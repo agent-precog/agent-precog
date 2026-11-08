@@ -7,4 +7,5 @@ authors:
 version: 0.3.0
 date-released: 2026-10-29
 url: "https://agent-precog.org"
+repository-code: "https://github.com/agent-precog/agent-precog"
 license: CC-BY-4.0

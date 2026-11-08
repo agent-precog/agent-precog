@@ -45,7 +45,7 @@ python3 -m http.server -d site 8000   # then open http://localhost:8000
 
 ## Deploy from GitHub automatically
 
-1. One-off: deploy `infra/github-oidc-role.yaml` with your GitHub username (`aws cloudformation deploy --stack-name agent-precog-oidc --template-file infra/github-oidc-role.yaml --capabilities CAPABILITY_NAMED_IAM --parameter-overrides GitHubOrg=kd-gitgub`). Copy the `DeployRoleArn` output.
+1. One-off: deploy `infra/github-oidc-role.yaml` with your GitHub username (`aws cloudformation deploy --stack-name agent-precog-oidc --template-file infra/github-oidc-role.yaml --capabilities CAPABILITY_NAMED_IAM --parameter-overrides GitHubOrg=agent-precog`). Copy the `DeployRoleArn` output.
 2. In the GitHub repo: Settings → Secrets → `AWS_DEPLOY_ROLE_ARN` = that ARN. Optionally Settings → Variables → `SITE_DOMAIN`, `SITE_CERT_ARN`, `SITE_ZONE_ID`.
 3. Push to `main`. The workflow builds and deploys. No AWS keys are stored anywhere.
 
