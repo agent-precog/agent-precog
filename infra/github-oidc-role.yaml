@@ -25,6 +25,7 @@ Resources:
     Properties:
       RoleName: !Sub "${SiteStackName}-github-deploy"
       AssumeRolePolicyDocument:
+        Version: "2012-10-17"
         Statement:
           - Effect: Allow
             Principal: { Federated: !Ref OidcProvider }
@@ -33,7 +34,11 @@ Resources:
               StringEquals:
                 token.actions.githubusercontent.com:aud: sts.amazonaws.com
               StringLike:
-                token.actions.githubusercontent.com:sub: !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/main"
+                # GitHub issues two subject formats: the classic "repo:owner/name:ref:..." and, since 2026,
+                # "repo:owner@<owner-id>/name@<repo-id>:ref:..." with numeric ids embedded. Accept both.
+                token.actions.githubusercontent.com:sub:
+                  - !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/main"
+                  - !Sub "repo:${GitHubOrg}@*/${GitHubRepo}@*:ref:refs/heads/main"
       Policies:
         - PolicyName: deploy-site
           PolicyDocument:
