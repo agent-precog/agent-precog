@@ -4,7 +4,7 @@ Description: IAM role that GitHub Actions assumes via OIDC to deploy agent-preco
 Parameters:
   GitHubOrg:
     Type: String
-    Description: GitHub user or org, e.g. keithdewar
+    Description: GitHub user or org that owns the repository
   GitHubRepo:
     Type: String
     Default: agent-precog

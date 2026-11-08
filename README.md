@@ -53,10 +53,6 @@ python3 -m http.server -d site 8000   # then open http://localhost:8000
 
 Append a row to `data/papers.csv` (columns are documented in the protocol's extraction template), commit, push. The pillar page, gap matrix and PRISMA counts update on the next build. `gap_cells` is a `;`-separated list drawn from: `multi-agent state`, `non-generative inference`, `latency/jitter aware`, `time-to-irreversibility`, `edge deployment`, `human handoff`, `cross-domain evaluation`.
 
-## Cost
-
-Domain £10–60/yr depending on TLD. S3 + CloudFront for a site this size: well under £1/month. Set a budget alarm in AWS Billing on day one.
-
 ## Licence
 
 Content and data CC BY 4.0 (see LICENSE-CONTENT). Code MIT (see LICENSE).
