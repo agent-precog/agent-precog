@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% set nav = 'papers' %}
+{% block title %}All papers - agent-precog.org{% endblock %}
+{% block body %}
+<section><div class="wrap" style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <span class="eyebrow">ALL INCLUDED PAPERS - {{ papers|length }}</span>
+    <h1 style="font-size:36px">Every paper in the review</h1>
+    <p class="lead" style="font-size:17px">Filter by pillar, year or venue, or download the table as CSV. Each row links to the paper; the extraction note behind it is in the repository.</p>
+  </div>
+  {% include "_table.html" %}
+</div></section>
+{% endblock %}

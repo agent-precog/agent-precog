@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% set nav = 'changelog' %}
+{% block title %}Changelog - agent-precog.org{% endblock %}
+{% block body %}
+<section><div class="wrap" style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <span class="eyebrow">CHANGELOG - CURRENT v{{ version.version }}</span>
+    <h1 style="font-size:36px">What changed, and when</h1>
+    <p class="lead" style="font-size:17px">One row per release. Minor versions are monthly updates; major versions are protocol changes.</p>
+  </div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Date</th><th>Version</th><th>Change</th></tr></thead>
+    <tbody>{% for c in changelog|reverse %}<tr><td class="mono">{{ c.date }}</td><td class="mono">{{ c.version }}</td><td>{{ c.change }}</td></tr>{% endfor %}</tbody>
+  </table></div>
+</div></section>
+{% endblock %}

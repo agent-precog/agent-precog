@@ -1,0 +1,46 @@
+<div class="filters">
+  <label>Year <select id="f-year" aria-label="Filter by year"><option value="">All</option>{% for y in papers|map(attribute='year')|unique|sort(reverse=true) %}<option>{{ y }}</option>{% endfor %}</select></label>
+  <label>Venue <select id="f-venue" aria-label="Filter by venue"><option value="">All</option>{% for v in papers|map(attribute='venue')|unique|sort %}<option>{{ v }}</option>{% endfor %}</select></label>
+  {% if not pillar %}<label>Pillar <select id="f-pillar" aria-label="Filter by pillar"><option value="">All</option>{% for pl in pillars %}<option value="{{ pl.n }}">{{ pl.n }} - {{ pl.short }}</option>{% endfor %}</select></label>{% endif %}
+  <label>Method <select id="f-method" aria-label="Filter by method"><option value="">All</option>{% for m in all_methods %}<option>{{ m }}</option>{% endfor %}</select></label>
+  <label><input type="checkbox" id="f-base"> Baseline candidates only</label>
+  <label><input type="search" id="f-q" placeholder="Search title or author" aria-label="Search papers"></label>
+  <a class="tag" href="/data/papers.csv" download style="padding:6px 10px">↓ CSV</a>
+</div>
+<div class="tablewrap">
+<table id="papers">
+<thead><tr><th>Paper</th>{% if not pillar %}<th>Pillar</th>{% endif %}<th>Year</th><th>Venue</th><th>Contribution</th><th>Methods</th><th title="Sorted by relevance, then year">Relevance <span class="sortind">↓</span></th><th>Tags</th></tr></thead>
+<tbody>
+{% for p in papers %}
+<tr data-year="{{ p.year }}" data-venue="{{ p.venue }}" data-pillar="{{ p.pillar_list|join(' ') }}" data-methods="{{ p.methods_list|join(' ') }}" data-rqs="{% for k,_,_ in rqs %}{% if p[k] >= 3 %}{{ k }} {% endif %}{% endfor %}" data-base="{{ 'y' if p.baseline else 'n' }}" data-q="{{ (p.title ~ ' ' ~ p.authors)|lower }}">
+  <td><a href="{{ p.url }}" style="font-weight:500;color:var(--ink)">{{ p.title }}</a><div class="hint">{{ p.authors }}</div></td>
+  {% if not pillar %}<td>{% for n in p.pillar_list %}<a class="tag pill-p" href="/pillars/{{ pillars[n-1].slug }}/" title="Pillar {{ n }} - {{ pillars[n-1].short }}">P{{ n }}</a> {% endfor %}</td>{% endif %}
+  <td class="mono">{{ p.year }}</td>
+  <td>{{ p.venue }}</td>
+  <td class="muted">{{ p.contribution }}</td>
+  <td>{% for m in p.methods_list %}<span class="tag" style="margin:1px 0;display:inline-block">{{ m }}</span> {% endfor %}</td>
+  <td class="nowrap"><span class="bar" title="max RQ relevance {{ p.relevance }}/5"><i style="width:{{ p.relevance * 20 }}%"></i></span> <span class="mono hint">{{ p.relevance }}/5</span></td>
+  <td>{% if p.baseline %}<span class="tag base">baseline</span> {% endif %}{% for k, label, _ in rqs %}{% if p[k] >= 3 %}<span class="tag rq" title="{{ label }} relevance {{ p[k] }}/5">{{ label }}</span> {% endif %}{% endfor %}{% if p.included_via != 'search' %}<span class="tag seed">{{ p.included_via }}</span>{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+<span class="hint" id="count">Showing {{ papers|length }} - sorted by relevance (highest 0-5 score against RQ1-RQ5, from the extraction note), then year</span>
+<script>
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('#papers tbody tr'));
+  var y=document.getElementById('f-year'),v=document.getElementById('f-venue'),p=document.getElementById('f-pillar'),m=document.getElementById('f-method'),b=document.getElementById('f-base'),q=document.getElementById('f-q'),c=document.getElementById('count');
+  var qs=new URLSearchParams(location.search),init=qs.get('method'),rq=qs.get('rq'); if(init&&m){m.value=init;}
+  function apply(){
+    var n=0,qq=(q.value||'').toLowerCase();
+    rows.forEach(function(r){
+      var ok=(!y.value||r.dataset.year===y.value)&&(!v.value||r.dataset.venue===v.value)&&(!p||!p.value||r.dataset.pillar.split(' ').indexOf(p.value)>=0)&&(!m.value||r.dataset.methods.split(' ').indexOf(m.value)>=0)&&(!rq||r.dataset.rqs.split(' ').indexOf(rq)>=0)&&(!b.checked||r.dataset.base==='y')&&(!qq||r.dataset.q.indexOf(qq)>=0);
+      r.style.display=ok?'':'none'; if(ok)n++;
+    });
+    c.textContent='Showing '+n+' of '+rows.length+' - relevance is the highest 0-5 score against RQ1-RQ5';
+  }
+  [y,v,p,m,b,q].forEach(function(e){ if(e) e.addEventListener('input',apply); });
+  if(init||rq) apply();
+})();
+</script>

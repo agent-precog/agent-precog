@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this review, please cite it as below."
+title: "agent-precog.org: a living systematic review of pre-emptive safety for multi-agent AI"
+authors:
+  - family-names: Dewar
+    given-names: Keith
+version: 0.3.0
+date-released: 2026-10-29
+url: "https://agent-precog.org"
+license: CC-BY-4.0

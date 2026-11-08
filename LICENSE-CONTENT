@@ -1,0 +1,16 @@
+agent-precog.org — review content and data
+
+The written content of this review (page text, figures, extraction notes),
+the data files in data/ (papers.csv, search_log.csv, decisions.csv,
+changelog.csv, pillars.json) and the generated digest are licensed under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+  https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit. Suggested citation:
+see CITATION.cff.
+
+Software in this repository (build.py, digest.py, templates/, static/,
+infra/, agent/, deploy scripts) is licensed separately under the MIT
+licence; see LICENSE.

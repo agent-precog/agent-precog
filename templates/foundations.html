@@ -1,0 +1,81 @@
+{% extends "base.html" %}{% set nav = 'foundations' %}
+{% block title %}Foundations - agent-precog.org{% endblock %}
+{% macro cite(id) -%}{% set p = by_id[id] %}<a href="{{ p.url }}" title="{{ p.title }}">{{ p.authors.split(';')[0].split(' ')[0] }}{% if p.authors.count(';') == 1 %} &amp; {{ p.authors.split(';')[1].strip().split(' ')[0] }}{% elif p.authors.count(';') > 1 %} et al.{% endif %} {{ p.year }}</a>{%- endmacro %}
+{% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+<section><div class="wrap side">
+  <aside>
+    <span class="eyebrow">FOUNDATIONS</span>
+    <a href="#problem">1 - The decision problem</a><a href="#state">2 - Why a local sub-graph</a><a href="#latent">3 - Latent prediction</a><a href="#geometry">4 - Hyperbolic distance</a><a href="#criterion">5 - The deferral criterion</a><a href="#training">6 - Training objectives</a><a href="#control">7 - Relation to control-theoretic safety</a><a href="#human">8 - The human after the halt</a>
+    <span class="eyebrow" style="margin-top:20px">BY METHOD</span>
+    {% for m in all_methods %}<a href="/papers/?method={{ m }}" class="tag" style="display:inline-block;margin:2px 2px 2px 10px">{{ m }}</a>{% endfor %}
+  </aside>
+  <main>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span class="eyebrow">MATHEMATICAL FOUNDATIONS - {{ total }} PAPERS IN THE REVIEW</span>
+      <h1 style="font-size:36px">The formal model, and the papers it rests on</h1>
+      <p class="lead" style="font-size:17px">PreCog's design is a small number of design commitments. Each one below is stated, then traced to the included papers that establish or motivate it. Every citation links to the paper; the <em>By method</em> list on the left filters the paper table by technique.</p>
+    </div>
+
+    <div id="problem" class="prose">
+      <h2>1 - The decision problem</h2>
+      <p>At step $t$ an agent proposes a tool call $a_t$ in a shared environment. A rejector $r(g_t, a_t) \in \{0,1\}$ either lets it proceed or halts it, where $g_t$ is the agent's local sub-graph. The rejector is a <em>reject option</em> in the sense of {{ cite('chow1970reject') }}: abstain when the expected cost of acting exceeds the cost of deferring. Modern learning-to-defer makes the downstream decision-maker explicit and trains the predictor and rejector jointly ({{ cite('madras2018predict') }}), with consistent surrogate losses so that minimising the surrogate minimises the true deferral loss ({{ cite('mozannar2020consistent') }}; {{ cite('verma2022calibrated') }}). PreCog adopts the two-stage predictor-rejector template of {{ cite('mao2023twostage') }}, in which the world model is trained first and frozen while the rejector is learned.</p>
+      <p>Two things distinguish PreCog's problem from that literature. The decision is sequential, so deferral must account for future value rather than per-step loss ({{ cite('joshi2021sequential') }}). And the cost of deferring is not constant: it depends on how much time remains before the action becomes irreversible, and on how long the deferral signal itself takes to arrive.</p>
+    </div>
+
+    <div id="state" class="prose">
+      <h2>2 - Why a local sub-graph, not global state</h2>
+      <p>The natural model of several agents acting under partial observability is a decentralised POMDP. Finite-horizon Dec-POMDPs are NEXP-complete ({{ cite('bernstein2002complexity') }}), and their joint state and action spaces grow combinatorially with the number of agents ({{ cite('oliehoek2016decpomdp') }}). Exact value backups over an enterprise's global state are therefore out of reach.</p>
+      <p>PreCog's response is a factored approximation: evaluate the action over the acting agent's $k$-hop neighbourhood, with $k = 3$, extracted on demand from a central graph. The justification is empirical rather than formal (hazards in the target domains are local in the relational graph), and the ablation over $k \in \{1,2,3\}$ in RQ4 measures what the approximation costs.</p>
+    </div>
+
+    <div id="latent" class="prose">
+      <h2>3 - Latent prediction instead of generation</h2>
+      <p>A joint-embedding predictive architecture predicts the <em>representation</em> of a future state rather than reconstructing the state itself ({{ cite('lecun2022path') }}). Given a context encoder $f_\theta$ and an action-conditioned predictor $p_\phi$,</p>
+      $$\hat z_{t+1:t+H} = p_\phi\big(f_\theta(g_t),\, u_t\big)$$
+      <p>where $u_t$ embeds the proposed action. Inference is a fixed number of forward passes, which is what makes a sub-15 ms budget plausible on edge silicon. I-JEPA showed the recipe works at scale with an exponential-moving-average target encoder and masked prediction ({{ cite('assran2023ijepa') }}); Graph-JEPA carried it to graphs with a hyperbolic coordinate target ({{ cite('skenderi2025graphjepa') }}). Joint-embedding training can collapse to a constant representation unless regularised; the variance-covariance terms of {{ cite('bardes2022vicreg') }} are the standard remedy and appear as $R(\theta)$ in the Stage 1 loss below.</p>
+    </div>
+
+    <div id="geometry" class="prose">
+      <h2>4 - Hyperbolic distance as the energy</h2>
+      <p>Sites contain zones, zones contain aisles; accounts contain beneficiaries contain payments. Tree-like hierarchies embed with low distortion in hyperbolic space but not in Euclidean space of the same dimension ({{ cite('nickel2017poincare') }}), and message passing can be carried out there directly ({{ cite('chami2019hgcn') }}). PreCog embeds into the Poincaré ball and measures divergence from a learned safe manifold $\mathcal{M}_{safe}$ (a set of prototypes) as</p>
+      $$D_{hyp}(z, \mathcal{M}_{safe}) = \min_{m \in \mathcal{M}_{safe}} \operatorname{arcosh}\!\left(1 + \frac{2\lVert z - m \rVert^2}{(1 - \lVert z \rVert^2)(1 - \lVert m \rVert^2)}\right)$$
+      <p>This gives an energy signal without a separate generative model: distance from known-safe behaviour is read off the latent space.</p>
+    </div>
+
+    <div id="criterion" class="prose">
+      <h2>5 - The latency-adjusted deferral criterion</h2>
+      <p>The rejector fires when the discounted energy over the prediction horizon meets a threshold that falls as network jitter consumes the time left before irreversibility:</p>
+      $$E(g_t, a_t) = \sum_{h=1}^{H} \gamma^h \Big[ D_{hyp}\big(\hat z_{t+h}, \mathcal{M}_{safe}\big) + V_\psi\big(\hat z_{t+h}\big) \Big] \;\geq\; \tau^*_t$$
+      $$\tau^*_t = \max\!\Big(\tau_{min},\; c_{human} - \lambda \cdot \min\big(1,\, \tfrac{\Delta t_{p99}}{TTI(g_t, a_t)}\big)\Big)$$
+      <p>$V_\psi$ is a learned blast-radius head estimating multi-hop consequence; $\Delta t_{p99}$ is the rolling 99th-percentile link latency; $TTI$ is time-to-irreversibility computed from domain rules. The ratio is the fraction of the remaining safe window the network is expected to consume. The floor $\tau_{min}$ prevents collapse to halt-everything, and a hard override enters the safe state whenever $\Delta t_{p99} + t_{infer} \geq TTI$. The adaptive threshold is the component with no direct precedent in the included literature: no deferral paper in the review treats signal latency or a deadline as an input to the decision, which is the gap RQ2 addresses.</p>
+    </div>
+
+    <div id="training" class="prose">
+      <h2>6 - Training objectives</h2>
+      <p><strong>Stage 1, world model.</strong> Align predicted and target latents under stop-gradient, with collapse regularisation:</p>
+      $$\mathcal{L}_{JEPA}(\theta, \phi) = \sum_{h=1}^{H} D_{hyp}\big(\hat z_{t+h},\, \mathrm{sg}[\bar f(g_{t+h})]\big) + \beta\, R(\theta)$$
+      <p><strong>Stage 2, rejector.</strong> With the world model frozen, minimise expected sequential cost over trajectories, where $c_{def}$ is the cost of a halt and $c_{cat}$ the cost of letting a catastrophic action proceed; a tempered sigmoid stands in for the hard indicator during training:</p>
+      $$\mathcal{L}_{L2D} = \mathbb{E}_{\tau} \sum_{t} \gamma^t \Big[ \rho_t \, c_{def}(g_t) + (1 - \rho_t)\, c_{cat}(g_t, a_t) \Big], \qquad \rho_t = \sigma\!\left(\tfrac{E(g_t, a_t) - \tau^*_t}{T}\right)$$
+      <p>Whether this surrogate is consistent with the target deferral loss in the sense of {{ cite('mozannar2020consistent') }} is open. The two-stage structure follows {{ cite('mao2023twostage') }}, whose consistency results cover the static case; extending them to the sequential, latency-dependent threshold is theoretical work the dissertation flags rather than claims. The risk-coverage framing of {{ cite('geifman2017selective') }} is the natural lens for reporting the result: prevention rate against false-halt rate across the threshold range.</p>
+    </div>
+
+    <div id="control" class="prose">
+      <h2>7 - Relation to control-theoretic safety</h2>
+      <p>Where dynamics are known, control barrier functions enforce forward invariance of a safe set with hard guarantees ({{ cite('ames2017cbf') }}), and shielding blocks unsafe actions against a temporal-logic specification ({{ cite('alshiekh2018shielding') }}). Both require an explicit model or specification of the hazard. PreCog's hazards are emergent compositions across agents and systems for which no specification exists in advance, so the rejector is learned. The price is that PreCog offers statistical rather than formal guarantees, which is why it is positioned above, not in place of, certified safety functions, and why barrier functions and shields appear as baselines rather than competitors.</p>
+    </div>
+
+    <div id="human" class="prose">
+      <h2>8 - The human after the halt</h2>
+      <p>The second half of the design has no equations but rests on an equally specific literature. Automation erodes the operator's readiness to intervene ({{ cite('bainbridge1983ironies') }}; {{ cite('endsley2023ironies') }}). What the operator needs is measurable: Endsley's three levels of situation awareness and the SAGAT freeze-probe method ({{ cite('endsley1995measurement') }}). Function allocation between human and machine is a design variable with known consequences ({{ cite('parasuraman2000model') }}), appropriate reliance depends on the automation being understandable ({{ cite('lee2004trust') }}), and asking a human to decide inside the hazard window makes them a moral crumple zone ({{ cite('elish2019moral') }}). The Fast Path/Slow Path split follows directly: stop first at machine timescale, explain second at human timescale, and never ask the human to decide about a world that is still moving.</p>
+    </div>
+
+    <div class="card" style="padding:20px">
+      <span class="eyebrow">HOW TO USE THIS PAGE</span>
+      <p class="muted" style="margin:0;font-size:14px">Each design commitment is a claim the review should be able to support or challenge. As papers are added, the method tags on the left will fill in; a tag with few papers behind it is where PreCog is most exposed. The full derivation, with proofs where they exist, is in the research charter.</p>
+    </div>
+  </main>
+</div></section>
+{% endblock %}

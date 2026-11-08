@@ -1,0 +1,62 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: IAM role that GitHub Actions assumes via OIDC to deploy agent-precog.ai. No long-lived keys.
+
+Parameters:
+  GitHubOrg:
+    Type: String
+    Description: GitHub user or org, e.g. keithdewar
+  GitHubRepo:
+    Type: String
+    Default: agent-precog
+  SiteStackName:
+    Type: String
+    Default: agent-precog
+
+Resources:
+  OidcProvider:
+    Type: AWS::IAM::OIDCProvider
+    Properties:
+      Url: https://token.actions.githubusercontent.com
+      ClientIdList: [sts.amazonaws.com]
+      ThumbprintList: [6938fd4d98bab03faadb97b34396831e3780aea1]
+
+  DeployRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${SiteStackName}-github-deploy"
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal: { Federated: !Ref OidcProvider }
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+              StringLike:
+                token.actions.githubusercontent.com:sub: !Sub "repo:${GitHubOrg}/${GitHubRepo}:ref:refs/heads/main"
+      Policies:
+        - PolicyName: deploy-site
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action: [cloudformation:*]
+                Resource: !Sub "arn:aws:cloudformation:*:${AWS::AccountId}:stack/${SiteStackName}/*"
+              - Effect: Allow
+                Action: [s3:ListBucket, s3:GetObject, s3:PutObject, s3:DeleteObject, s3:GetBucketLocation]
+                Resource:
+                  - !Sub "arn:aws:s3:::${SiteStackName}-${AWS::AccountId}"
+                  - !Sub "arn:aws:s3:::${SiteStackName}-${AWS::AccountId}/*"
+              - Effect: Allow
+                Action: [s3:CreateBucket, s3:PutBucketPolicy, s3:PutBucketPublicAccessBlock, s3:PutEncryptionConfiguration, s3:PutBucketVersioning, s3:DeleteBucketPolicy]
+                Resource: !Sub "arn:aws:s3:::${SiteStackName}-${AWS::AccountId}"
+              - Effect: Allow
+                Action: [cloudfront:*]
+                Resource: "*"
+              - Effect: Allow
+                Action: [route53:ChangeResourceRecordSets, route53:GetHostedZone, route53:ListResourceRecordSets]
+                Resource: "arn:aws:route53:::hostedzone/*"
+
+Outputs:
+  DeployRoleArn:
+    Value: !GetAtt DeployRole.Arn
+    Description: Put this in the GitHub repo secret AWS_DEPLOY_ROLE_ARN

@@ -1,0 +1,5 @@
+date,version,change
+2026-10-28,0.1.0,Site stood up with the 14-paper seed list; protocol v1.0 frozen; no database searches run yet
+2026-10-29,0.2.0,Added Foundations page tracing the formal model to its sources; methods tag and filter on the paper table; nine seed papers added (23 total)
+2026-10-29,0.3.0,"Landing page rebuilt around the project vision: target KPIs, overview and goals, unsolved problems. New RQs page with hypotheses and paper counts; Pillars index; Methods renamed PRISMA-S with an explanation of the standard and the PRISMA 2020 flow moved there"
+2026-11-07,0.3.1,Audit fixes: four seed papers added to Pillar 4 (edge inference) so no pillar is empty (27 total); first automated search rescheduled to 2026-11-15; home page reordered (project and Figure 1 before targets) with every unsolved problem linked to its research question; pre-search gap wording on pillar pages; gap matrix totals row and tiered gaps; relevance scores labelled and pillar badges on the paper table; relevance rubric on the RQs page; Ask-the-review assistant added

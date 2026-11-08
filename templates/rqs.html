@@ -1,0 +1,64 @@
+{% extends "base.html" %}{% set nav = 'rqs' %}
+{% block title %}Research questions - agent-precog.org{% endblock %}
+{% block body %}
+<section><div class="wrap" style="display:flex;flex-direction:column;gap:28px">
+  <div style="display:flex;flex-direction:column;gap:12px;max-width:800px">
+    <span class="eyebrow">FIVE RESEARCH QUESTIONS - {{ total }} PAPERS SCORED AGAINST THEM</span>
+    <h1 style="font-size:36px">What PreCog sets out to answer</h1>
+    <p class="lead" style="font-size:17px">Each question is paired with falsifiable hypotheses, the literature pillars that feed it, and the gap in the included papers it addresses. Every paper in the review carries a 0-5 relevance score against each question; the counts below are papers scoring 3 or more.</p>
+    <div class="card" style="padding:14px 18px;gap:6px;background:#FAFAF7">
+      <span class="hint" style="font-weight:600;color:var(--ink)">Relevance rubric (0-5, assigned at extraction, one score per RQ)</span>
+      <ul class="rubric">
+        <li><span class="mono">5</span> direct architectural building block or baseline for the RQ</li>
+        <li><span class="mono">4</span> core method, in an adjacent setting that transfers with adaptation</li>
+        <li><span class="mono">3</span> partial methodological overlap; informs the design</li>
+        <li><span class="mono">1-2</span> background or motivating context only</li>
+        <li><span class="mono">0</span> not relevant to this question</li>
+      </ul>
+      <span class="hint">A paper's <em>relevance</em> on the tables is its highest score across the five RQs.</span>
+    </div>
+  </div>
+
+  {% set rqdata = [
+    ('rq1','RQ1','Sub-15ms latent world-model interception','Can a non-generative Hyperbolic Graph-JEPA, compiled via TensorRT on edge silicon, ingest a localised 3-hop multi-agent sub-graph and accurately halt emergent catastrophic trajectories in under 15 milliseconds?',
+      ['End-to-end Fast Path latency ≤ 15 ms at p99 under nominal wireless conditions.','Rejector reaches ROC-AUC ≥ 0.96 on held-out emergent-catastrophe trajectories, detecting before the time-to-irreversibility boundary.','At matched recall, lower false-halt rate than a stateless per-call classifier and a 1-hop graph baseline.'],
+      [1,2,4],'Problems 1, 2 and 4: the latency trap, stateless evaluation and the centralised decision locus','No included paper couples a graph world model to a safety decision on edge hardware.'),
+    ('rq2','RQ2','Jitter-adaptive sequential learning to defer','How can a two-stage sequential L2D surrogate loss adapt its deferral threshold in real time to 99th-percentile wireless jitter relative to a domain\'s physical or transactional time-to-irreversibility?',
+      ['Under injected jitter, the adaptive threshold prevents a higher share of catastrophes before TTI than a fixed threshold calibrated on a clean network.','The cost in additional false halts is bounded and degrades gracefully across the tested jitter range.'],
+      [3,4],'Problems 3 and 4: the static deferral cost and the centralised decision locus','No deferral paper in the review treats signal latency or a deadline as an input to the decision.'),
+    ('rq3','RQ3','Dual-speed socio-technical handoff','Does decoupling safety into a Fast Path and an asynchronous Slow Path generalise across physical robotics and logical enterprise graphs while measurably reducing human out-of-the-loop recovery latency?',
+      ['Operators given the Dual-Speed brief reach a correct release/re-plan/escalate decision faster than operators given raw telemetry.','They make fewer incorrect decisions and report lower workload.','The same pipeline, retrained but not re-architected, meets the RQ1 targets in both environments.'],
+      [5,3],'Problems 5 and 6: the opaque halt and deferral under motion','Situation-awareness research is rich but none of it is paired with sub-second automated interception.'),
+    ('rq4','RQ4','Compositional generalisation to unseen hazards','Can a rejector trained on a finite set of hazard motifs intercept catastrophes formed by motif combinations, agent configurations and neighbourhood depths it has never seen, and what is lost as the sub-graph is truncated from 3 hops to 2 or 1?',
+      ['On the compositional test split the rejector retains at least 90% of its in-distribution prevention rate, where stateless and 1-hop baselines degrade substantially more.','Hyperbolic embedding improves compositional generalisation on hazards spanning containment hierarchies.','Prevention falls monotonically with neighbourhood depth, identifying the minimum context the architecture needs.'],
+      [1,2],'Problems 1 and 2, at the level of generalisation','Only one learning-to-defer paper uses a multi-agent state; no JEPA paper is action-conditioned for safety.'),
+    ('rq5','RQ5','Incremental value over existing safeguards','What fraction of catastrophic irreversible actions that pass existing safeguards (on-board protective fields, per-transaction rules, approval matrices, change approval) does PreCog intercept before irreversibility, and at what cost in false halts and throughput?',
+      ['For the defined hazard classes PreCog prevents a majority of catastrophes the existing safeguard does not catch, in both environments.','False-halt rate alongside the existing safeguard stays below a domain-defined nuisance threshold, and total emergency stops or reversals fall.','Incremental value concentrates in hazards whose causal chain crosses two or more systems or agents.'],
+      [1,3,5],'Commercial value and positioning against certified safety systems','The hazard class is defined as cross-system compositions, which single-node safeguards miss by construction.'),
+  ] %}
+
+  {% for key, label, title, q, hyps, pls, prob, gap in rqdata %}
+  {% set n = by_rq[key] %}
+  <div id="{{ key }}" class="card" style="padding:28px;gap:16px">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span class="eyebrow" style="font-size:14px">{{ label }} - ADDRESSES {{ prob|upper }}</span>
+        <h2 style="font-size:22px">{{ title }}</h2>
+      </div>
+      <a href="/papers/?rq={{ key }}" class="tag" style="padding:6px 10px;font-size:12px">{{ n }} paper{{ '' if n == 1 else 's' }} scoring ≥ 3 →</a>
+    </div>
+    <p style="margin:0;font-size:16px;line-height:1.6">{{ q }}</p>
+    <div class="grid g2" style="gap:20px">
+      <div>
+        <span class="hint" style="font-weight:600;color:var(--ink)">Hypotheses</span>
+        <ol style="margin:8px 0 0;padding-left:20px;font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px">{% for h in hyps %}<li>{{ h }}</li>{% endfor %}</ol>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div><span class="hint" style="font-weight:600;color:var(--ink)">Fed by pillars</span><div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">{% for pn in pls %}{% set pl = pillars[pn-1] %}<a href="/pillars/{{ pl.slug }}/" class="tag" style="padding:4px 8px">{{ pl.n }} - {{ pl.short }}</a>{% endfor %}</div></div>
+        <div><span class="hint" style="font-weight:600;color:var(--ink)">Gap in the literature</span><p class="muted" style="margin:6px 0 0;font-size:14px">{{ gap }}</p></div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div></section>
+{% endblock %}

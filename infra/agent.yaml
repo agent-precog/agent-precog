@@ -1,0 +1,141 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Site assistant for the living review - Lambda function URL calling Bedrock, grounded on the site's digest.md; DynamoDB for daily caps and an anonymised question log.
+
+Parameters:
+  SiteBucket:
+    Type: String
+    Description: Name of the site's S3 bucket (the digest.md is read from it).
+  SiteName:
+    Type: String
+    Default: agent-precog.org
+  SiteUrl:
+    Type: String
+    Default: https://agent-precog.org
+  AllowedOrigin:
+    Type: String
+    Default: "*"
+    Description: Origin allowed to call the function URL (the site's origin, e.g. https://agent-precog.org). "*" while testing.
+  ModelId:
+    Type: String
+    Description: Bedrock model or inference profile id, e.g. eu.anthropic.claude-haiku-4-5-20251001-v1:0
+  DailyCap:
+    Type: Number
+    Default: 300
+  IpCap:
+    Type: Number
+    Default: 40
+  LogQuestions:
+    Type: String
+    Default: "true"
+    AllowedValues: ["true", "false"]
+  Enabled:
+    Type: String
+    Default: "true"
+    AllowedValues: ["true", "false"]
+    Description: Kill switch. Set to false to disable the assistant without deleting anything.
+
+Resources:
+  Table:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "${AWS::StackName}-state"
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions: [{ AttributeName: pk, AttributeType: S }]
+      KeySchema: [{ AttributeName: pk, KeyType: HASH }]
+      TimeToLiveSpecification: { AttributeName: ttl, Enabled: true }
+
+  Role:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement: [{ Effect: Allow, Principal: { Service: lambda.amazonaws.com }, Action: sts:AssumeRole }]
+      ManagedPolicyArns: [arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole]
+      Policies:
+        - PolicyName: agent
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: [bedrock:InvokeModel, bedrock:InvokeModelWithResponseStream]
+                Resource: "*"
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource: !Sub "arn:aws:s3:::${SiteBucket}/digest.md"
+              - Effect: Allow
+                Action: [dynamodb:UpdateItem, dynamodb:PutItem]
+                Resource: !GetAtt Table.Arn
+
+  Function:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${AWS::StackName}"
+      Runtime: python3.12
+      Handler: handler.handler
+      Role: !GetAtt Role.Arn
+      Timeout: 60
+      MemorySize: 512
+      Environment:
+        Variables:
+          MODEL_ID: !Ref ModelId
+          SITE_BUCKET: !Ref SiteBucket
+          SITE_NAME: !Ref SiteName
+          SITE_URL: !Ref SiteUrl
+          TABLE: !Ref Table
+          DAILY_CAP: !Ref DailyCap
+          IP_CAP: !Ref IpCap
+          LOG_QUESTIONS: !Ref LogQuestions
+          ENABLED: !Ref Enabled
+          ALLOWED_ORIGIN: !Ref AllowedOrigin
+      Code:
+        ZipFile: |
+          def handler(event, context):
+              return {"statusCode": 503, "body": "agent code not yet uploaded; run deploy_agent.sh"}
+
+  FunctionUrl:
+    Type: AWS::Lambda::Url
+    Properties:
+      TargetFunctionArn: !GetAtt Function.Arn
+      AuthType: NONE
+      InvokeMode: BUFFERED
+      Cors:
+        AllowOrigins: [!Ref AllowedOrigin]
+        AllowMethods: [POST]
+        AllowHeaders: [content-type]
+        MaxAge: 86400
+
+  UrlPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref Function
+      Action: lambda:InvokeFunctionUrl
+      Principal: "*"
+      FunctionUrlAuthType: NONE
+
+  UrlInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref Function
+      Action: lambda:InvokeFunction
+      Principal: "*"
+      InvokedViaFunctionUrl: true
+
+  ErrorAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Site assistant Lambda errors
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      Dimensions: [{ Name: FunctionName, Value: !Ref Function }]
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 5
+      ComparisonOperator: GreaterThanThreshold
+      TreatMissingData: notBreaching
+
+Outputs:
+  AgentUrl:
+    Value: !GetAtt FunctionUrl.FunctionUrl
+  TableName:
+    Value: !Ref Table

@@ -1,0 +1,194 @@
+#!/usr/bin/env python3
+"""Build the agent-precog.ai static site from data/ into site/.
+
+Usage: python3 build.py            # writes ./site
+       python3 build.py --out dist # custom output directory
+
+Requires: jinja2 (pip install jinja2). No other dependencies.
+"""
+import argparse
+import csv
+import json
+import shutil
+from collections import Counter, defaultdict
+from datetime import date
+from pathlib import Path
+
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+from digest import build_digest
+
+SITE_NAME = "agent-precog.org"
+SITE_URL = "https://agent-precog.org"
+
+ROOT = Path(__file__).parent
+DATA = ROOT / "data"
+TEMPLATES = ROOT / "templates"
+STATIC = ROOT / "static"
+
+GAP_COLUMNS = [
+    ("multi-agent state", "Multi-agent state"),
+    ("non-generative inference", "Non-generative inference"),
+    ("latency/jitter aware", "Latency/jitter aware"),
+    ("time-to-irreversibility", "Time-to-irreversibility"),
+    ("edge deployment", "Edge deployment"),
+    ("human handoff", "Human handoff"),
+    ("cross-domain evaluation", "Cross-domain evaluation"),
+]
+
+RQS = [
+    ("rq1", "RQ1", "Sub-15ms latent world-model interception"),
+    ("rq2", "RQ2", "Jitter-adaptive sequential L2D"),
+    ("rq3", "RQ3", "Dual-speed socio-technical handoff"),
+    ("rq4", "RQ4", "Compositional generalisation"),
+    ("rq5", "RQ5", "Incremental value over existing safeguards"),
+]
+
+# Which pillars feed each RQ (mirrors the "Fed by pillars" lists on the RQs page).
+RQ_PILLARS = {"rq1": [1, 2, 4], "rq2": [3, 4], "rq3": [5, 3], "rq4": [1, 2], "rq5": [1, 3, 5]}
+
+
+def read_csv(path):
+    with open(path, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def load():
+    papers = read_csv(DATA / "papers.csv")
+    for p in papers:
+        p["pillar_list"] = [int(x) for x in str(p["pillar"]).split(";") if x.strip()]
+        p["gap_list"] = [g.strip().lower() for g in p.get("gap_cells", "").split(";") if g.strip()]
+        p["year"] = int(p["year"]) if p["year"] else None
+        for k, _, _ in RQS:
+            p[k] = int(p.get(k) or 0)
+        p["relevance"] = max(p[k] for k, _, _ in RQS)
+        p["baseline"] = str(p.get("baseline", "")).strip().lower() == "yes"
+        p["methods_list"] = [m.strip() for m in p.get("methods", "").split(";") if m.strip()]
+    pillars = json.loads((DATA / "pillars.json").read_text(encoding="utf-8"))
+    search_log = read_csv(DATA / "search_log.csv")
+    decisions = read_csv(DATA / "decisions.csv")
+    version = json.loads((ROOT / "version.json").read_text(encoding="utf-8"))
+    changelog = read_csv(DATA / "changelog.csv") if (DATA / "changelog.csv").exists() else []
+    return papers, pillars, search_log, decisions, version, changelog
+
+
+def prisma(papers, search_log, decisions):
+    identified_db = sum(int(r["hits"] or 0) for r in search_log)
+    other = sum(1 for p in papers if p["included_via"] != "search")
+    dedup = sum(1 for d in decisions if d["exclusion_code"] == "E5")
+    screened = max(identified_db - dedup, 0)
+    ta_excl = Counter(d["exclusion_code"] for d in decisions if d["stage"] == "title_abstract" and d["human_decision"] == "exclude")
+    ft_excl = Counter(d["exclusion_code"] for d in decisions if d["stage"] == "full_text" and d["human_decision"] == "exclude")
+    ta_total = sum(ta_excl.values())
+    ft_total = sum(ft_excl.values())
+    return {
+        "identified_db": identified_db,
+        "identified_other": other,
+        "duplicates": dedup,
+        "screened": screened,
+        "ta_excluded": ta_total,
+        "ta_codes": dict(ta_excl),
+        "full_text": max(screened - ta_total, 0),
+        "ft_excluded": ft_total,
+        "ft_codes": dict(ft_excl),
+        "included": len(papers),
+        "databases": len({r["database"] for r in search_log}),
+        "has_runs": bool(search_log),
+    }
+
+
+def gap_matrix(papers, pillars):
+    cells = defaultdict(list)
+    for p in papers:
+        for n in p["pillar_list"]:
+            for g in p["gap_list"]:
+                cells[(n, g)].append(p)
+    rows = []
+    for pl in pillars:
+        row = []
+        for key, label in GAP_COLUMNS:
+            ps = cells.get((pl["n"], key), [])
+            c = len(ps)
+            level = "gap" if c == 0 else "thin" if c <= 2 else "partial" if c <= 7 else "strong"
+            row.append({"key": key, "label": label, "count": c, "level": level, "papers": ps})
+        rows.append({"pillar": pl, "cells": row})
+    gaps = [(pl, key, label) for pl in pillars for key, label in GAP_COLUMNS if not cells.get((pl["n"], key))]
+    # Column totals across the whole review (a paper in two pillars counts once per column).
+    totals = []
+    for key, label in GAP_COLUMNS:
+        n = len({p["id"] for p in papers if key in p["gap_list"]})
+        totals.append({"key": key, "label": label, "count": n})
+    # Tier 1: requirements no paper in any pillar addresses. Tier 2: a pillar that is otherwise well
+    # populated (3+ papers) but has nothing on a requirement its neighbours cover - the integration gaps.
+    empty_cols = {t["key"] for t in totals if t["count"] == 0}
+    tier1 = [t for t in totals if t["count"] == 0]
+    tier2 = [(pl, key, label) for pl, key, label in gaps if key not in empty_cols and pl["count"] >= 3]
+    other = [(pl, key, label) for pl, key, label in gaps if key not in empty_cols and pl["count"] < 3]
+    return rows, gaps, {"totals": totals, "tier1": tier1, "tier2": tier2, "other": other}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default="site")
+    args = ap.parse_args()
+    out = ROOT / args.out
+
+    papers, pillars, search_log, decisions, version, changelog = load()
+    papers.sort(key=lambda p: (-p["relevance"], -(p["year"] or 0), p["title"]))
+    by_pillar = {pl["n"]: [p for p in papers if pl["n"] in p["pillar_list"]] for pl in pillars}
+    for pl in pillars:
+        pl["count"] = len(by_pillar[pl["n"]])
+    counts = prisma(papers, search_log, decisions)
+    matrix, gaps, gapinfo = gap_matrix(papers, pillars)
+    for pl in pillars:
+        pl["feeds"] = [label for k, label, _ in RQS if pl["n"] in RQ_PILLARS[k]]
+        pl["top_methods"] = [m for m, _ in Counter(m for p in by_pillar[pl["n"]] for m in p["methods_list"]).most_common(4)]
+    recent = sorted(papers, key=lambda p: p["screened_on"], reverse=True)[:5]
+    all_methods = sorted({m for p in papers for m in p["methods_list"]})
+    by_id = {p["id"]: p for p in papers}
+    by_rq = {k: sum(1 for p in papers if p[k] >= 3) for k, _, _ in RQS}
+    last_search = max((r["run_date"] for r in search_log), default=None)
+    agent_cfg = ROOT / "agent.json"
+    agent_url = json.loads(agent_cfg.read_text()).get("url") if agent_cfg.exists() else None
+
+    env = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=select_autoescape(["html"]))
+    ctx = dict(
+        pillars=pillars, counts=counts, version=version, recent=recent,
+        rqs=RQS, gap_columns=GAP_COLUMNS, matrix=matrix, gaps=gaps, gapinfo=gapinfo, rq_pillars=RQ_PILLARS,
+        last_search=last_search, built=date.today().isoformat(),
+        changelog=changelog, total=len(papers), all_methods=all_methods, by_id=by_id, by_rq=by_rq,
+        agent_url=agent_url, site_name=SITE_NAME,
+    )
+
+    if out.exists():
+        shutil.rmtree(out)
+    out.mkdir(parents=True)
+    shutil.copytree(STATIC, out / "static")
+    (out / "data").mkdir()
+    for f in ("papers.csv", "search_log.csv", "decisions.csv"):
+        shutil.copy(DATA / f, out / "data" / f)
+
+    def render(name, path, **extra):
+        html = env.get_template(name).render(**ctx, **extra)
+        p = out / path
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(html, encoding="utf-8")
+
+    render("index.html", "index.html")
+    render("gap.html", "gap/index.html")
+    render("methods.html", "prisma-s/index.html")
+    render("rqs.html", "rqs/index.html")
+    render("pillars.html", "pillars/index.html")
+    render("changelog.html", "changelog/index.html")
+    render("foundations.html", "foundations/index.html")
+    render("papers.html", "papers/index.html", papers=papers, pillar=None)
+    for pl in pillars:
+        render("pillar.html", f"pillars/{pl['slug']}/index.html", pillar=pl, papers=by_pillar[pl["n"]],
+               pillar_gaps=[c for row in matrix if row["pillar"]["n"] == pl["n"] for c in row["cells"] if c["level"] == "gap"])
+    n = build_digest(out, site_name=SITE_NAME, site_url=SITE_URL, version=version, papers=papers, pillars=pillars,
+                     rqs=RQS, gap_columns=GAP_COLUMNS, matrix=matrix, counts=counts, changelog=changelog)
+    print(f"Built {len(papers)} papers, {len(pillars)} pillars into {out}; digest {n//1024} KB")
+
+
+if __name__ == "__main__":
+    main()

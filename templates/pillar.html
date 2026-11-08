@@ -1,0 +1,43 @@
+{% extends "base.html" %}{% set nav = 'pillars' %}
+{% block title %}Pillar {{ pillar.n }} - {{ pillar.name }} - agent-precog.org{% endblock %}
+{% block body %}
+<section><div class="wrap side">
+  <aside>
+    <span class="eyebrow">PILLARS</span>
+    {% for pl in pillars %}<a href="/pillars/{{ pl.slug }}/" class="{{ 'on' if pl.n == pillar.n }}">{{ pl.n }} - {{ pl.short }}</a>{% endfor %}
+    <span class="eyebrow" style="margin-top:20px">ON THIS PAGE</span>
+    <a href="#scope">Scope &amp; search string</a><a href="#papers">Included papers</a><a href="#gaps">Gaps for PreCog</a>
+  </aside>
+  <main>
+    <div id="scope" style="display:flex;flex-direction:column;gap:14px">
+      <span class="eyebrow">PILLAR {{ pillar.n }} - {{ papers|length }} PAPER{{ '' if papers|length == 1 else 'S' }}{% if last_search %} - LAST SEARCH {{ last_search }}{% else %} - NO SEARCH RUN YET{% endif %}</span>
+      <h1 style="font-size:36px">{{ pillar.name }}</h1>
+      <p class="lead" style="font-size:17px;max-width:720px">{{ pillar.scope }}</p>
+      <div class="query"><span class="hint">Search string (see Methods for the per-database form)</span><code>{{ pillar.query }}</code></div>
+      <p class="hint" style="margin:0;max-width:720px">Papers tagged <span class="tag seed">seed</span> were hand-selected for foundational framing and are exempt from the search string's domain and date clauses (the "2015 or later, or seed list" rule on the <a href="/prisma-s/">PRISMA-S page</a>). Every paper found by the search must satisfy the full string.</p>
+    </div>
+    <div id="papers" style="display:flex;flex-direction:column;gap:14px">
+      <h2 style="font-size:22px">Included papers</h2>
+      {% if papers %}{% include "_table.html" %}
+      {% else %}
+      <div class="card" style="padding:24px;gap:8px;border-style:dashed">
+        <p style="margin:0;font-weight:500">No papers in this pillar yet.</p>
+        <p class="muted" style="margin:0;font-size:14px">{% if counts.has_runs %}The search string above returned nothing that passed screening. Decisions are logged in <a href="/data/decisions.csv">decisions.csv</a>.{% else %}The seed list did not include this pillar and the first database search has not run yet (scheduled {{ version.next_search }}). Nothing can be said about gaps here until it does.{% endif %}</p>
+      </div>
+      {% endif %}
+    </div>
+    {% if papers %}
+    <div id="gaps" class="card dark" style="padding:24px">
+      <span class="eyebrow">{% if counts.has_runs %}GAPS THIS PILLAR LEAVES OPEN{% else %}GAPS IN SEED LITERATURE - PRE-SEARCH BASELINE{% endif %}</span>
+      {% if pillar_gaps %}
+      <ul style="margin:0;padding-left:20px;font-size:15px;display:flex;flex-direction:column;gap:6px">
+        {% for c in pillar_gaps %}<li>No {% if not counts.has_runs %}seed{% else %}included{% endif %} paper in this pillar addresses <strong>{{ c.label|lower }}</strong></li>{% endfor %}
+      </ul>
+      {% else %}<p style="margin:0">Every requirement has at least one paper in this pillar.</p>{% endif %}
+      {% if not counts.has_runs %}<span class="muted" style="font-size:13px">Based on the {{ total }}-paper seed list; these are gaps in what was hand-selected, not yet evidence of gaps in the literature. Full database search scheduled for {{ version.next_search }}.</span>{% endif %}
+      <a href="/gap/" style="font-size:14px;font-weight:500">See in the gap matrix →</a>
+    </div>
+    {% endif %}
+  </main>
+</div></section>
+{% endblock %}

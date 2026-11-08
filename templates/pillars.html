@@ -1,0 +1,22 @@
+{% extends "base.html" %}{% set nav = 'pillars' %}
+{% block title %}Pillars - agent-precog.org{% endblock %}
+{% block body %}
+<section><div class="wrap" style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;flex-direction:column;gap:12px;max-width:800px">
+    <span class="eyebrow">FIVE PILLARS - {{ total }} PAPERS</span>
+    <h1 style="font-size:36px">Where the literature comes from</h1>
+    <p class="lead" style="font-size:17px">The review partitions the field into five research communities that rarely cite one another. Each pillar has its own search string, its own paper table, and its own list of what it leaves open for PreCog.</p>
+  </div>
+  <div class="grid g2">
+    {% for pl in pillars %}
+    <a class="card" href="/pillars/{{ pl.slug }}/" style="padding:24px;gap:10px">
+      <span class="eyebrow">PILLAR {{ pl.n }} - {{ pl.count }} PAPER{{ '' if pl.count == 1 else 'S' }}</span>
+      <h2 style="font-size:20px">{{ pl.name }}</h2>
+      <p class="muted" style="margin:0;font-size:14px">{{ pl.scope }}</p>
+      <div class="meta"><span class="hint">Feeds</span>{% for f in pl.feeds %}<span class="tag rq">{{ f }}</span>{% endfor %}</div>
+      {% if pl.top_methods %}<div class="meta"><span class="hint">Key methods</span>{% for m in pl.top_methods %}<span class="tag">{{ m }}</span>{% endfor %}</div>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</div></section>
+{% endblock %}

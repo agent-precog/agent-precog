@@ -1,0 +1,119 @@
+{% extends "base.html" %}{% set nav = 'home' %}
+{% block body %}
+<section class="hero" style="padding-bottom:32px"><div class="wrap grid g12">
+  <div class="span8" style="display:flex;flex-direction:column;gap:20px">
+    <div class="ag-row"><h1>agent-precog</h1><div id="ag-slot"></div></div>
+    <p class="lead" style="max-width:none;padding-right:36px">An open-source research program focused on engineering sub-15 ms agentic safety reflexes using sequential learning to defer (SL2D) and asynchronous human handoff. Application context: autonomous multi-agent systems in Finance, Supply-chain, Health &amp; Safety and Cybersecurity enterprise domains, with potential generalisation to other domains. This is a living systematic review for industrial and academic researchers, to the PRISMA-S standard. Published under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> (content and data) and <a href="https://opensource.org/license/mit">MIT</a> (code) licenses.</p>
+  </div>
+  <div class="span4" style="align-self:start;display:flex;flex-direction:column;gap:12px">
+    <div class="card dark" style="gap:10px">
+      <span class="eyebrow">NEXT SEARCH RUN</span>
+      <h3>{{ version.next_search }} - 06:00 UTC</h3>
+      <span class="muted" style="font-size:14px">arXiv, Semantic Scholar and OpenAlex queries rerun automatically. IEEE and ACM checked manually each quarter.{% if not counts.has_runs %} No database search has run yet; the review currently holds the {{ total }}-paper hand-curated seed list.{% endif %}</span>
+      <a href="/prisma-s/" style="font-size:14px;font-weight:500;color:#fff">PRISMA flow and search log →</a>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:0;padding-bottom:8px"><div class="wrap grid g12" style="align-items:start">
+  <div class="prose span8">
+    <h2>The project</h2>
+    <h3 class="sub">The problem</h3>
+    <p>Enterprise AI is moving from conversational assistants to autonomous multi-agent systems with direct write-access to forklifts, freight routes, treasury accounts and network endpoints. Each agent is individually competent. The risk lies in their combination: dozens of agents acting on partial views of shared state, issuing tool calls that touch the same aisles, ledgers and network segments within seconds of one another. Today's guardrails judge each call on its own, so a catastrophe assembled from individually reasonable actions passes every runtime test. And the windows are short: a loaded forklift covers a metre in half a second, a payment clears in seconds, a firewall change isolates a server in milliseconds. A language-model safety judge that needs 50 to 300 ms per decision, before the network round trip, is structurally too slow for this setting. Once a single unsafe call can move a two-tonne vehicle, release funds or isolate a production server, the binding constraint on deployment is no longer reasoning quality but deterministic, millisecond-level safety.</p>
+    <figure class="loop">
+      <svg viewBox="0 0 1060 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dual-speed deferral loop: graph state engine feeds a fast path and a slow path, both of which reach the human supervisor" style="width:100%;height:auto;display:block;font-family:'IBM Plex Sans',system-ui,sans-serif">
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#17191D"/></marker></defs>
+        <!-- 1 graph engine -->
+        <rect x="20" y="80" width="240" height="140" rx="10" fill="#fff" stroke="#17191D" stroke-width="2"/>
+        <text x="140" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="#17191D">1. GRAPH STATE ENGINE</text>
+        <text x="140" y="146" text-anchor="middle" font-size="13" fill="#4A4D55">3-hop ego sub-graph</text>
+        <text x="140" y="168" text-anchor="middle" font-size="13" fill="#4A4D55">In-memory accumulators</text>
+        <text x="140" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#17191D">Wireless stream (~4 ms)</text>
+        <!-- 1 -> 2a: live stream -->
+        <line x1="262" y1="110" x2="334" y2="110" stroke="#17191D" stroke-width="2.5" marker-end="url(#arr)"/>
+        <text x="298" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#17191D">Live</text>
+        <text x="298" y="94" text-anchor="middle" font-size="12" font-weight="600" fill="#17191D">Sub-graph</text>
+        <!-- 2a -> 2b: the halt triggers the slow path -->
+        <line x1="400" y1="132" x2="400" y2="168" stroke="#17191D" stroke-width="2.5" marker-end="url(#arr)"/>
+        <text x="420" y="155" font-size="13" font-weight="600" fill="#17191D">Halt signalled</text>
+        <!-- 1 -> 2b: paused state read on demand (not live) -->
+        <line x1="262" y1="190" x2="334" y2="224" stroke="#17191D" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+        <text x="298" y="246" text-anchor="middle" font-size="12" font-weight="600" fill="#17191D">Frozen</text>
+        <text x="298" y="260" text-anchor="middle" font-size="12" font-weight="600" fill="#17191D">Sub-graph</text>
+        <!-- 2a fast path -->
+        <rect x="336" y="30" width="384" height="100" rx="10" fill="#fff" stroke="#17191D" stroke-width="2"/>
+        <text x="528" y="60" text-anchor="middle" font-size="14" font-weight="700" fill="#17191D">2a. FAST PATH: LATENT WORLD MODEL (&lt;15 ms)</text>
+        <text x="528" y="86" text-anchor="middle" font-size="13" fill="#4A4D55">Latent energy spike → pre-emptive halt</text>
+        <text x="528" y="108" text-anchor="middle" font-size="12" fill="#6B6E76">Machine timescale: freezes the hazard</text>
+        <!-- 2b slow path -->
+        <rect x="336" y="170" width="384" height="100" rx="10" fill="#fff" stroke="#17191D" stroke-width="2"/>
+        <text x="528" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#17191D">2b. SLOW PATH: EDGE LANGUAGE MODEL (~200 ms)</text>
+        <text x="528" y="226" text-anchor="middle" font-size="13" fill="#4A4D55">Synthesises a three-line causal brief</text>
+        <text x="528" y="248" text-anchor="middle" font-size="12" fill="#6B6E76">Human timescale: restores situation awareness</text>
+        <!-- lines 2a/2b -> 3 -->
+        <line x1="722" y1="80" x2="798" y2="140" stroke="#17191D" stroke-width="2.5"/>
+        <line x1="722" y1="220" x2="798" y2="160" stroke="#17191D" stroke-width="2.5"/>
+        <!-- 3 human -->
+        <rect x="800" y="80" width="240" height="140" rx="10" fill="#fff" stroke="#17191D" stroke-width="2"/>
+        <text x="920" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="#17191D">3. HUMAN SUPERVISOR</text>
+        <text x="920" y="146" text-anchor="middle" font-size="13" fill="#4A4D55">Receives paused world state</text>
+        <text x="920" y="168" text-anchor="middle" font-size="13" fill="#4A4D55">+ verified situation brief</text>
+        <text x="920" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#17191D">Informed recovery decision</text>
+      </svg>
+      <figcaption><strong>Figure 1:</strong> Dual-speed deferral loop on edge silicon, decoupling the &lt;&nbsp;15&nbsp;ms halt from the &gt;&nbsp;200&nbsp;ms explanation handoff. The Slow Path is triggered by the halt signal and reads the frozen sub-graph, not the live one.</figcaption>
+    </figure>
+    <h3 class="sub">The approach</h3>
+    <p>The agent-precog research vision is for a two-tier safety layer built for this setting, designed to sit alongside the safeguards an enterprise already runs such as protective fields, transaction rules, approval matrices, and change control. PreCog is being engineered to catch the class of hazard conventional guardrails miss by construction: hazards whose causal chain crosses two or more systems or agents. A <strong>Fast Path</strong> watches the neighbourhood of each agent (a 3-hop sub-graph of the shared state across multiple agents, streamed from the central graph), predicts whether the proposed action pushes the system toward a catastrophic irreversible state, and halts it in under 15 ms on a device close to the actuator. The halt threshold tightens automatically as wireless jitter eats into the time left before the action becomes irreversible. Only once the hazard is frozen does a <strong>Slow Path</strong> produce a three-line situation brief for the human supervisor. Under the hood: a non-generative Hyperbolic Graph-JEPA world model compiled to TensorRT on an edge GPU for the Fast Path; a quantised edge language model for the Slow Path on the same edge silicon; a fast graph engine for the shared global state.</p>
+    <h3 class="sub">What's open</h3>
+    <p>The vision rests on the claim that stopping a hazard and explaining it to a person are different problems on different timescales, and should be engineered as separate, co-designed tiers. The machine tier must be stateful over the multi-agent graph and fast enough to act inside the irreversibility window. The human tier must activate only once the world is stable, and deliver structured understanding rather than raw telemetry. Deferral should not happen during an active emergency. The supervisor reviews a paused snapshot, instead of being asked to catch a falling knife.</p>
+    <p>Across the five literature pillars this review draws on (<a href="/pillars/multi-agent-systems/">multi-agent systems</a>, <a href="/pillars/world-models/">world models</a>, <a href="/pillars/learning-to-defer/">learning to defer</a>, <a href="/pillars/edge-inference/">edge inference</a> and <a href="/pillars/human-automation/">human-automation interaction</a>) no paper yet evaluates safety interception across domains, and only a handful treat signal latency or a deadline as an input to the decision. <a href="/gap/">The gap matrix</a> sets out these gaps pillar by pillar. PreCog is a research programme that builds this two-tier safety layer, measures it against those gaps on real edge hardware, and publishes <a href="/papers/">data</a>, <a href="/prisma-s/">methods</a>, and code, so that enterprises can test the hazard classes against their own systems and researchers can take the <a href="/rqs/">open questions</a> further.</p>
+  </div>
+  <aside class="span4" style="display:flex;flex-direction:column;gap:20px">
+    <div class="card" style="padding:24px;gap:14px">
+      <h2 style="font-size:20px">Recently added</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+        {% for p in recent %}
+        <li style="display:flex;flex-direction:column;gap:4px;padding-bottom:12px;border-bottom:1px solid var(--line2)">
+          <a href="{{ p.url }}" style="font-size:15px;font-weight:500;color:var(--ink)">{{ p.title }}</a>
+          <span class="hint">Pillar {{ p.pillar_list|join(', ') }} - {{ p.venue }} {{ p.year }}{% if p.baseline %} - baseline candidate{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <a href="/changelog/" style="font-size:14px;font-weight:500">View changelog →</a>
+    </div>
+    <div class="card" style="padding:24px;gap:12px">
+      <h2 style="font-size:20px">How this review works</h2>
+      <p class="muted" style="margin:0;font-size:14px">A living systematic review reported to PRISMA 2020, with the search reported to PRISMA-S. Three CSV files are the single source of truth; every page and count on this site is regenerated from them at each release. First-pass screening is AI-assisted and declared, with agreement against a dual-screened sample reported.</p>
+      <a href="/prisma-s/" style="font-size:14px;font-weight:500">Read the protocol and PRISMA flow →</a>
+    </div>
+  </aside>
+</div></section>
+
+<section style="padding-top:8px;padding-bottom:24px"><div class="wrap kpis">
+  <h2 class="kpi-title" style="grid-column:span 6">HARDWARE &amp; SOFTWARE CO-DESIGN TARGETS</h2>
+    <div class="card kpi"><div class="n mono">&ge; 90 %</div><div class="kpi-name">Prevention rate</div><div class="hint">Catastrophic trajectories halted before the time-to-irreversibility boundary</div></div>
+    <div class="card kpi"><div class="n mono">&lt; 1/1000</div><div class="kpi-name">False halt rate</div><div class="hint">Benign actions wrongly halted, per 1,000; the tolerable rate is set per domain</div></div>
+    <div class="card kpi "><div class="n mono">&lt; 15 ms</div><div class="kpi-name">Fast-Path halt</div><div class="hint">Graph-JEPA reflex, TensorRT on Jetson, end to end at p99</div></div>
+    <div class="card kpi "><div class="n mono">&lt; 200 ms</div><div class="kpi-name">Slow-Path brief</div><div class="hint">Nemotron-Bolt-E4B situation-awareness brief, time to first token</div></div>
+    <div class="card kpi "><div class="n mono">4</div><div class="kpi-name">Domains generalised</div><div class="hint">Robotics, supply chain, finance and SecOps on the same compiled model</div></div>
+    <div class="card kpi "><div class="n mono">&lt; 5.2 GB</div><div class="kpi-name">Unified memory</div><div class="hint">Both models co-resident on a single Jetson</div></div>
+</div></section>
+
+<section style="padding-top:0;padding-bottom:24px"><div class="wrap" style="display:flex;flex-direction:column;gap:20px">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:960px">
+    <h2>Unsolved problems</h2>
+    <p class="muted" style="margin:0;font-size:16px">Conventional guardrails and standard learning-to-defer fail in live multi-agent industrial settings for six reasons. The first two are architectural: the approach cannot work in this setting. The other four are operational: each one gets a working safety layer switched off in production. <a href="/rqs/#rq5">RQ5 measures what that failure costs →</a></p>
+  </div>
+  <div class="grid g3">
+    <div class="card" style="gap:10px"><h3 style="font-size:17px">1. The autoregressive latency trap</h3><span class="eyebrow">CANNOT ACT IN TIME</span><p class="muted" style="margin:0;font-size:14px">Using a language model as a token-generating safety evaluator costs 50-300 ms+ per decision on real hardware and networks, beyond the reaction budget of most physical hazards and many transactional ones. <a href="/rqs/#rq1">How RQ1 addresses this →</a></p></div>
+    <div class="card" style="gap:10px"><h3 style="font-size:17px">2. The stateless evaluation fallacy</h3><span class="eyebrow">CANNOT SEE THE INTERACTION</span><p class="muted" style="margin:0;font-size:14px">Per-call evaluators judge each input in isolation. Enterprise catastrophes emerge from compounding interactions across agents, so an evaluator can approve every individual step of a disaster. <a href="/rqs/#rq1">How RQ1 addresses this</a> - <a href="/rqs/#rq4">stress-tested by RQ4 →</a></p></div>
+    <div class="card" style="gap:10px"><h3 style="font-size:17px">3. The static deferral cost</h3><span class="eyebrow">THRESHOLD SET ONCE, WRONG LATER</span><p class="muted" style="margin:0;font-size:14px">L2D treats the cost of deferring as constant. In practice it depends on how much time remains before irreversibility and how long the safety signal takes to arrive; a threshold tuned at one point is wrong at every other. <a href="/rqs/#rq2">How RQ2 addresses this →</a></p></div>
+    <div class="card" style="gap:10px"><h3 style="font-size:17px">4. The centralised decision locus</h3><span class="eyebrow">DECIDED IN THE WRONG PLACE</span><p class="muted" style="margin:0;font-size:14px">Guardrails live where the state is, so every decision crosses a wireless round trip. The component with the most context is furthest from the actuator, and a dropped packet silently becomes a permit. <a href="/rqs/#rq1">How RQ1 addresses this</a> - <a href="/rqs/#rq2">residual closed by RQ2 →</a></p></div>
+    <div class="card" style="gap:10px"><h3 style="font-size:17px">5. The opaque, whole-system halt</h3><span class="eyebrow">STOPS WITHOUT EXPLAINING</span><p class="muted" style="margin:0;font-size:14px">When guardrails do fire they stop at coarse granularity and report only that a policy tripped. Operators cannot learn from it, throughput loss is disproportionate, and the layer gets tuned down. <a href="/rqs/#rq3">How RQ3 addresses this →</a></p></div>
+    <div class="card" style="gap:10px"><h3 style="font-size:17px">6. The deferral-under-motion fallacy</h3><span class="eyebrow">HANDS OFF AT THE WRONG MOMENT</span><p class="muted" style="margin:0;font-size:14px">L2D assumes a competent, available expert. In a live multi-agent system the expert is out of the loop, under time pressure, and shown unexplained state; deferring to them in-window is not a safe fallback, it is a different failure mode. <a href="/rqs/#rq3">How RQ3 addresses this →</a></p></div>
+  </div>
+</div></section>
+
+
+
+{% endblock %}

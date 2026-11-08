@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}agent-precog.org{% endblock %}</title>
+<meta name="description" content="A living, PRISMA 2020 systematic review of pre-emptive safety for multi-agent AI, maintained for Project PreCog.">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css?v={{ version.version }}">
+</head>
+<body{% if agent_url %} data-agent-url="{{ agent_url }}" data-site-name="{{ site_name }}"{% endif %}>
+<div class="page">
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">
+    <svg width="30" height="30" viewBox="0 0 120 120" aria-hidden="true"><path d="M12 66 L38 82 L60 48 L86 60" fill="none" stroke="#0E6B68" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="66" r="13" fill="#0E6B68"/><circle cx="38" cy="82" r="13" fill="#0E6B68"/><circle cx="60" cy="48" r="13" fill="#0E6B68"/><circle cx="86" cy="60" r="13" fill="#0E6B68"/><path d="M102.7 43.7 A22 22 0 0 1 83.5 83.1" fill="none" stroke="#17191D" stroke-width="13" stroke-linecap="round"/></svg>
+    <span>agent-precog<span class="ai">.org</span></span>
+  </a>
+  <nav class="main">
+    <a href="/rqs/" class="{{ 'on' if nav == 'rqs' }}">RQs</a>
+    <a href="/pillars/" class="{{ 'on' if nav == 'pillars' }}">Pillars</a>
+    <a href="/gap/" class="{{ 'on' if nav == 'gap' }}">Gap matrix</a>
+    <a href="/papers/" class="{{ 'on' if nav == 'papers' }}">Papers</a>
+    <a href="/foundations/" class="{{ 'on' if nav == 'foundations' }}">Foundations</a>
+    <a href="/prisma-s/" class="{{ 'on' if nav == 'prisma' }}">PRISMA-S</a>
+    <a href="/changelog/" class="{{ 'on' if nav == 'changelog' }}">Changelog</a>
+    <a href="https://github.com/kd-gitgub/agent-precog">GitHub</a>
+  </nav>
+</div></header>
+{% block body %}{% endblock %}
+<footer class="site"><div class="wrap">
+  <span class="foot-aff"><img src="/static/bath-logo.png" alt="University of Bath" class="bath-logo"><span>Department of Computer Science, University of Bath. Maintained by Keith Dewar <a href="mailto:kd222@bath.ac.uk">kd222@bath.ac.uk</a></span></span>
+  <span class="mono">CC BY 4.0 Cite as agent-precog.org v{{ version.version }} ({{ version.released[:4] }})</span>
+</div></footer>
+</div>
+{% if agent_url %}<script src="/static/agent.js?v={{ version.version }}" defer></script>{% endif %}
+</body>
+</html>

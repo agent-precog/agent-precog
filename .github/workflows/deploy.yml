@@ -1,0 +1,34 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # for OIDC to AWS
+  contents: read
+
+env:
+  AWS_REGION: eu-west-2
+  STACK: agent-precog
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install jinja2
+      - name: Configure AWS credentials (OIDC, no stored keys)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+      - name: Deploy
+        env:
+          DOMAIN: ${{ vars.SITE_DOMAIN }}
+          CERT_ARN: ${{ vars.SITE_CERT_ARN }}
+          ZONE_ID: ${{ vars.SITE_ZONE_ID }}
+        run: ./deploy.sh

@@ -1,0 +1,72 @@
+{% extends "base.html" %}{% set nav = 'gap' %}
+{% block title %}Gap matrix - agent-precog.org{% endblock %}
+{% block body %}
+<section><div class="wrap" style="display:flex;flex-direction:column;gap:28px">
+  <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+    <span class="eyebrow">GAP MATRIX - REGENERATED FROM {{ total }} PAPERS</span>
+    <h1 style="font-size:36px">What the literature covers, and what PreCog needs</h1>
+    <p class="lead" style="font-size:17px">Rows are the five pillars. Columns are the properties PreCog's architecture requires. Each cell counts the included papers whose extraction note tags that property within that pillar; click a cell to see them. Empty cells are the research gaps.</p>
+  </div>
+  <div class="legend"><strong style="color:var(--ink)">Coverage</strong>
+    <span><i style="background:var(--teal)"></i>strong (8+)</span><span><i style="background:var(--teal2)"></i>partial (3-7)</span><span><i style="background:var(--teal3)"></i>thin (1-2)</span><span><i style="border:1px dashed #B5B3AA"></i>gap (0)</span>
+  </div>
+  <div class="tablewrap"><table style="min-width:900px">
+    <thead><tr><th style="width:220px">Pillar</th>{% for key, label in gap_columns %}<th style="text-align:center">{{ label }}</th>{% endfor %}</tr></thead>
+    <tbody>
+    {% for row in matrix %}
+    <tr>
+      <td><a href="/pillars/{{ row.pillar.slug }}/" style="font-weight:500;color:var(--ink)">{{ row.pillar.n }} - {{ row.pillar.short }}</a><div class="hint">{{ row.pillar.count }} papers</div></td>
+      {% for c in row.cells %}
+      <td style="padding:8px">
+        {% if c.count %}<a class="cell {{ c.level }}" href="#cell-{{ row.pillar.n }}-{{ loop.index }}" aria-label="Pillar {{ row.pillar.n }}, {{ c.label }}, {{ c.count }} papers">{{ c.count }}</a>
+        {% else %}<span class="cell gap">0</span>{% endif %}
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+    <tr class="totals">
+      <td><strong>Total across review</strong><div class="hint">{{ total }} papers</div></td>
+      {% for t in gapinfo.totals %}<td style="text-align:center" class="mono {{ 'gaptot' if t.count == 0 }}">{{ t.count }}<div class="hint">/{{ total }}</div></td>{% endfor %}
+    </tr>
+    </tbody>
+  </table></div>
+
+  {% if not counts.has_runs %}<p class="muted" style="margin:0;font-size:14px;max-width:760px">Pre-search baseline: every count comes from the {{ total }}-paper seed list. An empty cell is a gap in what was hand-selected; it becomes evidence of a gap in the literature only once the database search ({{ version.next_search }}) has run against it.</p>{% endif %}
+
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <span class="eyebrow" style="color:var(--amber)">TIER 1 - UNOCCUPIED REQUIREMENTS - NO PAPER IN ANY PILLAR</span>
+    {% if gapinfo.tier1 %}
+    <div class="grid g3">
+      {% for t in gapinfo.tier1 %}
+      <div class="card"><span class="eyebrow" style="color:var(--amber)">0/{{ total }}</span><h3 style="font-size:17px">{{ t.label }}</h3><span class="muted" style="font-size:14px">No included paper in any pillar is tagged with this requirement. These are the properties PreCog needs that none of the five communities currently supplies.</span></div>
+      {% endfor %}
+    </div>
+    {% else %}<p class="muted" style="margin:0;font-size:14px">Every requirement is addressed by at least one paper somewhere in the review.</p>{% endif %}
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <span class="eyebrow">TIER 2 - MISSING CROSS-PILLAR BRIDGES - A POPULATED PILLAR SILENT ON A REQUIREMENT OTHERS COVER</span>
+    <p class="muted" style="margin:0;font-size:14px;max-width:760px">These are integration gaps: the requirement exists in the literature, but not inside the community PreCog would need to borrow it from. A cell is listed here only when the pillar has three or more papers, so the silence is informative rather than an artefact of a thin pillar.</p>
+    <ul style="columns:2;margin:0;font-size:14px;color:var(--muted)">{% for pl, key, label in gapinfo.tier2 %}<li><a href="/pillars/{{ pl.slug }}/">Pillar {{ pl.n }} - {{ pl.short }}</a> × <strong>{{ label }}</strong></li>{% endfor %}</ul>
+    {% if gapinfo.other %}<details><summary class="hint" style="cursor:pointer">{{ gapinfo.other|length }} further empty cells in pillars with fewer than three papers (not yet informative)</summary>
+      <ul style="columns:2;font-size:14px;color:var(--muted)">{% for pl, key, label in gapinfo.other %}<li>Pillar {{ pl.n }} × {{ label }}</li>{% endfor %}</ul>
+    </details>{% endif %}
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:20px">
+    {% for row in matrix %}{% for c in row.cells %}{% if c.count %}
+    <div id="cell-{{ row.pillar.n }}-{{ loop.index }}" class="card" style="padding:18px">
+      <span class="eyebrow">PILLAR {{ row.pillar.n }} × {{ c.label|upper }} - {{ c.count }}</span>
+      <ul style="margin:0;padding-left:18px;font-size:14px">{% for p in c.papers %}<li><a href="{{ p.url }}">{{ p.title }}</a> <span class="hint">({{ p.venue }} {{ p.year }})</span></li>{% endfor %}</ul>
+    </div>
+    {% endif %}{% endfor %}{% endfor %}
+  </div>
+</div></section>
+<script>
+(function(){
+  function hi(){ var id=location.hash.slice(1); if(!id) return; var el=document.getElementById(id); if(!el) return;
+    document.querySelectorAll('.card.hit').forEach(function(c){c.classList.remove('hit');}); el.classList.add('hit'); }
+  window.addEventListener('hashchange', hi); hi();
+})();
+</script>
+{% endblock %}
