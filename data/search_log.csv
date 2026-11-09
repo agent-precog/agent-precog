@@ -1,1 +1,2 @@
 run_date,pillar,database,query,filters,hits,run_by,notes
+2026-11-09,1,IEEE Xplore,"(""multi-agent"" OR ""multiagent"" OR ""Dec-POMDP"" OR ""decentralized POMDP"" OR ""agent swarm"" OR ""fleet"") AND (""safety"" OR ""hazard"" OR ""collision"" OR ""emergent"" OR ""cascading failure"" OR ""catastroph*"") AND (""warehouse"" OR ""logistics"" OR ""industrial"" OR ""enterprise"" OR ""robot*"" OR ""AMR"" OR ""tool call*"" OR ""LLM agent*"")",year 2015-2027; show: all results; content type: all; sort: relevance,3760,KD,manual run; query pasted unmodified into IEEE Xplore basic search
