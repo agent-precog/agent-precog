@@ -36,7 +36,7 @@ Otherwise EXCLUDE with exactly one code:
 - E6 not retrievable; E7 not in English.
 (E5 duplicate is assigned by the maintainer, not by this pass.)
 
-Second-pass rule: when the abstract makes (a) or (c) plausible under the strict readings, label likely-include;
+Second-pass rule: when the abstract makes any of (a)-(e) plausible, with (a) and (c) read strictly as above, label likely-include;
 the full text decides. Otherwise likely-exclude with the code.
 
 Output one line per record, tab-separated: record_id <TAB> likely-include|likely-exclude <TAB> code-or-blank <TAB> one-line reason (max 25 words).
