@@ -9,7 +9,7 @@
     <div class="card dark" style="gap:10px">
       <span class="eyebrow">NEXT SEARCH RUN</span>
       <h3>{{ version.next_search }} - 06:00 UTC</h3>
-      <span class="muted" style="font-size:14px">arXiv, Semantic Scholar and OpenAlex queries rerun automatically. IEEE and ACM checked manually each quarter.{% if not counts.has_runs %} No database search has run yet; the review currently holds the {{ total }}-paper hand-curated seed list.{% else %} First run under way: {{ counts.identified_db }} records identified, {{ counts.to_full_text }} passed title/abstract screening and await full-text review; the {{ total }} papers shown are the seed list until that completes.{% endif %}</span>
+      <span class="muted" style="font-size:14px">arXiv, Semantic Scholar and OpenAlex queries rerun automatically. IEEE and ACM checked manually each quarter.{% if not counts.has_runs %} No database search has run yet; the review currently holds the {{ total }}-paper hand-curated seed list.{% else %} First run under way: {{ counts.identified_db }} records identified, {{ counts.to_full_text }} passed title/abstract screening; {{ counts.ft_decided }} have been read in full and {{ counts.search_included }} included so far, alongside the {{ total - counts.search_included }}-paper seed list. The remainder await full-text review.{% endif %}</span>
       <a href="/prisma-s/" style="font-size:14px;font-weight:500;color:#fff">PRISMA flow and search log →</a>
     </div>
   </div>
