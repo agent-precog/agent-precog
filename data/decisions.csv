@@ -3832,7 +3832,7 @@ doi:10.1109/icnccom69117.2026.11736240,1,full_text,,,,,,,,"awaiting full-text re
 doi:10.1109/access.2026.3741694,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2026)"
 doi:10.1109/ojcoms.2026.3669379,1,full_text,,,,exclude,E3,2026-11-09,,full-text stage rule filter (protocol v1.4): survey/tutorial/magazine/book chapter by publication type or title; kept for snowballing
 doi:10.1109/tits.2026.3654998,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2026)"
-doi:10.1109/tase.2026.3688563,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2026)"
+doi:10.1109/tase.2026.3688563,1,full_text,exclude,E1,"v1.5: MAPF execution planner; no runtime monitor; safety not primary claim. Borderline (c): collision safety comes from precedence margins and replanning, not a runtime monitor or halt; maintainer to ",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2508.01495); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/access.2019.2939493,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2019)"
 doi:10.1109/iros45743.2020.9341762,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2020)"
 doi:10.1109/iisr.2018.8535808,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2018)"
@@ -4270,7 +4270,7 @@ ieee:10555601,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mecha
 doi:10.1109/tii.2023.3257308,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
 doi:10.1109/ojvt.2024.3479927,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
 doi:10.23919/ccc63176.2024.10662170,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
-doi:10.1109/iros58592.2024.10802312,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
+doi:10.1109/iros58592.2024.10802312,1,full_text,include,,arXiv HTML and PDF both serve the earlier 'MACA' version; the v2 abstract (IROS 2024) retitles it CoDe with 'up to three drones' and an updated credit-assignment framing - the published version may di,include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2204.08594); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/icra57147.2024.10610937,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
 doi:10.1109/iccre61448.2024.10589836,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
 doi:10.1109/romoco60539.2024.10604378,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
@@ -4301,7 +4301,7 @@ doi:10.1109/icra57147.2024.10610940,1,full_text,,,,,,,,"awaiting full-text revie
 doi:10.1109/access.2024.3362293,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
 doi:10.1109/icra57147.2024.10610123,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
 doi:10.1109/icapai61893.2024.10541189,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
-doi:10.1109/icra57147.2024.10609995,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
+doi:10.1109/icra57147.2024.10609995,1,full_text,exclude,E2,"v1.5: no baselines; human leader is a fixed trajectory. Borderline: multi-robot (1-3 assistants) manipulating one object with a human-held/teleoperated leader, but the human is only a predefined exoge",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2401.16560); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.23919/ecc64448.2024.10591252,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
 doi:10.1109/icairc64177.2024.10900236,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
 doi:10.1109/cdc56724.2024.10886561,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
@@ -4312,17 +4312,17 @@ doi:10.1109/icra57147.2024.10610304,1,full_text,,,,,,,,"awaiting full-text revie
 doi:10.1109/lra.2024.3416771,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
 doi:10.1109/lcsys.2024.3418313,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2024)"
 doi:10.1109/iecon55916.2024.10905592,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2024)"
-doi:10.1109/lra.2025.3560830,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/lra.2025.3560830,1,full_text,include,,"Safety filter is optimisation-based soft penalties, not hard constraints; no timing figures. v3 (Oct 2025) read via PDF; check for other queued versions.",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2312.12861); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/lra.2025.3581430,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/mmar65820.2025.11150850,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/isrimt67769.2025.11413212,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/tase.2025.3532023,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/wcnc61545.2025.10978450,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/case58245.2025.11164151,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/case58245.2025.11164151,1,full_text,exclude,E2,"v1.5: hardware-only study with safety metrics but no baseline or ablation; maintainer may waive given real-robot evidence. Edge deployment is qualitative only (onboard CPU, no GPU, no per-cycle timing",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2503.21141); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/tase.2024.3524000,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.23919/iccas66577.2025.11301345,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/icras65818.2025.11108843,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/tro.2025.3530348,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/tro.2025.3530348,1,full_text,include,,"Journal extension of GCBF (CoRL 2023, arXiv 2311.13014) which may be queued separately. Safety is baked into the learned policy with no runtime filter, so (a) not claimed. Controller runs off-board at",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2401.14554); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/concapan66820.2025.11512475,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/lra.2025.3566610,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tase.2025.3609637,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
@@ -4331,27 +4331,27 @@ doi:10.1109/meet67398.2025.11335899,1,full_text,,,,,,,,"awaiting full-text revie
 doi:10.1109/rcae66389.2025.11355259,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
 doi:10.1109/urtc68753.2025.11532991,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
 doi:10.1109/ictis68762.2025.11215030,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/tcst.2025.3546076,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/tcst.2025.3546076,1,full_text,exclude,E4,v1.5: single-robot; multi-robot extension qualitative only. Borderline E4: primarily single-robot; multi-robot extension (Sec. IV-D) is qualitative with no metrics or robot count. (d) rests on reporte,exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2503.00606); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/rcar65431.2025.11139421,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/tase.2025.3599556,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/icicml67980.2025.11333419,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/iros60139.2025.11246543,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/iros60139.2025.11246543,1,full_text,include,,"Constraints are baked into the planner rather than a separate interception layer, so (a) not claimed. '>10 Hz real-time' asserted without compute times or hardware. Simulation/Gazebo only.",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2507.20293); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/tase.2025.3605990,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/irac67707.2025.11381069,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/tvt.2025.3546857,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/tvt.2025.3546857,1,full_text,include,,"Safety enforced via training loss, not runtime filter (Fig. 3: CBF model 'is not deployed in online operation'). Latency cell refers to communication delay/AoI, not inference latency. HTML truncated; ",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2402.09382); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/i-smac65734.2025.11597651,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/icaides67265.2025.11404085,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
 doi:10.1109/tase.2025.3578326,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/lra.2025.3592073,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/lra.2025.3592073,1,full_text,include,,"Safety is baked into the planner, not a runtime interceptor. Criterion (d) borderline: 10 ms loop with 4.9 ms solve reported, but compute is an offboard desktop, not edge; the 27.89% figure in the abs",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2503.14656); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/tase.2025.3557155,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/ica65945.2025.11252385,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/tase.2025.3629700,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/icar65334.2025.11338604,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/icar65334.2025.11338604,1,full_text,exclude,E2,v1.5: violation rate but no baseline or ablation. Only 2-3 agents; no solve-time or latency data despite CBF real-time framing; psi value used in Table I not stated; Bernstein bound dominated by its c,exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2509.20093); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/icsrs68021.2025.11422060,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/mrs66243.2025.11357246,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/mrs66243.2025.11357246,1,full_text,exclude,E2,v1.5: metrics but no baseline or ablation; multi-agent nominal. Multi-agent only nominally in experiments (max two HAVs); no baselines; stability rests on untested Assumption 2; no latency or real-wor,exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2511.08016); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/iccae64891.2025.10980524,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/ojcsys.2025.3598673,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/mrs66243.2025.11357273,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/mrs66243.2025.11357273,1,full_text,exclude,E1,"Borderline (c): safety mechanism is multi-robot, but the hazard is a static environmental danger area, not inter-agent interaction; collision avoidance explicitly delegated to robot level (Sec. IV). C",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2510.20643); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/tase.2025.3615989,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/bddm68348.2025.11442039,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
 doi:10.1109/thms.2024.3488559,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
@@ -4362,24 +4362,24 @@ doi:10.1109/mrs66243.2025.11357247,1,full_text,,,,,,,,"awaiting full-text review
 doi:10.1109/tase.2024.3466791,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/iecon58223.2025.11221825,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tase.2025.3601609,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.23919/ecc65951.2025.11187043,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.23919/ecc65951.2025.11187043,1,full_text,include,,"Multi-agent only nominally: pairwise ego/other formulation, two robots in experiments, k-robot extension (Remark 4) untested and scalability listed as future work. Reported approximation error inconsi",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2411.08999); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/swc65939.2025.00247,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tase.2024.3382323,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11128344,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/hri61500.2025.10974004,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/icra55743.2025.11128344,1,full_text,include,,Strong fit for (c). Counts of MPC-ICBF triggers (Table I) are a proxy for intervention rate (RQ5). Minor inconsistencies noted: gamma 0.8 vs 0.99; Fig. 6 caption seconds vs text ms. 'Real-time' claime,include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2409.09573); AI draft reviewed by maintainer; runtime_interceptor=yes
+doi:10.1109/hri61500.2025.10974004,1,full_text,exclude,E1,"Borderline: nominally multi-agent safety, but mechanism is reward shaping only, no drone-drone collision term, no collision metrics, static obstacles; 'dense crowds' appears only as motivation. Could ",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2501.07566); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/jiot.2024.3497979,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11128447,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/cdc57313.2025.11312021,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/icra55743.2025.11128447,1,full_text,include,,"Forward-invariance guarantee is cited from prior work, not proved here; robustness is to observation error, not timing; simulation only.",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2309.11057); AI draft reviewed by maintainer; runtime_interceptor=yes
+doi:10.1109/cdc57313.2025.11312021,1,full_text,exclude,E2,"v1.5: single scenario, no baseline or ablation. Evaluation is a single simulated scenario with no baselines or timings (thin but present, so not E2); attacks are informational only, misbehaving robots",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2504.03120); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/ictai66417.2025.00046,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/icc69100.2025.11372253,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/iros60139.2025.11245826,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/iros60139.2025.11245826,1,full_text,include,,Borderline: core contribution is deadlock-prevention coordination; safety element is a standard CBF-QP runtime filter. No formal deadlock-freedom proof; hardware results deferred to supplementary mate,include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2503.05848); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/tcns.2025.3608070,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/dsins68311.2025.11329861,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/tcst.2024.3467809,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/tcst.2024.3467809,1,full_text,exclude,E2,"v1.5: mostly qualitative, baseline comparison qualitative only. Borderline: classical geometric CBF; multi-agent is a genuine distributed collision-avoidance setting but the contribution is the barrie",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2308.12073); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/iccta68914.2025.11520014,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/icaci65340.2025.11096346,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/access.2025.3555494,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/mrs66243.2025.11357266,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
+doi:10.1109/mrs66243.2025.11357266,1,full_text,exclude,E1,"v1.5: safety element incidental to tracking task; hazards are static adversarial zones. Borderline: hazards are adversarial danger zones in a tracking task, not agent-induced failures; LLM output veri",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2409.12274); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/cac67268.2025.11486874,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/iciteics64870.2025.11341425,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/isnib64820.2025.10983160,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
@@ -4388,8 +4388,8 @@ doi:10.1109/ccta53793.2025.11151327,1,full_text,,,,,,,,"awaiting full-text revie
 doi:10.1109/iarce68366.2025.11485680,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/iros60139.2025.11247055,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tase.2024.3420094,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/iros60139.2025.11246330,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/ccta53793.2025.11151283,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/iros60139.2025.11246330,1,full_text,include,,"Safety enforced by training (learned certificate), not by a runtime interception layer, so (a) is borderline; simulation only, no latency figures; builds directly on GCBF+ (2401.14554, same batch); EG",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2506.07755); AI draft reviewed by maintainer; runtime_interceptor=no
+doi:10.1109/ccta53793.2025.11151283,1,full_text,exclude,E2,"v1.5: runtime filter but qualitative figures only, no metric or baseline. Centralised filter over stacked 20-agent state; assumes zero transmission delay and deterministic dynamics; evaluation is qual",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2403.15854); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/tase.2025.3527327,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/access.2025.3540428,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tac.2025.3576037,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
@@ -4398,31 +4398,31 @@ doi:10.1109/iceamst67459.2025.11336076,1,full_text,,,,,,,,"awaiting full-text re
 doi:10.1109/tmech.2025.3561256,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.23919/ecc65951.2025.11187063,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/icsgsc68313.2025.11288288,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
-doi:10.1109/robio66223.2025.11377435,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/robio66223.2025.11377435,1,full_text,include,,"CBF is a learned soft training penalty, not a runtime filter/shield, despite 'formally guarantee safety' wording; only two drones; 'real-time' claim has no latency numbers; Table II comparison text mi",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2503.07376); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/icamechs68051.2025.11180981,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/tie.2024.3419242,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/iros60139.2025.11245969,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.23919/ccc64809.2025.11178935,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/cdc57313.2025.11312132,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/iros60139.2025.11246091,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/iros60139.2025.11246091,1,full_text,exclude,E1,"Multi-agent only in a two-test extension; collision-cost pruning is a standard planner feasibility check, not a safety reflex or monitor; no latency numbers despite 'efficiency' claim.",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2504.03260); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/tetci.2025.3603096,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/mrs66243.2025.11357265,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/cac67268.2025.11487818,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
 doi:10.1109/ccdc65474.2025.11090638,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11127533,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11127277,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/icra55743.2025.11127533,1,full_text,exclude,E1,"v1.5: CBF inside MPC; primary claim is fairness/coordination. Safety is a CBF constraint inside each robot's MPC, not a separate interception layer. Paper has internal inconsistencies (text percentage",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2409.10749); AI draft reviewed by maintainer; runtime_interceptor=no
+doi:10.1109/icra55743.2025.11127277,1,full_text,include,,"Simulation only, centralized with full knowledge of other agents; CBF guarantee inherited from cited work, no feasibility proof; car-dynamics case qualitative only.",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2409.10117); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/wf-pst65083.2025.00012,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tencon66050.2025.11375012,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/eiecc67963.2025.11409655,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/icra55743.2025.11127461,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11128015,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/icra55743.2025.11128015,1,full_text,include,,"No collision guarantee (authors state this, Sec. V); QP runs at higher rate than predictor but no latency numbers; minor inconsistencies between text and Table I (12 vs 13 collisions, eta=100 vs state",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2409.18862); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/inspire67328.2025.11300578,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/oceans58557.2025.11104505,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/cac67268.2025.11487660,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/tiv.2024.3488793,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
 doi:10.1109/access.2025.3613595,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/fllm67465.2025.11391143,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/iros60139.2025.11246312,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/iros60139.2025.11246312,1,full_text,exclude,E1,"Borderline (c): multi-agent collision avoidance, but it is a navigation planner with no hazard detection, interception or safety layer; no latency/hardware data; no human element.",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2603.04659); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/tifs.2025.3560203,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/dsn-s65789.2025.00064,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/isrimt67769.2025.11413146,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
@@ -4430,10 +4430,10 @@ doi:10.1109/bigdata66926.2025.11401700,1,full_text,,,,,,,,"awaiting full-text re
 doi:10.1109/lra.2025.3626244,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/cdc57313.2025.11312287,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/ur65550.2025.11078068,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/tcst.2024.3470533,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/tcst.2024.3470533,1,full_text,exclude,E4,"Single controlled agent; pedestrians are perceived obstacles, not agents, and 'multi-agent' appears only in the conclusion. Safety is a planning constraint, not a runtime interceptor; no latency numbe",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2307.12815); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/tce.2025.3526991,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/lcsys.2025.3640191,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11128657,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/lcsys.2025.3640191,1,full_text,exclude,E2,"v1.5: no metric or baseline; coverage not hazard. Multi-agent only nominally: demo constraint is team coverage (>=4 agents per region), not collision/hazard; centralised QP. Relevant mainly as composi",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2509.10716); AI draft reviewed by maintainer; runtime_interceptor=yes
+doi:10.1109/icra55743.2025.11128657,1,full_text,exclude,E1,"v1.5: coordination policy; safety outcome secondary to scalable navigation. Borderline c vs E1 (protocol v1.2): mechanism is a coordination/mutual-exclusion policy whose safety effect (collisions, dea",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2410.12651); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/iri66576.2025.00051,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
 doi:10.1109/icves65691.2025.11376069,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/lra.2025.3531146,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
@@ -4441,8 +4441,8 @@ doi:10.1109/iccv51701.2025.00939,1,full_text,,,,,,,,"awaiting full-text review; 
 doi:10.1109/tase.2025.3613403,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/access.2025.3626936,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/wiecon-ece69386.2025.11526251,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
-doi:10.23919/acc63710.2025.11107531,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/iros60139.2025.11246185,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.23919/acc63710.2025.11107531,1,full_text,exclude,E2,"v1.5: one qualitative barrier-trace plot, no baseline. Borderline E2: evaluation is qualitative (one barrier-trace plot), no baselines, no timing despite 'real-time' framing; inter-agent collisions no",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2409.18945); AI draft reviewed by maintainer; runtime_interceptor=yes
+doi:10.1109/iros60139.2025.11246185,1,full_text,exclude,E1,"Borderline (c)/(d): multi-agent collision constraints and millisecond compute times reported, but it is coordination/planning with no hazard detection, interception or explicit latency constraint; cen",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2507.19860); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/mrs66243.2025.11357249,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/raai67517.2025.11423372,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/ictis68762.2025.11214779,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
@@ -4457,12 +4457,12 @@ doi:10.1109/lcsys.2025.3599718,1,full_text,,,,,,,,"awaiting full-text review; ti
 doi:10.1109/itsc60802.2025.11423631,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
 doi:10.1109/tits.2025.3591652,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/lra.2025.3554099,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/ur65550.2025.11078073,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/ur65550.2025.11078073,1,full_text,include,,Detection only: the override/consensus use case in Sec. 1 is not implemented; real-time claims are qualitative with no measured latency; synthetic rule-based labels; (b) is partial (classification ove,include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2501.17329); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/ssrr68451.2025.11391295,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/cdc57313.2025.11312681,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.23919/ecc65951.2025.11187220,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/tase.2024.3446862,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11128011,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/icra55743.2025.11128011,1,full_text,exclude,E1,"v1.5: safety check inherited from prior work; primary claim is planning speed. Safety check (Robust MADER) is inherited from prior work, not the paper's contribution; 5614x speedup is from the single-",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2406.10060); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/aero63441.2025.11068530,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tase.2025.3607874,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/stcr62650.2025.11019136,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
@@ -4483,7 +4483,7 @@ doi:10.1109/iecon58223.2025.11221809,1,full_text,,,,,,,,"awaiting full-text revi
 doi:10.1109/lra.2025.3606795,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.23919/cje.2024.00.088,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/cac67268.2025.11487469,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.23919/acc63710.2025.11107795,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.23919/acc63710.2025.11107795,1,full_text,exclude,E1,Abstract mentions 'multi-agent space systems' but body is single chaser vs stationary target; edge/resource-constrained MPC relevant to (d) only loosely (no explicit latency constraint or safety-decis,exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2410.07413); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/cvprw67362.2025.00336,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/tase.2025.3546583,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/techdefense67306.2025.11721040,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
@@ -4492,7 +4492,7 @@ doi:10.1109/itsc60802.2025.11423439,1,full_text,,,,,,,,"awaiting full-text revie
 doi:10.23919/ecc65951.2025.11187276,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
 doi:10.1109/iccbe65177.2025.11255861,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
 doi:10.1109/tase.2025.3620556,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
-doi:10.1109/icra55743.2025.11128836,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
+doi:10.1109/icra55743.2025.11128836,1,full_text,include,,"Core contribution is a runtime collision shield for a learned multi-agent policy (criterion a/c) with ablation of shield vs naive shield (RQ5 relevant). Grid-world only; no edge hardware, no formal la",include,,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2409.14491); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.23919/acc63710.2025.11107722,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/icih67754.2025.11608756,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
 doi:10.1109/tase.2025.3606896,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
@@ -4510,7 +4510,7 @@ doi:10.1109/itsc60802.2025.11423700,1,full_text,,,,,,,,"awaiting full-text revie
 doi:10.1109/tcyb.2024.3515456,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2025)"
 doi:10.1109/wi-iat67162.2025.00124,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=0, llm=1, year=2025)"
 doi:10.1109/ieses66335.2025.11359891,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2025)"
-doi:10.1109/milcom64451.2025.11310651,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2025)"
+doi:10.1109/milcom64451.2025.11310651,1,full_text,exclude,E1,"v1.5: guardrails/human gate are design features not the studied subject; no baselines. Borderline E1/E4: guardrails and human approval are design features, not the studied subject; agents form a pipel",exclude,E1,2026-11-09,ft-extract-v1; protocol v1.5,full text read (arXiv 2509.21634); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/aiita69518.2026.11567230,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=1, year=2026)"
 doi:10.1109/icsist70215.2026.11705861,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2026)"
 doi:10.1109/aero66936.2026.11519927,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2026)"
