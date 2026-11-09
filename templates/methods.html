@@ -28,7 +28,7 @@
         <div class="box"><span class="l">Identified</span><span class="n">{{ counts.identified_db }}</span><span class="s">{{ counts.databases }} databases</span></div>
         <div class="box"><span class="l">After dedup</span><span class="n">{{ counts.screened }}</span><span class="s">{{ counts.duplicates }} duplicates</span></div>
         <div class="box"><span class="l">Full-text</span><span class="n">{{ counts.full_text }}</span><span class="s">{{ counts.ta_excluded }} excluded at abstract</span></div>
-        <div class="box inc"><span class="l">Included</span><span class="n">{{ counts.included }}</span><span class="s">{{ counts.ft_excluded }} excluded at full text</span></div>
+        <div class="box inc"><span class="l">Included</span><span class="n">{{ counts.included }}</span><span class="s">{% if counts.search_included %}{{ counts.ft_excluded }} excluded at full text{% else %}seed list; full-text stage in progress{% endif %}</span></div>
       </div>
       {% else %}
       <div class="prisma">

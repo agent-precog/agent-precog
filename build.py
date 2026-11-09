@@ -101,6 +101,8 @@ def prisma(papers, search_log, decisions):
         "included": len(papers),
         "databases": len({r["database"] for r in search_log}),
         "has_runs": bool(search_log),
+        "search_included": sum(1 for p in papers if p["included_via"] == "search"),
+        "to_full_text": sum(1 for d in decisions if d["stage"] == "title_abstract" and (d["human_decision"] == "include" or (d["human_decision"] == "" and d["ai_label"] == "include"))),
         "batches": screening_batches(decisions),
     }
 

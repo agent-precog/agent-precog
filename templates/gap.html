@@ -31,7 +31,7 @@
     </tbody>
   </table></div>
 
-  {% if not counts.has_runs %}<p class="muted" style="margin:0;font-size:14px;max-width:760px">Pre-search baseline: every count comes from the {{ total }}-paper seed list. An empty cell is a gap in what was hand-selected; it becomes evidence of a gap in the literature only once the database search ({{ version.next_search }}) has run against it.</p>{% endif %}
+  {% if not counts.search_included %}<p class="muted" style="margin:0;font-size:14px;max-width:760px">Pre-search baseline: every count comes from the {{ total }}-paper seed list. {% if counts.has_runs %}The first database search has run ({{ counts.identified_db }} records identified, {{ counts.to_full_text }} at full-text review); its papers enter the matrix as the full-text stage completes.{% else %}An empty cell is a gap in what was hand-selected; it becomes evidence of a gap in the literature only once the database search ({{ version.next_search }}) has run against it.{% endif %}</p>{% endif %}
 
   <div style="display:flex;flex-direction:column;gap:10px">
     <span class="eyebrow" style="color:var(--amber)">TIER 1 - UNOCCUPIED REQUIREMENTS - NO PAPER IN ANY PILLAR</span>

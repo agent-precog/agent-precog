@@ -28,13 +28,13 @@
     </div>
     {% if papers %}
     <div id="gaps" class="card dark" style="padding:24px">
-      <span class="eyebrow">{% if counts.has_runs %}GAPS THIS PILLAR LEAVES OPEN{% else %}GAPS IN SEED LITERATURE - PRE-SEARCH BASELINE{% endif %}</span>
+      <span class="eyebrow">{% if counts.search_included %}GAPS THIS PILLAR LEAVES OPEN{% else %}GAPS IN SEED LITERATURE - PRE-SEARCH BASELINE{% endif %}</span>
       {% if pillar_gaps %}
       <ul style="margin:0;padding-left:20px;font-size:15px;display:flex;flex-direction:column;gap:6px">
-        {% for c in pillar_gaps %}<li>No {% if not counts.has_runs %}seed{% else %}included{% endif %} paper in this pillar addresses <strong>{{ c.label|lower }}</strong></li>{% endfor %}
+        {% for c in pillar_gaps %}<li>No {% if not counts.search_included %}seed{% else %}included{% endif %} paper in this pillar addresses <strong>{{ c.label|lower }}</strong></li>{% endfor %}
       </ul>
       {% else %}<p style="margin:0">Every requirement has at least one paper in this pillar.</p>{% endif %}
-      {% if not counts.has_runs %}<span class="muted" style="font-size:13px">Based on the {{ total }}-paper seed list; these are gaps in what was hand-selected, not yet evidence of gaps in the literature. Full database search scheduled for {{ version.next_search }}.</span>{% endif %}
+      {% if not counts.search_included %}<span class="muted" style="font-size:13px">Based on the {{ total }}-paper seed list; these are gaps in what was hand-selected, not yet evidence of gaps in the literature. {% if counts.has_runs %}Search-derived papers enter as the full-text stage completes.{% else %}Full database search scheduled for {{ version.next_search }}.{% endif %}</span>{% endif %}
       <a href="/gap/" style="font-size:14px;font-weight:500">See in the gap matrix →</a>
     </div>
     {% endif %}
