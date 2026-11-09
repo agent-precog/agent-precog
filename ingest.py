@@ -58,6 +58,7 @@ def main():
     ap.add_argument("--database", required=True)
     ap.add_argument("--sample", type=float, default=0.20)
     ap.add_argument("--min-sample", type=int, default=50)
+    ap.add_argument("--max-sample", type=int, default=150, help="protocol v1.1: blind sample is 20%% of the batch, min 50, max 150")
     ap.add_argument("--seed", type=int, default=20261109)
     a = ap.parse_args()
 
@@ -84,12 +85,13 @@ def main():
     with open(OUT / f"{a.run}_records.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols); w.writeheader(); w.writerows(records)
 
-    n = max(a.min_sample, round(len(records) * a.sample))
+    n_draw = min(len(records), max(a.min_sample, round(len(records) * a.sample)))
     rng = random.Random(a.seed)
-    sample = rng.sample(records, min(n, len(records)))
+    draw = rng.sample(records, n_draw)          # the full 20% draw, reproducible from the seed
+    sample = draw[: min(n_draw, a.max_sample)]  # protocol v1.1 cap: the first max_sample of that draw
     sample.sort(key=lambda r: (r["year"], r["title"]))
     with open(OUT / f"{a.run}_blind.csv", "w", newline="", encoding="utf-8") as f:
-        f.write(f"# blind dual-screen sample: {len(sample)} of {len(records)} records, seed {a.seed}, drawn before any AI label existed\n")
+        f.write(f"# blind dual-screen sample: {len(sample)} of {len(records)} records (first {len(sample)} of a {n_draw}-record draw, seed {a.seed}, protocol v1.1 cap {a.max_sample}), drawn before any AI label existed\n")
         w = csv.DictWriter(f, fieldnames=["record_id", "title", "year", "venue", "abstract", "url", "human_decision", "exclusion_code", "notes"])
         w.writeheader()
         for r in sample:
