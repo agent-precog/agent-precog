@@ -6,7 +6,7 @@ Usage: python3 build.py            # writes ./site
 
 Requires: jinja2 (pip install jinja2). No other dependencies.
 """
-import argparse
+import glob, re, argparse
 import csv
 import json
 import shutil
@@ -76,6 +76,8 @@ def prisma(papers, search_log, decisions):
     identified_db = sum(int(r["hits"] or 0) for r in search_log)
     other = sum(1 for p in papers if p["included_via"] != "search")
     dedup = sum(1 for d in decisions if d["exclusion_code"] == "E5")
+    for p in sorted(glob.glob(str(DATA / "screening" / "*_records.csv"))):  # cross-run duplicates removed before screening
+        dedup += sum(1 for r in read_csv(Path(p)) if r.get("duplicate_of"))
     screened = max(identified_db - dedup, 0)
     def ta_code(d):
         # protocol v1.3: the maintainer's decision governs; an AI exclusion with no human decision stands
@@ -117,7 +119,8 @@ def screening_batches(decisions):
     for d in decisions:
         if d["stage"] not in ("title_abstract", "title_abstract_2"):
             continue
-        k = (d["pillar"], d["prompt_version"])
+        m = re.search(r"run (\S+?);", d["notes"] + ";")
+        k = (d["pillar"], d["prompt_version"], m.group(1) if m else ("2026-11-09_p1_ieee" if d["prompt_version"].startswith("ta-screen") else ""))
         c = batches[k]
         c["records"] += 1
         cal = "calibration" in d["notes"]
@@ -139,7 +142,7 @@ def screening_batches(decisions):
         if cal:
             c["calibration"] += 1
     keys = ("records", "ai_inc", "confirmed", "overridden", "pending", "leak_sample", "leak_read", "leaks", "calibration")
-    return [dict(pillar=p, prompt=v, **{k: c.get(k, 0) for k in keys}) for (p, v), c in sorted(batches.items())]
+    return [dict(pillar=p, prompt=v, run=run, **{k: c.get(k, 0) for k in keys}) for (p, v, run), c in sorted(batches.items())]
 
 
 def gap_matrix(papers, pillars):

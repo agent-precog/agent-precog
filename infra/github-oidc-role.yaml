@@ -61,7 +61,39 @@ Resources:
                 Action: [route53:ChangeResourceRecordSets, route53:GetHostedZone, route53:ListResourceRecordSets]
                 Resource: "arn:aws:route53:::hostedzone/*"
 
+  SearchRole:
+    # Assumed by .github/workflows/search.yml (any branch: the run creates its own search/<run> branch) to call
+    # Bedrock for title/abstract labelling. It can invoke one model and nothing else.
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${SiteStackName}-github-search"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: { Federated: !Ref OidcProvider }
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+              StringLike:
+                token.actions.githubusercontent.com:sub:
+                  - !Sub "repo:${GitHubOrg}/${GitHubRepo}:*"
+                  - !Sub "repo:${GitHubOrg}@*/${GitHubRepo}@*:*"
+      Policies:
+        - PolicyName: invoke-screening-model
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action: [bedrock:InvokeModel, bedrock:InvokeModelWithResponseStream]
+                Resource:
+                  - !Sub "arn:aws:bedrock:${AWS::Region}:${AWS::AccountId}:inference-profile/eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+                  - "arn:aws:bedrock:eu-*::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0"
+
 Outputs:
   DeployRoleArn:
     Value: !GetAtt DeployRole.Arn
     Description: Put this in the GitHub repo secret AWS_DEPLOY_ROLE_ARN
+  SearchRoleArn:
+    Value: !GetAtt SearchRole.Arn
+    Description: Put this in the GitHub repo secret AWS_SEARCH_ROLE_ARN
