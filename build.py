@@ -84,7 +84,8 @@ def prisma(papers, search_log, decisions):
         if d["human_decision"] == "" and d["ai_label"] == "exclude":
             return d["ai_code"]
         return None
-    ta_excl = Counter(c for c in (ta_code(d) for d in decisions if d["stage"] == "title_abstract") if c)
+    ta_excl = Counter(c for c in (ta_code(d) for d in decisions if d["stage"] in ("title_abstract", "title_abstract_2")) if c)
+    ta2_excluded = sum(1 for d in decisions if d["stage"] == "title_abstract_2" and ta_code(d))
     ft_excl = Counter(d["exclusion_code"] for d in decisions if d["stage"] == "full_text" and d["human_decision"] == "exclude")
     ta_total = sum(ta_excl.values())
     ft_total = sum(ft_excl.values())
@@ -103,7 +104,9 @@ def prisma(papers, search_log, decisions):
         "has_runs": bool(search_log),
         "search_included": sum(1 for p in papers if p["included_via"] == "search"),
         "ft_decided": sum(1 for d in decisions if d["stage"]=="full_text" and d["human_decision"] in ("include","exclude") and d["exclusion_code"] not in ("E3","E5")),
-        "to_full_text": sum(1 for d in decisions if d["stage"] == "title_abstract" and (d["human_decision"] == "include" or (d["human_decision"] == "" and d["ai_label"] == "include"))),
+        "to_full_text": sum(1 for d in decisions if d["stage"] == "title_abstract" and (d["human_decision"] == "include" or (d["human_decision"] == "" and d["ai_label"] == "include"))) - ta2_excluded,
+        "ta2_excluded": ta2_excluded,
+        "pdf_requested": sum(1 for d in decisions if d["stage"] == "title_abstract_2" and d["human_decision"] == "include"),
         "batches": screening_batches(decisions),
     }
 
@@ -112,7 +115,7 @@ def screening_batches(decisions):
     """Per-batch title/abstract screening statistics for the PRISMA-S page (protocol v1.3)."""
     batches = defaultdict(lambda: Counter())
     for d in decisions:
-        if d["stage"] != "title_abstract":
+        if d["stage"] not in ("title_abstract", "title_abstract_2"):
             continue
         k = (d["pillar"], d["prompt_version"])
         c = batches[k]
