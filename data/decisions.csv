@@ -3917,7 +3917,7 @@ doi:10.1109/iscid.2017.87,1,full_text,,,,,,,,"awaiting full-text review; tier B 
 doi:10.1109/smc.2016.7844604,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2016)"
 doi:10.1109/icra.2017.7989037,1,full_text,exclude,E1,Primary metric is path quality (extra time); no collision rate reported; safety only via reward shaping.,exclude,E1,2026-11-09,ft-extract-v2; protocol v1.5,full text read (arXiv 1609.07845); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/tac.2019.2946333,1,full_text,exclude,E6,"Full text of v3 (TAC 2020) could not be read: arxiv.org/html and /pdf (v3 explicitly) both returned the 2014 v1 text (different title, N=10 sim only, no six-robot experiments, no baselines). Mechanism",exclude,E6,2026-11-09,ft-extract-v2; protocol v1.5,full text read (arXiv 1402.3735); AI draft reviewed by maintainer; runtime_interceptor=yes
-doi:10.1109/control.2018.8516848,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2018)"
+doi:10.1109/control.2018.8516848,1,full_text,include,,"Borderline E3: comparative study of existing methods with no new mechanism, but it is an original empirical evaluation (collision counts, baselines). Also borderline (a): VO filtering replaces the nom",include,,2026-11-09,ft-extract-v2; protocol v1.5,full text read (open-access copy http://eprints.whiterose.ac.uk/135915/1/UKACC18_0133_FI.pdf); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/vast50239.2020.00008,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2020)"
 doi:10.1109/icca.2019.8899992,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2019)"
 doi:10.1109/acc.2015.7170779,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2015)"
@@ -3937,7 +3937,7 @@ doi:10.1109/lra.2019.2929981,1,full_text,include,,"Borderline: reactive local na
 doi:10.1109/ascc.2017.8287158,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2017)"
 doi:10.1109/mra.2014.2381357,1,full_text,,,,exclude,E3,2026-11-09,,full-text stage rule filter (protocol v1.4): survey/tutorial/magazine/book chapter by publication type or title; kept for snowballing
 doi:10.1109/mrs.2017.8250935,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2017)"
-doi:10.1109/metroaerospace48742.2020.9160145,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2020)"
+doi:10.1109/metroaerospace48742.2020.9160145,1,full_text,exclude,E2,"Collision avoidance is a constraint inside the planner, not a veto layer, so (a) not met; multi-UAS collision avoidance is the primary claim but results are preliminary figures with no metrics or base",exclude,E2,2026-11-09,ft-extract-v2; protocol v1.5,full text read (open-access copy https://iris.polito.it/bitstream/11583/2837698/1/MetroAerospace_2020.pdf); AI draft reviewed by maintainer; runtime_interceptor=no
 doi:10.1109/ccta.2018.8511471,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2018)"
 doi:10.1109/icra.2018.8460793,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2018)"
 doi:10.1109/compsac48688.2020.00012,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2020)"
@@ -4061,7 +4061,7 @@ doi:10.1145/3526071.3527516,1,full_text,,,,,,,,"awaiting full-text review; tier 
 doi:10.1109/mlise57402.2022.00039,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2022)"
 doi:10.1109/access.2022.3163393,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2022)"
 doi:10.1109/mrs60187.2023.10416788,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2023)"
-doi:10.1109/med51440.2021.9480187,1,full_text,,,,,,,,"awaiting full-text review; tier B (rule: mechanism=1, llm=0, year=2021)"
+doi:10.1109/med51440.2021.9480187,1,full_text,exclude,E2,"Genuine runtime filter (a) in a multi-robot setting, but qualitative simulation only: no baseline/ablation, no quantitative safety metric. Criterion (c) borderline: hazard is human-robot, not inter-ro",exclude,E2,2026-11-09,ft-extract-v2; protocol v1.5,full text read (open-access copy https://iris.unicas.it/bitstream/11580/89183/6/MAIN_finalDOI.pdf); AI draft reviewed by maintainer; runtime_interceptor=yes
 doi:10.1109/gcat55367.2022.9971918,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2022)"
 doi:10.1109/raai59955.2023.10601211,1,full_text,,,,,,,,"awaiting full-text review; tier A (rule: mechanism=1, llm=0, year=2023)"
 doi:10.1109/ro-man53752.2022.9900763,1,full_text,,,,,,,,"awaiting full-text review; tier C (rule: mechanism=0, llm=0, year=2022)"
