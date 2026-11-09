@@ -77,7 +77,14 @@ def prisma(papers, search_log, decisions):
     other = sum(1 for p in papers if p["included_via"] != "search")
     dedup = sum(1 for d in decisions if d["exclusion_code"] == "E5")
     screened = max(identified_db - dedup, 0)
-    ta_excl = Counter(d["exclusion_code"] for d in decisions if d["stage"] == "title_abstract" and d["human_decision"] == "exclude")
+    def ta_code(d):
+        # protocol v1.3: the maintainer's decision governs; an AI exclusion with no human decision stands
+        if d["human_decision"] == "exclude":
+            return d["exclusion_code"]
+        if d["human_decision"] == "" and d["ai_label"] == "exclude":
+            return d["ai_code"]
+        return None
+    ta_excl = Counter(c for c in (ta_code(d) for d in decisions if d["stage"] == "title_abstract") if c)
     ft_excl = Counter(d["exclusion_code"] for d in decisions if d["stage"] == "full_text" and d["human_decision"] == "exclude")
     ta_total = sum(ta_excl.values())
     ft_total = sum(ft_excl.values())
@@ -94,7 +101,39 @@ def prisma(papers, search_log, decisions):
         "included": len(papers),
         "databases": len({r["database"] for r in search_log}),
         "has_runs": bool(search_log),
+        "batches": screening_batches(decisions),
     }
+
+
+def screening_batches(decisions):
+    """Per-batch title/abstract screening statistics for the PRISMA-S page (protocol v1.3)."""
+    batches = defaultdict(lambda: Counter())
+    for d in decisions:
+        if d["stage"] != "title_abstract":
+            continue
+        k = (d["pillar"], d["prompt_version"])
+        c = batches[k]
+        c["records"] += 1
+        cal = "calibration" in d["notes"]
+        if d["ai_label"] == "include":
+            c["ai_inc"] += 1
+            if d["human_decision"] == "include":
+                c["confirmed"] += 1
+            elif d["human_decision"] == "exclude":
+                c["overridden"] += 1
+            elif not cal:
+                c["pending"] += 1
+        else:
+            if "leak-check" in d["notes"]:
+                c["leak_sample"] += 1
+                if d["human_decision"] == "include":
+                    c["leaks"] += 1
+                elif d["human_decision"]:
+                    c["leak_read"] += 1
+        if cal:
+            c["calibration"] += 1
+    keys = ("records", "ai_inc", "confirmed", "overridden", "pending", "leak_sample", "leak_read", "leaks", "calibration")
+    return [dict(pillar=p, prompt=v, **{k: c.get(k, 0) for k in keys}) for (p, v), c in sorted(batches.items())]
 
 
 def gap_matrix(papers, pillars):
