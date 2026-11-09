@@ -38,7 +38,9 @@ setting, 3 = partial methodological overlap, 1-2 = background only, 0 = not rele
 
 Gap-matrix cells (list every one the paper actually addresses; be strict):
 multi-agent state; non-generative inference; latency/jitter aware; time-to-irreversibility; edge deployment;
-human handoff; cross-domain evaluation
+human handoff; cross-domain evaluation (ONLY when the same mechanism is evaluated in both a physical
+domain - robots/vehicles - and a logical/enterprise domain - software agents, transactions, services; two
+robotics settings do not qualify)
 
 Methods tags (reuse existing where they fit, add a new lowercase hyphenated tag only when needed):
 POMDP, SA-measurement, WCET-analysis, barrier-functions, calibration, complexity-theory, consistency-proof,
