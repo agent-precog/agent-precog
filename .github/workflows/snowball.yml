@@ -1,0 +1,140 @@
+name: Snowballing
+
+# Backward and forward citation chasing on the included set, as the published protocol requires:
+# "Snowballing (backward and forward via Semantic Scholar and OpenAlex) runs on the included set after each
+# quarterly pass and stops when a full pass adds fewer than five papers."
+#
+# Seeds are every paper in data/papers.csv plus every record excluded E3 and kept for snowballing.
+#
+# Modes: count  - report how many records the pass would yield, change nothing
+#        screen - fetch, ingest, dedup against every earlier run, label, build the review workbook, open a PR
+#
+# Run count first. Forward citation counts are unbounded in principle, so the volume decides whether a cap is
+# needed before a pass is worth screening. Nothing reaches the site until the maintainer applies the workbook
+# and merges.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pillar:
+        description: Pillar number (1-5)
+        default: "1"
+      direction:
+        description: backward, forward or both
+        default: both
+      cap:
+        description: Max records per seed per direction, 0 for no cap
+        default: "0"
+      min_year:
+        description: Earliest publication year to keep
+        default: "2015"
+      mode:
+        description: count or screen
+        default: count
+
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
+env:
+  AWS_REGION: eu-west-2
+  PILLAR: ${{ github.event.inputs.pillar || '1' }}
+  DIRECTION: ${{ github.event.inputs.direction || 'both' }}
+  CAP: ${{ github.event.inputs.cap || '0' }}
+  MIN_YEAR: ${{ github.event.inputs.min_year || '2015' }}
+  MODE: ${{ github.event.inputs.mode || 'count' }}
+
+jobs:
+  snowball:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install boto3 openpyxl
+
+      - name: Count what this pass would yield
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: |
+          rc=0
+          python3 snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
+            --min-year "$MIN_YEAR" --count-only > counts.txt 2>&1 || rc=$?
+          { echo "### Snowball counts (pillar $PILLAR, $DIRECTION)"; echo '```'; tail -40 counts.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          tail -40 counts.txt
+          exit $rc
+
+      - name: Fetch citations
+        if: env.MODE == 'screen'
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: |
+          rc=0
+          echo "RUN_ID=$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" >> "$GITHUB_ENV"
+          python3 snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
+            --min-year "$MIN_YEAR" --run "$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" > fetch.txt 2>&1 || rc=$?
+          { echo "### Fetch"; echo '```'; tail -40 fetch.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          tail -40 fetch.txt
+          exit $rc
+
+      - name: Ingest and deduplicate
+        if: env.MODE == 'screen'
+        run: |
+          rc=0
+          python3 ingest.py --run "$RUN_ID" --pillar "$PILLAR" --database api > ingest.txt 2>&1 || rc=$?
+          { echo "### Ingest"; echo '```'; cat ingest.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          cat ingest.txt
+          exit $rc
+
+      - name: Configure AWS credentials (OIDC)
+        if: env.MODE == 'screen'
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_SEARCH_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: AI title/abstract labelling
+        if: env.MODE == 'screen'
+        env:
+          MODEL_ID: ${{ vars.SCREEN_MODEL_ID || 'eu.anthropic.claude-haiku-4-5-20251001-v1:0' }}
+        run: |
+          rc=0
+          python3 label.py --run "$RUN_ID" --prompt ta-screen-v4 > label_full.txt 2>&1 || rc=$?
+          tail -20 label_full.txt > label.txt
+          { echo "### Labelling"; echo '```'; cat label.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          cat label.txt
+          exit $rc
+
+      - name: Build the review workbook
+        if: env.MODE == 'screen'
+        run: |
+          rc=0
+          python3 review.py build --run "$RUN_ID" > review.txt 2>&1 || rc=$?
+          { echo "### Review workbook"; echo '```'; cat review.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          cat review.txt
+          exit $rc
+
+      - name: Open pull request
+        if: env.MODE == 'screen'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "agent-precog snowball"
+          git config user.email "snowball@agent-precog.org"
+          BR="snowball/$RUN_ID-${{ github.run_number }}"
+          git checkout -b "$BR"
+          git add data/raw data/screening data/search_log.csv data/decisions.csv
+          git commit -m "Snowball pass $RUN_ID: records, AI labels and review workbook"
+          git push -u origin "$BR"
+          {
+            echo "Snowball pass **$RUN_ID** (pillar $PILLAR; direction $DIRECTION; cap ${CAP}; from ${MIN_YEAR})."
+            echo
+            echo '```'; cat counts.txt fetch.txt ingest.txt label.txt review.txt; echo '```'
+            echo
+            echo "Review: open \`data/screening/${RUN_ID}_review.xlsx\`, fill the decision column on both tabs, then run"
+            echo "\`python3 review.py apply --run $RUN_ID --sheet <returned.xlsx>\` and commit before merging."
+            echo
+            echo "Protocol stop rule: snowballing stops when a full pass adds fewer than five papers."
+          } > body.md
+          gh pr create --title "Snowball pass $RUN_ID (pillar $PILLAR)" --body-file body.md --base main --head "$BR"
