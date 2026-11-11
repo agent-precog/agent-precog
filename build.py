@@ -143,6 +143,15 @@ def prisma(papers, search_log, decisions):
         "to_full_text": sum(1 for d in decisions if d["stage"] == "title_abstract" and (d["human_decision"] == "include" or (d["human_decision"] == "" and d["ai_label"] == "include"))) - ta2_excluded,
         "ta2_excluded": ta2_excluded,
         "pdf_requested": sum(1 for d in decisions if d["stage"] == "title_abstract_2" and d["human_decision"] == "include"),
+        # records sitting at the full-text stage with no full-text decision yet
+        "pending_publication": sum(1 for _ in read_csv(DATA / "screening" / "pending_publication.csv")) if (DATA / "screening" / "pending_publication.csv").exists() else 0,
+        "awaiting_ft": len(
+            {d["record_id"] for d in decisions if d["stage"] == "title_abstract"
+             and (d["human_decision"] == "include" or (not d["human_decision"] and d["ai_label"] == "include"))}
+            - {d["record_id"] for d in decisions if d["stage"] == "title_abstract_2"
+               and not (d["human_decision"] == "include" or (not d["human_decision"] and d["ai_label"] == "include"))}
+            - {d["record_id"] for d in decisions if d["stage"] == "full_text" and d["human_decision"] in ("include", "exclude")}
+        ),
         "batches": screening_batches(all_decisions),
     }
 
