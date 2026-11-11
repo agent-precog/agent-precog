@@ -53,10 +53,21 @@ def build(a):
         for rr in range(2, ws.max_row + 1): ws.cell(rr, 8).fill = PatternFill("solid", fgColor="FFF4CC")
         ws.freeze_panes = "D2"
 
-    wb = Workbook(); sheet(wb.active, inc, INC_OPTS); wb.active.title = "AI includes"
+    # Split the maintainer's includes by the full-text tier rule so the highest-yield records can be reviewed
+    # first and the work divides into sittings; the decision column and its vocabulary are the same on every tab,
+    # so the returned workbook applies exactly as a single-tab one would.
+    by_tier = {t: [l for l in inc if tier(recs[l["record_id"]]["title"], recs[l["record_id"]]["abstract"], recs[l["record_id"]]["year"]) == t]
+               for t in ("A", "B", "C")}
+    wb = Workbook(); wb.remove(wb.active)
+    for t in ("A", "B", "C"):
+        if by_tier[t]:
+            sheet(wb.create_sheet(f"Tier {t} ({len(by_tier[t])})"), by_tier[t], INC_OPTS)
+    if not wb.worksheets:
+        sheet(wb.create_sheet("AI includes"), inc, INC_OPTS)
     sheet(wb.create_sheet("Leak check"), leak, LEAK_OPTS)
     out = SCREEN / f"{a.run}_review.xlsx"; wb.save(out)
-    print(f"{len(inc)} AI includes to review, {len(leak)} leak-check records (of {len(exc)} AI excludes) -> {out}")
+    print(f"{len(inc)} AI includes to review (tier A {len(by_tier['A'])}, B {len(by_tier['B'])}, C {len(by_tier['C'])}), "
+          f"{len(leak)} leak-check records (of {len(exc)} AI excludes) -> {out}")
 
 
 def apply(a):
