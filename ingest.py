@@ -55,10 +55,45 @@ def api_rows(path):
                 yield {k: r.get(k, "") for k in ("record_id", "title", "authors", "year", "venue", "type", "doi", "url", "arxiv_id", "abstract", "database")}
 
 
+def bibtex_rows(path):
+    """ACM Digital Library citation export (BibTeX). One record per @type{key, ...} block."""
+    text = open(path, encoding="utf-8-sig", errors="replace").read()
+    for block in re.split(r"\n(?=@)", text):
+        if not block.lstrip().startswith("@"):
+            continue
+        fields = {}
+        for m in re.finditer(r"(\w+)\s*=\s*\{", block):
+            k, i, depth = m.group(1).lower(), m.end(), 1
+            while i < len(block) and depth:
+                if block[i] == "{": depth += 1
+                elif block[i] == "}": depth -= 1
+                i += 1
+            fields[k] = block[m.end():i - 1]
+        if not fields.get("title"):
+            continue
+        de = lambda v: clean(re.sub(r"[{}]", "", v or "").replace("\\&", "&").replace("\\_", "_"))
+        doi = de(fields.get("doi", "")).lower()
+        if not doi:   # some entries carry the DOI only in the entry key or the url
+            mdoi = re.search(r"10\.\d{4,9}/[^\s,}]+", block.split("abstract", 1)[0])
+            doi = mdoi.group(0).lower().rstrip(",}") if mdoi else ""
+        kind = (block.lstrip()[1:].split("{", 1)[0] or "").lower()
+        yield {"record_id": f"doi:{doi}" if doi else "acm:" + de(block.lstrip()[1:].split("{", 1)[1].split(",", 1)[0]),
+               "title": de(fields.get("title")), "authors": "; ".join(a.strip() for a in de(fields.get("author", "")).split(" and ")),
+               "year": de(fields.get("year", ""))[:4], "venue": de(fields.get("booktitle") or fields.get("journal") or fields.get("series", "")),
+               "type": {"inproceedings": "Conference", "article": "Journal", "incollection": "Book chapter",
+                        "book": "Book", "phdthesis": "Thesis"}.get(kind, kind),
+               "doi": doi, "url": de(fields.get("url", "")) or (f"https://doi.org/{doi}" if doi else ""),
+               "arxiv_id": "", "abstract": de(fields.get("abstract", "")), "database": "ACM Digital Library"}
+
+
 def reader_for(path):
-    with open(path, newline="", encoding="utf-8-sig") as f:
-        head = f.readline()
-    return ieee_rows if "Document Title" in head else api_rows
+    with open(path, newline="", encoding="utf-8-sig", errors="replace") as f:
+        head = f.read(4000)
+    if "Document Title" in head:
+        return ieee_rows
+    if head.lstrip().startswith("@"):
+        return bibtex_rows
+    return api_rows
 
 
 def prior_index(run):
