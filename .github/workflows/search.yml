@@ -50,9 +50,11 @@ jobs:
           OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: |
-          python3 search.py --pillar "$PILLAR" --databases "$DATABASES" --count-only | tee counts.txt
-          echo "### Hit counts (pillar $PILLAR)" >> "$GITHUB_STEP_SUMMARY"
-          sed 's/^/- /' counts.txt >> "$GITHUB_STEP_SUMMARY"
+          rc=0
+          python3 search.py --pillar "$PILLAR" --databases "$DATABASES" --count-only > counts.txt 2>&1 || rc=$?
+          { echo "### Hit counts (pillar $PILLAR)"; echo '```'; cat counts.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          cat counts.txt
+          exit $rc
 
       - name: Download records
         if: env.MODE == 'screen'
@@ -60,12 +62,15 @@ jobs:
           OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: |
+          set -o pipefail
           echo "RUN_ID=$(date -u +%Y-%m-%d)_p$PILLAR" >> "$GITHUB_ENV"
-          python3 search.py --pillar "$PILLAR" --databases "$DATABASES" --run "$(date -u +%Y-%m-%d)_p$PILLAR"
+          python3 search.py --pillar "$PILLAR" --databases "$DATABASES" --run "$(date -u +%Y-%m-%d)_p$PILLAR" 2>&1 | tee download.txt
 
       - name: Ingest and deduplicate
         if: env.MODE == 'screen'
-        run: python3 ingest.py --run "$RUN_ID" --pillar "$PILLAR" --database api | tee ingest.txt
+        run: |
+          set -o pipefail
+          python3 ingest.py --run "$RUN_ID" --pillar "$PILLAR" --database api 2>&1 | tee ingest.txt
 
       - name: Configure AWS credentials (OIDC)
         if: env.MODE == 'screen'
@@ -78,11 +83,15 @@ jobs:
         if: env.MODE == 'screen'
         env:
           MODEL_ID: ${{ vars.SCREEN_MODEL_ID || 'eu.anthropic.claude-haiku-4-5-20251001-v1:0' }}
-        run: python3 label.py --run "$RUN_ID" --prompt ta-screen-v2 | tail -3 | tee label.txt
+        run: |
+          set -o pipefail
+          python3 label.py --run "$RUN_ID" --prompt ta-screen-v2 2>&1 | tail -3 | tee label.txt
 
       - name: Build the review workbook
         if: env.MODE == 'screen'
-        run: python3 review.py build --run "$RUN_ID" | tee review.txt
+        run: |
+          set -o pipefail
+          python3 review.py build --run "$RUN_ID" 2>&1 | tee review.txt
 
       - name: Open pull request
         if: env.MODE == 'screen'

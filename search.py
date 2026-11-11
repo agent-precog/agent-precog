@@ -16,7 +16,7 @@ Network: arXiv (export.arxiv.org, no key), OpenAlex (api.openalex.org, optional 
 Semantic Scholar (api.semanticscholar.org, optional S2_API_KEY). All three are rate-limited; this script is deliberately
 slow (one request every few seconds) and must not be parallelised against any of them.
 """
-import argparse, csv, html, json, os, re, sys, time, urllib.parse, urllib.request
+import argparse, csv, html, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -217,10 +217,25 @@ def main():
     run = a.run or f"{a.date}_p{a.pillar}"
     RAW.mkdir(exist_ok=True)
     summary = {}
+    failures = 0
     for db in [d.strip() for d in a.databases.split(",") if d.strip()]:
-        q, total, rows = DBS[db](pillar["query"], a.count_only)
+        try:
+            q, total, rows = DBS[db](pillar["query"], a.count_only)
+        except Exception as e:  # one API being down or rejecting the query must not lose the others
+            detail = ""
+            if isinstance(e, urllib.error.HTTPError):
+                try:
+                    detail = " | body: " + e.read()[:500].decode("utf-8", "replace").replace("\n", " ")
+                except Exception:
+                    pass
+            summary[db] = {"error": f"{type(e).__name__}: {e}{detail}"}
+            print(f"{db}: FAILED {type(e).__name__}: {e}{detail}", flush=True)
+            failures += 1
+            continue
         summary[db] = {"query": q, "hits": total, "downloaded": len(rows)}
         print(f"{db}: {total} hits" + ("" if a.count_only else f", {len(rows)} records -> data/raw/{run}_{db}.csv"), flush=True)
+        if a.count_only:
+            print(f"    query as sent: {q}", flush=True)
         if not a.count_only:
             with open(RAW / f"{run}_{db}.csv", "w", newline="", encoding="utf-8") as f:
                 w = csv.DictWriter(f, fieldnames=COLS); w.writeheader(); w.writerows({k: r.get(k, "") for k in COLS} for r in rows)
@@ -229,6 +244,8 @@ def main():
                                         f"year {YEAR_FROM} onward; title and abstract (arXiv: all fields)", total, "search.py",
                                         f"{len(rows)} records downloaded; run {run}"])
     (RAW / f"{run}_summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
+    if failures:
+        sys.exit(f"{failures} of {len(summary)} databases failed")
 
 
 if __name__ == "__main__":
