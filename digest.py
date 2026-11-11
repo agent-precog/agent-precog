@@ -58,7 +58,7 @@ def page_text(path: Path) -> str:
 
 def build_digest(out: Path, *, site_name, site_url, version, papers, pillars, rqs, gap_columns, matrix, counts, changelog):
     L = []
-    L.append(f"# {site_name} — review digest (v{version['version']}, released {version['released']}, protocol v{version['protocol']})")
+    L.append(f"# {site_name} - review digest (v{version['version']}, released {version['released']}, protocol v{version['protocol']})")
     L.append(f"Site: {site_url}. Next scheduled search run: {version['next_search']}. Papers included: {len(papers)}.")
     L.append("This digest is regenerated at every release from the same CSV files as the site. Deep links: /rqs/, /pillars/, /gap/, /papers/ (filters ?rq=rqN and ?method=TAG), /foundations/, /prisma-s/, /changelog/, /pillars/<slug>/.")
 
