@@ -21,6 +21,10 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install jinja2
+      - name: Validate the data
+        # every check in validate.py exists because the defect it catches actually happened;
+        # a broken CSV must not reach the site
+        run: python3 validate.py
       - name: Configure AWS credentials (OIDC, no stored keys)
         uses: aws-actions/configure-aws-credentials@v4
         with:
