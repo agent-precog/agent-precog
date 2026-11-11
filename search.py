@@ -78,23 +78,84 @@ def get(url, headers=None, retries=4, pause=3.0):
 ATOM = {"a": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
 
 
+DATE_CLAUSE = f" AND submittedDate:[{YEAR_FROM}01010000 TO 209912312359]"
+
+
+def arxiv_variants(query):
+    """Candidate translations, most faithful first.
+
+    arXiv's API answers HTTP 500 to boolean queries it considers too long or too deeply nested, and gives no
+    reason, so the translation is chosen by trying progressively simpler forms. Whichever is used is written to
+    the search log verbatim, as PRISMA-S requires; adapting a string to each database's syntax is expected, and
+    the reduced forms only ever broaden recall (they drop a conjunct, never add one).
+    """
+    base = expand(query)
+    groups, depth, start = [], 0, None
+    for i, ch in enumerate(base):          # the conjuncts, i.e. the parenthesised groups at depth 0
+        if ch == "(":
+            if depth == 0:
+                start = i + 1
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+            if depth == 0:
+                groups.append(base[start:i])
+    groups = groups or [base]
+    fielded = lambda s, f: re.sub(r'"([^"]+)"', lambda m: f'{f}:"{m.group(1)}"', s)
+    v = [
+        ("all+date", fielded(base, "all") + DATE_CLAUSE),
+        ("all", fielded(base, "all")),
+        ("abs+date", fielded(base, "abs") + DATE_CLAUSE),
+        ("all, single words unquoted, +date",
+         re.sub(r'"([^"]+)"', lambda m: (f'all:"{m.group(1)}"' if " " in m.group(1) else f"all:{m.group(1)}"), base) + DATE_CLAUSE),
+    ]
+    if len(groups) >= 2:  # drop the last conjunct (on arXiv the domain group is the least informative)
+        v.append(("first two groups +date", fielded("(" + ") AND (".join(groups[:2]) + ")", "all") + DATE_CLAUSE))
+    if len(groups) >= 1:
+        v.append(("first group only +date", fielded("(" + groups[0] + ")", "all") + DATE_CLAUSE))
+    v.append(("syntax check", 'all:"multi-agent" AND all:"safety"'))
+    return v
+
+
 def arxiv_query(query):
-    # arXiv's API: fielded terms, AND/OR/ANDNOT, phrases in quotes. Search title+abstract via all: on each phrase.
-    q = expand(query).replace(" OR ", " OR ").replace(" AND ", " AND ")
-    q = re.sub(r'"([^"]+)"', lambda m: 'all:"' + m.group(1) + '"', q)
-    return q + f" AND submittedDate:[{YEAR_FROM}01010000 TO 209912312359]"
+    return arxiv_variants(query)[0][1]
+
+
+def arxiv_count(q):
+    url = "http://export.arxiv.org/api/query?" + urllib.parse.urlencode({"search_query": q, "start": 0, "max_results": 1})
+    root = ET.fromstring(get(url, retries=2, pause=3.0))
+    return int(root.find("{http://a9.com/-/spec/opensearch/1.1/}totalResults").text)
 
 
 def arxiv(query, count_only):
-    q = arxiv_query(query)
-    rows, start, total = [], 0, None
+    # choose the most faithful translation this API will actually answer
+    chosen, err = None, None
+    for name, cand in arxiv_variants(query):
+        try:
+            n = arxiv_count(cand)
+        except Exception as e:
+            print(f"    arxiv variant [{name}]: {type(e).__name__} {e}", flush=True)
+            err = err or e
+            time.sleep(3.0)
+            continue
+        print(f"    arxiv variant [{name}]: {n} hits", flush=True)
+        if chosen is None and n > 0:
+            chosen = (name, cand, n)
+        if not count_only:
+            break
+        time.sleep(3.0)
+    if chosen is None:
+        raise err or RuntimeError("no arXiv query variant returned any result")
+    name, q, total = chosen
+    print(f"    arxiv using variant [{name}]", flush=True)
+    if count_only:
+        return q, total, []
+    rows, start = [], 0
     while True:
         url = "http://export.arxiv.org/api/query?" + urllib.parse.urlencode(
             {"search_query": q, "start": start, "max_results": 200, "sortBy": "submittedDate", "sortOrder": "descending"})
         root = ET.fromstring(get(url))
         total = int(root.find("{http://a9.com/-/spec/opensearch/1.1/}totalResults").text)
-        if count_only:
-            return q, total, []
         entries = root.findall("a:entry", ATOM)
         if not entries:
             break
@@ -174,13 +235,16 @@ def semanticscholar(query, count_only):
     q = s2_query(query)
     key = os.environ.get("S2_API_KEY", "")
     headers = {"x-api-key": key} if key else {}
+    if not key:
+        print("    semanticscholar: no S2_API_KEY set; the anonymous pool is shared and usually answers 429. "
+              "A free key (https://www.semanticscholar.org/product/api#api-key-form) removes this.", flush=True)
     fields = "externalIds,title,authors,year,venue,publicationTypes,abstract,url"
     rows, token, total = [], None, None
     while True:
         params = {"query": q, "year": f"{YEAR_FROM}-", "fields": fields}
         if token: params["token"] = token
         url = "https://api.semanticscholar.org/graph/v1/paper/search/bulk?" + urllib.parse.urlencode(params)
-        d = json.loads(get(url, headers=headers, pause=5.0))
+        d = json.loads(get(url, headers=headers, retries=5, pause=6.0))
         total = d.get("total", 0)
         if count_only:
             return q, total, []
