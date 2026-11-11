@@ -1,0 +1,13 @@
+{
+ "arxiv": {
+  "error": "HTTPError: HTTP Error 500: Internal Server Error | body: <?xml version='1.0' encoding='UTF-8'?> <feed xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:arxiv=\"http://arxiv.org/schemas/atom\" xmlns=\"http://www.w3.org/2005/Atom\">   <id>https://arxiv.org/</id>   <title>arXiv Search Results</title>   <updated>2026-11-11T09:40:38Z</updated>   <opensearch:itemsPerPage>1</opensearch:itemsPerPage>   <opensearch:totalResults>1</opensearch:totalResults>   <opensearch:startIndex>0</opensearch:startIndex>   <entry>     <id>https://arxiv.org/api/errors<"
+ },
+ "openalex": {
+  "error": "HTTPError: HTTP Error 401: Unauthorized | body: {\"error\":\"API key required for cursor paging\",\"message\":\"Paging past the first page with cursor= needs a free API key. Get one in a minute at https://openalex.org/settings/api\"}"
+ },
+ "semanticscholar": {
+  "query": "(\"multi-agent\" | \"multiagent\" | \"Dec-POMDP\" | \"decentralized POMDP\" | \"agent swarm\" | \"fleet\") + (\"safety\" | \"hazard\" | \"collision\" | \"emergent\" | \"cascading failure\" | \"catastroph*\") + (\"warehouse\" | \"logistics\" | \"industrial\" | \"enterprise\" | \"robot*\" | \"AMR\" | \"tool call*\" | \"LLM agent*\")",
+  "hits": 2785,
+  "downloaded": 2784
+ }
+}
