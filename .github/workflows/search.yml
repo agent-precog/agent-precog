@@ -50,8 +50,10 @@ jobs:
           OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: |
+          set -o pipefail
           rc=0
-          python3 search.py --pillar "$PILLAR" --databases "$DATABASES" --count-only > counts.txt 2>&1 || rc=$?
+          python3 -u search.py --pillar "$PILLAR" --databases "$DATABASES" --count-only 2>&1 | tee counts.txt || true
+          rc=${PIPESTATUS[0]}
           { echo "### Hit counts (pillar $PILLAR)"; echo '```'; cat counts.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           cat counts.txt
           exit $rc
@@ -72,8 +74,10 @@ jobs:
       - name: Ingest and deduplicate
         if: env.MODE == 'screen'
         run: |
+          set -o pipefail
           rc=0
-          python3 ingest.py --run "$RUN_ID" --pillar "$PILLAR" --database api > ingest.txt 2>&1 || rc=$?
+          python3 -u ingest.py --run "$RUN_ID" --pillar "$PILLAR" --database api 2>&1 | tee ingest.txt || true
+          rc=${PIPESTATUS[0]}
           { echo "### Ingest"; echo '```'; cat ingest.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           cat ingest.txt
           exit $rc
@@ -90,8 +94,10 @@ jobs:
         env:
           MODEL_ID: ${{ vars.SCREEN_MODEL_ID || 'eu.anthropic.claude-haiku-4-5-20251001-v1:0' }}
         run: |
+          set -o pipefail
           rc=0
-          python3 label.py --run "$RUN_ID" --prompt ta-screen-v2 > label_full.txt 2>&1 || rc=$?
+          python3 -u label.py --run "$RUN_ID" --prompt ta-screen-v2 2>&1 | tee label_full.txt || true
+          rc=${PIPESTATUS[0]}
           tail -20 label_full.txt > label.txt
           { echo "### Labelling"; echo '```'; cat label.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           cat label.txt
@@ -100,8 +106,10 @@ jobs:
       - name: Build the review workbook
         if: env.MODE == 'screen'
         run: |
+          set -o pipefail
           rc=0
-          python3 review.py build --run "$RUN_ID" > review.txt 2>&1 || rc=$?
+          python3 -u review.py build --run "$RUN_ID" 2>&1 | tee review.txt || true
+          rc=${PIPESTATUS[0]}
           { echo "### Review workbook"; echo '```'; cat review.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           cat review.txt
           exit $rc

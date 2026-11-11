@@ -58,9 +58,13 @@ jobs:
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: |
+          set -o pipefail
           rc=0
-          python3 snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
-            --min-year "$MIN_YEAR" --count-only > counts.txt 2>&1 || rc=$?
+          # tee so progress streams into the live log; PIPESTATUS keeps python's exit code, which a
+          # bare pipe would otherwise hide behind tee's own success
+          python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
+            --min-year "$MIN_YEAR" --count-only 2>&1 | tee counts.txt || true
+          rc=${PIPESTATUS[0]}
           { echo "### Snowball counts (pillar $PILLAR, $DIRECTION)"; echo '```'; tail -40 counts.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           tail -40 counts.txt
           exit $rc
@@ -70,10 +74,12 @@ jobs:
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: |
+          set -o pipefail
           rc=0
           echo "RUN_ID=$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" >> "$GITHUB_ENV"
-          python3 snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
-            --min-year "$MIN_YEAR" --run "$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" > fetch.txt 2>&1 || rc=$?
+          python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
+            --min-year "$MIN_YEAR" --run "$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" 2>&1 | tee fetch.txt || true
+          rc=${PIPESTATUS[0]}
           { echo "### Fetch"; echo '```'; tail -40 fetch.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           tail -40 fetch.txt
           exit $rc
