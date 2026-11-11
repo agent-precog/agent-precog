@@ -141,8 +141,8 @@ def arxiv(query, count_only):
         print(f"    arxiv variant [{name}]: {n} hits", flush=True)
         if chosen is None and n > 0:
             chosen = (name, cand, n)
-        if not count_only:
-            break
+        if chosen is not None and not os.environ.get("ARXIV_ALL_VARIANTS"):
+            break  # the first (most faithful) form this API answers is the one used; set ARXIV_ALL_VARIANTS=1 to compare them all
         time.sleep(3.0)
     if chosen is None:
         raise err or RuntimeError("no arXiv query variant returned any result")
