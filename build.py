@@ -72,7 +72,41 @@ def load():
     return papers, pillars, search_log, decisions, version, changelog
 
 
+def gap_claims(papers):
+    """Counts behind the prose gap claims on the home page and the RQ page.
+
+    These sentences used to be hardcoded, and went stale silently as papers entered the review:
+    the RQ1 claim was false on the live site for two days after karthik2026self was included.
+    They are computed here so a claim cannot outlive its evidence.
+    """
+    def cells(p):
+        return {c.strip().lower() for c in p.get("gap_cells", "").split(";") if c.strip()}
+    def n(pred):
+        return sum(1 for p in papers if pred(p))
+    return {
+        "cross_domain": n(lambda p: "cross-domain evaluation" in cells(p)),
+        "graph_edge": n(lambda p: {"multi-agent state", "non-generative inference", "edge deployment"} <= cells(p)),
+        "defer_timing": n(lambda p: p.get("pillar") == "3" and cells(p) & {"latency/jitter aware", "time-to-irreversibility"}),
+        "sa_interception": n(lambda p: p.get("pillar") == "5" and "latency/jitter aware" in cells(p)),
+    }
+
+
+def latest_decisions(decisions):
+    """The current decision for each (record_id, stage), which is the last one logged.
+
+    decisions.csv is an append-only audit log, so a record re-screened under a later protocol
+    version has more than one row at the same stage. The counts must reflect the current rule,
+    while the batch table on the methods page still shows every pass, superseded ones included.
+    """
+    cur = {}
+    for d in decisions:
+        cur[(d["record_id"], d["stage"])] = d
+    return list(cur.values())
+
+
 def prisma(papers, search_log, decisions):
+    all_decisions = decisions                 # full audit log, for the batch table
+    decisions = latest_decisions(decisions)   # current decision per record and stage, for the counts
     identified_db = sum(int(r["hits"] or 0) for r in search_log)
     other = sum(1 for p in papers if p["included_via"] != "search")
     dedup = sum(1 for d in decisions if d["exclusion_code"] == "E5")
@@ -109,7 +143,7 @@ def prisma(papers, search_log, decisions):
         "to_full_text": sum(1 for d in decisions if d["stage"] == "title_abstract" and (d["human_decision"] == "include" or (d["human_decision"] == "" and d["ai_label"] == "include"))) - ta2_excluded,
         "ta2_excluded": ta2_excluded,
         "pdf_requested": sum(1 for d in decisions if d["stage"] == "title_abstract_2" and d["human_decision"] == "include"),
-        "batches": screening_batches(decisions),
+        "batches": screening_batches(all_decisions),
     }
 
 
@@ -201,7 +235,7 @@ def main():
 
     env = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=select_autoescape(["html"]))
     ctx = dict(
-        pillars=pillars, counts=counts, version=version, recent=recent,
+        pillars=pillars, counts=counts, version=version, recent=recent, claims=gap_claims(papers),
         rqs=RQS, gap_columns=GAP_COLUMNS, matrix=matrix, gaps=gaps, gapinfo=gapinfo, rq_pillars=RQ_PILLARS,
         last_search=last_search, built=date.today().isoformat(),
         changelog=changelog, total=len(papers), all_methods=all_methods, by_id=by_id, by_rq=by_rq,
