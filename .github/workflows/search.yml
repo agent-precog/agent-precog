@@ -113,7 +113,7 @@ jobs:
         run: |
           git config user.name "agent-precog search"
           git config user.email "search@agent-precog.org"
-          BR="search/$RUN_ID"
+          BR="search/$RUN_ID-${{ github.run_number }}"   # unique per run, so a repeated run never collides with an open PR
           git checkout -b "$BR"
           git add data/raw data/screening data/search_log.csv data/decisions.csv
           git commit -m "Search run $RUN_ID: records, AI labels and review workbook"
