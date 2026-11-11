@@ -309,7 +309,12 @@ def main():
                                         f"{len(rows)} records downloaded; run {run}"])
     (RAW / f"{run}_summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
     if failures:
-        sys.exit(f"{failures} of {len(summary)} databases failed")
+        ok = len(summary) - failures
+        print(f"INCOMPLETE RUN: {failures} of {len(summary)} databases failed, {ok} succeeded", flush=True)
+        if not ok:                      # nothing downloaded: stop the pipeline
+            sys.exit("every database failed")
+        # otherwise continue with what did download; the search log records only the databases that answered,
+        # and the pull request body carries this notice so the run is not mistaken for a complete one
 
 
 if __name__ == "__main__":
