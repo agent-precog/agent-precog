@@ -152,9 +152,10 @@ def arxiv(query, count_only):
         return q, total, []
     rows, start = [], 0
     while True:
+        # arXiv answers 500 to large pages on long queries; 100 per request with a courteous gap is reliable
         url = "http://export.arxiv.org/api/query?" + urllib.parse.urlencode(
-            {"search_query": q, "start": start, "max_results": 200, "sortBy": "submittedDate", "sortOrder": "descending"})
-        root = ET.fromstring(get(url))
+            {"search_query": q, "start": start, "max_results": 100, "sortBy": "submittedDate", "sortOrder": "descending"})
+        root = ET.fromstring(get(url, retries=6, pause=5.0))
         total = int(root.find("{http://a9.com/-/spec/opensearch/1.1/}totalResults").text)
         entries = root.findall("a:entry", ATOM)
         if not entries:
@@ -173,10 +174,10 @@ def arxiv(query, count_only):
                 "type": "preprint", "doi": doi, "url": f"https://arxiv.org/abs/{aid}",
                 "abstract": clean(e.find("a:summary", ATOM).text), "arxiv_id": aid, "database": "arXiv",
             })
-        start += 200
+        start += 100
         if start >= total:
             break
-        time.sleep(3.0)
+        time.sleep(5.0)
     return q, total, rows
 
 
@@ -193,34 +194,58 @@ def openalex(query, count_only):
             "per_page": 200, "select": "id,doi,title,display_name,publication_year,authorships,primary_location,type,abstract_inverted_index,ids"}
     if mailto:
         base["mailto"] = mailto
-    rows, cursor, total = [], "*", None
-    while cursor:
-        url = "https://api.openalex.org/works?" + urllib.parse.urlencode({**base, "cursor": cursor})
-        d = json.loads(get(url))
-        total = d["meta"]["count"]
-        if count_only:
-            return q, total, []
-        for w in d["results"]:
-            inv = w.get("abstract_inverted_index") or {}
-            words = sorted(((pos, t) for t, poss in inv.items() for pos in poss))
-            abstract = " ".join(t for _, t in words)
-            doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
-            arx = ""
-            for loc in [w.get("primary_location") or {}]:
-                u = (loc.get("landing_page_url") or "") + " " + (loc.get("pdf_url") or "")
-                m = re.search(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})", u)
-                if m: arx = m.group(1)
-            src = ((w.get("primary_location") or {}).get("source") or {}).get("display_name", "")
-            rows.append({
-                "record_id": f"doi:{doi}" if doi else (f"arxiv:{arx}" if arx else "openalex:" + w["id"].rsplit("/", 1)[-1]),
-                "title": clean(w.get("title") or w.get("display_name") or ""),
-                "authors": "; ".join(clean((a.get("author") or {}).get("display_name", "")) for a in w.get("authorships", [])),
-                "year": str(w.get("publication_year") or ""), "venue": clean(src), "type": w.get("type", ""),
-                "doi": doi, "url": f"https://doi.org/{doi}" if doi else (w.get("primary_location") or {}).get("landing_page_url", "") or w["id"],
-                "abstract": clean(abstract), "arxiv_id": arx, "database": "OpenAlex",
-            })
-        cursor = d["meta"].get("next_cursor")
-        time.sleep(1.0)
+    key = os.environ.get("OPENALEX_API_KEY", "")
+    if key:
+        base["api_key"] = key
+
+    def page_of(params):
+        return json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(params)))
+
+    total = page_of({**base, "per_page": 1})["meta"]["count"]
+    if count_only:
+        return q, total, []
+    # Cursor paging needs a paid key, so page by number instead; that caps a single filter at 10,000 records,
+    # which is worked around by splitting the filter year by year. Each slice reports its own count, so a slice
+    # that is itself over the cap would be visible rather than silently truncated.
+    PAGE_CAP = 10000
+    slices = [(base, total)]
+    if total > PAGE_CAP:
+        slices = []
+        for yr in range(YEAR_FROM, time.gmtime().tm_year + 2):
+            b = dict(base, filter=f"title_and_abstract.search:{q},publication_year:{yr}")
+            n = page_of({**b, "per_page": 1})["meta"]["count"]
+            print(f"    openalex {yr}: {n}", flush=True)
+            if n > PAGE_CAP:
+                print(f"    openalex: WARNING {yr} has {n} records, above the {PAGE_CAP} paging cap; it will be truncated", flush=True)
+            if n:
+                slices.append((b, n))
+            time.sleep(0.5)
+    rows = []
+    for b, n in slices:
+        for page in range(1, (min(n, PAGE_CAP) + 199) // 200 + 1):
+            d = page_of({**b, "page": page})
+            if not d["results"]:
+                break
+            for w in d["results"]:
+                inv = w.get("abstract_inverted_index") or {}
+                words = sorted(((pos, t) for t, poss in inv.items() for pos in poss))
+                abstract = " ".join(t for _, t in words)
+                doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
+                arx = ""
+                for loc in [w.get("primary_location") or {}]:
+                    u = (loc.get("landing_page_url") or "") + " " + (loc.get("pdf_url") or "")
+                    m = re.search(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})", u)
+                    if m: arx = m.group(1)
+                src = ((w.get("primary_location") or {}).get("source") or {}).get("display_name", "")
+                rows.append({
+                    "record_id": f"doi:{doi}" if doi else (f"arxiv:{arx}" if arx else "openalex:" + w["id"].rsplit("/", 1)[-1]),
+                    "title": clean(w.get("title") or w.get("display_name") or ""),
+                    "authors": "; ".join(clean((a.get("author") or {}).get("display_name", "")) for a in w.get("authorships", [])),
+                    "year": str(w.get("publication_year") or ""), "venue": clean(src), "type": w.get("type", ""),
+                    "doi": doi, "url": f"https://doi.org/{doi}" if doi else (w.get("primary_location") or {}).get("landing_page_url", "") or w["id"],
+                    "abstract": clean(abstract), "arxiv_id": arx, "database": "OpenAlex",
+                })
+            time.sleep(1.0)
     return q, total, rows
 
 
