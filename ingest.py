@@ -4,7 +4,7 @@
     python3 ingest.py --run 2026-11-09_p1_ieee --pillar 1 --database "IEEE Xplore"            # IEEE Xplore CSV exports
     python3 ingest.py --run 2026-11-15_p1 --pillar 1 --database api                           # files written by search.py
 
-Reads  data/raw/<run>_*.csv       one or more export files (IEEE Xplore format, or the normalised format search.py writes)
+Reads  data/raw/<run>_*.csv|.bib  one or more export files (IEEE Xplore CSV, ACM Digital Library BibTeX, or the normalised format search.py writes)
 Writes data/screening/<run>_records.csv   record_id,pillar,database,title,authors,year,venue,type,doi,url,arxiv_id,in_review,duplicate_of,abstract
        data/screening/<run>_blind.csv     only with --blind (protocols v1.0-v1.2; retired by v1.3)
 
@@ -129,9 +129,9 @@ def main():
     ap.add_argument("--seed", type=int, default=20261109)
     a = ap.parse_args()
 
-    files = sorted(glob.glob(str(RAW / f"{a.run}_*.csv")))
+    files = sorted(glob.glob(str(RAW / f"{a.run}_*.csv")) + glob.glob(str(RAW / f"{a.run}_*.bib")))
     if not files:
-        sys.exit(f"no raw files matching data/raw/{a.run}_*.csv")
+        sys.exit(f"no raw files matching data/raw/{a.run}_*.csv or .bib")
     records, seen = [], {}
     for f in files:
         for r in reader_for(f)(f):
