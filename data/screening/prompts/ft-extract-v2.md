@@ -22,8 +22,14 @@ Inclusion criteria (full-text stage). INCLUDE if ALL hold:
       and the paper is about efficiency, deadlock or path quality are E1;
   (d) edge or real-time inference under explicit latency constraints for safety decisions;
   (e) human takeover, handoff, or situation awareness when automation defers to a person.
-- Minimum evaluation (protocol v1.5): at least one quantitative safety metric AND a baseline or ablation;
-  a qualitative demonstration alone is E2.
+- Minimum evaluation (protocol v1.6), judged against what the paper itself claims:
+  * a paper claiming a SAFETY MECHANISM (criterion (a) or (c)) needs at least one quantitative safety metric
+    (collision, violation, hazard or intervention rate) AND a baseline or ablation;
+  * a paper claiming a WORLD MODEL or PREDICTOR (criterion (b)) needs a quantitative predictive-accuracy metric
+    AND a baseline or ablation, since no hazard rate exists for it to report. Such a paper enters the review as
+    method and architecture evidence, not as safety evidence: score RQ5 no higher than 2 and do not credit it
+    with preventing anything.
+  A qualitative demonstration alone is E2 in either case.
 - E1 off-topic if none of (a)-(e) is the subject; E4 wrong level if it is a single-agent, single-input
   guardrail with no multi-agent, sequential, latency or handoff aspect. Multi-agent coordination alone is E1
   unless the mechanism is a safety mechanism (protocol v1.2).
