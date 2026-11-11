@@ -1,0 +1,17 @@
+{
+ "arxiv": {
+  "query": "(all:\"multi-agent\" OR all:\"multiagent\" OR all:\"Dec-POMDP\" OR all:\"decentralized POMDP\" OR all:\"agent swarm\" OR all:\"fleet\") AND (all:\"safety\" OR all:\"hazard\" OR all:\"collision\" OR all:\"emergent\" OR all:\"cascading failure\" OR (all:\"catastrophe\" OR all:\"catastrophic\" OR all:\"catastrophes\")) AND (all:\"warehouse\" OR all:\"logistics\" OR all:\"industrial\" OR all:\"enterprise\" OR (all:\"robot\" OR all:\"robots\" OR all:\"robotic\" OR all:\"robotics\") OR all:\"AMR\" OR (all:\"tool call\" OR all:\"tool calls\" OR all:\"tool calling\" OR all:\"tool-calling\") OR (all:\"LLM agent\" OR all:\"LLM agents\" OR all:\"LLM-agent\")) AND submittedDate:[201501010000 TO 209912312359]",
+  "hits": 2037,
+  "downloaded": 2037
+ },
+ "openalex": {
+  "query": "(\"multi-agent\" OR \"multiagent\" OR \"Dec-POMDP\" OR \"decentralized POMDP\" OR \"agent swarm\" OR \"fleet\") AND (\"safety\" OR \"hazard\" OR \"collision\" OR \"emergent\" OR \"cascading failure\" OR (\"catastrophe\" OR \"catastrophic\" OR \"catastrophes\")) AND (\"warehouse\" OR \"logistics\" OR \"industrial\" OR \"enterprise\" OR (\"robot\" OR \"robots\" OR \"robotic\" OR \"robotics\") OR \"AMR\" OR (\"tool call\" OR \"tool calls\" OR \"tool calling\" OR \"tool-calling\") OR (\"LLM agent\" OR \"LLM agents\" OR \"LLM-agent\"))",
+  "hits": 4365,
+  "downloaded": 4365
+ },
+ "semanticscholar": {
+  "query": "(\"multi-agent\" | \"multiagent\" | \"Dec-POMDP\" | \"decentralized POMDP\" | \"agent swarm\" | \"fleet\") + (\"safety\" | \"hazard\" | \"collision\" | \"emergent\" | \"cascading failure\" | \"catastroph*\") + (\"warehouse\" | \"logistics\" | \"industrial\" | \"enterprise\" | \"robot*\" | \"AMR\" | \"tool call*\" | \"LLM agent*\")",
+  "hits": 2786,
+  "downloaded": 2785
+ }
+}
