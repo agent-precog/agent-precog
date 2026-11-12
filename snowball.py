@@ -139,7 +139,11 @@ def oa_norm(w):
             "abstract": abstract.replace("\n", " ").strip(), "arxiv_id": arx, "database": "OpenAlex (snowball)"}
 
 
-def oa_resolve(items, prov=None, chunk=40):
+def norm_title(t):
+    return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+
+def oa_resolve(items, prov=None, titles=None, chunk=40):
     """Seeds to OpenAlex works. Returns {work_id: work}; referenced_works comes free on each.
 
     items is a list of (kind, id). arXiv preprints are indexed under their registered DOI
@@ -147,20 +151,33 @@ def oa_resolve(items, prov=None, chunk=40):
     Each resolved work carries _provenance, so forward chasing can be restricted to papers that
     are in scope rather than to the foundations they rest on.
     """
-    prov = prov or {}
+    prov, titles = prov or {}, titles or {}
     want = {}
     for kind, v in items:
         d = (v if kind == "doi" else f"10.48550/arxiv.{v}").lower()
         want[d] = prov.get((kind, v), "search")
-    out, keys = {}, list(want)
+    out, keys, unmatched = {}, list(want), []
     for i in range(0, len(keys), chunk):
         part = keys[i:i + chunk]
         d = oa_get({"filter": "doi:" + "|".join(part), "per-page": len(part), "select": SELECT})
         for w in (d or {}).get("results", []):
             doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
-            w["_provenance"] = want.get(doi, "search")
+            if doi in want:
+                w["_provenance"] = want[doi]
+            else:
+                # a seed stored under an arXiv id comes back with its published DOI, so the
+                # identifier lookup misses; fall back to the title before assuming anything
+                t = norm_title(w.get("title") or w.get("display_name"))
+                w["_provenance"] = titles.get(t, "unknown")
+                if w["_provenance"] == "unknown":
+                    unmatched.append((doi or w["id"], (w.get("title") or "")[:60]))
             out[w["id"]] = w
         time.sleep(0.5)
+    if unmatched:
+        print(f"  provenance unresolved for {len(unmatched)} seeds; they are excluded from forward "
+              f"chasing rather than assumed in scope", flush=True)
+        for d, t in unmatched[:5]:
+            print(f"    {d} | {t}", flush=True)
     return out
 
 
@@ -238,6 +255,28 @@ def probe(key):
         print(f"   OK   key works: {len((r or {}).get('data', []))} records")
     except ApiError as e:
         print(f"   {e.code}  throttled even with the key; this is why OpenAlex is primary")
+
+
+def seed_titles():
+    """Normalised title to provenance, so a seed still resolves when its DOI comes back in another form."""
+    out = {}
+    for p in csv.DictReader(open(DATA / "papers.csv", newline="", encoding="utf-8")):
+        out[re.sub(r"[^a-z0-9]+", " ", (p["title"] or "").lower()).strip()] = (
+            "seed" if p.get("included_via") == "seed" else "search")
+    import glob
+    cur = {}
+    for d in csv.DictReader(open(DATA / "decisions.csv", newline="", encoding="utf-8")):
+        cur[(d["record_id"], d["stage"])] = d
+    e3 = {k[0] for k, d in cur.items()
+          if (d["exclusion_code"] == "E3") or (not d["human_decision"] and d["ai_code"] == "E3")}
+    recs = {}
+    for path in glob.glob(str(DATA / "screening" / "*_records.csv")):
+        for r in csv.DictReader(open(path, newline="", encoding="utf-8")):
+            recs.setdefault(r["record_id"], r)
+    for rid in e3:
+        t = re.sub(r"[^a-z0-9]+", " ", (recs.get(rid, {}).get("title") or "").lower()).strip()
+        if t: out.setdefault(t, "e3")
+    return out
 
 
 def seeds():
@@ -343,8 +382,9 @@ def main():
         items = [items[int(i * step)] for i in range(a.limit_seeds)]
     dirs = {"backward": ["references"], "forward": ["citations"], "both": ["references", "citations"]}[a.direction]
 
+    titles = seed_titles()
     print(f"resolving {len(items)} seeds against OpenAlex...", flush=True)
-    works = oa_resolve(items, prov=sd)
+    works = oa_resolve(items, prov=sd, titles=titles)
     print(f"resolved {len(works)} of {len(items)} seeds", flush=True)
     if not works:
         print("nothing resolved; stopping rather than reporting an empty pass as a result")
@@ -375,7 +415,9 @@ def main():
     if "citations" in dirs:
         # the hand-curated foundations are cited by entire fields that are not this review, so
         # they seed the backward pass but not the forward one
-        allowed = {"all": {"seed", "search", "e3"}, "in-scope": {"search", "e3"}, "search-only": {"search"}}[a.forward_from]
+        allowed = {"all": {"seed", "search", "e3", "unknown"},
+                   "in-scope": {"search", "e3"},
+                   "search-only": {"search"}}[a.forward_from]
         wl = sorted(w for w, obj in works.items() if obj.get("_provenance", "search") in allowed)
         skipped = len(works) - len(wl)
         if skipped:
