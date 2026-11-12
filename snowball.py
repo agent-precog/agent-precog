@@ -27,6 +27,13 @@ FIELDS = "title,abstract,year,venue,externalIds,authors.name,publicationTypes"
 MAILTO = "agent-precog@dewar.cloud"
 
 
+class ApiError(Exception):
+    """An HTTP error that carries the server's own explanation, which is the whole point."""
+    def __init__(self, code, body, url):
+        self.code, self.body, self.url = code, body, url
+        super().__init__(f"HTTP {code}: {body[:300] or '(empty body)'}")
+
+
 def get(url, headers=None, retries=5, pause=3.0):
     for attempt in range(retries):
         try:
@@ -34,16 +41,58 @@ def get(url, headers=None, retries=5, pause=3.0):
             with urllib.request.urlopen(req, timeout=90) as r:
                 return json.load(r)
         except urllib.error.HTTPError as e:
+            # the body of a 4xx from Semantic Scholar says what is actually wrong; discarding it
+            # turns a one-minute diagnosis into an hour-long guess
+            try:
+                body = e.read().decode("utf-8", "replace")
+            except Exception:
+                body = ""
             if e.code in (429, 500, 502, 503, 504) and attempt < retries - 1:
                 time.sleep(pause * (attempt + 1)); continue
             if e.code == 404:
                 return None
-            raise
+            raise ApiError(e.code, body, url)
         except Exception:
             if attempt < retries - 1:
                 time.sleep(pause * (attempt + 1)); continue
             raise
     return None
+
+
+def probe(key):
+    """Try the request in several shapes against one known paper and print exactly what each returns.
+
+    Written because a 54-minute run reported 401 failures as a bare 'HTTP Error 400: Bad Request'
+    with no indication of which part of the request the server objected to.
+    """
+    doi = "10.1145/3463952.3464013"            # Safe Multi-Agent Reinforcement Learning via Shielding
+    enc = urllib.parse.quote(f"DOI:{doi}", safe="")
+    full = urllib.parse.quote(FIELDS)
+    variants = [
+        ("base lookup, minimal fields",      f"{S2}/paper/DOI:{doi}?fields=title,year"),
+        ("base lookup, full fields",         f"{S2}/paper/DOI:{doi}?fields={full}"),
+        ("references, no fields param",      f"{S2}/paper/DOI:{doi}/references?limit=3"),
+        ("references, minimal fields",       f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3"),
+        ("references, full fields (current)",f"{S2}/paper/DOI:{doi}/references?fields={full}&limit=3"),
+        ("references, fields unquoted",      f"{S2}/paper/DOI:{doi}/references?fields={FIELDS}&limit=3"),
+        ("references, id percent-encoded",   f"{S2}/paper/{enc}/references?fields=title,year&limit=3"),
+        ("references, offset present",       f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3&offset=0"),
+        ("citations, minimal fields",        f"{S2}/paper/DOI:{doi}/citations?fields=title,year&limit=3"),
+        ("search endpoint (auth sanity)",    f"{S2}/paper/search?query=shielding&limit=1&fields=title"),
+    ]
+    headers = {"User-Agent": f"agent-precog ({MAILTO})"}
+    if key: headers["x-api-key"] = key
+    print(f"probe: key {'present' if key else 'ABSENT'}\n")
+    for label, url in variants:
+        try:
+            r = get(url, headers, retries=1)
+            n = len(r.get("data", [])) if isinstance(r, dict) and "data" in r else ("none" if r is None else "ok")
+            print(f"  OK    {label:36} -> {n if n != 'ok' else 'object'} | {url[:110]}")
+        except ApiError as e:
+            print(f"  FAIL  {label:36} -> {e.code} {e.body[:160]!r}")
+        except Exception as e:
+            print(f"  FAIL  {label:36} -> {type(e).__name__}: {e}")
+        time.sleep(1.0 if key else 3.0)
 
 
 def seeds():
@@ -122,9 +171,12 @@ def main():
     ap.add_argument("--min-year", type=int, default=2015)
     ap.add_argument("--count-only", action="store_true")
     ap.add_argument("--limit-seeds", type=int, default=0)
+    ap.add_argument("--probe", action="store_true", help="try one known paper several ways and print what the API says")
     a = ap.parse_args()
 
     key = os.environ.get("S2_API_KEY", "")
+    if a.probe:
+        probe(key); return
     if not key:
         print("no S2_API_KEY set; the anonymous pool is shared and will usually answer 429", flush=True)
     sd = seeds()
@@ -140,7 +192,12 @@ def main():
             try:
                 recs = chase(kind, value, d, key, a.cap, a.min_year)
             except Exception as e:
-                failed += 1; print(f"  seed {value} {d}: {e}", flush=True); continue
+                failed += 1
+                if failed <= 5 or failed % 50 == 0:
+                    print(f"  seed {value} {d}: {e}", flush=True)
+                elif failed == 6:
+                    print("  (further failures summarised at the end)", flush=True)
+                continue
             per_dir[d] += len(recs)
             for r in recs:
                 found.setdefault(r["record_id"], r)

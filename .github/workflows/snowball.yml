@@ -29,7 +29,7 @@ on:
         description: Earliest publication year to keep
         default: "2015"
       mode:
-        description: count or screen
+        description: probe, count or screen
         default: count
 
 permissions:
@@ -54,7 +54,17 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install boto3 openpyxl
 
+      - name: Probe the API
+        if: env.MODE == 'probe'
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: |
+          set -o pipefail
+          python3 -u snowball.py --probe 2>&1 | tee probe.txt || true
+          { echo "### API probe"; echo '```'; cat probe.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Count what this pass would yield
+        if: env.MODE != 'probe'
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
         run: |
