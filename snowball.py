@@ -139,20 +139,26 @@ def oa_norm(w):
             "abstract": abstract.replace("\n", " ").strip(), "arxiv_id": arx, "database": "OpenAlex (snowball)"}
 
 
-def oa_resolve(items, chunk=40):
+def oa_resolve(items, prov=None, chunk=40):
     """Seeds to OpenAlex works. Returns {work_id: work}; referenced_works comes free on each.
 
-    arXiv preprints are indexed under their registered DOI (10.48550/arXiv.NNNN.NNNNN), so they
-    resolve the same way rather than being skipped, which is what a ten-seed trial caught.
+    items is a list of (kind, id). arXiv preprints are indexed under their registered DOI
+    (10.48550/arXiv.NNNN.NNNNN), so they resolve the same way rather than being skipped.
+    Each resolved work carries _provenance, so forward chasing can be restricted to papers that
+    are in scope rather than to the foundations they rest on.
     """
-    out = {}
-    dois = []
-    for k, v in items:
-        dois.append(v if k == "doi" else f"10.48550/arxiv.{v}")
-    for i in range(0, len(dois), chunk):
-        part = dois[i:i + chunk]
+    prov = prov or {}
+    want = {}
+    for kind, v in items:
+        d = (v if kind == "doi" else f"10.48550/arxiv.{v}").lower()
+        want[d] = prov.get((kind, v), "search")
+    out, keys = {}, list(want)
+    for i in range(0, len(keys), chunk):
+        part = keys[i:i + chunk]
         d = oa_get({"filter": "doi:" + "|".join(part), "per-page": len(part), "select": SELECT})
         for w in (d or {}).get("results", []):
+            doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
+            w["_provenance"] = want.get(doi, "search")
             out[w["id"]] = w
         time.sleep(0.5)
     return out
@@ -235,15 +241,23 @@ def probe(key):
 
 
 def seeds():
-    """Included papers plus E3 surveys held back for snowballing."""
+    """Included papers plus E3 surveys held back for snowballing.
+
+    Returns {(kind, id): provenance}, where provenance is "seed" for the hand-curated foundations,
+    "search" for papers the database searches found, and "e3" for surveys kept for snowballing.
+    Forward chasing is restricted by provenance: the foundations are cited by entire fields that
+    are not this review, so their reference lists are useful while the literature citing them is
+    overwhelmingly noise.
+    """
     out = {}
     for p in csv.DictReader(open(DATA / "papers.csv", newline="", encoding="utf-8")):
         d = (p.get("doi_or_arxiv") or "").strip().lower()
+        prov = "seed" if p.get("included_via") == "seed" else "search"
         if d and not d.startswith("10."):
             # papers.csv writes these as "arXiv:2401.00001"; store the bare id
-            out.setdefault(("arxiv", d.split(":", 1)[-1].strip()), p["title"])
+            out.setdefault(("arxiv", d.split(":", 1)[-1].strip()), prov)
         elif d:
-            out.setdefault(("doi", d), p["title"])
+            out.setdefault(("doi", d), prov)
     cur = {}
     for d in csv.DictReader(open(DATA / "decisions.csv", newline="", encoding="utf-8")):
         cur[(d["record_id"], d["stage"])] = d
@@ -251,7 +265,7 @@ def seeds():
           if (d["exclusion_code"] == "E3") or (not d["human_decision"] and d["ai_code"] == "E3")}
     for rid in e3:
         if rid.startswith("doi:"):
-            out.setdefault(("doi", rid[4:].lower()), "")
+            out.setdefault(("doi", rid[4:].lower()), "e3")
     return out
 
 
@@ -309,6 +323,8 @@ def main():
     ap.add_argument("--min-year", type=int, default=2015)
     ap.add_argument("--count-only", action="store_true")
     ap.add_argument("--limit-seeds", type=int, default=0)
+    ap.add_argument("--forward-from", default="in-scope", choices=["in-scope", "all"],
+                    help="in-scope chases citations only from papers the searches found and E3 surveys, not the foundations")
     ap.add_argument("--probe", action="store_true", help="try one known paper several ways and print what the API says")
     a = ap.parse_args()
 
@@ -326,7 +342,7 @@ def main():
     dirs = {"backward": ["references"], "forward": ["citations"], "both": ["references", "citations"]}[a.direction]
 
     print(f"resolving {len(items)} seeds against OpenAlex...", flush=True)
-    works = oa_resolve(items)
+    works = oa_resolve(items, prov=sd)
     print(f"resolved {len(works)} of {len(items)} seeds", flush=True)
     if not works:
         print("nothing resolved; stopping rather than reporting an empty pass as a result")
@@ -354,7 +370,13 @@ def main():
                 print(f"  backward {min(i + 40, len(refs))}/{len(refs)}; {len(found)} unique so far", flush=True)
 
     if "citations" in dirs:
-        wl = sorted(works)
+        # the hand-curated foundations are cited by entire fields that are not this review, so
+        # they seed the backward pass but not the forward one
+        wl = sorted(w for w, obj in works.items()
+                    if a.forward_from == "all" or obj.get("_provenance") != "seed")
+        skipped = len(works) - len(wl)
+        if skipped:
+            print(f"forward: {len(wl)} seeds ({skipped} foundational seed-list papers excluded)", flush=True)
         for i, wid in enumerate(wl, 1):
             try:
                 recs = oa_citing(wid, a.min_year, a.cap)

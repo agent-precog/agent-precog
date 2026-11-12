@@ -25,6 +25,9 @@ on:
       cap:
         description: Max records per seed per direction, 0 for no cap
         default: "0"
+      forward_from:
+        description: in-scope (skip the foundational seed papers) or all
+        default: in-scope
       min_year:
         description: Earliest publication year to keep
         default: "2015"
@@ -45,6 +48,7 @@ env:
   PILLAR: ${{ github.event.inputs.pillar || '1' }}
   DIRECTION: ${{ github.event.inputs.direction || 'both' }}
   CAP: ${{ github.event.inputs.cap || '0' }}
+  FORWARD_FROM: ${{ github.event.inputs.forward_from || 'in-scope' }}
   MIN_YEAR: ${{ github.event.inputs.min_year || '2015' }}
   LIMIT_SEEDS: ${{ github.event.inputs.limit_seeds || '0' }}
   MODE: ${{ github.event.inputs.mode || 'count' }}
@@ -78,7 +82,7 @@ jobs:
           rc=0
           # tee so progress streams into the live log; PIPESTATUS keeps python's exit code, which a
           # bare pipe would otherwise hide behind tee's own success
-          python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
+          python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" --forward-from "$FORWARD_FROM" \
             --min-year "$MIN_YEAR" --limit-seeds "$LIMIT_SEEDS" --count-only 2>&1 | tee counts.txt || true
           rc=${PIPESTATUS[0]}
           { echo "### Snowball counts (pillar $PILLAR, $DIRECTION)"; echo '```'; tail -40 counts.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
@@ -94,7 +98,7 @@ jobs:
           set -o pipefail
           rc=0
           echo "RUN_ID=$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" >> "$GITHUB_ENV"
-          python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
+          python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" --forward-from "$FORWARD_FROM" \
             --min-year "$MIN_YEAR" --limit-seeds "$LIMIT_SEEDS" --run "$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" 2>&1 | tee fetch.txt || true
           rc=${PIPESTATUS[0]}
           { echo "### Fetch"; echo '```'; tail -40 fetch.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
