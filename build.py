@@ -109,10 +109,14 @@ def prisma(papers, search_log, decisions):
     decisions = latest_decisions(decisions)   # current decision per record and stage, for the counts
     identified_db = sum(int(r["hits"] or 0) for r in search_log)
     other = sum(1 for p in papers if p["included_via"] != "search")
-    dedup = sum(1 for d in decisions if d["exclusion_code"] == "E5")
-    for p in sorted(glob.glob(str(DATA / "screening" / "*_records.csv"))):  # cross-run duplicates removed before screening
-        dedup += sum(1 for r in read_csv(Path(p)) if r.get("duplicate_of"))
-    screened = max(identified_db - dedup, 0)
+    # Records screened is counted from the records themselves, not by subtracting known duplicates
+    # from the hit total. A run that queries several databases collapses heavily before ingest -
+    # the three API searches returned 9,187 rows and 5,910 distinct records - and that collapse is
+    # a duplicate removal too. Deriving it the other way silently overstated screening by 3,277.
+    screened = 0
+    for p in sorted(glob.glob(str(DATA / "screening" / "*_records.csv"))):
+        screened += sum(1 for r in read_csv(Path(p)) if not r.get("duplicate_of"))
+    dedup = max(identified_db - screened, 0)
     def ta_code(d):
         # protocol v1.3: the maintainer's decision governs; an AI exclusion with no human decision stands
         if d["human_decision"] == "exclude":

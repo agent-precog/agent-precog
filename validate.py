@@ -104,6 +104,32 @@ def check_decisions(ps):
     return ds
 
 
+def check_coverage():
+    """Every record that went to screening should carry a decision, and none should be unlabelled.
+
+    A living-search run left 48 records with no decision row and 50 labelled 'unlabelled' after the
+    model failed on them. Both are invisible in the PRISMA totals, which count records rather than
+    decisions, so the flow can look complete while records have quietly fallen out of it.
+    """
+    import glob
+    screened = set()
+    for path in glob.glob(str(DATA / "screening" / "*_records.csv")):
+        for r in csv.DictReader(open(path, newline="", encoding="utf-8")):
+            if not r.get("duplicate_of"):
+                screened.add(r["record_id"])
+    decided, unlabelled = set(), []
+    for d in rows("decisions.csv"):
+        if d["stage"] in ("title_abstract", "title_abstract_2"):
+            decided.add(d["record_id"])
+            if d["ai_label"] == "unlabelled" and not d["human_decision"]:
+                unlabelled.append(d["record_id"])
+    missing = screened - decided
+    if missing:
+        warn(f"{len(missing)} screened records have no title/abstract decision: {sorted(missing)[:5]}")
+    if unlabelled:
+        warn(f"{len(unlabelled)} records are labelled 'unlabelled' with no maintainer decision: {sorted(set(unlabelled))[:5]}")
+
+
 def check_log():
     for r in rows("search_log.csv"):
         for col in ("run_date", "pillar", "database", "query", "hits"):
@@ -126,6 +152,7 @@ def main():
     ps = check_papers()
     ds = check_decisions(ps)
     check_log()
+    check_coverage()
     check_typography(ps, ds)
     print(f"{len(ps)} papers, {len(ds)} decision rows")
     for w in warnings: print("WARN ", w)
