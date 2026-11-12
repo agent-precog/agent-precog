@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """AI title/abstract labelling with a versioned prompt (protocol v1.3 onward).
 
-    python3 label.py --run 2026-11-15_p1 --prompt ta-screen-v2 [--model eu.anthropic.claude-haiku-4-5-20251001-v1:0]
+    python3 label.py --run 2026-11-15_p1 --prompt ta-screen-v4 [--model eu.anthropic.claude-haiku-4-5-20251001-v1:0]
 
 Reads  data/screening/<run>_records.csv          (skips rows with duplicate_of set)
        data/screening/prompts/<prompt>.md         the exact prompt text, which is the system message
@@ -46,7 +46,7 @@ def parse(reply, ids):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", required=True)
-    ap.add_argument("--prompt", default="ta-screen-v2")
+    ap.add_argument("--prompt", default="ta-screen-v4")
     ap.add_argument("--model", default=os.environ.get("MODEL_ID", "eu.anthropic.claude-haiku-4-5-20251001-v1:0"))
     ap.add_argument("--region", default=os.environ.get("AWS_REGION", "eu-west-2"))
     ap.add_argument("--batch", type=int, default=25)

@@ -96,7 +96,7 @@ jobs:
         run: |
           set -o pipefail
           rc=0
-          python3 -u label.py --run "$RUN_ID" --prompt ta-screen-v2 2>&1 | tee label_full.txt || true
+          python3 -u label.py --run "$RUN_ID" --prompt ta-screen-v4 2>&1 | tee label_full.txt || true
           rc=${PIPESTATUS[0]}
           tail -20 label_full.txt > label.txt
           { echo "### Labelling"; echo '```'; cat label.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
