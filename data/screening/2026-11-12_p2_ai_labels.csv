@@ -1,0 +1,819 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+doi:10.1145/3856815,exclude,E1,NL-FOL conversion and neuro-symbolic reasoning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.65109/ivnk5836,exclude,E1,"Offline MARL with world models for policy learning; no runtime safety interception, deferral, or multi-agent hazard detection primacy.",ta-screen-v2,2026-11-12
+doi:10.65109/ixmj8234,exclude,E1,"Model-based MARL with joint embeddings; coordination focus, not runtime safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1145/3748636.3760462,exclude,E1,"Vision-language navigation with cognitive modules; no runtime safety interception, deferral, or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+acm:3635637.3663049,exclude,E1,Latent-variable world model for MARL sample efficiency; no runtime safety interception or multi-agent hazard detection primacy.,ta-screen-v2,2026-11-12
+acm:3635637.3662876,exclude,E1,"Model-based MARL with counterfactual imagination; credit assignment focus, not runtime safety interception or hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1145/3767308.3834987,exclude,E1,Multi-view world model for interactive video generation; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3737904.3768530,exclude,E1,"LLM grounding for sensor scheduling; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1145/3788149.3788171,exclude,E1,LLM selection framework via multi-agent reasoning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3711896.3736837,exclude,E1,"Graph ODE for fluid dynamics modeling; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1145/3533271.3561753,exclude,E1,Market simulator world model; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3637528.3671791,exclude,E1,GNN architecture for heterophilic graphs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+acm:3535850.3535894,exclude,E1,"Model-based MARL with communication; coordination focus, not runtime safety interception or hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1145/3534678.3539301,exclude,E1,Brain dynamics representation learning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3844212.3844246,include,,Hierarchical belief modeling for opponent adaptation under partial observability; world model and multi-agent interaction inference.,ta-screen-v2,2026-11-12
+doi:10.1145/3799825.3818755,include,,Digital twin with multi-agent observatory for structural anomaly detection and decision support; world model and hazard identification.,ta-screen-v2,2026-11-12
+doi:10.1145/3764920.3771694,exclude,E1,Distance-based spatial reasoning for LLMs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3767308.3835995,exclude,E1,4D scene graph memory for egocentric video QA; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3711896.3737185,exclude,E1,Job matching recommendation system; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3843220,exclude,E1,Spatial RAG for distance reasoning in LLMs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1177/26339137231222481,exclude,E2,Vision of active inference and shared intelligence; position paper without quantitative safety evaluation or baseline.,ta-screen-v2,2026-11-12
+doi:10.1145/3583691,exclude,E1,Cover time analysis for scale-free graphs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3431920.3439465,exclude,E1,DNN pruning for FPGA acceleration; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/2901378.2901379,exclude,E1,Graph-based data management for 3D simulations; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3600211.3607544,exclude,E1,"Position paper on AI ethics and dispossession; no method, system, or empirical study reported.",ta-screen-v2,2026-11-12
+doi:10.1145/3294052.3319681,exclude,E1,"Probabilistic databases with open-world assumption; no safety interception, world models, hazard detection, latency constraints, or human takeover.",ta-screen-v2,2026-11-12
+doi:10.1145/3022099.3022103,exclude,E1,"Error propagation analysis for space robotics; reliability and fault analysis, not runtime safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1145/2688073.2688110,exclude,E1,"Complex contagions in social networks; diffusion and spreading dynamics, not safety-critical multi-agent systems or runtime interception.",ta-screen-v2,2026-11-12
+arxiv:2611.14419,include,,LLM-generated world models for multi-agent stochastic games; addresses world models and multi-agent reasoning with formal evaluation.,ta-screen-v2,2026-11-12
+arxiv:2611.12755,exclude,E1,"Granger causality and causal structure in dynamical systems; signal analysis and latent dynamics, not safety interception or multi-agent hazards.",ta-screen-v2,2026-11-12
+arxiv:2611.12324,exclude,E1,"World model learning for game mechanics; single-agent environment learning, no multi-agent safety, runtime interception, or latency constraints.",ta-screen-v2,2026-11-12
+arxiv:2611.12014,include,,Multi-agent LLM systems for materials discovery; evaluates agent reasoning and decision-making under uncertainty with quantitative benchmarks.,ta-screen-v2,2026-11-12
+arxiv:2611.11780,exclude,E1,"Low-bit world models for robot planning; model quantization and inference speed, not runtime safety interception or multi-agent hazards.",ta-screen-v2,2026-11-12
+arxiv:2611.11140,exclude,E1,"Surgical video representation learning via latent prediction; single-agent surgical workflow, no multi-agent safety or runtime interception.",ta-screen-v2,2026-11-12
+arxiv:2611.10658,exclude,E1,"Cellular world models for perturbation prediction; biological simulation, not safety-critical multi-agent systems or runtime interception.",ta-screen-v2,2026-11-12
+arxiv:2611.07730,include,,World-model-guided navigation in multi-agent scenes; addresses multi-agent social dynamics and safety-aware planning with human-like behavior evaluation.,ta-screen-v2,2026-11-12
+arxiv:2611.06901,exclude,E1,"Latent world models for visual control; single-agent manipulation, no multi-agent hazards or runtime safety interception.",ta-screen-v2,2026-11-12
+arxiv:2611.06653,exclude,E1,"Action-interface mismatch detection via world models; single-robot diagnostic, not multi-agent safety or runtime interception.",ta-screen-v2,2026-11-12
+arxiv:2611.06093,exclude,E1,"Domain-incremental learning with representation drift; continual learning, not safety interception or multi-agent hazards.",ta-screen-v2,2026-11-12
+arxiv:2611.04571,exclude,E1,"CFD dataset and neural surrogate benchmarking; aerodynamic prediction, not safety interception or multi-agent systems.",ta-screen-v2,2026-11-12
+arxiv:2611.04016,exclude,E1,"Continual spatial world models for embodied agents; single-agent navigation and environment learning, no multi-agent safety.",ta-screen-v2,2026-11-12
+arxiv:2611.02690,exclude,E1,"Human-Oriented World Model framework; conceptual framework for human state estimation, not runtime safety interception or multi-agent hazards.",ta-screen-v2,2026-11-12
+arxiv:2611.01600,include,,Object-centric world models for occluded manipulation planning; addresses planning under partial observability with learned world model rollouts.,ta-screen-v2,2026-11-12
+arxiv:2611.01001,include,,"GURU hierarchical neuro-symbolic multi-agent system; runtime verification, symbolic safety checks, and multi-agent coordination for mission-critical operations.",ta-screen-v2,2026-11-12
+arxiv:2610.40191,exclude,E1,"Agentic video generation and world modeling; video synthesis and agent harness, not runtime safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2610.39576,include,,"Bayesian offline multi-agent RL with latent world models; addresses multi-agent decision-making, world model reliability, and policy performance under partial observability.",ta-screen-v2,2026-11-12
+arxiv:2610.39362,exclude,E1,"Federated hypergraph learning with latent correspondence; distributed graph learning, not safety interception or multi-agent hazards.",ta-screen-v2,2026-11-12
+arxiv:2610.38903,exclude,E1,"Structural-test geometry for partially observable world models; single-agent planning and latent geometry, no multi-agent safety.",ta-screen-v2,2026-11-12
+arxiv:2610.34564,exclude,E1,"Population-scale multi-agent video world models; video generation and latent diffusion, not runtime safety interception or hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2610.31983,exclude,E1,"Physics interpretability in video encoders; relational physics probing, not safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2610.31194,exclude,E1,"World model prediction task; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2610.29408,exclude,E1,"Multi-agent video prediction; no runtime safety interception, deferral, or hazard detection mechanism.",ta-screen-v2,2026-11-12
+arxiv:2610.29088,exclude,E1,Causal world models for parameter shifts; prediction task without safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2610.29061,exclude,E1,"Video segmentation using masked prediction; no safety interception, deferral, or multi-agent aspect.",ta-screen-v2,2026-11-12
+arxiv:2610.28555,exclude,E1,"Sample-efficient prediction via learned connectivity; no runtime safety, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2610.28458,exclude,E1,"Self-supervised learning framework; no runtime safety interception, deferral, or multi-agent safety evaluation.",ta-screen-v2,2026-11-12
+arxiv:2610.27921,exclude,E1,Quantum world models for latent actions; prediction task without runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2610.25764,exclude,E1,"Action-conditioned time-series prediction; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1021/acs.jcim.6c00828,exclude,E1,"Molecular graph representation learning; no runtime safety, deferral, or multi-agent aspect.",ta-screen-v2,2026-11-12
+arxiv:2610.25013,exclude,E1,Latent world model planning via manifold distance; prediction task without runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2610.23396,exclude,E1,"Robot manipulation with world model; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2610.22708,exclude,E1,Text-based world model benchmark; prediction task without runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2610.22450,exclude,E1,3D world modeling for autonomous driving; prediction and planning without explicit runtime safety interception mechanism.,ta-screen-v2,2026-11-12
+arxiv:2610.21319,include,,Multi-agent RL with cost prediction in world model; constrained policy learning suggests safety-relevant cost management.,ta-screen-v2,2026-11-12
+arxiv:2610.21095,exclude,E1,World and action modeling reciprocal benefits; prediction and policy learning without runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2610.19955,exclude,E1,Neurosymbolic world models with temporal logic; planning without runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2610.19411,exclude,E1,"Wearable activity recognition via self-supervised learning; no runtime safety, deferral, or multi-agent aspect.",ta-screen-v2,2026-11-12
+arxiv:2610.19364,exclude,E1,Dynamic graph world modeling; prediction task without runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2610.18447,exclude,E1,Multimodal world model for embodied AI; prediction and action generation without runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2610.18082,exclude,E1,Long-horizon agent failure recovery via world model; no explicit runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2610.16763,exclude,E1,Relational world modeling for database systems; prediction without runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2610.16450,exclude,E1,Language world models in multi-agent game; forecasting and belief inference without runtime safety interception mechanism.,ta-screen-v2,2026-11-12
+arxiv:2610.14191,exclude,E1,Tissue deformation forecasting for surgery; prediction task without runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2610.13194,exclude,E1,Long-horizon autonomous research with world models; planning without runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2610.12349,exclude,E1,"Latent world model decomposition; prediction task without runtime safety interception, deferral, or multi-agent hazard focus.",ta-screen-v2,2026-11-12
+arxiv:2610.12299,exclude,E1,"Multi-agent world model for egocentric prediction; no runtime safety interception, deferral, or hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2610.10850,exclude,E1,"Clinical EEG latent dynamics; no safety interception, multi-agent hazard, or deferral mechanism.",ta-screen-v2,2026-11-12
+arxiv:2610.08780,exclude,E1,Robot manipulation world model; no runtime safety interception or multi-agent safety property.,ta-screen-v2,2026-11-12
+arxiv:2610.08033,exclude,E1,MOBA game world model and policy; no runtime safety interception or multi-agent collision/cascade detection.,ta-screen-v2,2026-11-12
+arxiv:2610.07704,exclude,E1,Decentralized MARL with world models; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2610.05996,exclude,E1,Latent world model for exploration planning; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2610.05731,exclude,E1,Remote sensing temporal representation learning; no safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2610.07028,exclude,E1,Identifiable world models from diffusion; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2610.05409,exclude,E1,Structured latent world model for time-series forecasting; no runtime safety interception.,ta-screen-v2,2026-11-12
+arxiv:2610.10571,exclude,E1,EEG foundation model with latent prediction; no safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2610.04940,exclude,E1,Software world model for code change impact; no runtime safety interception of autonomous agents.,ta-screen-v2,2026-11-12
+arxiv:2610.04607,exclude,E1,Policy-grounded world model for robot manipulation; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2610.04445,exclude,E1,Requirement-change consequence prediction; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2611.00023,exclude,E1,Counterfactual world model for video; no runtime safety interception or multi-agent safety property.,ta-screen-v2,2026-11-12
+arxiv:2610.02691,exclude,E1,Interactive world simulator for robot planning; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2610.01842,exclude,E1,Time-series world model mechanism consistency; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2610.01373,exclude,E1,Commute-time-preserving world models for planning; no runtime safety interception.,ta-screen-v2,2026-11-12
+arxiv:2609.39870,exclude,E1,World-action foundation model for robotics; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2609.38927,exclude,E1,Graph-based object-centric world model; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2609.37378,exclude,E1,Latent world model with intervention training; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2609.36985,exclude,E1,Causal representation learning for world modeling; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2609.36810,exclude,E1,Weather-controllable video world model; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2609.36344,exclude,E1,Deep research agent with rollback; no runtime safety interception of autonomous multi-agent systems.,ta-screen-v2,2026-11-12
+arxiv:2609.36333,exclude,E1,Latent world model planning with geometry preservation; no runtime safety interception.,ta-screen-v2,2026-11-12
+arxiv:2609.35545,exclude,E1,Graph world model for epidemic policy; no runtime safety interception or multi-agent collision/cascade detection.,ta-screen-v2,2026-11-12
+arxiv:2609.34604,exclude,E1,"World models for dynamics prediction; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2609.34159,exclude,E1,Graph world modeling for temporal graph evolution; no runtime safety mechanism or multi-agent safety as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2609.34058,exclude,E1,World model constraint learning on monoid worlds; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.33563,exclude,E1,"Multi-agent RL with world models; no runtime safety interception, deferral, or explicit multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2609.33347,exclude,E1,Experimental science of world model laws; no runtime safety mechanism or multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+arxiv:2609.32928,exclude,E1,Self-supervised representation learning for cardiorespiratory sensing; no runtime safety or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2609.32837,exclude,E1,Robotic ultrasound navigation with scene-graph world models; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.32692,exclude,E1,World generation evaluation for narrative consistency; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2609.32322,exclude,E1,Decision-relevant prediction error for planning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.31893,exclude,E1,World models for cyber defense; no explicit runtime safety interception mechanism or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.31868,exclude,E1,Hierarchical latent planning with sub-goals; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.31281,exclude,E1,Multi-agent world-action model for test-time planning; no runtime safety interception or explicit multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.31167,exclude,E1,"EEG foundation model pretraining; no runtime safety, multi-agent, or latency-constrained safety decision aspect.",ta-screen-v2,2026-11-12
+arxiv:2610.00280,exclude,E1,Physical world models with imposed structure; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.29403,exclude,E1,Predictive latent pretraining for reaction-diffusion equations; no runtime safety or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2609.28670,exclude,E1,Graph world models for evolving topologies; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.24749,exclude,E1,Decision-aligned latent world model for planning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.24626,exclude,E1,Latent world models for autonomous driving; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.24385,exclude,E1,Self-supervised tactile sensor representation learning; no runtime safety or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2609.24352,exclude,E1,In-context world representations in LLMs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.21223,include,,Vision-language robot manipulation safety evaluation across lifecycle stages; addresses runtime safety interception and hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.20530,exclude,E1,Language model architecture with relational attention; no runtime safety or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2609.19315,include,,Graph world models for LLM task planning with verification and repair; addresses runtime safety interception and constraint checking.,ta-screen-v2,2026-11-12
+arxiv:2609.15189,exclude,E1,Latent action dynamics modeling from videos; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.07874,exclude,E1,Intervention-aware latent field for multimodal LLMs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2609.06296,exclude,E1,"Sign language encoder; no safety interception, world models, multi-agent hazard detection, latency constraints, or human takeover.",ta-screen-v2,2026-11-12
+arxiv:2609.04261,exclude,E1,"Molecular graph pretraining; no safety interception, multi-agent systems, or runtime safety mechanisms.",ta-screen-v2,2026-11-12
+arxiv:2608.29937,exclude,E1,Latent world-action model for single-agent robot policy; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2608.26239,exclude,E1,"Long-horizon world model for robot planning; no runtime safety interception, multi-agent hazard detection, or explicit latency constraints.",ta-screen-v2,2026-11-12
+arxiv:2608.24534,include,,Clinical LLM safety alignment via physiological grounding; training-time safety constraint enforcement with quantitative safety metrics.,ta-screen-v2,2026-11-12
+arxiv:2608.22583,exclude,E1,Clinical knowledge graph refinement; no runtime safety interception or multi-agent safety property.,ta-screen-v2,2026-11-12
+arxiv:2608.22294,exclude,E1,Task-conditioned world model for single-agent manipulation planning; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2608.22278,exclude,E1,Vision-based humanoid loco-manipulation via world model distillation; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2608.20735,exclude,E1,Vision-language-action policy for conveyor-belt manipulation; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2608.20516,exclude,E1,"Graph-JEPA representation learning diagnostic; no safety interception, multi-agent systems, or runtime safety mechanisms.",ta-screen-v2,2026-11-12
+arxiv:2608.17739,include,,Physics-informed world model for multi-agent CAV control with offline RL; multi-agent traffic safety with world model supervision.,ta-screen-v2,2026-11-12
+arxiv:2608.16955,include,,Radio world model for multi-agent UAV coverage optimization; multi-agent coordination with JEPA-based world model and negotiation framework.,ta-screen-v2,2026-11-12
+arxiv:2608.15156,exclude,E1,Counterfactual rollout in learned world models; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2608.14952,include,,Cross-modal world model for autonomous driving risk perception; multi-agent hazard detection (occluded road users) with acoustic-visual fusion.,ta-screen-v2,2026-11-12
+arxiv:2608.13456,exclude,E2,Causal world models survey/perspective; no quantitative safety metric or empirical evaluation of safety outcomes.,ta-screen-v2,2026-11-12
+arxiv:2608.21414,include,,Object-centric latent world model for autonomous driving risk identification; multi-agent risk detection with rollout-based object-level safety scoring.,ta-screen-v2,2026-11-12
+arxiv:2608.10915,exclude,E1,"Human-centric agentic AI paradigm; no runtime safety interception, multi-agent hazard detection, or quantitative safety evaluation.",ta-screen-v2,2026-11-12
+arxiv:2608.10449,exclude,E1,Persistent world model for long-horizon service robots; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2609.26118,exclude,E1,Disentangled latent action model for embodied pretraining; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2608.08600,exclude,E1,Population-scalable multi-agent world model; no runtime safety interception or multi-agent safety hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2608.12398,exclude,E1,Hierarchical energy-based multimodal cognition model; no runtime safety interception or multi-agent systems.,ta-screen-v2,2026-11-12
+arxiv:2608.07809,include,,Causal world model with reliability-certified runtime abstention for control; runtime safety interception via certified fallback under parameter shift.,ta-screen-v2,2026-11-12
+arxiv:2608.06257,exclude,E1,Multiplayer world models with shared state; no runtime safety interception or multi-agent safety hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2608.06020,exclude,E1,Economic world models survey/blueprint; no quantitative safety metric or empirical evaluation of safety outcomes.,ta-screen-v2,2026-11-12
+arxiv:2608.05928,exclude,E1,"Graph-structured JEPA for single-cell transcriptomics; no safety interception, multi-agent systems, or runtime safety mechanisms.",ta-screen-v2,2026-11-12
+arxiv:2608.05792,exclude,E1,Survey on agentic AI and ISAC; no runtime safety interception or multi-agent hazard detection as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2608.04381,exclude,E1,"Graph self-supervised learning method; no safety, deferral, world models, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2608.01926,exclude,E1,"Visual goal-reaching world model; no runtime safety interception, deferral, or multi-agent aspects.",ta-screen-v2,2026-11-12
+arxiv:2608.00491,exclude,E1,"Graph representation learning via JEPA; no safety, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2607.27017,exclude,E1,"Latent world model analysis for physics recovery; no runtime safety, deferral, or multi-agent safety.",ta-screen-v2,2026-11-12
+arxiv:2607.26452,exclude,E1,World-state dataset for world models; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.26056,exclude,E1,Intent-to-action JEPA for planning; no runtime safety interception or multi-agent aspects.,ta-screen-v2,2026-11-12
+arxiv:2607.25236,exclude,E1,Code-based world models for planning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.24267,exclude,E1,Visuo-tactile world model for contact prediction; no runtime safety interception or multi-agent aspects.,ta-screen-v2,2026-11-12
+arxiv:2607.23602,exclude,E1,Action selection in world models; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.22430,exclude,E1,Identifiability theory for controlled world models; no runtime safety or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.19809,include,,Multi-agent RL with world models and message learning; addresses multi-agent coordination and latent prediction.,ta-screen-v2,2026-11-12
+arxiv:2607.18887,exclude,E1,Vessel trajectory prediction dataset and framework; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.18412,exclude,E1,"Dynamic graph embedding via JEPA; no safety, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2607.11964,include,,Autonomous driving with latent world model; addresses risk-aware state abstraction and long-horizon decision-making.,ta-screen-v2,2026-11-12
+arxiv:2607.10203,exclude,E1,Adaptive-compute world models for control; no runtime safety interception or multi-agent aspects.,ta-screen-v2,2026-11-12
+arxiv:2607.08894,exclude,E1,LLM agent planning with tree search; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.09798,exclude,E1,JEPA tutorial for 6G networks; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.06925,exclude,E1,Goal-conditioned world model for spatial relations; no runtime safety interception or multi-agent aspects.,ta-screen-v2,2026-11-12
+arxiv:2607.05238,exclude,E1,Stochastic world model with branching; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.04139,exclude,E1,"EEG emotion recognition via self-supervised learning; no safety, deferral, or multi-agent aspects.",ta-screen-v2,2026-11-12
+arxiv:2607.00889,exclude,E1,3D semantic scene graph generation; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2607.00276,exclude,E1,"LLM physics reasoning benchmark; no runtime safety, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2606.31736,exclude,E1,"Remote photoplethysmography via JEPA; no safety, deferral, or multi-agent aspects.",ta-screen-v2,2026-11-12
+arxiv:2606.30568,exclude,E1,World model for unmanned systems sensing and communication; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2606.28712,exclude,E1,World modeling for SLAM and planning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2606.28228,exclude,E1,"Causal representation learning in continuous-time SDEs; no safety interception, deferral, or multi-agent safety.",ta-screen-v2,2026-11-12
+arxiv:2606.28455,exclude,E1,Diagnostic protocol for latent structure in world models; no runtime safety mechanism or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2606.27806,exclude,E1,Language agent planning with hybrid world models; no runtime safety interception or multi-agent safety primacy.,ta-screen-v2,2026-11-12
+arxiv:2606.27780,exclude,E1,Graph world model error analysis for planning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2606.27364,exclude,E1,Physics-based 3D object motion prediction; no runtime safety interception or multi-agent safety aspect.,ta-screen-v2,2026-11-12
+arxiv:2606.27014,exclude,E1,Generalization theory for JEPA world models; no runtime safety mechanism or multi-agent safety focus.,ta-screen-v2,2026-11-12
+doi:10.1016/j.media.2026.104376,exclude,E1,Cardiac motion modeling from MRI; medical application with no safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2606.25368,exclude,E1,Visual anomaly detection via hypergraph normal world; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2606.22430,exclude,E1,LLM causal structure learning; no runtime safety mechanism or multi-agent safety aspect.,ta-screen-v2,2026-11-12
+arxiv:2606.22261,exclude,E1,Abnormality detection in complex systems; no runtime safety interception or multi-agent hazard primacy.,ta-screen-v2,2026-11-12
+arxiv:2606.18688,include,,JEPA world model with dual grounding channels; addresses world model structure and multi-agent behavioral dynamics.,ta-screen-v2,2026-11-12
+arxiv:2606.16721,exclude,E3,"Review roadmap for medical world models; survey/overview of scattered work, not a primary method paper.",ta-screen-v2,2026-11-12
+arxiv:2606.16533,include,,Regret-aware world-action model for embodied control; addresses control-relevant state maintenance and deployment constraints.,ta-screen-v2,2026-11-12
+arxiv:2606.16274,include,,End-to-end autonomous driving with latent world modeling; addresses long-horizon planning and safety-aware trajectory planning.,ta-screen-v2,2026-11-12
+arxiv:2606.14934,exclude,E1,"Separable neural architectures for PDEs; mathematical framework for physical simulation, no safety interception.",ta-screen-v2,2026-11-12
+arxiv:2609.00002,exclude,E1,Textual world models for language agents; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2606.13092,include,,Certified world models with predictability certificates; addresses horizon certification and rollout reliability for planning.,ta-screen-v2,2026-11-12
+arxiv:2606.13053,include,,Event-verified world models for robotic manipulation; addresses predicate-grounded verification and task-progress gating.,ta-screen-v2,2026-11-12
+arxiv:2606.12721,exclude,E1,Theory of mind utility for social reasoning; no runtime safety interception or multi-agent safety mechanism.,ta-screen-v2,2026-11-12
+arxiv:2606.11162,exclude,E1,"Graph neural ODE for physical forecasting; long-term prediction on meshes, no runtime safety or multi-agent hazard.",ta-screen-v2,2026-11-12
+arxiv:2606.07303,exclude,E1,"Bootstrap theory of representational emergence; meta-framework on representation learning, no safety mechanism.",ta-screen-v2,2026-11-12
+arxiv:2606.06373,exclude,E1,"Wireless foundation model via JEPA pretraining; signal processing application, no safety interception or multi-agent aspect.",ta-screen-v2,2026-11-12
+arxiv:2606.04775,include,,Activation steering of video generation via optimal control; addresses closed-loop feedback intervention and safety steering.,ta-screen-v2,2026-11-12
+arxiv:2606.00706,exclude,E1,Cross-modal remote sensing image retrieval; no runtime safety interception or multi-agent safety aspect.,ta-screen-v2,2026-11-12
+arxiv:2605.31361,exclude,E1,"Latent teammate modeling in MARL; no runtime safety interception, shielding, or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+arxiv:2605.29585,exclude,E1,"VLM evaluation framework for physical reasoning; audits language commitments but not safety interception, monitoring, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2605.27734,exclude,E1,"Sample-complexity theory for latent prediction in generative models; no runtime safety, deferral, or multi-agent safety application.",ta-screen-v2,2026-11-12
+arxiv:2605.25063,exclude,E1,"RL for laser deposition scan-order optimization; single-agent manufacturing control, not multi-agent safety or runtime interception.",ta-screen-v2,2026-11-12
+arxiv:2606.00054,exclude,E1,"Survey on vision-language-action learning from human videos; no runtime safety interception, deferral, or multi-agent hazard detection focus.",ta-screen-v2,2026-11-12
+arxiv:2605.17451,include,,Drone-embodied tracking with altitude-aware dual world model; world model for multi-agent (drone-target) interactive 3D state prediction.,ta-screen-v2,2026-11-12
+arxiv:2605.16530,exclude,E1,"Neuro-symbolic world model for cataract surgery simulation; single-agent surgical task, not multi-agent safety or runtime interception.",ta-screen-v2,2026-11-12
+arxiv:2605.15967,exclude,E1,Event-graph world models for counterfactual reasoning; formal framework but no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2605.15733,exclude,E1,"Brain-inspired hierarchical world model for structure abstraction; cognitive science focus, no runtime safety or multi-agent application.",ta-screen-v2,2026-11-12
+arxiv:2605.14851,include,,Multi-agent operational planning with adversarial world model verification; world model predicts platform evolution; multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+arxiv:2605.14398,include,,Multi-agent code-based world simulator with physics constraints and deterministic checks; executable simulation with safety anomaly detection.,ta-screen-v2,2026-11-12
+arxiv:2605.14036,exclude,E1,"Principled reasoning in LLMs via relational recoding; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2605.13013,exclude,E1,"Latent diffusion world model for online MBRL; single-agent RL, no runtime safety interception or multi-agent safety focus.",ta-screen-v2,2026-11-12
+arxiv:2605.12835,exclude,E1,"Framework for causal atlases from literature and models; knowledge organization tool, not runtime safety or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2605.12763,exclude,E1,"Learning geometry near bifurcations in RNNs; theoretical neuroscience, no runtime safety or multi-agent application.",ta-screen-v2,2026-11-12
+arxiv:2605.12090,include,,Survey on World Action Models unifying predictive state modeling with action generation; covers world models and embodied safety-relevant action pipelines.,ta-screen-v2,2026-11-12
+arxiv:2607.20441,exclude,E1,"LLM belief propagation measured via prediction markets; information bias quantification, not runtime safety or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2605.11550,include,,World-Action Interactive Models (WAIMs) for autonomous driving; world prediction and action generation coupled; safety-related trajectory evaluation.,ta-screen-v2,2026-11-12
+arxiv:2605.08954,exclude,E1,"Molecule world model for drug discovery optimization; single-molecule actionability, not multi-agent safety or runtime interception.",ta-screen-v2,2026-11-12
+arxiv:2605.06582,exclude,E1,"Audio tokenization via self-alignment; signal processing, no runtime safety, deferral, or multi-agent application.",ta-screen-v2,2026-11-12
+arxiv:2605.06066,include,,Causal RL benchmark for Magic: The Gathering with SCM and causal credit assignment; multi-agent game with explicit causal structure and policy auditability.,ta-screen-v2,2026-11-12
+arxiv:2605.04899,exclude,E1,"Geometric analysis of LLM token embeddings and world models; theoretical analysis, no runtime safety or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2605.02759,include,,Dynamic SLAM with stochastic GNN world model for pedestrian motion; multi-agent (robot-pedestrian) safety envelope for collision-free navigation.,ta-screen-v2,2026-11-12
+arxiv:2605.01665,exclude,E1,"Filtering for Gauss-Cauchy convolution models; statistical signal processing, no runtime safety or multi-agent application.",ta-screen-v2,2026-11-12
+arxiv:2604.28161,exclude,E1,"Kinematic recurrent state-space model for deformable linear object dynamics; single-agent manipulation, no runtime safety interception or multi-agent hazard.",ta-screen-v2,2026-11-12
+arxiv:2604.27895,exclude,E1,"Survey of graph world models; no runtime safety interception, hazard detection, or evaluation.",ta-screen-v2,2026-11-12
+arxiv:2604.22748,exclude,E1,Taxonomy and survey of world models across domains; no runtime safety mechanism or multi-agent hazard detection as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2604.21871,exclude,E1,"LLM moral reasoning in dilemmas; not about runtime safety interception, multi-agent hazard detection, or deferral mechanisms.",ta-screen-v2,2026-11-12
+arxiv:2604.19683,exclude,E1,Robot policy learning via world models; no runtime safety interception or multi-agent safety as primary outcome.,ta-screen-v2,2026-11-12
+arxiv:2604.18887,exclude,E1,Reduced-order models for legged robot locomotion; stability analysis but no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2604.18564,exclude,E1,"Multi-agent multi-view video world models; no runtime safety interception, hazard detection, or safety evaluation as primary claim.",ta-screen-v2,2026-11-12
+doi:10.1109/tns.2026.3732134,exclude,E1,"Reactor thermal-hydraulic forecasting; industrial control system, not autonomous agent safety or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:2604.06155,exclude,E1,LLM world models and multi-token prediction; no runtime safety mechanism or multi-agent safety focus.,ta-screen-v2,2026-11-12
+arxiv:2603.29090,exclude,E1,Object-centric world model architecture; no runtime safety interception or multi-agent hazard detection as primary outcome.,ta-screen-v2,2026-11-12
+arxiv:2603.25415,exclude,E1,Semantic scene graph generation via navigation; no runtime safety interception or multi-agent safety as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2603.21104,include,,Counterfactual reasoning for safety-critical scenario generation; multi-agent interaction modeling with causal structure for hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2604.03266,exclude,E1,Multi-agent communication and latent property learning; no runtime safety interception or hazard detection as primary focus.,ta-screen-v2,2026-11-12
+arxiv:2603.17808,exclude,E1,Video world models for robot planning; no runtime safety interception or multi-agent safety as primary outcome.,ta-screen-v2,2026-11-12
+arxiv:2603.14087,exclude,E1,"Interpretability of Transformer features; not about runtime safety, multi-agent systems, or safety evaluation.",ta-screen-v2,2026-11-12
+arxiv:2603.00808,exclude,E1,Multi-agent world models via meta-theory of mind; no runtime safety interception or hazard detection as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2603.02263,exclude,E1,Emergent geometric alignment in world models; no runtime safety interception or multi-agent hazard detection focus.,ta-screen-v2,2026-11-12
+arxiv:2603.00466,exclude,E1,Unified video generation with world knowledge; no runtime safety interception or multi-agent safety as primary outcome.,ta-screen-v2,2026-11-12
+arxiv:2602.23285,exclude,E1,"Neural ODE for EEG brain dynamics; neuroscience application, not autonomous agent safety or multi-agent systems.",ta-screen-v2,2026-11-12
+doi:10.1609/icaps.v36i1.42888,exclude,E1,"Generalized planning with learned transition models; no runtime safety interception, multi-agent hazard detection, or human handoff.",ta-screen-v2,2026-11-12
+arxiv:2602.23058,exclude,E1,Geometric world models for visual planning; no runtime safety interception or multi-agent safety as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2602.22631,exclude,E1,Neural network formalization in Lean; verification framework but no runtime safety interception or multi-agent focus.,ta-screen-v2,2026-11-12
+arxiv:2602.22208,exclude,E1,Multiplayer video world model in Minecraft; no runtime safety interception or multi-agent hazard detection as primary outcome.,ta-screen-v2,2026-11-12
+arxiv:2602.20093,exclude,E1,Sequential recommendation with latent reasoning; not about autonomous agent safety or multi-agent systems.,ta-screen-v2,2026-11-12
+arxiv:2602.15384,include,,Web agent with world model and action correction; consequence simulation and risk-aware action refinement for safety.,ta-screen-v2,2026-11-12
+arxiv:2602.12643,exclude,E1,Reinforcement learning with latent dynamics; no runtime safety interception or multi-agent safety as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2602.11389,exclude,E1,Object-centric world model for visual reasoning and planning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2602.07413,exclude,E1,"Dexterous manipulation skill model with replanning; no runtime safety interception, multi-agent aspect, or explicit safety evaluation.",ta-screen-v2,2026-11-12
+arxiv:2602.07277,exclude,E1,Cross-view world model for navigation planning; no runtime safety interception or multi-agent safety primacy.,ta-screen-v2,2026-11-12
+arxiv:2602.05638,exclude,E1,"Surgical video foundation model; no runtime safety interception, multi-agent systems, or safety-critical evaluation.",ta-screen-v2,2026-11-12
+arxiv:2602.04821,include,,"Urban traffic control with uncertainty-aware safe RL, Lyapunov stability certificates, and anomaly detection for corrective actions.",ta-screen-v2,2026-11-12
+arxiv:2602.07050,exclude,E1,Interpretability study of physics in video world models; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2602.03490,exclude,E1,Predictive sequence network for path integration; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2602.02381,exclude,E1,Self-supervised learning method for representation; no runtime safety interception or multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+arxiv:2603.29585,exclude,E1,Origami folding with world model planning; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2601.15891,exclude,E1,Radiology image encoder via predictive pretraining; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2601.15344,exclude,E1,fMRI neurocircuit decomposition method; no runtime safety interception or multi-agent systems.,ta-screen-v2,2026-11-12
+arxiv:2602.00039,exclude,E1,"Survey of dimensionality reduction in dynamical networks; no runtime safety interception, multi-agent hazard detection, or deferral mechanism.",ta-screen-v2,2026-11-12
+doi:10.1016/j.jcp.2026.115150,exclude,E1,Model order reduction for PDEs; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-13612-1_42,exclude,E1,Object-centric RL with MCTS planning; no explicit runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2601.04035,exclude,E1,GUI agent with world model lookahead; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2601.01705,exclude,E2,Human-robot collaboration with explicit world model; no quantitative safety metric or ablation shown in abstract.,ta-screen-v2,2026-11-12
+arxiv:2601.01321,exclude,E1,Digital twin framework survey; no runtime safety interception or multi-agent safety as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2512.20732,exclude,E1,LLM benchmark for finite element code generation; no runtime safety interception or multi-agent systems.,ta-screen-v2,2026-11-12
+arxiv:2512.12091,include,,Graph-based world model for real-time scheduling with uncertainty; multi-agent RL with thermal safety constraints and risk-aware decisions.,ta-screen-v2,2026-11-12
+arxiv:2511.14262,exclude,E1,Object-centric world model for RL; no runtime safety interception or multi-agent hazard detection primacy.,ta-screen-v2,2026-11-12
+arxiv:2511.13782,exclude,E1,Spatial reasoning benchmark for VLMs; no runtime safety interception or multi-agent systems.,ta-screen-v2,2026-11-12
+arxiv:2511.10400,exclude,E1,Byzantine fault tolerance in LLM-based multi-agent systems; no runtime safety interception or hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2511.05972,include,,Decentralized world models for satellite-terrestrial networks with uncertainty-aware offloading and multi-agent coordination under interference constraints.,ta-screen-v2,2026-11-12
+arxiv:2511.02877,exclude,E1,Chaotic time series prediction with reservoir computing; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2511.01177,exclude,E1,Cross-embodiment world model for dexterous manipulation; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+arxiv:2511.00549,exclude,E1,Single-agent TSC with centralized control; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2510.22204,include,,Neuro-symbolic world model with runtime safety reasoning for UAV landing; addresses (b) and (e).,ta-screen-v2,2026-11-12
+arxiv:2510.19270,exclude,E1,Mechanism design and policy learning; no runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2510.12088,exclude,E1,"Symbolic world modeling in stochastic environments; no safety interception, hazard detection, or latency constraints.",ta-screen-v2,2026-11-12
+arxiv:2510.01502,exclude,E1,Video foundation model alignment with human social perception; no safety or multi-agent aspects.,ta-screen-v2,2026-11-12
+arxiv:2509.23488,exclude,E1,"LLM benchmark analysis; no safety, world models, or multi-agent systems.",ta-screen-v2,2026-11-12
+arxiv:2509.12387,include,,Causal world models for few-shot learning; addresses (b) causal structure and multi-agent reasoning.,ta-screen-v2,2026-11-12
+arxiv:2509.12249,exclude,E1,"JEPA representation learning theory; no safety interception, hazard detection, or latency constraints.",ta-screen-v2,2026-11-12
+arxiv:2508.12087,include,,Multi-agent path finding with world model; addresses (b) and (c) collision avoidance as primary outcome.,ta-screen-v2,2026-11-12
+arxiv:2508.08248,exclude,E1,"Audio-driven avatar video generation; no safety, multi-agent, or autonomous system aspects.",ta-screen-v2,2026-11-12
+arxiv:2508.06990,exclude,E1,Semantic navigation with scene graphs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2508.02912,include,,Multi-agent coordination with embodied world models; addresses (b) and (c) multi-agent planning.,ta-screen-v2,2026-11-12
+arxiv:2508.00159,exclude,E2,Human empowerment objective; no quantitative safety metric or empirical evaluation in abstract.,ta-screen-v2,2026-11-12
+arxiv:2507.13920,include,,Dynamic causal graphs for world modeling; addresses (b) multi-agent interaction discovery.,ta-screen-v2,2026-11-12
+arxiv:2507.10871,exclude,E1,"Neural transport simulation surrogate; no safety, multi-agent, or autonomous system aspects.",ta-screen-v2,2026-11-12
+arxiv:2507.10539,include,,Graph world model for multi-modal tasks including multi-agent; addresses (b) structured world modeling.,ta-screen-v2,2026-11-12
+arxiv:2507.07982,exclude,E1,"Video diffusion with 3D geometry; no safety interception, hazard detection, or multi-agent aspects.",ta-screen-v2,2026-11-12
+arxiv:2506.23126,exclude,E1,Robotic manipulation world model; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2506.18537,include,,Multi-agent transformer world model for MARL; addresses (b) and (c) multi-agent coordination.,ta-screen-v2,2026-11-12
+arxiv:2506.18194,exclude,E1,Self-supervised pretraining on polymer graphs; no safety or multi-agent autonomous system aspects.,ta-screen-v2,2026-11-12
+arxiv:2506.08149,include,,Communicative world models for autonomous driving MARL; addresses (b) and (c) multi-agent coordination.,ta-screen-v2,2026-11-12
+arxiv:2506.06597,exclude,E1,"Side-channel attack defense on TPUs; no safety interception, world models, or multi-agent aspects.",ta-screen-v2,2026-11-12
+arxiv:2506.00417,include,,World models for cognitive agents and wireless networks; addresses (b) and potential (a) edge inference.,ta-screen-v2,2026-11-12
+arxiv:2505.17685,include,,Visual world model for autonomous driving with trajectory planning; addresses (b) and (d) latency-aware planning.,ta-screen-v2,2026-11-12
+arxiv:2505.14396,include,,Causal world models for counterfactual reasoning; addresses (b) causal structure in multi-agent contexts.,ta-screen-v2,2026-11-12
+arxiv:2505.03176,exclude,E1,"World model for SSL; no runtime safety interception, multi-agent hazard detection, or deferral mechanism.",ta-screen-v2,2026-11-12
+arxiv:2504.21275,exclude,E1,"Network time series model for trade flows; no safety interception, multi-agent hazard, or deferral aspect.",ta-screen-v2,2026-11-12
+arxiv:2504.15785,exclude,E1,LLM world model for planning; no runtime safety interception or multi-agent safety as primary claim.,ta-screen-v2,2026-11-12
+arxiv:2504.10157,exclude,E1,"Social simulation with LLM agents; no safety interception, hazard detection, or deferral mechanism.",ta-screen-v2,2026-11-12
+arxiv:2504.04608,include,,Decentralized multi-agent world model with communication; addresses multi-agent coordination and emergent safety.,ta-screen-v2,2026-11-12
+doi:10.1109/icdl63968.2025.11204457,include,,World models for multi-agent coordination via emergent communication; addresses (b).,ta-screen-v2,2026-11-12
+arxiv:2503.19316,exclude,E1,Social opinion dynamics on Twitter; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2502.11663,exclude,E1,Autonomous driving world model; no runtime safety interception or multi-agent collision detection.,ta-screen-v2,2026-11-12
+arxiv:2502.10012,exclude,E1,Differentiable simulators for policy learning; no runtime safety interception or deferral mechanism.,ta-screen-v2,2026-11-12
+arxiv:2502.09297,exclude,E1,"Theoretical analysis of world model learning; no runtime safety, deferral, or multi-agent hazard aspect.",ta-screen-v2,2026-11-12
+arxiv:2502.04249,include,,Free energy risk metrics with gatekeepers intervening in multi-agent AV fleet; runtime safety interception.,ta-screen-v2,2026-11-12
+arxiv:2502.00708,exclude,E1,3D scene generation with physics; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2502.01684,exclude,E1,"Graph SSL framework; no safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1109/tiv.2024.3408830.,unlabelled,,model returned no usable line,ta-screen-v2,2026-11-12
+arxiv:2501.07108,exclude,E1,"LLM representation learning analysis; no runtime safety, deferral, or multi-agent hazard aspect.",ta-screen-v2,2026-11-12
+arxiv:2412.05333,exclude,E1,"Jet physics SSL; no safety interception, deferral, or multi-agent aspect.",ta-screen-v2,2026-11-12
+arxiv:2411.06890,exclude,E1,Sparse transformer world model; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2410.20922,exclude,E1,General-purpose world modelling framework; no runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2410.10738,exclude,E1,Driving world model dataset; no runtime safety interception or multi-agent collision detection.,ta-screen-v2,2026-11-12
+arxiv:2410.10394,exclude,E1,Robotic manipulation world model; no runtime safety interception or multi-agent hazard aspect.,ta-screen-v2,2026-11-12
+doi:10.18653/v1/2025.findings-emnlp.895,exclude,E1,Scientific agent with knowledge graph; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2410.08822,exclude,E1,Object-centric latent dynamics for RL; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2410.03904,exclude,E1,Audio anomaly detection framework; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2410.03136,exclude,E1,LM reasoning with world model; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2409.15803,exclude,E1,"3D self-supervised representation learning; no safety interception, deferral, or multi-agent aspect.",ta-screen-v2,2026-11-12
+arxiv:2409.03272,exclude,E1,World model for autonomous driving; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2408.02514,exclude,E1,Music stem compatibility; not about autonomous systems or safety.,ta-screen-v2,2026-11-12
+arxiv:2407.16779,exclude,E1,Networked dynamical system modeling; no runtime safety mechanism or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2406.19800,exclude,E1,Robotic dynamics prediction; no runtime safety interception or multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+arxiv:2406.17837,exclude,E1,Transformer normalization theory; not about autonomous systems or safety.,ta-screen-v2,2026-11-12
+arxiv:2406.14415,include,,Multi-agent motion forecasting with world model; addresses (b) world models over multi-agent state.,ta-screen-v2,2026-11-12
+arxiv:2406.10714,include,,Adaptive world models for autonomous driving planning; addresses (b) world models and multi-agent interactions.,ta-screen-v2,2026-11-12
+arxiv:2405.19334,exclude,E1,Multimodal generation survey; not focused on runtime safety or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+arxiv:2405.18193,exclude,E1,Self-supervised vision learning; no runtime safety or multi-agent safety aspect.,ta-screen-v2,2026-11-12
+arxiv:2405.17995,exclude,E1,Vision representation learning; not about autonomous systems or safety.,ta-screen-v2,2026-11-12
+arxiv:2405.10093,exclude,E1,Time-series forecasting; no autonomous system or safety context.,ta-screen-v2,2026-11-12
+arxiv:2404.16078,include,,Hierarchical world models for reasoning; addresses (b) world models with temporal abstractions.,ta-screen-v2,2026-11-12
+arxiv:2403.09631,include,,3D vision-language-action world model for embodied agents; addresses (b) world models and action prediction.,ta-screen-v2,2026-11-12
+arxiv:2403.06432,exclude,E1,Brain functional connectivity learning; not about autonomous systems or safety.,ta-screen-v2,2026-11-12
+arxiv:2402.09234,exclude,E1,Crash simulation surrogate modeling; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2402.06046,exclude,E1,"Robotaxi crash analysis; post-hoc investigation, not a method or system paper.",ta-screen-v2,2026-11-12
+arxiv:2402.05290,exclude,E1,World models for policy gradients; no runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2401.11432,exclude,E1,Deformable object manipulation; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+arxiv:2402.03326,include,,Object-centric world models with graph dynamics; addresses (b) world models over multi-agent state.,ta-screen-v2,2026-11-12
+arxiv:2312.05361,exclude,E1,Abstract representations in transformers; no runtime safety or multi-agent safety application.,ta-screen-v2,2026-11-12
+arxiv:2311.14910,exclude,E1,Coupled oscillators synchronization; no autonomous system or safety context.,ta-screen-v2,2026-11-12
+arxiv:2310.17178,include,,Object-centric world model in reinforcement learning; addresses (b) world models for multi-agent environments.,ta-screen-v2,2026-11-12
+arxiv:2310.10237,exclude,E1,Graph out-of-distribution detection; no runtime safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+arxiv:2309.04615,include,,Multi-agent RL with disentangled world model; addresses (b) world models for multi-agent systems.,ta-screen-v2,2026-11-12
+arxiv:2309.00941,exclude,E1,Linear representations in sequence models; no runtime safety or multi-agent safety aspect.,ta-screen-v2,2026-11-12
+doi:10.1109/ssci52147.2023.10371887,include,,World models for anomaly detection in autonomous driving; latent prediction over multi-agent state.,ta-screen-v2,2026-11-12
+arxiv:2308.01399,include,,Multimodal world model predicting future text and image; agent learns from imagined rollouts.,ta-screen-v2,2026-11-12
+arxiv:2305.14369,exclude,E1,"Neural dynamics from fMRI; no autonomous system, safety interception, or multi-agent aspect.",ta-screen-v2,2026-11-12
+doi:10.1109/lra.2023.3291924,exclude,E1,Self-supervised lane prediction; navigation pattern inference without safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+doi:10.1109/tkde.2023.3335240,exclude,E1,"Time series forecasting with latent factors; no autonomous system, safety, or multi-agent context.",ta-screen-v2,2026-11-12
+arxiv:2303.04116,include,,Multi-agent world model for traffic simulation; motion prediction and latent dynamics.,ta-screen-v2,2026-11-12
+arxiv:2303.01212,exclude,E3,"Survey of grid-centric perception and occupancy networks; review article, not primary research.",ta-screen-v2,2026-11-12
+arxiv:2301.05832,exclude,E3,Survey on world models and predictive coding in robotics; review and position paper.,ta-screen-v2,2026-11-12
+doi:10.1109/ijcnn52387.2021.9533830,exclude,E1,Graph regularized point process for event sequences; no autonomous system or safety aspect.,ta-screen-v2,2026-11-12
+arxiv:2203.02872,exclude,E1,"Epistemic modals in logic; pure philosophy, no autonomous systems or safety.",ta-screen-v2,2026-11-12
+doi:10.1002/bimj.202100381,exclude,E1,Deep learning for biomedical longitudinal data; no autonomous system or safety context.,ta-screen-v2,2026-11-12
+arxiv:2202.06159,exclude,E1,"Neural population decoding for behavior prediction; neuroscience, not autonomous system safety.",ta-screen-v2,2026-11-12
+arxiv:2202.05333,include,,Object-factored world models for robotic manipulation; latent dynamics prediction.,ta-screen-v2,2026-11-12
+arxiv:2110.14853,exclude,E1,"Neural dynamical modeling from primate motor cortex; neuroscience, not autonomous system safety.",ta-screen-v2,2026-11-12
+arxiv:2109.01710,exclude,E1,"Dynamic mode decomposition challenges; signal processing, no autonomous system or safety focus.",ta-screen-v2,2026-11-12
+arxiv:2106.09608,include,,Knowledge graph world models for text-based games; predicts world changes from actions.,ta-screen-v2,2026-11-12
+arxiv:2104.02981,exclude,E1,Model-based RL for recommendation systems; no autonomous agent safety or multi-agent hazard.,ta-screen-v2,2026-11-12
+arxiv:2102.09812,include,,World model for multi-agent racing; latent dynamics and opponent prediction.,ta-screen-v2,2026-11-12
+arxiv:2011.03880,include,,Latent ODE for multi-agent dynamics from partial observations; graph structure learning.,ta-screen-v2,2026-11-12
+arxiv:2010.01899,exclude,E1,Knowledge graph completion via multi-hop reasoning; no autonomous system or safety aspect.,ta-screen-v2,2026-11-12
+arxiv:2007.06533,include,,Spatially structured recurrent modules for multi-agent world modeling; partial observations.,ta-screen-v2,2026-11-12
+arxiv:1910.12469,exclude,E1,"Latent process from event sequences; no autonomous system, safety, or multi-agent hazard.",ta-screen-v2,2026-11-12
+arxiv:1907.03950,exclude,E1,"Neural state machine for visual reasoning; VQA task, no autonomous system or safety.",ta-screen-v2,2026-11-12
+doi:10.1371/journal.pcbi.1007263,exclude,E1,"Nonlinear dynamics from fMRI; neuroscience, no autonomous system or safety aspect.",ta-screen-v2,2026-11-12
+arxiv:1811.09920,exclude,E3,"Unified intelligence-communication model overview; position and framework paper, not empirical study.",ta-screen-v2,2026-11-12
+doi:10.1109/icdm.2017.80,exclude,E1,"Spatio-temporal forecasting of spatial processes; no safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+arxiv:1704.08991,exclude,E1,Multi-agent trajectory prediction; no runtime safety interception or explicit multi-agent hazard detection primacy.,ta-screen-v2,2026-11-12
+doi:10.1016/j.engappai.2017.07.005,exclude,E1,Fuzzy RL policy training on world models; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.1109/idap71869.2026.11728010,exclude,E1,Drug repositioning via biomedical graph learning; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/aetcse69203.2026.11504088,exclude,E1,"Trajectory prediction method; no runtime safety interception, hazard detection, or deferral mechanism.",ta-screen-v2,2026-11-12
+doi:10.1109/icivc70586.2026.11686623,exclude,E1,Tabular self-supervised learning via JEPA; no safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.1109/jiot.2026.3660030,exclude,E1,V2X cooperative perception via self-supervised learning; no runtime safety interception or explicit hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/icivc70586.2026.11686495,exclude,E1,Multi-camera autonomous driving perception; no runtime safety interception or explicit multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/tsg.2025.3578842,exclude,E1,Road-power network foundation model; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/ijcnn69854.2026.11729833,exclude,E1,Self-supervised LP solving via neural networks; no safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.1109/iccc70295.2026.11680482,exclude,E1,Edge orchestration via graph world model; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/icassp48485.2024.10446644,include,,Multi-agent sparse interaction modeling via anomaly detection; addresses multi-agent dynamics and interaction structure learning.,ta-screen-v2,2026-11-12
+doi:10.1109/ijcnn64981.2025.11228644,include,,Model-based multi-agent RL with disentangled world model; addresses multi-agent coordination and latent dynamics.,ta-screen-v2,2026-11-12
+doi:10.1109/globecom46510.2021.9685806,exclude,E1,Link prediction in social networks; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/jsen.2024.3405542,exclude,E1,Vehicle trajectory prediction with sensing failure handling; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/tccn.2026.3717925,include,,World model-based multi-agent RL for LEO satellite task offloading; addresses multi-agent coordination and latent dynamics.,ta-screen-v2,2026-11-12
+doi:10.1109/tnse.2026.3731054,include,,Digital twin and world model for UAV swarm proactive control; addresses multi-agent coordination and predictive safety planning.,ta-screen-v2,2026-11-12
+doi:10.1109/tgcn.2026.3716365,exclude,E1,Graph world model for beamforming resource allocation; no multi-agent hazard detection or safety interception.,ta-screen-v2,2026-11-12
+doi:10.1109/icra46639.2022.9811597,exclude,E1,"Latent graph dynamics for deformable object manipulation; single-agent robotic control, no multi-agent aspect.",ta-screen-v2,2026-11-12
+doi:10.1109/tits.2022.3225322,exclude,E1,"Latent dynamics for deformable object shape control; single-agent robotic task, no multi-agent or safety interception.",ta-screen-v2,2026-11-12
+doi:10.1109/iros55552.2023.10342022,exclude,E1,"Motion retargeting via latent prediction; single-agent human-robot mapping, no multi-agent or safety interception.",ta-screen-v2,2026-11-12
+doi:10.1109/icdl63968.2025.11204356,exclude,E1,"Self-supervised object-centric learning via intrinsic motivation; single-agent robotic exploration, no multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1109/cisat71030.2026.11682053,exclude,E1,"UAV inspection with world model and LLM reasoning; single-agent inspection task, no multi-agent or safety interception.",ta-screen-v2,2026-11-12
+doi:10.1109/vtc2025-spring65109.2025.11174936,include,,Model-based multi-agent RL for wireless port and precoding optimization; addresses multi-agent coordination and latent prediction.,ta-screen-v2,2026-11-12
+doi:10.1109/ojcoms.2026.3684230,exclude,E1,Semantic video communication via latent prediction; no multi-agent hazard detection or safety interception.,ta-screen-v2,2026-11-12
+doi:10.1109/access.2024.3477306,exclude,E1,Active inference for robot control; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/tnse.2026.3752269,include,,World model with distributed RSSM for multi-agent resource allocation; latent prediction over multi-agent state.,ta-screen-v2,2026-11-12
+doi:10.1109/access.2026.3747945,include,,Adversarial attack on AV planner with residual-based defense; runtime safety interception and multi-agent collision hazard.,ta-screen-v2,2026-11-12
+doi:10.1109/lra.2023.3300282,include,,Graph-based world model for active perception; runtime task monitoring and adaptive skill configuration.,ta-screen-v2,2026-11-12
+doi:10.1109/aciiw71585.2026.11712079,exclude,E1,"Dyadic interaction prediction; no runtime safety, multi-agent hazard, or latency-critical safety decision.",ta-screen-v2,2026-11-12
+doi:10.1109/iros60139.2025.11245885,include,,Multi-agent model-based RL with world model; latent prediction over multi-agent state and decentralized execution.,ta-screen-v2,2026-11-12
+doi:10.1109/tase.2025.3643840,exclude,E1,Industrial soft sensing with latent dynamics; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/tccn.2026.3715905,include,,Multi-agent model-based RL for UAV spectrum sharing; world model captures multi-agent dynamics and coordination.,ta-screen-v2,2026-11-12
+doi:10.1109/iceeie47180.2019.8981445,exclude,E1,Object mapping for multi-robot; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/tbme.2026.3738914,exclude,E1,"sEMG gait decoding; no runtime safety, multi-agent, or latency-critical safety decision aspect.",ta-screen-v2,2026-11-12
+doi:10.1109/jiot.2026.3721094,include,,Safe MPC with latent dynamics and edge reasoning; multi-agent crowd-risk detection and safety-violation monitoring.,ta-screen-v2,2026-11-12
+doi:10.1109/lra.2020.3010206,exclude,E1,Disentangled VAE for latent dynamics; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/mcom.001.2600348,include,,World model for unmanned systems coordination; AoI-driven sensing and predictive decision-making for multi-agent safety.,ta-screen-v2,2026-11-12
+doi:10.1109/aero66936.2026.11519895,include,,Multi-robot world model learning with MA-MBRL; multi-agent path planning and task allocation with risk minimization.,ta-screen-v2,2026-11-12
+doi:10.1109/icbase63199.2024.10762181,include,,World model with PPO for cross-domain autonomous vehicle decision-making; environment prediction for unknown scenarios.,ta-screen-v2,2026-11-12
+doi:10.1109/tpami.2026.3735606,exclude,E1,Driving world model for scene understanding and generation; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+doi:10.1109/tip.2026.3730842,exclude,E1,"Video causal state-space model; no runtime safety, multi-agent hazard, or latency-critical safety decision.",ta-screen-v2,2026-11-12
+doi:10.1109/icra55743.2025.11128002,exclude,E1,"Visual MPC for granular media; single-agent manipulation, no multi-agent hazard or runtime safety interception.",ta-screen-v2,2026-11-12
+doi:10.1109/mnet.2026.3738567,include,,World model for UAV-satellite coordination; hierarchical MARL with predictive demand and freshness-aware state management.,ta-screen-v2,2026-11-12
+doi:10.1109/icct-pacific69083.2026.11519043,include,,Scene graph forecasting with latent dynamics; multi-agent node birth/disappearance and relationship prediction.,ta-screen-v2,2026-11-12
+doi:10.1109/access.2026.3684562,exclude,E1,"Visual world model for ophthalmic surgery; single-agent surgical robotics, no multi-agent or runtime safety interception.",ta-screen-v2,2026-11-12
+doi:10.1109/tmm.2025.3543110,include,,Multi-agent self-awareness architecture with world model; interaction modeling and localization in multi-agent scenarios.,ta-screen-v2,2026-11-12
+doi:10.1109/tccn.2026.3727979,include,,World-model-based DRL for multi-agent AAV data collection; POMDP with topology-adaptive graph encoder.,ta-screen-v2,2026-11-12
+doi:10.1109/mnet.2026.3686182,include,,Distributed model-based MARL for multi-cell systems; world model predicts interference and enables predict-then-act safety.,ta-screen-v2,2026-11-12
+doi:10.1109/tpami.2026.3703038,exclude,E3,"Survey on physical AI integrating perception, reasoning, modeling and interaction; review article, not primary research.",ta-screen-v2,2026-11-12
+doi:10.1109/tce.2025.3636054,exclude,E1,Elevator scheduling and biometric recognition; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/dcoss-iot69657.2026.00114,include,,"AUV swarm coordination with physics-informed world model, uncertainty quantification, and safety constraints on SNR floor.",ta-screen-v2,2026-11-12
+doi:10.1109/southeastcon63549.2026.11476408,exclude,E1,"Data platform autonomy; no runtime safety interception, multi-agent hazard, or latency-critical safety decision.",ta-screen-v2,2026-11-12
+doi:10.1109/is57118.2022.10019723,exclude,E2,Smart agriculture modeling; no quantitative safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.1109/saci.2015.7208245,exclude,E1,Social network model realism; off-topic to autonomous systems safety.,ta-screen-v2,2026-11-12
+doi:10.1109/jiot.2026.3734499,exclude,E3,"Survey of multimodal fusion for IIoT; review article, not a method or empirical study.",ta-screen-v2,2026-11-12
+doi:10.1109/icccn69946.2026.11662907,include,,World model for 5G handover optimization; addresses world models and latency-constrained safety decisions.,ta-screen-v2,2026-11-12
+doi:10.1109/tcss.2026.3653579,exclude,E1,Emotional support dialogue; no autonomous system safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+doi:10.23919/nanacps00070.2026.00013,include,,Causal discovery-driven conflict mitigation in O-RAN xApps; addresses world models and runtime safety planning.,ta-screen-v2,2026-11-12
+doi:10.1109/meditcom67211.2026.11641088,exclude,E1,Video semantic communication; no runtime safety interception or multi-agent safety.,ta-screen-v2,2026-11-12
+doi:10.1109/icecet55527.2022.9873044,exclude,E1,Task mapping for MIMD processors; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+doi:10.1109/upinlbs68186.2025.11468427,include,,Embodied AI with verify-replan mechanism; addresses runtime safety interception and deferral.,ta-screen-v2,2026-11-12
+doi:10.1109/iros47612.2022.9981459,exclude,E1,"Multi-agent target tracking; coordination and planning, not runtime safety interception or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+doi:10.1109/isc257844.2023.10293487,exclude,E2,Spatial AI architecture proposal; no quantitative safety metric or empirical evaluation.,ta-screen-v2,2026-11-12
+doi:10.1109/scisisis61014.2024.10760020,exclude,E1,Energy-based time series model; no autonomous system safety or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.1109/tpami.2026.3679426,include,,Vision-language navigation with world model and memory-persistent learning; addresses world models and runtime adaptation.,ta-screen-v2,2026-11-12
+doi:10.1109/humanoids57100.2023.10375143,exclude,E4,Single-robot inverse kinematics with collision avoidance; no multi-agent or sequential safety interception.,ta-screen-v2,2026-11-12
+doi:10.1109/lra.2025.3537899,exclude,E1,Deformable object manipulation planning; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+doi:10.1109/lra.2026.3752312,include,,Autonomous driving with style-aware world model and safety-aware trajectory planning.,ta-screen-v2,2026-11-12
+doi:10.1002/9781394377480.ch12,exclude,E3,"Roadmap of computational experiment method; review/vision chapter, not empirical study.",ta-screen-v2,2026-11-12
+doi:10.1109/cicn67655.2025.11367837,exclude,E1,"MANET black hole attack detection; network security, not autonomous system safety interception.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.17630814,exclude,E1,Polymer molecular graph dataset; no autonomous system or safety aspect.,ta-screen-v2,2026-11-12
+doi:10.20944/preprints202606.1501.v1,exclude,E1,Malware classification via self-supervised learning; no autonomous system safety or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19245327,exclude,E2,LLM agent orchestration framework; proposal and prior-art claim without quantitative safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19484645,exclude,E2,N-body trajectory prediction framework; theoretical prior art without empirical safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22869387,exclude,E1,"World model structure comparison; no runtime safety interception, multi-agent hazard, or deferral mechanism.",ta-screen-v2,2026-11-12
+doi:10.64898/2026.08.03.742606,exclude,E1,"Protein sequence-function prediction; no safety interception, multi-agent systems, or latency-constrained safety decisions.",ta-screen-v2,2026-11-12
+doi:10.1021/acs.jcim.6c01297,exclude,E1,"Olfactory mixture similarity prediction; no safety interception, multi-agent hazard, or runtime monitoring.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23470338,exclude,E6,No abstract provided; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.64898/2026.10.12.758273,exclude,E1,Vascular network simulation evaluation; no runtime safety interception or multi-agent safety hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1609/aaaiss.v8i1.42517,include,,MARL belief representation via world models; predictive auxiliary learning for decentralized agents under partial observability.,ta-screen-v2,2026-11-12
+doi:10.3390/computers15110778,include,,"IIoT intrusion detection with action-conditioned world model, safety-reachability module, and pre-impact attack detection before physical harm.",ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-00800-8_13,exclude,E6,No abstract provided; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.62311/nesx/rp-f12026,include,,Disaster digital twins as world models for cascading infrastructure failure prediction; multi-layer network hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20519070,exclude,E1,Information geometry of JEPA architectures; theoretical framework without empirical safety evaluation or runtime interception.,ta-screen-v2,2026-11-12
+doi:10.54254/2755-2721/2026.36903,include,,Vision-centric world models for embodied robots; predictive state interfaces for planning under contact and partial observation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23676054,exclude,E1,"Wildfire spread prediction via JEPA; no runtime safety interception, multi-agent interaction, or deferral mechanism.",ta-screen-v2,2026-11-12
+doi:10.1145/3318216.3363315,exclude,E1,Edge stream processing DAG placement; latency prediction for IoT but no safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19799073,include,,Formal extensions to structural probe domain and authority-safety theory for JEPA-class latent-space systems; multi-agent containment.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.17755791,include,,Decoder-free JEPA for latent-only world modeling; stability and generalization in abstract prediction for embodied systems.,ta-screen-v2,2026-11-12
+doi:10.17605/osf.io/scu75,exclude,E2,Field-based cognitive architecture for anomaly and counterfactual detection; no quantitative safety metric or empirical evaluation reported.,ta-screen-v2,2026-11-12
+doi:10.1109/ipdps64566.2025.00080,exclude,E1,"GNN latency prediction for stream processing; no safety interception, multi-agent hazard, or deferral mechanism.",ta-screen-v2,2026-11-12
+doi:10.1145/3580305.3599465,exclude,E1,Microservice latency prediction via GNN; no runtime safety interception or multi-agent safety hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21750653,include,,Action-conditioned graph world models with relation-to-memory updates and risk-aware lookahead planning; reproducibility artifact.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20534843,exclude,E3,"PREreview of another paper; review/commentary, not a primary research contribution.",ta-screen-v2,2026-11-12
+doi:10.1007/s11280-026-01441-8,exclude,E6,No abstract provided; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2604.26422,exclude,E1,Microservice tail-latency forecasting via graph transformer; no runtime safety interception or multi-agent safety hazard.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23890649,exclude,E2,"JEPA interventional consistency in causal simulations; pilot results only, full protocol pending, no quantitative safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23690773,include,,"Lookahead World Models framework for predictive simulation, counterfactual planning, and action selection in dynamic environments.",ta-screen-v2,2026-11-12
+doi:10.64898/2026.08.14.744901,exclude,E1,"Protein molecular proximity representation learning; no runtime safety interception, multi-agent systems, or safety hazard detection.",ta-screen-v2,2026-11-12
+doi:10.26153/tsw/63990,exclude,E1,World models for autonomous driving simulation; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.25772/cv2m-6t69,exclude,E1,"Multi-agent game agents with language; no runtime safety interception, deferral, or safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.1007/978-981-92-2014-4_16,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.1145/3627703.3629572,exclude,E1,"DNN latency prediction framework; not about safety interception, deferral, or multi-agent hazards.",ta-screen-v2,2026-11-12
+doi:10.1109/icdcs54860.2022.00092,exclude,E1,TEE-hosted DL inference latency prediction; no safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.64898/2026.10.19.760096,exclude,E1,Immune world model for peptide vaccines; not about autonomous systems or multi-agent safety.,ta-screen-v2,2026-11-12
+doi:10.1016/j.cma.2026.119329,exclude,E1,Physics-informed latent dynamics for PDEs; no runtime safety or multi-agent coordination.,ta-screen-v2,2026-11-12
+doi:10.1109/ijcnn60899.2024.10651439,exclude,E1,Network latency prediction for URLLC; not about autonomous systems or safety interception.,ta-screen-v2,2026-11-12
+doi:10.1109/ipdps64566.2025.00069,exclude,E1,Distributed DL training latency prediction; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2605.28155,exclude,E1,Internet RTT prediction via temporal GNNs; not about autonomous systems or safety.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-28447-1_23,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23383230,exclude,E1,AI evidence governance in clinical trials; not about autonomous systems or runtime safety.,ta-screen-v2,2026-11-12
+doi:10.1109/msn60784.2023.00052,exclude,E1,CNN inference latency prediction on mobile devices; no safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19445948,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23125811,include,,Multi-hypothesis latent mechanism characterization with JEPA; world model identifiability relevant to multi-agent reasoning.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20738104,include,,Distributed cognitive architecture with hierarchical world models and multi-agent WMC-Agents; foundational for autonomous systems.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20586653,include,,Consistency bounds for shared world models in multi-agent autonomous systems; addresses predictive information and multi-agent coordination.,ta-screen-v2,2026-11-12
+doi:10.1109/iccc62609.2024.10942010,exclude,E1,Edge device inference latency prediction; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19125795,include,,Multi-agent world model communication with deception detection; addresses shared representation integrity in multi-agent systems.,ta-screen-v2,2026-11-12
+doi:10.36548/jucct.2026.3.008,exclude,E1,Surgical world model and digital twin; no runtime safety interception or multi-agent autonomous system hazards.,ta-screen-v2,2026-11-12
+doi:10.1007/978-981-99-8126-7_39,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19953950,include,,Audited JEPA world-model runtime with multi-domain verification; addresses world model integrity and reproducibility for autonomous systems.,ta-screen-v2,2026-11-12
+doi:10.1016/j.peva.2025.102539,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.1007/s11063-026-11865-y,exclude,E1,Sports biomechanics prediction with I-JEPA and PSO; not about autonomous systems or multi-agent safety.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2508.01635,exclude,E1,Microservice tail latency prediction; no runtime safety interception or multi-agent autonomous system aspect.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19695321,include,,World model with relational graph structure for multi-agent interaction prediction and causal discovery.,ta-screen-v2,2026-11-12
+doi:10.1049/sfw2/6947479,exclude,E1,"Video anomaly detection; multi-agent framing is metaphorical (prosecutor/skeptic agents), not safety interception or multi-agent hazard.",ta-screen-v2,2026-11-12
+doi:10.5302/j.icros.2026.26.0234,exclude,E1,"Object goal navigation; graph world model for path planning, not runtime safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1016/j.engappai.2025.112890,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387924,exclude,E2,"Framework paper on adaptive supervision in world models; no quantitative safety metric, baseline, or ablation reported.",ta-screen-v2,2026-11-12
+doi:10.1609/aaai.v39i19.34291,exclude,E1,"Microservice latency prediction; no safety interception, multi-agent hazard, or runtime monitoring aspect.",ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-9872455/v1,exclude,E1,Edge device inference latency prediction; no safety interception or multi-agent safety property.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23111733,exclude,E2,Conceptual methods paper on latent entity characterization; no empirical results or quantitative evaluation claimed.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21969336,exclude,E2,"Compositional generalization in world models; no safety metric, baseline, or ablation; primarily qualitative.",ta-screen-v2,2026-11-12
+doi:10.1109/infocom59046.2026.11571392,exclude,E1,LEO satellite network latency prediction; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1109/lra.2026.3732899,exclude,E1,Object navigation with scene graphs; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1051/epjconf/202532801071,exclude,E1,Mobile edge computing task scheduling; no runtime safety interception or multi-agent safety property.,ta-screen-v2,2026-11-12
+doi:10.1016/j.oceaneng.2026.129000,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.24138502,exclude,E2,Theoretical framework on relational fields and causal identification; no empirical results or quantitative evaluation.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.6628518,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+openalex:W7214821546,exclude,E1,Multi-agent foraging with world models; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20096811,include,,Recursive safety and counter-observation in multi-agent embodied systems; suggests runtime monitoring.,ta-screen-v2,2026-11-12
+doi:10.3390/fi14080230,exclude,E1,Network traffic prediction and classification; no safety interception or multi-agent hazard aspect.,ta-screen-v2,2026-11-12
+doi:10.1007/s00530-026-02691-2,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22992859,exclude,E3,Review article on mathematics of world models; survey/tutorial type.,ta-screen-v2,2026-11-12
+doi:10.1016/j.knosys.2025.114534,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23124995,exclude,E2,Prototype and benchmark for latent entity characterization; no safety metric or multi-agent hazard evaluation.,ta-screen-v2,2026-11-12
+doi:10.1080/01691864.2024.2415995,exclude,E1,Autonomous robot planning with graph world models; no runtime safety interception or multi-agent hazard.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19646375,exclude,E1,"Software library for model routing; no safety interception, multi-agent hazard, or empirical safety study.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20414033,exclude,E2,Theoretical reformulation of I-JEPA as PDE; no empirical evaluation or safety metric.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21696955,include,,Operational-Systemic World Model with explicit auditability and state tracking for autonomous production systems.,ta-screen-v2,2026-11-12
+doi:10.1016/j.neunet.2024.107081,exclude,E1,Title/abstract missing; cannot assess against criteria (a)-(e).,ta-screen-v2,2026-11-12
+doi:10.20944/preprints202606.1203.v1,include,,Reflexive Composition Operator extends world models to feedback-loop environments; formal framework with multi-agent validation.,ta-screen-v2,2026-11-12
+doi:10.1145/3806096.3844836,include,,Neurosymbolic world models bridging perception and cognition; addresses multi-agent safety interception through uplift/downlift operators.,ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-10847346/v1,include,,Object-Centric Graph World-Action Models for relational robot manipulation; explicit graph structure for multi-agent state prediction.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21693869,include,,Next-Action Model: continuous latent trajectory dynamics for event-centric world models with formal geometric framework.,ta-screen-v2,2026-11-12
+doi:10.31223/x5cn6n,exclude,E1,"Glaciological physics and JEPA specialist models; no safety interception, multi-agent hazard, or runtime deferral aspect.",ta-screen-v2,2026-11-12
+doi:10.3390/electronics15112231,include,,Graph spatiotemporal world model with safety-tightening mechanism for MPC; hard-constraint feasibility and closed-loop safety.,ta-screen-v2,2026-11-12
+doi:10.18653/v1/2022.emnlp-main.86,exclude,E1,"Text-based game world models; no runtime safety interception, multi-agent hazard, or deferral mechanism.",ta-screen-v2,2026-11-12
+doi:10.26434/chemrxiv-2024-vcppg,exclude,E1,"ADMET property prediction via Graph Transformer; no safety interception, multi-agent, or runtime monitoring aspect.",ta-screen-v2,2026-11-12
+doi:10.3389/fncom.2022.642397,exclude,E1,Consciousness theory and integrated information; not a method/system for autonomous safety or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.24105710,include,,Multi-agent clinical pipeline with deterministic governance and Topo-CBP for zero-drift agentic control; safety-critical handoff.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19519486,exclude,E1,"Symbolic regression and physics discovery via PIR-JEPA; no runtime safety, multi-agent hazard, or deferral mechanism.",ta-screen-v2,2026-11-12
+doi:10.1007/978-3-031-72761-0_2,exclude,E1,Title/abstract missing; cannot assess against criteria (a)-(e).,ta-screen-v2,2026-11-12
+doi:10.36001/phme.2026.v9i1.4968,exclude,E1,Spatio-temporal anomaly detection for corrosion; no runtime safety interception or multi-agent hazard aspect.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21962133,exclude,E2,Computational World Model Explanation Theory; proposes framework but no quantitative safety metric or empirical evaluation.,ta-screen-v2,2026-11-12
+openalex:W7204343946,include,,Neuro-Symbolic Multi-Agent World Models with differentiable constraints against semantic drift; multi-agent partial observability.,ta-screen-v2,2026-11-12
+openalex:W3125861392,include,,Model-based multi-agent RL with joint planning via world model rollouts and learned communication protocol.,ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-8377767/v1,include,,LY-GWM: graph-structured world model with explicit ontological–causal separation for intervention-consistent reasoning.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-37252-9_16,exclude,E1,Title/abstract missing; cannot assess against criteria (a)-(e).,ta-screen-v2,2026-11-12
+doi:10.20944/preprints202610.1664.v1,include,,Declared world model where language models write rules from scene graphs; explicit rule-fact separation for world reasoning.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21965270,include,,Withdrawal Constrained Transfer revises rollout admission rules; safety-aware revision of world model planning authority.,ta-screen-v2,2026-11-12
+doi:10.1145/3767308.3835621,include,,BRAVE: belief-based world models for partially observable RL; retrieval-fusion for multi-agent coordination tasks.,ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-11327969/v1,include,,"Comprehensive review of World Model RL; covers multi-agent systems, autonomous driving, and world action models at scale.",ta-screen-v2,2026-11-12
+doi:10.1109/compsac69091.2026.00103,include,,Semantic governance of heterogeneous world models for agentic AI; ontology-driven metapath design for multi-agent reasoning.,ta-screen-v2,2026-11-12
+doi:10.1145/3769102.3774636,exclude,E1,"Trajectory forecasting for CAVs; no runtime safety interception, deferral, or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+doi:10.5287/ora-5zo7k1eob,include,,World models with causal structure; addresses (b) latent prediction over graphs and multi-agent state.,ta-screen-v2,2026-11-12
+doi:10.1017/s0001867800007692,exclude,E1,"Random walk mixing time on small-world networks; no safety, deferral, or multi-agent hazard aspect.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18251324,include,,Scale-dependent approximation theory for world models and local updating; addresses (b) world models and latent prediction.,ta-screen-v2,2026-11-12
+doi:10.1016/j.adapen.2026.100285,include,,Physics-informed multi-agent RL for building control with learned dynamics model; addresses (b) world models and (c) multi-agent coordination.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7158238,exclude,E6,No abstract provided; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.20944/preprints202511.1370.v1,exclude,E1,"Multi-agent LLM systems for reasoning and coordination; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21536979,exclude,E1,Graph rewiring for contagion forecasting; no runtime safety interception or multi-agent hazard detection as primary claim.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-37464-6_22,exclude,E6,No abstract provided; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-031-91227-6_35,exclude,E6,No abstract provided; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.3233/ssw260026,include,,Embodied knowledge graphs for humanoid robots; addresses (b) world models and (a) safety-aware action grounding.,ta-screen-v2,2026-11-12
+doi:10.1093/bioadv/vbaf180,exclude,E1,"Protein structure prediction quality estimation; no multi-agent, safety, or deferral aspect.",ta-screen-v2,2026-11-12
+doi:10.70675/4d2a563dzcd6fz429fz85ddz1ccfdb045e3f,exclude,E7,Abstract in French; not in English.,ta-screen-v2,2026-11-12
+doi:10.52202/085713-2192,include,,World model alignment for LLM agents with symbolic knowledge; addresses (b) world models and (a) policy regulation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23382921,include,,World self-and-mutual modeling framework; addresses (b) world models and multi-agent coordination.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23439800,include,,Riemannian geometry for geometric world models; addresses (b) world models and latent manifold structure.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20263403,include,,H2E safety governance for agentic AI with world models and LLMs; addresses (a) runtime safety layer and (b) world models.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18193444,include,,CWM-CI creative inference with world model repair; addresses (b) world models and adaptive epistemic updates.,ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-4210117/v1,exclude,E1,"Latent linear models for coupled oscillators; no safety, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.3390/s26185922,include,,Multi-agent deep RL for UAV watershed monitoring; addresses (c) multi-agent coordination and (b) world models for prediction.,ta-screen-v2,2026-11-12
+doi:10.66238/fsrma109,exclude,E1,PCIe protocol behavior modeling for microservices; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.62311/nesx/rp1225,include,,AI world models for smart governance integrating traffic and emergency response; addresses (b) world models and (c) multi-agent urban systems.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20242414,include,,Sparse causal world modeling for industrial and aerospace systems; addresses (b) world models with causal structure and intervention reasoning.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-030-20351-1_52,exclude,E6,No abstract provided; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.1109/cvpr52734.2025.00935,exclude,E1,"Neural architecture predictor using GNNs and transformers; no safety, deferral, or multi-agent hazard aspect.",ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-9997591/v1,exclude,E1,Recursive transport topology for representation geometry; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7396220,exclude,E6,Empty abstract; not retrievable for screening.,ta-screen-v2,2026-11-12
+doi:10.62311/nesx/rb85-978-81-17475-15-7,exclude,E1,"Monograph on graph-based robotic optimization; no runtime safety interception, deferral, or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23073869,exclude,E2,Stability-plasticity dilemma via continual learning; no quantitative safety metric or multi-agent hazard evaluation demonstrated.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7397291,exclude,E6,Empty abstract; not retrievable for screening.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7216139,exclude,E6,Empty abstract; not retrievable for screening.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7163762,exclude,E6,Empty abstract; not retrievable for screening.,ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-11015825/v1,exclude,E1,Financial fraud detection and risk propagation; not multi-agent safety interception or autonomous system hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19481107,exclude,E1,"Ontological and semiotic philosophy; not a method, system, or empirical study on safety reflexes.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21633009,exclude,E1,"Advisory AI dialogue evaluation; no runtime safety interception, deferral mechanism, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387553,exclude,E2,World self-and-mutual model framework; conceptual architecture without quantitative safety evaluation or empirical validation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23433449,exclude,E2,Self-and-mutual-and-world model framework; proposed conceptual design without empirical validation or safety metrics.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2610.16822,exclude,E1,Graph Transformer for neural architecture search; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.3390/make8050126,include,,"Knowledge graphs for autonomous driving perception, reasoning, and decision-making; world models and real-time reasoning for safety.",ta-screen-v2,2026-11-12
+doi:10.3390/electronics15153254,exclude,E1,"AI architecture survey (Transformers, MoE, world models); no runtime safety interception or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387883,exclude,E2,Adaptive self-play and multi-model game switching; framework without empirical validation or quantitative safety metrics.,ta-screen-v2,2026-11-12
+doi:10.1109/dac63849.2025.11345707,exclude,E1,GNN-based performance prediction for neuromorphic hardware; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3658617.3697660,exclude,E1,Data-driven dataflow-aware scheduling for GNN inference; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1145/3545008.3545051,exclude,E1,Neural network latency query and prediction system; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.6233079,exclude,E6,Empty abstract; not retrievable for screening.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22812185,exclude,E1,"Philosophical essay on AI, world-binding, and authorship; not a method or empirical study on safety reflexes.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19145918,exclude,E2,LLM-based world model with role-separated agents; dry-run protocol without quantitative safety or multi-agent hazard metrics.,ta-screen-v2,2026-11-12
+doi:10.2514/1.g008999,exclude,E1,Data-driven networked dynamic system models; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23992776,include,,Discrete structural annealing for traffic congestion; world model with local structural rewriting and quantitative efficiency improvement.,ta-screen-v2,2026-11-12
+doi:10.17586/2226-1494-2020-20-2-249-256,exclude,E1,Random graph centrality measures; no safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1016/j.engappai.2026.114402,exclude,E1,No abstract provided; title suggests multi-agent coordination but lacks safety interception or hazard detection focus.,ta-screen-v2,2026-11-12
+doi:10.26906/sunz.2025.3.059,exclude,E1,"Mathematical models of random graphs; no safety, multi-agent hazard, deferral, or world-model application to autonomous systems.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.24111489,exclude,E1,"Philosophical exploration of taste, free will, and governance; no empirical method, system, or formal result on runtime safety or multi-agent hazards.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19236042,exclude,E2,"Proposes asynchronous coherence for cognitive architectures; no quantitative safety metric, baseline, or ablation study reported in abstract.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387620,include,,Framework integrates self-correction and mutual correction in world models with state-dependent switching; addresses error detection and repair in multi-model coordination.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23190611,exclude,E2,Proposes DTS-Reg regularizer for robust world models under domain shifts; explicitly states no measured performance numbers or evaluation results claimed.,ta-screen-v2,2026-11-12
+doi:10.1007/s44443-026-01368-0,include,,Intervention-consistent world model for counterfactual urban dynamics with risk-aware decision-making; demonstrates quantitative evaluation on forecasting and counterfactual benchmarks.,ta-screen-v2,2026-11-12
+doi:10.1109/cvpr52734.2025.00648,exclude,E4,"Event-based optical flow prediction; single-input sensor processing with no multi-agent, sequential deferral, or safety interception aspect.",ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2506.07735,exclude,E1,"Neural architecture representation learning for hardware latency prediction; no safety, multi-agent, or runtime interception mechanism.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21448988,exclude,E2,"Multi-modal AI framework with prime-based governance layer; author explicitly states no safety guarantees, no bias elimination, and unresolved defects; no quantitative safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.1109/fpl60245.2023.00037,exclude,E1,"GNN accelerator generation framework; hardware optimization for graph neural networks, not safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-31933-3_39,exclude,E1,No abstract provided; title suggests scene graphs for traffic comprehension but lacks explicit safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+doi:10.54097/6sehae79,exclude,E1,"Recommender inference optimization via workload-aware profiling; hardware acceleration for inference, not safety interception or multi-agent coordination.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387743,include,,Framework for adaptive reasoning between self-and-interaction models in world-model architecture; addresses mode-switching under uncertainty and computational constraints.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7593728,exclude,E1,No abstract provided; title mentions cyber-resilience and false-data-injection but lacks explicit runtime safety interception or multi-agent hazard mechanism.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22996123,exclude,E1,"Cloud security monitoring and attack prediction using DNNs; cybersecurity threat detection, not autonomous multi-agent safety or runtime interception.",ta-screen-v2,2026-11-12
+doi:10.3390/app16147342,include,,Systematic review of context-aware crowd management with sensing–prediction–intervention–feedback framework; addresses multi-agency decisions and control philosophies for public-safety scenarios.,ta-screen-v2,2026-11-12
+openalex:W7113042353,exclude,E1,"Graph representation learning for wireless network optimization; topology-aware machine learning, not runtime safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1016/j.engappai.2025.113682,exclude,E1,No abstract provided; title suggests applied GNNs in medicine and remote sensing; no explicit safety interception or multi-agent hazard focus.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7302362,exclude,E1,"No abstract provided; title mentions graph closure and state recovery but lacks context on safety, multi-agent systems, or runtime interception.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.17726348,include,,"Multi-layer embodied data infrastructure for world modeling and physical intelligence; addresses unified perception, simulation-augmentation, and alignment–control layers for embodied foundation models.",ta-screen-v2,2026-11-12
+doi:10.4218/etrij.2025-0201,exclude,E4,"Operation-level scheduling for deep learning inference on embedded systems; single-device latency optimization, not multi-agent, sequential deferral, or safety interception.",ta-screen-v2,2026-11-12
+doi:10.1109/southeastcon63549.2026.11476389,include,,"Tiered multimodal memory and event-graph architecture for real-time agentic AI; addresses streaming perception, world-state representation, and anomaly response policies.",ta-screen-v2,2026-11-12
+doi:10.1080/00207721.2026.2681134,exclude,E1,"Graph-coupled state-space identification for panel systems; system identification under missing observations, not safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.3390/computers14120541,exclude,E2,"Proposes Mindful Machines paradigm with autopoietic operating system; conceptual framework without quantitative safety metrics, baselines, or empirical ablation studies.",ta-screen-v2,2026-11-12
+doi:10.1109/gaiis69281.2026.11519320,exclude,E1,"LLM inference latency prediction; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.24963/ijcai.2026/722,include,,Graph-based world model for heterogeneous scheduling with uncertainty; multi-agent RL with thermal safety constraints and risk-aware scheduling.,ta-screen-v2,2026-11-12
+doi:10.1115/imece2025-167129,exclude,E1,CAD procedural error detection; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.1016/j.aei.2026.105135,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-031-87995-1_4,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.5865722,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.1016/j.rineng.2025.106911,exclude,E1,Water demand forecasting with GNN; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19633334,exclude,E1,"Graph compute substrate architecture; no empirical safety evaluation, runtime interception, or multi-agent safety claim.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21892713,exclude,E1,Philosophy of scientific discovery; not a peer-reviewed empirical method or system.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21915103,include,,Partial-identification framework for reward hacking; safety constraints robust to manipulation; deploy-time vulnerability check.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.24081491,exclude,E1,"Philosophical framework on machine attachment; no empirical method, system, or safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.5969814,exclude,E6,No abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21222361,exclude,E1,Cosmology and physics interpretation; not a peer-reviewed empirical safety method.,ta-screen-v2,2026-11-12
+doi:10.3850/esrel2026061419_esrel26-p26348-cd,include,,Kripke-based risk identification from contradictory safety documentation; systematic hazard detection and residual risk coverage.,ta-screen-v2,2026-11-12
+doi:10.1109/tcad.2026.3656302,exclude,E1,Neuromorphic hardware simulator and latency prediction; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.3389/frobt.2025.1566623,include,,Multi-agent RL for satellite anomaly detection and autonomous CFD setup; world models and real-time decision-making under constraints.,ta-screen-v2,2026-11-12
+doi:10.4018/979-8-3373-6940-2.ch002,exclude,E1,Philosophical chapter on cognitive AI and world models; no empirical method or safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.1145/3703353,exclude,E1,Neural architecture search latency prediction; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+openalex:W7213484537,exclude,E1,Deep learning for ultrasound imaging; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+openalex:W7156571201,include,,World-action models with failure-risk prediction and counterfactual planning; safety-aware decision-sufficient control.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22077861,exclude,E1,Neuro-symbolic cognitive architecture; no empirical safety evaluation or runtime interception mechanism.,ta-screen-v2,2026-11-12
+doi:10.1109/tii.2026.3722260,exclude,E1,Neural architecture representation learning for latency prediction; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+openalex:W7205277251,exclude,E7,Abstract in French; cannot assess per English-language criterion.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22717169,exclude,E1,Finite graph predictive-compression study; not a safety method or multi-agent system.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18251434,exclude,E1,Renormalization theory for strategic reasoning; no empirical safety evaluation or runtime interception.,ta-screen-v2,2026-11-12
+doi:10.1145/3725734,exclude,E1,DNN inference offloading in vehicular edge computing; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.17605/osf.io/xkdtr,exclude,E2,"Renormalization theory for strategic reasoning; no quantitative safety metric, baseline, or empirical evaluation reported.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.24100039,exclude,E1,"Continual learning memory architecture; no runtime safety interception, deferral, or multi-agent safety property.",ta-screen-v2,2026-11-12
+doi:10.52843/cassyni.ps009x,exclude,E1,Physics-based ML for transport phenomena; no runtime safety mechanism or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.1145/3789240.3829103,exclude,E1,Microservice critical-path analysis and scheduling; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387904,exclude,E2,Conceptual framework for adaptive world-model learning; no quantitative safety metric or empirical validation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20584196,exclude,E1,Annotation-layer architecture specification; no runtime safety mechanism or multi-agent safety property.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2606.12688,exclude,E1,"Multimodal model serving system; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.23939/sisn2026.19.027,include,,"UAV routing with control barrier functions, model-predictive control, and runtime safety constraints; multi-agent swarm coordination.",ta-screen-v2,2026-11-12
+doi:10.17605/osf.io/kyaqw,exclude,E2,Scale-dependent approximation theory; no quantitative safety metric or empirical evaluation.,ta-screen-v2,2026-11-12
+doi:10.1016/j.comcom.2024.01.010,exclude,E1,Network latency profiling and prediction; no runtime safety mechanism or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387574,exclude,E2,Conceptual world-model diagnosis framework; no quantitative safety metric or empirical validation.,ta-screen-v2,2026-11-12
+doi:10.1109/tcc.2026.3685862,exclude,E1,GPU cluster scheduling for inference; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.47392/irjaeh.2026.0137,exclude,E1,Question-answering system with latency-aware fusion; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.1016/j.conengprac.2026.107135,include,,"Multi-agent trajectory generation with MPC, world-model-based constraint configuration, and distributed coordination.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20836938,exclude,E2,Constitutional safety framework for self-modifying agents; claims formal proofs but no independent empirical validation.,ta-screen-v2,2026-11-12
+doi:10.1162/daed.a.972,exclude,E3,"Conversation with Yann LeCun on AI foundations; review/dialogue, not a research method or empirical study.",ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7002676,exclude,E2,Title only; no abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+openalex:W7169635312,include,,"Multi-modal representation learning for embodied agents; world models, multi-agent coordination, and safety-relevant constraints.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20049578,exclude,E2,Consciousness framework theory; no quantitative safety metric or empirical validation of safety claims.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2512.16924,exclude,E1,Promptable world-event generation; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22082377,exclude,E1,"Synthetic robot fleet dataset; no method, system, or safety mechanism; data release only.",ta-screen-v2,2026-11-12
+doi:10.1007/s40192-026-00465-2,exclude,E2,Title only; no abstract provided; cannot assess.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22678254,exclude,E2,Closure mathematics for cognitive worldhood; formal theory without quantitative safety metric or empirical validation.,ta-screen-v2,2026-11-12
+doi:10.14711/thesis-hdl172437,include,,Multi-echelon supply-chain RL with world-model prediction and decentralized cooperation; multi-agent coordination under uncertainty.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.5374773,exclude,E2,No quantitative safety metric or evaluation reported in abstract.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20858789,exclude,E1,"World model and RL agent for power grid; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19353903,exclude,E1,Survey of AI in medicine; multi-agent systems mentioned but not primary safety focus; no runtime interception or hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23433734,exclude,E2,Conceptual framework paper; no quantitative evaluation or empirical study reported.,ta-screen-v2,2026-11-12
+openalex:W7168000623,exclude,E1,"Model compression and semi-supervised learning; no runtime safety, deferral, or multi-agent safety aspect.",ta-screen-v2,2026-11-12
+doi:10.1109/comst.2026.3681198,exclude,E1,"Survey of GNNs for 6G networks; no runtime safety interception, deferral, or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+doi:10.3390/technologies14050266,include,,Object-centric world model with graph dynamics for robotic manipulation; addresses (b) world models over multi-agent state.,ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-04558-4_13,exclude,E2,Title/abstract missing; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19808285,exclude,E1,"Abstract reasoning benchmark; no runtime safety, deferral, multi-agent hazard detection, or latency-constrained safety decisions.",ta-screen-v2,2026-11-12
+doi:10.17605/osf.io/zxsmk,exclude,E1,"Developmental framework for AI cognition; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1145/3770855.3818654,include,,Intervention-aware causal knowledge graph for climate adaptation; addresses (a) runtime decision support and (c) multi-agent hazard/adaptation.,ta-screen-v2,2026-11-12
+doi:10.32657/10356/172842,include,,"Learning-enabled decision-making for autonomous driving with world model, actor, cost modules; addresses (b) world models and (a) decision architecture.",ta-screen-v2,2026-11-12
+doi:10.32657/10356/214735,exclude,E1,"LiDAR perception and scene tokenization for autonomous driving; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21036523,exclude,E1,"Theoretical framework on consciousness; no runtime safety, deferral, multi-agent hazard detection, or empirical evaluation.",ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.6029523,exclude,E2,Bayesian network learning tool; abstract missing; cannot assess safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23385205,exclude,E2,Conceptual framework for adaptive planning modes; no quantitative evaluation or empirical study reported.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21142533,exclude,E1,"Decision-theoretic theory of observerhood; no runtime safety, deferral, multi-agent hazard detection, or empirical evaluation.",ta-screen-v2,2026-11-12
+doi:10.1109/tbdata.2022.3199197,exclude,E1,"Sparse matrix multiplication optimization; no safety, deferral, multi-agent, or latency-constrained safety aspect.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20092130,include,,Patient world model with causal diffusion and agentic verifier for rare disease; addresses (b) world models and (c) multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.1353/ppp.2020.0011,exclude,E7,Published 2020; outside 2015+ window; philosophical discussion of enactivism in psychiatry.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23387680,exclude,E2,Conceptual framework for adaptive search; no quantitative evaluation or empirical study reported.,ta-screen-v2,2026-11-12
+doi:10.3724/bnsfc-2025-0012,exclude,E1,"Consumer research paradigm with generative AI; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1007/978-3-032-33669-9_4,exclude,E2,Title only; abstract missing; cannot assess inclusion criteria.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18167700,exclude,E1,"Developmental framework for AI cognition; no runtime safety, deferral, multi-agent hazard detection, or empirical evaluation.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23928289,exclude,E2,Conceptual architecture proposal; no quantitative evaluation or empirical study reported.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20027503,exclude,E1,Riemannian geometry optimization on edge hardware; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.7282/t3-fw4q-nc39,exclude,E1,"Robotic manipulation, vision-language-action models, world modeling; no runtime safety interception or multi-agent safety primacy.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23644669,exclude,E2,"Formal verification and causal reasoning framework; no quantitative safety metric, baseline or ablation reported in abstract.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20372492,exclude,E1,"Theoretical physics of intelligence; no runtime safety mechanism, multi-agent hazard detection or empirical evaluation.",ta-screen-v2,2026-11-12
+doi:10.1109/asp-dac58780.2024.10473875,exclude,E1,"Hardware modeling and benchmarking for AI; no safety interception, monitoring or multi-agent safety aspect.",ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7460859,exclude,E6,No abstract provided; not retrievable.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19497604,exclude,E1,Football video analysis and biomechanics; no runtime safety interception or multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19334838,exclude,E1,"Theoretical intelligence regime framework; no empirical method, system or quantitative safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.1038/s41524-026-01999-x,exclude,E1,"Physics-informed GCN-LSTM for microstructure forecasting; no safety interception, monitoring or multi-agent aspect.",ta-screen-v2,2026-11-12
+doi:10.1109/vtc2024-spring62846.2024.10683650,exclude,E1,Task scheduling in heterogeneous networks; no runtime safety interception or multi-agent safety hazard detection.,ta-screen-v2,2026-11-12
+doi:10.25394/pgs.32918891,include,,"Generative modeling of human behavior in autonomous systems; addresses human-AI interaction, uncertainty quantification, and closed-loop adaptation for safety-critical scenarios.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20253460,include,,"ErrP-guided deep RL for BCIs in assistive tech; addresses runtime error feedback, uncertainty modeling, and adaptive safety in human-machine interaction.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23783836,exclude,E1,"Image segmentation methods comparison; no runtime safety interception, monitoring or multi-agent aspect.",ta-screen-v2,2026-11-12
+doi:10.54941/ahfe1006214,include,,Human-AI team performance and task allocation; addresses when autonomous systems should defer to humans and conditions for safe heterogeneous team operation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22167626,exclude,E1,"Compact language model architecture; no runtime safety interception, monitoring or multi-agent aspect.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18039718,exclude,E1,"Philosophy of mind framework (CCV); no empirical method, system or quantitative safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18745697,exclude,E1,Mathematical framework for dreaming and consciousness; no runtime safety mechanism or multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21795308,exclude,E3,"Sandesh Theories series overview; survey/repository of AI research areas, not a specific empirical study or method.",ta-screen-v2,2026-11-12
+doi:10.1201/9781003725435-12,exclude,E3,"Machine learning textbook chapter; tutorial overview of paradigms, not a novel empirical method or system.",ta-screen-v2,2026-11-12
+doi:10.1038/s41746-026-02602-9,exclude,E1,Multimodal vision-language model for lung nodule analysis; no runtime safety interception or multi-agent safety primacy.,ta-screen-v2,2026-11-12
+doi:10.1007/s11432-025-4808-x,exclude,E6,No abstract provided; not retrievable.,ta-screen-v2,2026-11-12
+doi:10.1016/j.jnlssr.2026.100361,include,,"Generative resilience framework integrating world models, multi-agent orchestrators, and human-AI safety; addresses systemic safety, automation bias, and human-centric AI governance.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23933426,exclude,E1,Real estate price forecasting with spatiotemporal architectures; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+doi:10.5075/epfl-thesis-12053,exclude,E1,"Structured model discovery for dynamical systems; no runtime safety interception, monitoring or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.23919/date69613.2026.11539710,exclude,E1,Hardware accelerator modeling and latency prediction; no runtime safety interception or multi-agent aspect.,ta-screen-v2,2026-11-12
+openalex:W7219161524,exclude,E1,"Proposes AGI framework with world models and social simulations; no runtime safety interception, deferral, or multi-agent hazard detection as primary claim.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22847715,exclude,E1,"Investigates data valuation and world models for learning; no runtime safety mechanism, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21456250,exclude,E1,Theoretical architecture for machine-assisted scientific discovery; no runtime safety interception or multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18003034,exclude,E1,"Psychology and consciousness theory; not on AI safety, autonomous systems, or multi-agent control.",ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.7452738,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23143435,exclude,E1,Philosophical exploration of generative rules and reality; not on autonomous systems safety or multi-agent hazards.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22993753,include,,"Agentic reasoning for LLMs covering planning, acting, learning, multi-agent systems, and safety governance challenges.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21027354,exclude,E1,Proposes mathematical framework for causal inference and world models; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.5128927,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.1109/iccworkshops67674.2025.11162404,exclude,E1,"Network digital twin for route optimization; no runtime safety interception, deferral, or multi-agent collision/hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22146690,exclude,E1,"Consciousness theory; not on autonomous systems, safety interception, or multi-agent control.",ta-screen-v2,2026-11-12
+doi:10.14288/1.0456580,include,,Generative models for motion forecasting and multi-agent trajectory prediction with uncertainty quantification for autonomous driving.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19140603,exclude,E1,"Business and policy strategy modeling; no autonomous system safety, runtime interception, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.1201/9781003743774-10,include,,"Hybrid edge-native architecture for autonomous agents with sub-100ms latency, multi-agent coordination, and safety/privacy constraints.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23558244,include,,"Multi-agent simulations with emergent behavior, learned world models, continual learning, and safety/ethics considerations.",ta-screen-v2,2026-11-12
+doi:10.3390/electronics14020323,exclude,E1,"Intrusion detection model; no autonomous system safety, runtime interception, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.22260/isarc2025/0004,exclude,E4,"Worker-robot collaboration with behavioral decision-making; single-agent robot control, not multi-agent safety or runtime interception.",ta-screen-v2,2026-11-12
+doi:10.2139/ssrn.6044026,exclude,E6,No abstract provided; cannot assess eligibility.,ta-screen-v2,2026-11-12
+doi:10.54254/2755-2721/2026.ch35364,exclude,E1,"Edge AI compilation and hardware co-design; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23057665,exclude,E1,"Neuro-symbolic framework for reducing hallucination; no runtime safety interception, deferral, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20596480,exclude,E1,"Speculative AGI meta-architecture; no empirical method, runtime safety mechanism, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.3390/jmse14161477,include,,"Ship path planning review covering collision avoidance, multi-vessel interaction, safety constraints, and reinforcement learning for autonomous navigation.",ta-screen-v2,2026-11-12
+doi:10.55041/ijsrem67590,exclude,E1,"Linux real-time latency monitoring system; no autonomous system safety, runtime interception, or multi-agent control.",ta-screen-v2,2026-11-12
+doi:10.65521/ijacect.v11i1.4190,exclude,E1,"Traffic management with edge AI; no runtime safety interception, deferral, or multi-agent collision/hazard detection as primary claim.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18720443,exclude,E1,"Disease knowledge base and agentic AI for clinical reasoning; no autonomous system safety, runtime interception, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.64898/2026.11.05.764481,exclude,E1,Gene regulatory network inference; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21532914,exclude,E1,"Silicon-based system description; no empirical safety method, evaluation, or multi-agent safety property.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21870881,include,,"Modular robot control with formal safety guarantees, emergency stop, real-time schedulability, and graceful degradation under mixed-criticality.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20465333,exclude,E1,Voter dynamics on networks; no runtime safety interception or multi-agent safety hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20466597,exclude,E1,Voter dynamics on networks; no runtime safety interception or multi-agent safety hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18825376,exclude,E1,"Semantic communication architecture; no runtime safety interception, deferral, or multi-agent hazard detection mechanism.",ta-screen-v2,2026-11-12
+doi:10.1184/r1/32620371,exclude,E1,"Reinforcement learning abstraction; no runtime safety interception, deferral, or multi-agent safety hazard as primary outcome.",ta-screen-v2,2026-11-12
+doi:10.11648/j.ajap.20261504.17,exclude,E1,Group psychotherapy dynamics; not an AI/autonomous system paper.,ta-screen-v2,2026-11-12
+doi:10.6084/m9.figshare.30815342,exclude,E2,"AGI architecture proposal; no quantitative safety metric, baseline, or ablation study reported.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20026109,include,,"Simulation-gated policy with reality gate, dream mode, irreversible action suppression, and quantified safety metrics (IAR reduction, constraint satisfaction).",ta-screen-v2,2026-11-12
+doi:10.1093/ijnp/pyaf052.109,exclude,E1,Neuroscience study of maternal immune activation; not an autonomous system or AI safety paper.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23934149,exclude,E2,Whole-person temporal modeling proposal; no prospective study executed or quantitative validation reported.,ta-screen-v2,2026-11-12
+doi:10.32657/10356/204726,exclude,E1,Database query optimization via representation learning; no runtime safety interception or multi-agent safety aspect.,ta-screen-v2,2026-11-12
+doi:10.21203/rs.3.rs-10926683/v1,include,,"Autonomous driving with LLMs/VLMs, multi-agent V2X coordination, safety frameworks, and real-time latency constraints.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19324243,include,,"Formal governance architecture for agentic AI with admissibility gates, rollback, anomaly detection, and consequence-scaled assurance profiles.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22287205,exclude,E1,Computational neuroscience methodology; no runtime safety interception or multi-agent autonomous system.,ta-screen-v2,2026-11-12
+doi:10.47409/ijsp.2026.8.6,exclude,E1,Radical psychotherapy framework; not an autonomous system or AI safety paper.,ta-screen-v2,2026-11-12
+doi:10.47409/ijsp.2026.8.7,exclude,E1,Radical psychotherapy framework; not an autonomous system or AI safety paper.,ta-screen-v2,2026-11-12
+doi:10.26434/chemrxiv.15004999/v1,exclude,E1,LLM-driven molecular discovery; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.22872308,exclude,E1,Ontological physics theory; not an autonomous system or AI safety paper.,ta-screen-v2,2026-11-12
+openalex:W2563465246,exclude,E1,Neuroscience fMRI study of decision-making; not an autonomous system or AI safety paper.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18113531,exclude,E2,AGI capacity law proposal; no peer-reviewed empirical validation or quantitative safety evaluation reported.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.17679601,exclude,E2,"AI Standard Model whitepaper; no quantitative evaluation, baseline, or ablation study of safety mechanisms.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23146961,exclude,E1,Philosophical/theoretical exploration of rule evolution; not an autonomous system or AI safety paper.,ta-screen-v2,2026-11-12
+doi:10.17605/osf.io/38y4x,exclude,E1,Book on human connection and organizational success; not an autonomous system or AI safety paper.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21887002,exclude,E1,"Position paper on cognitive architecture; no runtime safety interception, monitoring, or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21887180,exclude,E1,"Methodology for cognitive primitives discovery; no runtime safety mechanism, deferral, or multi-agent safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.21871358,exclude,E1,Roadmap and strategic position paper on future AGI architectures; no empirical safety study or runtime mechanism.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18135027,exclude,E1,Philosophical framework on AI ethics and understanding; no runtime safety interception or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23847743,exclude,E1,Theoretical framework on exigence and cognitive kernel; no runtime safety mechanism or multi-agent safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18489675,exclude,E1,Planetary science hypothesis on solar system formation; off-topic to autonomous systems safety.,ta-screen-v2,2026-11-12
+openalex:W2361758363,exclude,E1,"Multi-agent simulation of employee counterproductive behavior; organizational management, not autonomous system safety.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23672805,exclude,E1,Theoretical framework on attention and attractor dynamics; no runtime safety mechanism or multi-agent hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20131094,exclude,E1,Governance and economic framework for human-AGI cohabitation; no runtime safety interception or hazard detection.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20783570,exclude,E2,"Wave-substrate computer architecture; no quantitative safety metric, baseline, or ablation study reported.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.24051676,exclude,E1,Conceptual framework on world representation and state awareness; no runtime safety mechanism or multi-agent evaluation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23311806,exclude,E1,"Textbook on generative AI and LLM engineering; survey/tutorial, not a novel safety method or empirical study.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18938432,exclude,E1,"Python code for system coherence monitoring; no peer-reviewed method, evaluation, or multi-agent safety claim.",ta-screen-v2,2026-11-12
+doi:10.3389/conf.fninf.2016.20.00012,exclude,E1,"Brain network topology measurement; neuroscience, not autonomous system safety.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.18361867,exclude,E2,Conceptual framework for Engineer-AI as civic co-agent; no quantitative safety evaluation or empirical validation.,ta-screen-v2,2026-11-12
+doi:10.3389/fpsyg.2026.1768785,exclude,E1,Theoretical framework on human-AI coevolution and cognitive individuality; no runtime safety mechanism.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19426884,exclude,E1,"Photovoltaic forecast error network analysis; energy systems, not autonomous agent safety.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23391808,exclude,E1,"Philosophical theory on AGI fitting human practice; position paper, not empirical method or safety study.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.17667052,exclude,E1,"Technical and diplomatic architecture for post-scarcity; infrastructure and governance, not autonomous system safety.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20088790,exclude,E1,"Holistic information theory model for AI safety; philosophical framework, no empirical evaluation or runtime mechanism.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.23070552,exclude,E2,Theoretical framework on latent affective states in LLMs and AI alignment; no quantitative safety metric or empirical study.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20214773,exclude,E2,"Lie-algebraic framework for LLM activation-space geometry; interpretability method, no runtime safety interception or multi-agent hazard detection.",ta-screen-v2,2026-11-12
+doi:10.18725/oparu-11089,include,,Misbehavior detection framework for cooperative intelligent transport systems; multi-agent safety with fusion and validation.,ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20538364,exclude,E1,"Epistemological analysis of LLM cognition; philosophical critique, no runtime safety mechanism or multi-agent evaluation.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.19358397,exclude,E2,Cognitive architecture for LLM agents with memory and affective state; no quantitative safety metric or multi-agent hazard evaluation.,ta-screen-v2,2026-11-12
+doi:10.17605/osf.io/qe7kr,exclude,E1,"Speculative hardware architecture; no safety interception, multi-agent hazard, or evaluation method described.",ta-screen-v2,2026-11-12
+doi:10.5281/zenodo.20083233,exclude,E1,Art theory and epistemology; not a peer-reviewed empirical study or method for autonomous systems safety.,ta-screen-v2,2026-11-12
+doi:10.1215/00295132-8868941,exclude,E1,"Humanities critique of robot labor imaginary; no safety mechanism, hazard detection, or technical evaluation.",ta-screen-v2,2026-11-12
+doi:10.1101/2024.11.07.622528,exclude,E1,Human learning of successor representations in graph tasks; not multi-agent safety or runtime interception.,ta-screen-v2,2026-11-12
+doi:10.31234/osf.io/rm5b2,exclude,E1,"Consciousness theory synthesis; no runtime safety mechanism, multi-agent hazard detection, or empirical safety evaluation.",ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2606.27806,exclude,E2,Title suggests world models for LLM agents but abstract missing; cannot assess safety evaluation or mechanism.,ta-screen-v2,2026-11-12
+doi:10.2991/ameii-16.2016.108,exclude,E1,"Social information network evolution; no autonomous system, safety interception, or multi-agent hazard aspect.",ta-screen-v2,2026-11-12
+doi:10.1109/swc69865.2026.11763784,exclude,E1,"3D reconstruction task assignment on edge clusters; no safety interception, multi-agent hazard, or runtime monitoring.",ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2606.29495,exclude,E2,Title mentions world models and social influence but abstract missing; cannot assess safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2606.13840,exclude,E2,Multi-agent autonomous driving and V2X mentioned but abstract missing; cannot assess safety mechanism or evaluation.,ta-screen-v2,2026-11-12
+s2:62e4b14a47ec4fc916c3601cfebee2c984ed59b7,exclude,E2,Decentralized multi-agent world models title but abstract missing; cannot assess safety or evaluation.,ta-screen-v2,2026-11-12
+doi:10.52202/085713-1364,include,,Multi-task multi-agent RL with MoE world model; world models for multi-agent planning and learning.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2603.28963,exclude,E2,Multi-agent traffic simulation with world models but abstract missing; cannot assess safety evaluation.,ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2401.11432,exclude,E1,"Deformable bag manipulation latent dynamics; single-agent manipulation, not multi-agent safety or interception.",ta-screen-v2,2026-11-12
+s2:db12f5c97456a23601f4ee881a2f722c95e83919,exclude,E1,Data aging in robotics world models; no runtime safety interception or multi-agent hazard aspect.,ta-screen-v2,2026-11-12
+s2:e512b2f35d3b7df4cf57ff6b37f172605e32a0c8,exclude,E1,"UAV visual-inertial navigation in urban scenes; single-agent navigation, not multi-agent safety or interception.",ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2608.05928,exclude,E1,"Gene block prediction in single cells; biological data, not autonomous systems or safety.",ta-screen-v2,2026-11-12
+doi:10.48550/arxiv.2607.05238,include,,Stochastic JEPA world models with predictor mixtures; world model method for multi-agent or sequential systems.,ta-screen-v2,2026-11-12
