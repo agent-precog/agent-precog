@@ -127,6 +127,11 @@ def prisma(papers, search_log, decisions):
     ta_excl = Counter(c for c in (ta_code(d) for d in decisions if d["stage"] in ("title_abstract", "title_abstract_2")) if c)
     ta2_excluded = sum(1 for d in decisions if d["stage"] == "title_abstract_2" and ta_code(d))
     ft_excl = Counter(d["exclusion_code"] for d in decisions if d["stage"] == "full_text" and d["human_decision"] == "exclude")
+    # Full-text exclusions drafted by the AI from the paper and accepted by the maintainer in bulk rather
+    # than read row by row. They are counted apart from the maintainer's own full-text decisions so the
+    # flow never presents an accepted draft as a decision the maintainer made by reading the paper.
+    ft_ai_excl = Counter(d["ai_code"] for d in decisions if d["stage"] == "full_text"
+                         and not d["human_decision"] and d["ai_label"] == "exclude")
     ta_total = sum(ta_excl.values())
     ft_total = sum(ft_excl.values())
     return {
@@ -139,6 +144,8 @@ def prisma(papers, search_log, decisions):
         "full_text": max(screened - ta_total, 0),
         "ft_excluded": ft_total,
         "ft_codes": dict(ft_excl),
+        "ft_ai_excluded": sum(ft_ai_excl.values()),
+        "ft_ai_codes": dict(ft_ai_excl),
         "included": len(papers),
         "databases": len({r["database"] for r in search_log}),
         "has_runs": bool(search_log),
@@ -155,6 +162,7 @@ def prisma(papers, search_log, decisions):
             - {d["record_id"] for d in decisions if d["stage"] == "title_abstract_2"
                and not (d["human_decision"] == "include" or (not d["human_decision"] and d["ai_label"] == "include"))}
             - {d["record_id"] for d in decisions if d["stage"] == "full_text" and d["human_decision"] in ("include", "exclude")}
+            - {d["record_id"] for d in decisions if d["stage"] == "full_text" and not d["human_decision"] and d["ai_label"] == "exclude"}
         ),
         "batches": screening_batches(all_decisions),
     }
