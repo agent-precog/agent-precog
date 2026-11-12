@@ -104,6 +104,41 @@ def latest_decisions(decisions):
     return list(cur.values())
 
 
+def flow_breakdown(papers, search_log, decisions):
+    """Where every distinct screened record currently stands, so the published flow adds up.
+
+    Each record is placed in exactly one state from its latest decisions. The boxes and the
+    sentence beneath them are generated from this, never from separately maintained totals.
+    """
+    cur = {}
+    for d in decisions:
+        cur[(d["record_id"], d["stage"])] = d
+    recs = set()
+    for p in sorted(glob.glob(str(DATA / "screening" / "*_records.csv"))):
+        recs.update(r["record_id"] for r in read_csv(Path(p)) if not r.get("duplicate_of"))
+    pp = DATA / "screening" / "pending_publication.csv"
+    pending = {r["record_id"] for r in read_csv(pp)} if pp.exists() else set()
+    def excluded(d):
+        return bool(d) and (d["human_decision"] == "exclude" or (d["human_decision"] == "" and d["ai_label"] == "exclude"))
+    c = Counter(); codes = Counter()
+    for rid in recs:
+        ta, ta2, ft = cur.get((rid, "title_abstract")), cur.get((rid, "title_abstract_2")), cur.get((rid, "full_text"))
+        if ft and ft["human_decision"] == "include": c["included"] += 1
+        elif ft and ft["human_decision"] == "exclude": c["ft_excluded"] += 1; codes[ft["exclusion_code"]] += 1
+        elif ft and ft["ai_label"] == "exclude": c["ft_ai_excluded"] += 1
+        elif excluded(ta2) or excluded(ta): c["ta_excluded"] += 1
+        elif rid in pending: c["forthcoming"] += 1
+        elif ta is None or (ta["ai_label"] == "unlabelled" and not ta["human_decision"]): c["unlabelled"] += 1
+        else: c["not_read"] += 1
+    found = sum(int(r["hits"] or 0) for r in search_log)
+    f = {k: c[k] for k in ("included", "ft_excluded", "ft_ai_excluded", "ta_excluded", "forthcoming", "unlabelled", "not_read")}
+    f.update(found=found, screened=len(recs), duplicates=max(found - len(recs), 0),
+             passed=len(recs) - c["ta_excluded"], not_retrieved=codes["E6"], ft_duplicates=codes["E5"],
+             seed=sum(1 for p in papers if p["included_via"] not in ("search", "snowball")),
+             snowball_found=sum(int(r["hits"] or 0) for r in search_log if r["database"].startswith("Snowballing")))
+    return f
+
+
 def prisma(papers, search_log, decisions):
     all_decisions = decisions                 # full audit log, for the batch table
     decisions = latest_decisions(decisions)   # current decision per record and stage, for the counts
@@ -165,6 +200,7 @@ def prisma(papers, search_log, decisions):
             - {d["record_id"] for d in decisions if d["stage"] == "full_text" and d["human_decision"] in ("include", "exclude")}
             - {d["record_id"] for d in decisions if d["stage"] == "full_text" and not d["human_decision"] and d["ai_label"] == "exclude"}
         ),
+        "flow": flow_breakdown(papers, search_log, all_decisions),
         "batches": screening_batches(all_decisions),
     }
 

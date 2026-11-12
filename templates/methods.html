@@ -24,12 +24,23 @@
         <h2 style="font-size:20px">PRISMA 2020 flow</h2><span class="hint mono">regenerated at each release</span>
       </div>
       {% if counts.has_runs %}
+      {% set f = counts.flow %}
       <div class="prisma">
-        <div class="box"><span class="l">Identified</span><span class="n">{{ counts.identified_db }}</span><span class="s">{{ counts.databases }} databases</span></div>
-        <div class="box"><span class="l">After dedup</span><span class="n">{{ counts.screened }}</span><span class="s">{{ counts.duplicates }} duplicates</span></div>
-        <div class="box"><span class="l">Full-text</span><span class="n">{{ counts.full_text }}</span><span class="s">{{ counts.ta_excluded }} excluded at abstract</span></div>
-        <div class="box inc"><span class="l">Included</span><span class="n">{{ counts.included }}</span><span class="s">{% if counts.search_included %}{{ counts.ft_excluded }} excluded at full text{% if counts.ft_ai_excluded %}, {{ counts.ft_ai_excluded }} more on an accepted AI draft{% endif %}{% else %}seed list; full-text stage in progress{% endif %}</span></div>
+        <div class="box"><span class="l">Records found</span><span class="n">{{ "{:,}".format(f.found) }}</span><span class="s">by {{ counts.databases }} database searches{% if f.snowball_found %} and one round of citation chasing{% endif %}, before duplicates are removed</span></div>
+        <div class="box"><span class="l">Unique records screened</span><span class="n">{{ "{:,}".format(f.screened) }}</span><span class="s">after removing {{ "{:,}".format(f.duplicates) }} duplicates; each screened on its title and abstract</span></div>
+        <div class="box"><span class="l">Passed screening</span><span class="n">{{ "{:,}".format(f.passed) }}</span><span class="s">{{ "{:,}".format(f.ta_excluded) }} excluded on title and abstract</span></div>
+        <div class="box inc"><span class="l">Papers in the review</span><span class="n">{{ "{:,}".format(f.included + f.seed) }}</span><span class="s">{{ "{:,}".format(f.included) }} included after full-text reading, plus the {{ f.seed }}-paper seed list</span></div>
       </div>
+      <p style="margin:14px 0 6px"><strong>What happened to the {{ "{:,}".format(f.passed) }} records that passed screening.</strong> Passing screening means only that the title and abstract looked in scope. It does not mean the paper has been read.</p>
+      <ul style="margin:0 0 10px;padding-left:20px">
+        <li><strong>{{ "{:,}".format(f.included) }}</strong> were read in full and included by the maintainer.</li>
+        <li><strong>{{ "{:,}".format(f.ft_excluded) }}</strong> were excluded by the maintainer at the full-text stage. This includes {{ f.not_retrieved }} whose full text could not be retrieved and {{ f.ft_duplicates }} duplicates of a paper already decided.</li>
+        <li><strong>{{ "{:,}".format(f.ft_ai_excluded) }}</strong> were excluded on an AI reading of the full text, which the maintainer accepted without reading each paper himself. They can be reopened.</li>
+        <li><strong>{{ "{:,}".format(f.not_read) }}</strong> have not been read. They passed screening and wait for a full-text decision; the first pass read the highest-ranked tier and a sample of the rest.</li>
+        {% if f.unlabelled %}<li><strong>{{ f.unlabelled }}</strong> have no screening label yet, because the screening model returned none.</li>{% endif %}
+        {% if f.forthcoming %}<li><strong>{{ f.forthcoming }}</strong> are forthcoming or under embargo, and will be read when their full text is released.</li>{% endif %}
+      </ul>
+      <p class="muted" style="margin:0;font-size:14px">These figures add up: every one of the {{ "{:,}".format(f.screened) }} screened records is in exactly one of the states above or was excluded on title and abstract. They are regenerated from the decision log at each release.</p>
       {% else %}
       <div class="prisma">
         <div class="box"><span class="l">Identified</span><span class="n">-</span><span class="s">no search runs yet</span></div>
@@ -39,7 +50,7 @@
       </div>
       <p class="muted" style="margin:0;font-size:14px">The first database search runs on {{ version.next_search }}. Until then the review holds the hand-curated seed list described in the protocol.</p>
       {% endif %}
-      <p class="muted" style="margin:0;font-size:14px">First-pass abstract screening is AI-first and declared; the maintainer reviews every AI inclusion and a random sample of exclusions, and the override and leak rates are reported below. Every decision and override is logged.</p>
+      <p class="muted" style="margin:8px 0 0;font-size:14px">Title and abstract screening is done first by an AI model and is declared as such. The maintainer checks it by exception, through blind samples of excluded records for the database searches, and where he reviewed a record himself his decision governs. The labels from citation chasing have not yet been sample-checked. Override and leak rates are reported below, and every decision and override is logged.</p>
     </div>
     <div id="standards" class="prose"><h2>Standards</h2>
       <p>Review type: living systematic review. Reporting: PRISMA 2020 flow diagram and checklist; PRISMA-S for the search. Living methodology: scheduled re-searches with versioned, citable releases. Language: English. Period: 1 January 2015 onward, plus a hand-curated seed list of earlier seminal works.</p></div>
