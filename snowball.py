@@ -323,8 +323,10 @@ def main():
     ap.add_argument("--min-year", type=int, default=2015)
     ap.add_argument("--count-only", action="store_true")
     ap.add_argument("--limit-seeds", type=int, default=0)
-    ap.add_argument("--forward-from", default="in-scope", choices=["in-scope", "all"],
-                    help="in-scope chases citations only from papers the searches found and E3 surveys, not the foundations")
+    ap.add_argument("--forward-from", default="in-scope", choices=["in-scope", "all", "search-only"],
+                    help="which seeds to chase citations from: all, in-scope (excludes the hand-curated "
+                         "foundations) or search-only (also excludes E3 surveys, whose citing literature is "
+                         "as broad as the survey is well known)")
     ap.add_argument("--probe", action="store_true", help="try one known paper several ways and print what the API says")
     a = ap.parse_args()
 
@@ -350,6 +352,7 @@ def main():
     print(f"{len(works)} seeds, directions {dirs}, min year {a.min_year}, cap {a.cap or 'none'}", flush=True)
 
     found, per_dir, failed = {}, {d: 0 for d in dirs}, 0
+    yield_by_seed = {}
 
     if "references" in dirs:
         refs = []
@@ -372,8 +375,8 @@ def main():
     if "citations" in dirs:
         # the hand-curated foundations are cited by entire fields that are not this review, so
         # they seed the backward pass but not the forward one
-        wl = sorted(w for w, obj in works.items()
-                    if a.forward_from == "all" or obj.get("_provenance") != "seed")
+        allowed = {"all": {"seed", "search", "e3"}, "in-scope": {"search", "e3"}, "search-only": {"search"}}[a.forward_from]
+        wl = sorted(w for w, obj in works.items() if obj.get("_provenance", "search") in allowed)
         skipped = len(works) - len(wl)
         if skipped:
             print(f"forward: {len(wl)} seeds ({skipped} foundational seed-list papers excluded)", flush=True)
@@ -385,6 +388,7 @@ def main():
                 if failed <= 5: print(f"  seed {wid} citations: {e}", flush=True)
                 continue
             per_dir["citations"] += len(recs)
+            yield_by_seed[wid] = len(recs)
             for r in recs: found.setdefault(r["record_id"], r)
             if i % 10 == 0 or i == len(wl):
                 print(f"  forward {i}/{len(wl)} seeds; {len(found)} unique so far", flush=True)
@@ -394,6 +398,16 @@ def main():
     for rid in list(found):
         if rid in seed_ids: del found[rid]
 
+    if yield_by_seed:
+        # the distribution matters more than the total: a cap should be set from where the mass is
+        top = sorted(yield_by_seed.items(), key=lambda kv: -kv[1])[:12]
+        tot = sum(yield_by_seed.values()) or 1
+        print("\nheaviest forward seeds (these decide whether a cap is needed):")
+        for wid, n in top:
+            w = works.get(wid, {})
+            print(f"  {n:6}  {w.get('_provenance','?'):6}  {(w.get('title') or w.get('display_name') or wid)[:62]}")
+        head = sum(n for _, n in top)
+        print(f"  the 12 heaviest account for {head} of {tot} forward records ({100*head//tot}%)")
     print(f"\nunique records found: {len(found)}")
     for d in dirs:
         print(f"  {d}: {per_dir[d]} (before dedup)")

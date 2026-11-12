@@ -26,7 +26,7 @@ on:
         description: Max records per seed per direction, 0 for no cap
         default: "0"
       forward_from:
-        description: in-scope (skip the foundational seed papers) or all
+        description: search-only, in-scope or all (which seeds to chase citations from)
         default: in-scope
       min_year:
         description: Earliest publication year to keep
