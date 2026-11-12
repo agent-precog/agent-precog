@@ -140,9 +140,15 @@ def oa_norm(w):
 
 
 def oa_resolve(items, chunk=40):
-    """Seeds to OpenAlex works, by DOI. Returns {work_id: work}. referenced_works comes free."""
+    """Seeds to OpenAlex works. Returns {work_id: work}; referenced_works comes free on each.
+
+    arXiv preprints are indexed under their registered DOI (10.48550/arXiv.NNNN.NNNNN), so they
+    resolve the same way rather than being skipped, which is what a ten-seed trial caught.
+    """
     out = {}
-    dois = [v for k, v in items if k == "doi"]
+    dois = []
+    for k, v in items:
+        dois.append(v if k == "doi" else f"10.48550/arxiv.{v}")
     for i in range(0, len(dois), chunk):
         part = dois[i:i + chunk]
         d = oa_get({"filter": "doi:" + "|".join(part), "per-page": len(part), "select": SELECT})
@@ -234,7 +240,8 @@ def seeds():
     for p in csv.DictReader(open(DATA / "papers.csv", newline="", encoding="utf-8")):
         d = (p.get("doi_or_arxiv") or "").strip().lower()
         if d and not d.startswith("10."):
-            out.setdefault(("arxiv", d), p["title"])
+            # papers.csv writes these as "arXiv:2401.00001"; store the bare id
+            out.setdefault(("arxiv", d.split(":", 1)[-1].strip()), p["title"])
         elif d:
             out.setdefault(("doi", d), p["title"])
     cur = {}
@@ -312,8 +319,10 @@ def main():
         print("no S2_API_KEY set; the pass runs on OpenAlex, so this only affects the probe's last check", flush=True)
     sd = seeds()
     items = sorted(sd)
-    if a.limit_seeds:
-        items = items[:a.limit_seeds]
+    if a.limit_seeds and a.limit_seeds < len(items):
+        # evenly spaced across the set: the head is all arXiv ids and would not be representative
+        step = len(items) / a.limit_seeds
+        items = [items[int(i * step)] for i in range(a.limit_seeds)]
     dirs = {"backward": ["references"], "forward": ["citations"], "both": ["references", "citations"]}[a.direction]
 
     print(f"resolving {len(items)} seeds against OpenAlex...", flush=True)
