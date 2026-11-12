@@ -60,39 +60,46 @@ def get(url, headers=None, retries=5, pause=3.0):
 
 
 def probe(key):
-    """Try the request in several shapes against one known paper and print exactly what each returns.
+    """Establish whether the API key is being honoured, then whether the request shape is right.
 
-    Written because a 54-minute run reported 401 failures as a bare 'HTTP Error 400: Bad Request'
-    with no indication of which part of the request the server objected to.
+    The first pass reported 401 failures as a bare 'HTTP Error 400'. The second showed every
+    failure carrying Semantic Scholar's anonymous-caller message, so the key is the first thing
+    to settle: everything else is unmeasurable while the limiter is rejecting calls.
+
+    Nothing derived from the key is printed beyond its length and whether it has stray whitespace,
+    since this log is public.
     """
-    doi = "10.1145/3463952.3464013"            # Safe Multi-Agent Reinforcement Learning via Shielding
-    enc = urllib.parse.quote(f"DOI:{doi}", safe="")
-    full = urllib.parse.quote(FIELDS)
-    variants = [
-        ("base lookup, minimal fields",      f"{S2}/paper/DOI:{doi}?fields=title,year"),
-        ("base lookup, full fields",         f"{S2}/paper/DOI:{doi}?fields={full}"),
-        ("references, no fields param",      f"{S2}/paper/DOI:{doi}/references?limit=3"),
-        ("references, minimal fields",       f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3"),
-        ("references, full fields (current)",f"{S2}/paper/DOI:{doi}/references?fields={full}&limit=3"),
-        ("references, fields unquoted",      f"{S2}/paper/DOI:{doi}/references?fields={FIELDS}&limit=3"),
-        ("references, id percent-encoded",   f"{S2}/paper/{enc}/references?fields=title,year&limit=3"),
-        ("references, offset present",       f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3&offset=0"),
-        ("citations, minimal fields",        f"{S2}/paper/DOI:{doi}/citations?fields=title,year&limit=3"),
-        ("search endpoint (auth sanity)",    f"{S2}/paper/search?query=shielding&limit=1&fields=title"),
+    raw = os.environ.get("S2_API_KEY", "")
+    print(f"key: {'set' if raw else 'NOT SET'}, length {len(raw)}, "
+          f"stray whitespace: {raw != raw.strip()}, looks truncated: {len(raw.strip()) < 20}")
+    ua = {"User-Agent": f"agent-precog ({MAILTO})"}
+    keyed = dict(ua, **({"x-api-key": raw.strip()} if raw.strip() else {}))
+    # a paper certain to be indexed, so a 404 means the request shape is wrong rather than the paper missing
+    doi = "10.1038/nature14539"          # LeCun, Bengio and Hinton, Deep learning, Nature 2015
+    checks = [
+        ("search, WITH key",    f"{S2}/paper/search?query=deep+learning&limit=1&fields=title", keyed),
+        ("search, WITHOUT key", f"{S2}/paper/search?query=deep+learning&limit=1&fields=title", ua),
+        ("base lookup",         f"{S2}/paper/DOI:{doi}?fields=title,year", keyed),
+        ("references",          f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3", keyed),
+        ("citations",           f"{S2}/paper/DOI:{doi}/citations?fields=title,year&limit=3", keyed),
+        ("citations, full fields", f"{S2}/paper/DOI:{doi}/citations?fields={urllib.parse.quote(FIELDS)}&limit=3", keyed),
     ]
-    headers = {"User-Agent": f"agent-precog ({MAILTO})"}
-    if key: headers["x-api-key"] = key
-    print(f"probe: key {'present' if key else 'ABSENT'}\n")
-    for label, url in variants:
+    for label, url, hdrs in checks:
         try:
-            r = get(url, headers, retries=1)
-            n = len(r.get("data", [])) if isinstance(r, dict) and "data" in r else ("none" if r is None else "ok")
-            print(f"  OK    {label:36} -> {n if n != 'ok' else 'object'} | {url[:110]}")
+            r = get(url, hdrs, retries=1)
+            if r is None:
+                print(f"  404   {label:24} (not found)")
+            elif isinstance(r, dict) and "data" in r:
+                print(f"  OK    {label:24} {len(r['data'])} records")
+            else:
+                print(f"  OK    {label:24} object returned")
         except ApiError as e:
-            print(f"  FAIL  {label:36} -> {e.code} {e.body[:160]!r}")
+            print(f"  {e.code}   {label:24} {e.body[:120]!r}")
         except Exception as e:
-            print(f"  FAIL  {label:36} -> {type(e).__name__}: {e}")
-        time.sleep(1.0 if key else 3.0)
+            print(f"  FAIL  {label:24} {type(e).__name__}: {e}")
+        time.sleep(6.0)   # well inside even the anonymous limit, so a 429 here means the limiter, not our pace
+    print("\nIf 'search, WITH key' is 429 while the key is set and untruncated, the key is not being")
+    print("accepted: check it was pasted whole into the S2_API_KEY secret, and that it is active.")
 
 
 def seeds():
