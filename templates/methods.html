@@ -27,9 +27,9 @@
       {% set f = counts.flow %}
       <div class="prisma">
         <div class="box"><span class="l">Records found</span><span class="n">{{ "{:,}".format(f.found) }}</span><span class="s">Across {{ counts.databases }} databases{% if f.snowball_found %} and citation chasing{% endif %}</span></div>
-        <div class="box"><span class="l">Abstracts screened</span><span class="n">{{ "{:,}".format(f.screened) }}</span><span class="s">after removing {{ "{:,}".format(f.duplicates) }} duplicates</span></div>
+        <div class="box"><span class="l">Abstracts screened</span><span class="n">{{ "{:,}".format(f.screened) }}</span><span class="s">After removing {{ "{:,}".format(f.duplicates) }} duplicates</span></div>
         <div class="box"><span class="l">Abstracts that passed screening</span><span class="n">{{ "{:,}".format(f.passed) }}</span><span class="s">{{ "{:,}".format(f.ta_excluded) }} excluded on title and abstract</span></div>
-        <div class="box inc"><span class="l">Papers in the review</span><span class="n">{{ "{:,}".format(f.included + f.seed) }}</span><span class="s">included after full-text reading</span></div>
+        <div class="box inc"><span class="l">Papers in the review</span><span class="n">{{ "{:,}".format(f.included + f.seed) }}</span><span class="s">Included after full-text reading</span></div>
       </div>
       {% else %}
       <div class="prisma">

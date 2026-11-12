@@ -53,9 +53,10 @@ tr:last-child td{border-bottom:0}
 .prisma{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 @media(max-width:720px){.prisma{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .prisma .box{padding:14px;border-radius:6px;background:var(--tint);border:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
-.prisma .box.inc{background:var(--tealbg);border-color:var(--teal)}.prisma .box.inc *{color:var(--teal)}
+.prisma .box.inc{background:var(--tealbg);border-color:var(--teal)}
 .prisma .box .n{font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:500}
-.prisma .box .l,.prisma .box .s{font-size:12px;color:var(--hint)}
+.prisma .box .l,.prisma .box .s{font-size:12px}
+.prisma .box,.prisma .box *{color:#000;opacity:1}
 .cell{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:6px;font-family:'IBM Plex Mono',monospace;font-weight:500;color:var(--ink)}
 .cell:hover{text-decoration:none;outline:2px solid var(--ink)}
 .cell.strong{background:var(--teal);color:#fff}.cell.partial{background:var(--teal2)}.cell.thin{background:var(--teal3)}

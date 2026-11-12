@@ -9,9 +9,15 @@
     <div class="card dark" style="gap:10px">
       <span class="eyebrow">NEXT SEARCH RUN</span>
       <h3>{{ version.next_search }} - 06:00 UTC</h3>
-      <span class="muted" style="font-size:14px">IEEE Xplore and ACM are searched by hand each quarter; arXiv, Semantic Scholar and OpenAlex are searched through their APIs, by hand for the first runs and on a monthly schedule once those are complete.{% if not counts.has_runs %} No database search has run yet; the review currently holds the {{ total }}-paper hand-curated seed list.{% else %} First run under way: {{ counts.identified_db }} records identified, {{ counts.to_full_text }} passed title/abstract screening; {{ counts.ft_decided }} have full-text decisions by the maintainer{% if counts.ft_ai_excluded %}, {{ counts.ft_ai_excluded }} more were excluded on an AI reading of the full text that the maintainer accepted,{% endif %} and {{ counts.search_included }} are included so far, alongside the {{ total - counts.search_included }}-paper seed list. {% if counts.awaiting_ft and counts.awaiting_ft == counts.pending_publication %}Every record that passed screening in these databases has been read in full except {{ counts.awaiting_ft }} whose publisher has not yet released the full text.{% elif counts.awaiting_ft %}{{ counts.awaiting_ft }} await full-text decisions.{% else %}Every record that passed screening in these databases has now been read in full.{% endif %}{% endif %}</span>
+      <span class="muted" style="font-size:14px">IEEE Xplore and ACM are searched by hand each quarter; arXiv, Semantic Scholar and OpenAlex are searched through their APIs, by hand for the first runs and on a monthly schedule once those are complete.{% if not counts.has_runs %} No database search has run yet; the review currently holds the {{ total }}-paper hand-curated seed list.{% endif %}</span>
       <a href="/prisma-s/" style="font-size:14px;font-weight:500;color:#fff">PRISMA flow and search log →</a>
     </div>
+    {% if counts.has_runs %}{% set f = counts.flow %}
+    <div class="prisma" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+      <div class="box"><span class="l">Records found</span><span class="n">{{ "{:,}".format(f.found) }}</span><span class="s">Across {{ counts.databases }} databases{% if f.snowball_found %} and citation chasing{% endif %}</span></div>
+      <div class="box inc"><span class="l">Papers in the review</span><span class="n">{{ "{:,}".format(f.included + f.seed) }}</span><span class="s">Included after full-text reading</span></div>
+    </div>
+    {% endif %}
   </div>
 </div></section>
 
