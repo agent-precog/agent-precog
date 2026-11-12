@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 GAP_CELLS = {"multi-agent state", "non-generative inference", "latency/jitter aware",
              "time-to-irreversibility", "edge deployment", "human handoff", "cross-domain evaluation"}
-CODES = {"E1", "E2", "E3", "E4", "E5", "E6", "E7"}
+CODES = {"E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8"}
 STAGES = {"title_abstract", "title_abstract_2", "full_text"}
 BAD_CHARS = {"·": "middle dot", "–": "en dash", "—": "em dash"}
 
