@@ -14,7 +14,7 @@
     </div>
     {% if counts.has_runs %}{% set f = counts.flow %}
     <div class="prisma" style="grid-template-columns:repeat(2,minmax(0,1fr))">
-      <div class="box"><span class="l">Search results</span><span class="n">{{ "{:,}".format(f.found) }}</span><span class="s">Across {{ counts.databases }} databases{% if f.snowball_found %} and citation chasing{% endif %}</span></div>
+      <div class="box"><span class="l">Search results</span><span class="n">{{ "{:,}".format(f.found) }}</span><span class="s">Across {{ counts.databases }} databases{% if f.snowball_found %}, then citation chasing{% endif %}</span></div>
       <div class="box inc"><span class="l">Papers in the review</span><span class="n">{{ "{:,}".format(f.included + f.seed) }}</span><span class="s">Included after full-text reading</span></div>
     </div>
     {% endif %}
