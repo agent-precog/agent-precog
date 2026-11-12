@@ -1,0 +1,17 @@
+{
+ "arxiv": {
+  "query": "(all:\"joint-embedding predictive\" OR all:\"JEPA\" OR all:\"world model\" OR all:\"latent dynamics\" OR all:\"latent prediction\") AND (all:\"graph\" OR all:\"relational\" OR all:\"hyperbolic\" OR (all:\"Poincare\" OR all:\"Poincar\u00e9\") OR all:\"multi-agent\") AND (all:\"self-supervised\" OR all:\"action-conditioned\" OR (all:\"predict\" OR all:\"predicts\" OR all:\"prediction\" OR all:\"predictive\" OR all:\"predicting\") OR all:\"anomaly\" OR all:\"safety\") AND submittedDate:[201501010000 TO 209912312359]",
+  "hits": 369,
+  "downloaded": 369
+ },
+ "openalex": {
+  "query": "(\"joint-embedding predictive\" OR \"JEPA\" OR \"world model\" OR \"latent dynamics\" OR \"latent prediction\") AND (\"graph\" OR \"relational\" OR \"hyperbolic\" OR (\"Poincare\" OR \"Poincar\u00e9\") OR \"multi-agent\") AND (\"self-supervised\" OR \"action-conditioned\" OR (\"predict\" OR \"predicts\" OR \"prediction\" OR \"predictive\" OR \"predicting\") OR \"anomaly\" OR \"safety\")",
+  "hits": 625,
+  "downloaded": 625
+ },
+ "semanticscholar": {
+  "query": "(\"joint-embedding predictive\" | \"JEPA\" | \"world model\" | \"latent dynamics\" | \"latent prediction\") + (\"graph\" | \"relational\" | \"hyperbolic\" | \"Poincar*\" | \"multi-agent\") + (\"self-supervised\" | \"action-conditioned\" | \"predict*\" | \"anomaly\" | \"safety\")",
+  "hits": 303,
+  "downloaded": 303
+ }
+}
