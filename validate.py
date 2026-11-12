@@ -98,7 +98,7 @@ def check_decisions(ps):
         ids = ident(recs.get(rid, {})) or {rid}
         if not (ids & bykey) and nt(recs.get(rid, {}).get("title", "\x00")) not in bytitle:
             warn(f"decisions.csv: {rid} is a full-text include but is not in papers.csv")
-    missing = [p["id"] for p in ps if p["included_via"] == "search"
+    missing = [p["id"] for p in ps if p["included_via"] in ("search", "snowball")
                and pkeys(p) and not (pkeys(p) & inc_ident) and nt(p["title"]) not in inc_titles]
     if missing: warn(f"papers.csv: {len(missing)} search-included papers have no full-text include decision: {missing[:5]}")
     return ds

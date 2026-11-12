@@ -108,7 +108,7 @@ def prisma(papers, search_log, decisions):
     all_decisions = decisions                 # full audit log, for the batch table
     decisions = latest_decisions(decisions)   # current decision per record and stage, for the counts
     identified_db = sum(int(r["hits"] or 0) for r in search_log)
-    other = sum(1 for p in papers if p["included_via"] != "search")
+    other = sum(1 for p in papers if p["included_via"] not in ("search", "snowball"))
     # Records screened is counted from the records themselves, not by subtracting known duplicates
     # from the hit total. A run that queries several databases collapses heavily before ingest -
     # the three API searches returned 9,187 rows and 5,910 distinct records - and that collapse is
@@ -147,9 +147,10 @@ def prisma(papers, search_log, decisions):
         "ft_ai_excluded": sum(ft_ai_excl.values()),
         "ft_ai_codes": dict(ft_ai_excl),
         "included": len(papers),
-        "databases": len({r["database"] for r in search_log}),
+        "databases": len({r["database"] for r in search_log if not r["database"].startswith("Snowballing")}),
         "has_runs": bool(search_log),
-        "search_included": sum(1 for p in papers if p["included_via"] == "search"),
+        "search_included": sum(1 for p in papers if p["included_via"] in ("search", "snowball")),
+        "snowball_included": sum(1 for p in papers if p["included_via"] == "snowball"),
         "ft_decided": sum(1 for d in decisions if d["stage"]=="full_text" and d["human_decision"] in ("include","exclude") and d["exclusion_code"] not in ("E3","E5")),
         "to_full_text": sum(1 for d in decisions if d["stage"] == "title_abstract" and (d["human_decision"] == "include" or (d["human_decision"] == "" and d["ai_label"] == "include"))) - ta2_excluded,
         "ta2_excluded": ta2_excluded,
