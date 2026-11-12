@@ -1,0 +1,29 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+doi:10.1145/3856815,include,,"(b) JEPA latent prediction over a shared graph space; application is NL-FOL conversion, full text decides",ta-screen-v4,2026-11-12
+doi:10.65109/ivnk5836,include,,(b) local-to-global world model for offline multi-agent RL with uncertainty-aware sampling,ta-screen-v4,2026-11-12
+doi:10.65109/ixmj8234,include,,(b) VAE world model with joint state-action embeddings and imagined rollouts for multi-agent RL,ta-screen-v4,2026-11-12
+doi:10.1145/3748636.3760462,exclude,E2,"Conceptual agent model with world model and multi-agent modules; vision paper outlining a needed benchmark, nothing reported",ta-screen-v4,2026-11-12
+acm:3635637.3663049,include,,(b) bi-level latent-variable world model for multi-agent RL with decentralised execution,ta-screen-v4,2026-11-12
+acm:3635637.3662876,include,,(b) multi-agent Dreamer-style world model with centralised imagination and counterfactual rollouts,ta-screen-v4,2026-11-12
+doi:10.1145/3767308.3834987,include,,"(b) multi-view interactive world model aimed at multi-user multi-agent environments; multi-agent aspect weak, full text decides",ta-screen-v4,2026-11-12
+doi:10.1145/3737904.3768530,include,,(b) plausible: physical world model grounded through spatial trajectory graph in a multi-agent LLM system,ta-screen-v4,2026-11-12
+doi:10.1145/3788149.3788171,exclude,E1,Multi-agent LLM pipeline for model selection; real-world model selection is not a world model,ta-screen-v4,2026-11-12
+doi:10.1145/3711896.3736837,include,,"(b) graph neural ODE predicting latent dynamics over graphs; fluid domain, full text decides relevance",ta-screen-v4,2026-11-12
+doi:10.1145/3533271.3561753,include,,(b) learned world-model simulator emulating a multi-agent limit order book trader population,ta-screen-v4,2026-11-12
+doi:10.1145/3637528.3671791,exclude,E1,GNN receptive-field method for heterophilic graphs; proxy label predictor is not a world model,ta-screen-v4,2026-11-12
+acm:3535850.3535894,include,,(b) per-agent world models sustained by communication with imagined rollouts for multi-agent RL,ta-screen-v4,2026-11-12
+doi:10.1145/3534678.3539301,exclude,E1,GNN representation of fMRI brain dynamics for task classification; no world model or agents,ta-screen-v4,2026-11-12
+doi:10.1145/3844212.3844246,include,,(b) plausible: multi-agent game agent with auxiliary belief and world-model objectives and graph attention,ta-screen-v4,2026-11-12
+doi:10.1145/3799825.3818755,include,,(b) plausible: shared voxel-graph world model used by multiple agents for structural anomaly identification; poster,ta-screen-v4,2026-11-12
+doi:10.1145/3764920.3771694,exclude,E1,Distance-graph RAG for LLM spatial reasoning; world model only as a figure of speech,ta-screen-v4,2026-11-12
+doi:10.1145/3767308.3835995,exclude,E1,"Scene-graph memory for egocentric video QA; explicitly not a world model, single wearer",ta-screen-v4,2026-11-12
+doi:10.1145/3711896.3737185,exclude,E1,LLM and GNN embeddings for job recommendation; real-world model deployment is not a world model,ta-screen-v4,2026-11-12
+doi:10.1145/3843220,exclude,E1,Spatial RAG over distance graph for LLM reasoning; world model only as a figure of speech,ta-screen-v4,2026-11-12
+doi:10.1177/26339137231222481,exclude,E2,White paper vision of shared generative world models among agent ensembles via active inference; no method or study,ta-screen-v4,2026-11-12
+doi:10.1145/3583691,exclude,E1,Cover time of random walks on scale-free small-world graphs; not a world model,ta-screen-v4,2026-11-12
+doi:10.1145/3431920.3439465,exclude,E1,"Small-world structural DNN pruning for FPGA inference; not a world model, no safety decision",ta-screen-v4,2026-11-12
+doi:10.1145/2901378.2901379,exclude,E1,Graph-based data management for 3D simulation state; no prediction or safety topic,ta-screen-v4,2026-11-12
+doi:10.1145/3600211.3607544,exclude,E1,Critical essay on AI and dispossession; world model used in a sociopolitical sense,ta-screen-v4,2026-11-12
+doi:10.1145/3294052.3319681,exclude,E1,Probabilistic databases with open-world semantics; open-world model is not a world model,ta-screen-v4,2026-11-12
+doi:10.1145/3022099.3022103,exclude,E1,"Error propagation analysis of Simulink software for reliability; design-time, single system, real-world model phrase only",ta-screen-v4,2026-11-12
+doi:10.1145/2688073.2688110,exclude,E1,Complex contagion spread in Kleinberg small-world graphs; not a world model,ta-screen-v4,2026-11-12

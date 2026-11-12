@@ -1,0 +1,75 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+doi:10.1109/idap71869.2026.11728010,include,,"(b) JEPA latent prediction over heterogeneous biomedical knowledge graph; graph latent-prediction method, full text decides relevance",ta-screen-v4,2026-11-12
+doi:10.1109/aetcse69203.2026.11504088,include,,(b) JEPA latent prediction for multi-agent trajectory forecasting with agent-wise masking,ta-screen-v4,2026-11-12
+doi:10.1109/icivc70586.2026.11686623,exclude,E1,"JEPA for sparse tabular recommender data; no graph or multi-agent state, none of (a)-(e)",ta-screen-v4,2026-11-12
+doi:10.1109/jiot.2026.3660030,include,,(b) multi-agent JEPA latent embedding prediction for V2X cooperative perception; 78 ms inference reported,ta-screen-v4,2026-11-12
+doi:10.1109/icivc70586.2026.11686495,exclude,E1,"Single-vehicle multi-camera JEPA perception with uncertainty; no graph or multi-agent state, no runtime interception",ta-screen-v4,2026-11-12
+doi:10.1109/tsg.2025.3578842,include,,(b) Graphormer-JEPA latent-predictive pretraining over road-power coupling network graphs,ta-screen-v4,2026-11-12
+doi:10.1109/ijcnn69854.2026.11729833,include,,(b) joint-embedding predictive pretraining over bipartite variable-constraint graphs; latent prediction on graphs,ta-screen-v4,2026-11-12
+doi:10.1109/iccc70295.2026.11680482,include,,(b) graph recurrent state-space world model predicting action-conditioned future graph states; decision deadlines touch (d),ta-screen-v4,2026-11-12
+doi:10.1109/icassp48485.2024.10446644,include,,(b) variational latent dynamics model of agents trajectories in multi-agent RL to detect interactive states,ta-screen-v4,2026-11-12
+doi:10.1109/ijcnn64981.2025.11228644,include,,(b) disentangled world model with variational graph auto-encoders for multi-agent reinforcement learning,ta-screen-v4,2026-11-12
+doi:10.1109/globecom46510.2021.9685806,exclude,E1,"Social network link prediction by joint embedding; no world model, latent dynamics prediction or safety topic",ta-screen-v4,2026-11-12
+doi:10.1109/jsen.2024.3405542,exclude,E1,Tracking and graph matching to repair sensing failures for trajectory prediction; no world model or runtime interception,ta-screen-v4,2026-11-12
+doi:10.1109/tccn.2026.3717925,include,,(b) world model learning latent transition dynamics for multi-agent PPO over satellite network state,ta-screen-v4,2026-11-12
+doi:10.1109/tnse.2026.3731054,include,,(b) latent world model in MPC loop for UAV swarm control; digital twin verifies candidate decisions,ta-screen-v4,2026-11-12
+doi:10.1109/lra.2026.3726342,include,,(b) autoregressive action world model predicting local observations and neighbour intentions in multi-agent path finding,ta-screen-v4,2026-11-12
+doi:10.1109/tgcn.2026.3716365,include,,(b) graph world model as differentiable surrogate conditioned on graph state for satellite beamforming,ta-screen-v4,2026-11-12
+doi:10.1109/icra46639.2022.9811597,include,,(b) latent graph dynamics model over interacting keypoints with MPC for deformable object manipulation,ta-screen-v4,2026-11-12
+doi:10.1109/tits.2022.3225322,exclude,E1,Single-robot latent dynamics for deformable shape control; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/iros55552.2023.10342022,include,,(b) plausible: latent-space motion prediction on spatial-temporal graph structure for robot retargeting; full text decides,ta-screen-v4,2026-11-12
+doi:10.1109/icdl63968.2025.11204356,include,,(b) graph-based object-centric world model with prediction-error intrinsic motivation,ta-screen-v4,2026-11-12
+doi:10.1109/cisat71030.2026.11682053,include,,"(b) world state as evidence-constrained temporal graph with safety gating in closed loop, possibly (a)",ta-screen-v4,2026-11-12
+doi:10.1109/vtc2025-spring65109.2025.11174936,include,,(b) model-based multi-agent RL where each base station uses a world model to predict observations,ta-screen-v4,2026-11-12
+doi:10.1109/ojcoms.2026.3684230,exclude,E1,"Latent video prediction for semantic communication; single stream, no graph or multi-agent state",ta-screen-v4,2026-11-12
+doi:10.1109/icdl63968.2025.11204457,include,,(b) fully decentralized multi-agent world model with emergent communication and coordination,ta-screen-v4,2026-11-12
+doi:10.1109/access.2024.3477306,exclude,E1,Single-robot active inference world model for reaching; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/tns.2026.3732134,include,,(b) latent neural ODE dynamics over sensor graph for reactor forecasting; millisecond inference touches (d),ta-screen-v4,2026-11-12
+doi:10.1109/tnse.2026.3752269,include,,(b) per-agent RSSM world models with latent imagination for decentralized multi-agent resource allocation,ta-screen-v4,2026-11-12
+doi:10.1109/access.2026.3747945,include,,(a) residual-based runtime detector switches to fallback planner on adversarial motion in multi-agent traffic; also (c),ta-screen-v4,2026-11-12
+doi:10.1109/lra.2023.3300282,include,,(b) graph-based world model with multi-hypothesis tracking queried for predictions and run-time monitoring,ta-screen-v4,2026-11-12
+doi:10.1109/aciiw71585.2026.11712079,include,,(b) relational-latent world model with learned forward dynamics over two-party interaction state,ta-screen-v4,2026-11-12
+doi:10.1109/iros60139.2025.11245885,include,,(b) multi-agent model-based RL with enhanced world model under CTDE,ta-screen-v4,2026-11-12
+doi:10.1109/tase.2025.3643840,include,,(b) plausible: probabilistic latent dynamics prediction with variational graph recurrent network for soft sensing,ta-screen-v4,2026-11-12
+doi:10.1109/iv55156.2024.10588698,include,,(b) world-model-inspired dreamed closed-loop multi-agent motion forecasting conditioned on ego action,ta-screen-v4,2026-11-12
+doi:10.1109/tccn.2026.3715905,include,,(b) multi-agent model-based RL with per-UAV learned world models predicting system dynamics,ta-screen-v4,2026-11-12
+doi:10.1109/iceeie47180.2019.8981445,exclude,E1,"Geometric object position mapping into a robot map; world model is a static map, no latent prediction or safety",ta-screen-v4,2026-11-12
+doi:10.1109/tbme.2026.3738914,include,,"(b) plausible: latent-dynamics consistency learning constrained by anatomical channel graph; weak fit, full text decides",ta-screen-v4,2026-11-12
+doi:10.1109/jiot.2026.3721094,include,,(b) dynamic hypergraph reasoning with latent dynamics and safe MPC at the edge; possibly (d),ta-screen-v4,2026-11-12
+doi:10.1109/lra.2020.3010206,exclude,E1,VAE disentanglement and single-system latent dynamics; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/mcom.001.2600348,include,,(b) predictive latent world model for heterogeneous unmanned multi-agent systems with knowledge graph; numerical results reported,ta-screen-v4,2026-11-12
+doi:10.1109/aero66936.2026.11519895,include,,"(b) multi-robot team world model learning concept; may be vision only, in doubt so passed to full text",ta-screen-v4,2026-11-12
+doi:10.1109/icbase63199.2024.10762181,exclude,E1,Single amphibious vehicle world-model PPO; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/ijcnn52387.2021.9533830,exclude,E1,"Graph-regularized point process for event sequences; no world model or latent state prediction, no safety topic",ta-screen-v4,2026-11-12
+doi:10.1109/tpami.2026.3735606,exclude,E1,Single-ego driving world model for 3D scene generation; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/tip.2026.3730842,include,,"(b) plausible: latent state-space dynamics with learned causal graph over latent factors; weak fit, full text decides",ta-screen-v4,2026-11-12
+doi:10.1109/icra55743.2025.11128002,exclude,E1,Single-robot visual dynamics model for granular manipulation; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/icra48891.2023.10161243,include,,(b) multi-agent traffic simulation formulated as world model with latent agent personalities,ta-screen-v4,2026-11-12
+doi:10.1109/mnet.2026.3738567,include,,(b) world model completing unreported states feeding hierarchical multi-agent RL in satellite-UAV networks,ta-screen-v4,2026-11-12
+doi:10.1109/icct-pacific69083.2026.11519043,include,,(b) scene graph forecasting with latent dynamics units including node birth and disappearance,ta-screen-v4,2026-11-12
+doi:10.1109/access.2026.3684562,exclude,E1,Single-scene visual world model for ophthalmic surgery; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/tmm.2025.3543110,include,,"(b) world models predicting interaction patterns in multi-agent self-awareness architecture, two interacting agents",ta-screen-v4,2026-11-12
+doi:10.1109/tccn.2026.3727979,include,,(b) world-model DRL (TDMPC2) with graph encoder over sensor network topologies,ta-screen-v4,2026-11-12
+doi:10.1109/mnet.2026.3686182,include,,(b) latent world model predicting network state in distributed model-based multi-agent RL across base stations,ta-screen-v4,2026-11-12
+doi:10.1109/tpami.2026.3703038,exclude,E1,"Survey of physical AI and embodied world models; no graph or multi-agent state, no runtime safety topic",ta-screen-v4,2026-11-12
+doi:10.1109/tce.2025.3636054,exclude,E1,Elevator dispatch with YOLO recognition and GNN scheduling; none of (a)-(e) is the subject,ta-screen-v4,2026-11-12
+doi:10.1109/dcoss-iot69657.2026.00114,include,,(b) physics-informed world model with mean-field multi-agent RL for AUV swarm coordination,ta-screen-v4,2026-11-12
+doi:10.1109/southeastcon63549.2026.11476408,include,,(b) event-graph world model for closed-loop platform autonomy with bounded interventions; architecture plus baseline evaluation,ta-screen-v4,2026-11-12
+doi:10.1109/is57118.2022.10019723,exclude,E1,Modelling approach for a smart agriculture CPSS platform; none of (a)-(e),ta-screen-v4,2026-11-12
+doi:10.1109/saci.2015.7208245,exclude,E1,Realism of synthetic social network models via motifs; small-world is not a world model,ta-screen-v4,2026-11-12
+doi:10.1109/jiot.2026.3734499,exclude,E1,"Review of time-series and text fusion for industrial world models; no graph or multi-agent world model, no safety topic",ta-screen-v4,2026-11-12
+doi:10.1109/icccn69946.2026.11662907,include,,(b) world model producing dense predictive signals for multi-agent handover optimisation across cells,ta-screen-v4,2026-11-12
+doi:10.1109/tcss.2026.3653579,exclude,E1,Emotional world model for single dialogue system; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.23919/nanacps00070.2026.00013,include,,(b) causal-graph-masked learned world model for planning over conflicting xApps in O-RAN,ta-screen-v4,2026-11-12
+doi:10.1109/meditcom67211.2026.11641088,exclude,E1,Latent predictive video transmission for semantic communication; no graph or multi-agent aspect,ta-screen-v4,2026-11-12
+doi:10.1109/icecet55527.2022.9873044,exclude,E1,ILP task mapping for MIMD processors in model-based development; off-topic,ta-screen-v4,2026-11-12
+doi:10.1109/upinlbs68186.2025.11468427,exclude,E1,"Single-agent language navigation with feasibility validator and replanning; robustness, not safety interception or multi-agent world model",ta-screen-v4,2026-11-12
+doi:10.1109/iros47612.2022.9981459,exclude,E1,Multi-agent target-tracking planner using a given occlusion map; no world-model contribution or safety interception,ta-screen-v4,2026-11-12
+doi:10.1109/isc257844.2023.10293487,include,,(b) proposed architecture predicting world state and group agent behaviour via digital twin; contribution depth for full text,ta-screen-v4,2026-11-12
+doi:10.1109/scisisis61014.2024.10760020,exclude,E1,Energy-based latent time-series model on synthetic data; no graph or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/tpami.2026.3679426,exclude,E1,Single-agent VLN world model used for memory retrieval; no graph or multi-agent aspect,ta-screen-v4,2026-11-12
+doi:10.1109/humanoids57100.2023.10375143,exclude,E1,Learned inverse kinematics with collision avoidance for one humanoid; world model is a 3D map,ta-screen-v4,2026-11-12
+doi:10.1109/lra.2025.3537899,exclude,E1,LLM hierarchical planning for deformable manipulation; no world model over graphs or multi-agent state,ta-screen-v4,2026-11-12
+doi:10.1109/lra.2026.3752312,include,,(b) style-aware autoregressive world model of reactive surrounding agents for driving policy training,ta-screen-v4,2026-11-12
+doi:10.1002/9781394377480.ch12,exclude,E1,Book chapter roadmap on computational experiments; real-world model mapping is not a world model,ta-screen-v4,2026-11-12
+doi:10.1109/cicn67655.2025.11367837,exclude,E1,"Black hole attack detection in MANET routing on small-world topologies; network security, not (a)-(e)",ta-screen-v4,2026-11-12
