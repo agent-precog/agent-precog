@@ -31,6 +31,15 @@
         <div class="box"><span class="l">Abstracts that passed screening</span><span class="n">{{ "{:,}".format(f.passed) }}</span><span class="s">{{ "{:,}".format(f.ta_excluded) }} excluded on title and abstract</span></div>
         <div class="box inc"><span class="l">Papers in the review</span><span class="n">{{ "{:,}".format(f.included + f.seed) }}</span><span class="s">{{ "{:,}".format(f.included) }} included after full-text reading</span></div>
       </div>
+      {% else %}
+      <div class="prisma">
+        <div class="box"><span class="l">Identified</span><span class="n">-</span><span class="s">no search runs yet</span></div>
+        <div class="box"><span class="l">After dedup</span><span class="n">-</span><span class="s"></span></div>
+        <div class="box"><span class="l">Full-text</span><span class="n">-</span><span class="s"></span></div>
+        <div class="box inc"><span class="l">Included</span><span class="n">{{ counts.included }}</span><span class="s">seed list only</span></div>
+      </div>
+      <p class="muted" style="margin:0;font-size:14px">The first database search runs on {{ version.next_search }}. Until then the review holds the hand-curated seed list described in the protocol.</p>
+      {% endif %}
       <p class="muted" style="margin:0;font-size:14px">Title and abstract screening is done first by an AI model and is declared as such. The maintainer checks it by exception, through blind samples of excluded records for the database searches, and where he reviewed a record himself his decision governs. The labels from citation chasing have not yet been sample-checked. Override and leak rates are reported below, and every decision and override is logged.</p>
     </div>
     <div id="standards" class="prose"><h2>Standards</h2>
