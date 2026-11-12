@@ -28,6 +28,9 @@ on:
       min_year:
         description: Earliest publication year to keep
         default: "2015"
+      limit_seeds:
+        description: Use only the first N seeds, 0 for all. Try 10 before a full pass.
+        default: "0"
       mode:
         description: probe, count or screen
         default: count
@@ -43,6 +46,7 @@ env:
   DIRECTION: ${{ github.event.inputs.direction || 'both' }}
   CAP: ${{ github.event.inputs.cap || '0' }}
   MIN_YEAR: ${{ github.event.inputs.min_year || '2015' }}
+  LIMIT_SEEDS: ${{ github.event.inputs.limit_seeds || '0' }}
   MODE: ${{ github.event.inputs.mode || 'count' }}
 
 jobs:
@@ -58,6 +62,7 @@ jobs:
         if: env.MODE == 'probe'
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
         run: |
           set -o pipefail
           python3 -u snowball.py --probe 2>&1 | tee probe.txt || true
@@ -67,13 +72,14 @@ jobs:
         if: env.MODE != 'probe'
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
         run: |
           set -o pipefail
           rc=0
           # tee so progress streams into the live log; PIPESTATUS keeps python's exit code, which a
           # bare pipe would otherwise hide behind tee's own success
           python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
-            --min-year "$MIN_YEAR" --count-only 2>&1 | tee counts.txt || true
+            --min-year "$MIN_YEAR" --limit-seeds "$LIMIT_SEEDS" --count-only 2>&1 | tee counts.txt || true
           rc=${PIPESTATUS[0]}
           { echo "### Snowball counts (pillar $PILLAR, $DIRECTION)"; echo '```'; tail -40 counts.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           tail -40 counts.txt
@@ -83,12 +89,13 @@ jobs:
         if: env.MODE == 'screen'
         env:
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
         run: |
           set -o pipefail
           rc=0
           echo "RUN_ID=$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" >> "$GITHUB_ENV"
           python3 -u snowball.py --pillar "$PILLAR" --direction "$DIRECTION" --cap "$CAP" \
-            --min-year "$MIN_YEAR" --run "$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" 2>&1 | tee fetch.txt || true
+            --min-year "$MIN_YEAR" --limit-seeds "$LIMIT_SEEDS" --run "$(date -u +%Y-%m-%d)_p${PILLAR}_snowball" 2>&1 | tee fetch.txt || true
           rc=${PIPESTATUS[0]}
           { echo "### Fetch"; echo '```'; tail -40 fetch.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           tail -40 fetch.txt

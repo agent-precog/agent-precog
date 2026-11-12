@@ -99,57 +99,133 @@ def resolve(ids, headers, chunk=500):
     return out
 
 
+
+# ---------------------------------------------------------------- OpenAlex
+# The protocol names Semantic Scholar and OpenAlex. OpenAlex is the primary source here: it
+# answers reliably where S2 throttles even an authenticated caller, it carries referenced_works
+# on the work object so backward chasing needs no per-paper endpoint, and identifiers go in query
+# parameters rather than the URL path, which is what broke the first implementation.
+
+def oa_params(extra):
+    p = dict(extra)
+    mail = os.environ.get("OPENALEX_MAILTO", "") or MAILTO
+    if mail: p["mailto"] = mail
+    return p
+
+
+def oa_get(params, retries=5, pause=3.0):
+    url = f"{OA}/works?" + urllib.parse.urlencode(oa_params(params))
+    return get(url, {"User-Agent": f"agent-precog ({MAILTO})"}, retries, pause)
+
+
+SELECT = "id,doi,title,display_name,publication_year,type,authorships,primary_location,abstract_inverted_index,referenced_works"
+
+
+def oa_norm(w):
+    inv = w.get("abstract_inverted_index") or {}
+    words = sorted(((pos, t) for t, poss in inv.items() for pos in poss))
+    abstract = " ".join(t for _, t in words)
+    doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
+    loc = w.get("primary_location") or {}
+    u = (loc.get("landing_page_url") or "") + " " + (loc.get("pdf_url") or "")
+    m = re.search(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})", u)
+    arx = m.group(1) if m else ""
+    src = (loc.get("source") or {}).get("display_name", "") or ""
+    return {"record_id": f"doi:{doi}" if doi else (f"arxiv:{arx}" if arx else "openalex:" + w["id"].rsplit("/", 1)[-1]),
+            "title": (w.get("title") or w.get("display_name") or "").strip(),
+            "authors": "; ".join((a.get("author") or {}).get("display_name", "") for a in w.get("authorships", [])),
+            "year": str(w.get("publication_year") or ""), "venue": src, "type": w.get("type", "") or "",
+            "doi": doi, "url": f"https://doi.org/{doi}" if doi else (loc.get("landing_page_url") or w["id"]),
+            "abstract": abstract.replace("\n", " ").strip(), "arxiv_id": arx, "database": "OpenAlex (snowball)"}
+
+
+def oa_resolve(items, chunk=40):
+    """Seeds to OpenAlex works, by DOI. Returns {work_id: work}. referenced_works comes free."""
+    out = {}
+    dois = [v for k, v in items if k == "doi"]
+    for i in range(0, len(dois), chunk):
+        part = dois[i:i + chunk]
+        d = oa_get({"filter": "doi:" + "|".join(part), "per-page": len(part), "select": SELECT})
+        for w in (d or {}).get("results", []):
+            out[w["id"]] = w
+        time.sleep(0.5)
+    return out
+
+
+def oa_fetch_ids(ids, min_year, chunk=40):
+    """Hydrate OpenAlex work ids into records."""
+    out = []
+    ids = [i for i in ids if i]
+    for i in range(0, len(ids), chunk):
+        part = [x.rsplit("/", 1)[-1] for x in ids[i:i + chunk]]
+        f = "openalex_id:" + "|".join(part)
+        if min_year: f += f",from_publication_date:{min_year}-01-01"
+        d = oa_get({"filter": f, "per-page": len(part), "select": SELECT})
+        out += [oa_norm(w) for w in (d or {}).get("results", [])]
+        time.sleep(0.5)
+    return out
+
+
+def oa_citing(work_id, min_year, cap):
+    """Works citing this one. Page-based paging: cursor paging now needs a paid key."""
+    wid = work_id.rsplit("/", 1)[-1]
+    out, page = [], 1
+    while True:
+        f = f"cites:{wid}"
+        if min_year: f += f",from_publication_date:{min_year}-01-01"
+        d = oa_get({"filter": f, "per-page": 200, "page": page, "select": SELECT})
+        res = (d or {}).get("results", [])
+        out += [oa_norm(w) for w in res]
+        if len(res) < 200 or (cap and len(out) >= cap) or page * 200 >= 10000:
+            break
+        page += 1
+        time.sleep(0.5)
+    return out[:cap] if cap else out
+
+
 def probe(key):
-    """Verify the two things the first two passes got wrong: the key, and the request shape.
+    """Check the path the pass actually uses, cheaply, before committing to a full run.
 
-    Pass one put DOIs straight into the URL path. A DOI contains a slash, so the route split and
-    every lookup was answered 404 or 400. Papers are now addressed by Semantic Scholar paperId,
-    resolved in batches, and this checks that end to end on a paper certain to be indexed.
+    Two passes were lost to untestable code: the first put DOIs in the URL path, where the slash
+    splits the route, and the second hit Semantic Scholar's limiter even with a valid key. The
+    pass now runs on OpenAlex, so this verifies that path end to end on one known paper.
     """
-    raw = os.environ.get("S2_API_KEY", "")
-    print(f"key: {'set' if raw else 'NOT SET'}, length {len(raw)}, "
-          f"stray whitespace: {raw != raw.strip()}, looks truncated: {len(raw.strip()) < 20}")
-    ua = {"User-Agent": f"agent-precog ({MAILTO})"}
-    keyed = dict(ua, **({"x-api-key": raw.strip()} if raw.strip() else {}))
-    doi = "10.1038/nature14539"      # LeCun, Bengio and Hinton, Deep learning, Nature 2015
-
-    print("\n1. does the key work at all")
+    doi = "10.1038/nature14539"       # LeCun, Bengio and Hinton, Deep learning, Nature 2015
+    print(f"OpenAlex mailto: {os.environ.get('OPENALEX_MAILTO','') or MAILTO}")
+    print("\n1. resolve a known DOI")
     try:
-        r = get(f"{S2}/paper/search?query=deep+learning&limit=1&fields=title", keyed, retries=1)
-        print(f"   OK    search with key: {len((r or {}).get('data', []))} records")
-    except ApiError as e:
-        print(f"   {e.code}   search with key: {e.body[:110]!r}  <- the key is not being honoured")
-        return
-    time.sleep(2)
+        works = oa_resolve([("doi", doi)])
+    except Exception as e:
+        print(f"   FAIL {type(e).__name__}: {e}"); return
+    if not works:
+        print("   FAIL resolved nothing; OpenAlex is unreachable or the filter is wrong"); return
+    wid, w = next(iter(works.items()))
+    refs = w.get("referenced_works") or []
+    print(f"   OK   {wid} | {len(refs)} referenced works on the object")
 
-    print("\n2. the old shape, DOI in the path (expected to fail: the slash splits the route)")
-    for label, url in [("base lookup", f"{S2}/paper/DOI:{doi}?fields=title,year"),
-                       ("references", f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3")]:
-        try:
-            r = get(url, keyed, retries=1)
-            print(f"   {'404  ' if r is None else 'OK   '} {label}")
-        except ApiError as e:
-            print(f"   {e.code}   {label}: {e.body[:90]!r}")
-        time.sleep(2)
-
-    print("\n3. the new shape, resolve then address by paperId")
+    print("\n2. backward: hydrate a few references")
     try:
-        ids = resolve([f"DOI:{doi}"], keyed)
-        pid = ids.get(f"DOI:{doi}")
-        print(f"   resolve -> {pid or 'NOT RESOLVED'}")
-        if not pid:
-            return
-        time.sleep(2)
-        for d in ("references", "citations"):
-            try:
-                r = get(f"{S2}/paper/{pid}/{d}?fields={urllib.parse.quote(FIELDS)}&limit=3", keyed, retries=2)
-                n = len((r or {}).get("data", []))
-                print(f"   OK    {d}: {n} records" + (" <- working" if n else " <- empty, check fields"))
-            except ApiError as e:
-                print(f"   {e.code}   {d}: {e.body[:110]!r}")
-            time.sleep(2)
+        recs = oa_fetch_ids(refs[:5], 0)
+        print(f"   OK   {len(recs)} records" + (f" | e.g. {recs[0]['title'][:60]}" if recs else ""))
+    except Exception as e:
+        print(f"   FAIL {type(e).__name__}: {e}")
+
+    print("\n3. forward: works citing it, capped")
+    try:
+        recs = oa_citing(wid, 2015, 5)
+        print(f"   OK   {len(recs)} records" + (f" | e.g. {recs[0]['title'][:60]}" if recs else ""))
+    except Exception as e:
+        print(f"   FAIL {type(e).__name__}: {e}")
+
+    print("\n4. Semantic Scholar, for reference only (the protocol names it; OpenAlex is primary)")
+    raw = (key or "").strip()
+    hdrs = {"User-Agent": f"agent-precog ({MAILTO})"}
+    if raw: hdrs["x-api-key"] = raw
+    try:
+        r = get(f"{S2}/paper/search?query=deep+learning&limit=1&fields=title", hdrs, retries=3, pause=5.0)
+        print(f"   OK   key works: {len((r or {}).get('data', []))} records")
     except ApiError as e:
-        print(f"   {e.code}   batch resolve: {e.body[:140]!r}")
+        print(f"   {e.code}  throttled even with the key; this is why OpenAlex is primary")
 
 
 def seeds():
@@ -233,51 +309,59 @@ def main():
     if a.probe:
         probe(key); return
     if not key:
-        print("no S2_API_KEY set; the anonymous pool is shared and will usually answer 429", flush=True)
+        print("no S2_API_KEY set; the pass runs on OpenAlex, so this only affects the probe's last check", flush=True)
     sd = seeds()
     items = sorted(sd)
     if a.limit_seeds:
         items = items[:a.limit_seeds]
-    headers = {"User-Agent": f"agent-precog ({MAILTO})"}
-    if key: headers["x-api-key"] = key
+    dirs = {"backward": ["references"], "forward": ["citations"], "both": ["references", "citations"]}[a.direction]
 
-    ext = [s2_id(kind, value) for kind, value in items]
-    print(f"resolving {len(ext)} identifiers to Semantic Scholar paper ids...", flush=True)
-    try:
-        ids = resolve(ext, headers)
-    except Exception as e:
-        print(f"resolution failed: {e}")
-        sys.exit(1)
-    unresolved = [e for e in ext if e not in ids]
-    print(f"resolved {len(ids)} of {len(ext)}; {len(unresolved)} not indexed by Semantic Scholar", flush=True)
-    if unresolved[:5]:
-        print("  not indexed, for example: " + ", ".join(unresolved[:5]), flush=True)
-    if not ids:
+    print(f"resolving {len(items)} seeds against OpenAlex...", flush=True)
+    works = oa_resolve(items)
+    print(f"resolved {len(works)} of {len(items)} seeds", flush=True)
+    if not works:
         print("nothing resolved; stopping rather than reporting an empty pass as a result")
         sys.exit(1)
-
-    dirs = {"backward": ["references"], "forward": ["citations"], "both": ["references", "citations"]}[a.direction]
-    print(f"{len(ids)} seeds, directions {dirs}, min year {a.min_year}, cap {a.cap or 'none'}", flush=True)
+    print(f"{len(works)} seeds, directions {dirs}, min year {a.min_year}, cap {a.cap or 'none'}", flush=True)
 
     found, per_dir, failed = {}, {d: 0 for d in dirs}, 0
-    seedlist = sorted(ids.items())
-    for i, (given, pid) in enumerate(seedlist, 1):
-        for d in dirs:
+
+    if "references" in dirs:
+        refs = []
+        for w in works.values():
+            refs += (w.get("referenced_works") or [])
+        refs = list(dict.fromkeys(refs))
+        print(f"backward: {len(refs)} distinct referenced works to hydrate", flush=True)
+        for i in range(0, len(refs), 40):
             try:
-                recs = chase(pid, d, headers, a.cap, a.min_year)
+                recs = oa_fetch_ids(refs[i:i + 40], a.min_year)
             except Exception as e:
                 failed += 1
-                if failed <= 5 or failed % 50 == 0:
-                    print(f"  seed {given} {d}: {e}", flush=True)
-                elif failed == 6:
-                    print("  (further failures summarised at the end)", flush=True)
+                if failed <= 5: print(f"  references chunk {i}: {e}", flush=True)
                 continue
-            per_dir[d] += len(recs)
-            for r in recs:
-                found.setdefault(r["record_id"], r)
-            time.sleep(0.4 if key else 3.0)
-        if i % 10 == 0 or i == len(seedlist):
-            print(f"  {i}/{len(seedlist)} seeds; {len(found)} unique records so far", flush=True)
+            per_dir["references"] += len(recs)
+            for r in recs: found.setdefault(r["record_id"], r)
+            if (i // 40) % 10 == 0:
+                print(f"  backward {min(i + 40, len(refs))}/{len(refs)}; {len(found)} unique so far", flush=True)
+
+    if "citations" in dirs:
+        wl = sorted(works)
+        for i, wid in enumerate(wl, 1):
+            try:
+                recs = oa_citing(wid, a.min_year, a.cap)
+            except Exception as e:
+                failed += 1
+                if failed <= 5: print(f"  seed {wid} citations: {e}", flush=True)
+                continue
+            per_dir["citations"] += len(recs)
+            for r in recs: found.setdefault(r["record_id"], r)
+            if i % 10 == 0 or i == len(wl):
+                print(f"  forward {i}/{len(wl)} seeds; {len(found)} unique so far", flush=True)
+
+    # drop anything that is itself a seed
+    seed_ids = {f"doi:{v}" for k, v in items if k == "doi"} | {f"arxiv:{v}" for k, v in items if k == "arxiv"}
+    for rid in list(found):
+        if rid in seed_ids: del found[rid]
 
     print(f"\nunique records found: {len(found)}")
     for d in dirs:
