@@ -59,47 +59,97 @@ def get(url, headers=None, retries=5, pause=3.0):
     return None
 
 
+def post(url, payload, headers=None, retries=5, pause=3.0):
+    data = json.dumps(payload).encode()
+    hdrs = dict(headers or {}, **{"Content-Type": "application/json"})
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, data=data, headers=hdrs, method="POST")
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            try: body = e.read().decode("utf-8", "replace")
+            except Exception: body = ""
+            if e.code in (429, 500, 502, 503, 504) and attempt < retries - 1:
+                time.sleep(pause * (attempt + 1)); continue
+            raise ApiError(e.code, body, url)
+        except Exception:
+            if attempt < retries - 1:
+                time.sleep(pause * (attempt + 1)); continue
+            raise
+    return None
+
+
+def resolve(ids, headers, chunk=500):
+    """Map external identifiers to Semantic Scholar paperIds.
+
+    A DOI contains a slash, so putting one in the URL path splits the route and the request is
+    answered 404 or 400 - which is what silently defeated the first snowball pass. paperIds are
+    alphanumeric, so the edge endpoints can be addressed safely. This also replaces one lookup per
+    seed with one call per 500.
+    """
+    out = {}
+    for i in range(0, len(ids), chunk):
+        part = ids[i:i + chunk]
+        r = post(f"{S2}/paper/batch?fields=paperId,title", {"ids": part}, headers)
+        for given, got in zip(part, r or []):
+            if got and got.get("paperId"):
+                out[given] = got["paperId"]
+        time.sleep(1.2)
+    return out
+
+
 def probe(key):
-    """Establish whether the API key is being honoured, then whether the request shape is right.
+    """Verify the two things the first two passes got wrong: the key, and the request shape.
 
-    The first pass reported 401 failures as a bare 'HTTP Error 400'. The second showed every
-    failure carrying Semantic Scholar's anonymous-caller message, so the key is the first thing
-    to settle: everything else is unmeasurable while the limiter is rejecting calls.
-
-    Nothing derived from the key is printed beyond its length and whether it has stray whitespace,
-    since this log is public.
+    Pass one put DOIs straight into the URL path. A DOI contains a slash, so the route split and
+    every lookup was answered 404 or 400. Papers are now addressed by Semantic Scholar paperId,
+    resolved in batches, and this checks that end to end on a paper certain to be indexed.
     """
     raw = os.environ.get("S2_API_KEY", "")
     print(f"key: {'set' if raw else 'NOT SET'}, length {len(raw)}, "
           f"stray whitespace: {raw != raw.strip()}, looks truncated: {len(raw.strip()) < 20}")
     ua = {"User-Agent": f"agent-precog ({MAILTO})"}
     keyed = dict(ua, **({"x-api-key": raw.strip()} if raw.strip() else {}))
-    # a paper certain to be indexed, so a 404 means the request shape is wrong rather than the paper missing
-    doi = "10.1038/nature14539"          # LeCun, Bengio and Hinton, Deep learning, Nature 2015
-    checks = [
-        ("search, WITH key",    f"{S2}/paper/search?query=deep+learning&limit=1&fields=title", keyed),
-        ("search, WITHOUT key", f"{S2}/paper/search?query=deep+learning&limit=1&fields=title", ua),
-        ("base lookup",         f"{S2}/paper/DOI:{doi}?fields=title,year", keyed),
-        ("references",          f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3", keyed),
-        ("citations",           f"{S2}/paper/DOI:{doi}/citations?fields=title,year&limit=3", keyed),
-        ("citations, full fields", f"{S2}/paper/DOI:{doi}/citations?fields={urllib.parse.quote(FIELDS)}&limit=3", keyed),
-    ]
-    for label, url, hdrs in checks:
+    doi = "10.1038/nature14539"      # LeCun, Bengio and Hinton, Deep learning, Nature 2015
+
+    print("\n1. does the key work at all")
+    try:
+        r = get(f"{S2}/paper/search?query=deep+learning&limit=1&fields=title", keyed, retries=1)
+        print(f"   OK    search with key: {len((r or {}).get('data', []))} records")
+    except ApiError as e:
+        print(f"   {e.code}   search with key: {e.body[:110]!r}  <- the key is not being honoured")
+        return
+    time.sleep(2)
+
+    print("\n2. the old shape, DOI in the path (expected to fail: the slash splits the route)")
+    for label, url in [("base lookup", f"{S2}/paper/DOI:{doi}?fields=title,year"),
+                       ("references", f"{S2}/paper/DOI:{doi}/references?fields=title,year&limit=3")]:
         try:
-            r = get(url, hdrs, retries=1)
-            if r is None:
-                print(f"  404   {label:24} (not found)")
-            elif isinstance(r, dict) and "data" in r:
-                print(f"  OK    {label:24} {len(r['data'])} records")
-            else:
-                print(f"  OK    {label:24} object returned")
+            r = get(url, keyed, retries=1)
+            print(f"   {'404  ' if r is None else 'OK   '} {label}")
         except ApiError as e:
-            print(f"  {e.code}   {label:24} {e.body[:120]!r}")
-        except Exception as e:
-            print(f"  FAIL  {label:24} {type(e).__name__}: {e}")
-        time.sleep(6.0)   # well inside even the anonymous limit, so a 429 here means the limiter, not our pace
-    print("\nIf 'search, WITH key' is 429 while the key is set and untruncated, the key is not being")
-    print("accepted: check it was pasted whole into the S2_API_KEY secret, and that it is active.")
+            print(f"   {e.code}   {label}: {e.body[:90]!r}")
+        time.sleep(2)
+
+    print("\n3. the new shape, resolve then address by paperId")
+    try:
+        ids = resolve([f"DOI:{doi}"], keyed)
+        pid = ids.get(f"DOI:{doi}")
+        print(f"   resolve -> {pid or 'NOT RESOLVED'}")
+        if not pid:
+            return
+        time.sleep(2)
+        for d in ("references", "citations"):
+            try:
+                r = get(f"{S2}/paper/{pid}/{d}?fields={urllib.parse.quote(FIELDS)}&limit=3", keyed, retries=2)
+                n = len((r or {}).get("data", []))
+                print(f"   OK    {d}: {n} records" + (" <- working" if n else " <- empty, check fields"))
+            except ApiError as e:
+                print(f"   {e.code}   {d}: {e.body[:110]!r}")
+            time.sleep(2)
+    except ApiError as e:
+        print(f"   {e.code}   batch resolve: {e.body[:140]!r}")
 
 
 def seeds():
@@ -141,13 +191,11 @@ def norm(rec, database):
             "arxiv_id": arx, "database": database}
 
 
-def chase(kind, value, direction, key, cap, min_year):
-    """One seed, one direction. Returns normalised records."""
-    headers = {"User-Agent": f"agent-precog ({MAILTO})"}
-    if key: headers["x-api-key"] = key
+def chase(paper_id, direction, headers, cap, min_year):
+    """One seed, one direction, addressed by Semantic Scholar paperId. Returns normalised records."""
     out, offset = [], 0
     while True:
-        url = (f"{S2}/paper/{s2_id(kind, value)}/{direction}"
+        url = (f"{S2}/paper/{paper_id}/{direction}"
                f"?fields={urllib.parse.quote(FIELDS)}&limit=100&offset={offset}")
         page = get(url, headers)
         if not page or not page.get("data"):
@@ -190,18 +238,37 @@ def main():
     items = sorted(sd)
     if a.limit_seeds:
         items = items[:a.limit_seeds]
+    headers = {"User-Agent": f"agent-precog ({MAILTO})"}
+    if key: headers["x-api-key"] = key
+
+    ext = [s2_id(kind, value) for kind, value in items]
+    print(f"resolving {len(ext)} identifiers to Semantic Scholar paper ids...", flush=True)
+    try:
+        ids = resolve(ext, headers)
+    except Exception as e:
+        print(f"resolution failed: {e}")
+        sys.exit(1)
+    unresolved = [e for e in ext if e not in ids]
+    print(f"resolved {len(ids)} of {len(ext)}; {len(unresolved)} not indexed by Semantic Scholar", flush=True)
+    if unresolved[:5]:
+        print("  not indexed, for example: " + ", ".join(unresolved[:5]), flush=True)
+    if not ids:
+        print("nothing resolved; stopping rather than reporting an empty pass as a result")
+        sys.exit(1)
+
     dirs = {"backward": ["references"], "forward": ["citations"], "both": ["references", "citations"]}[a.direction]
-    print(f"{len(items)} seeds, directions {dirs}, min year {a.min_year}, cap {a.cap or 'none'}", flush=True)
+    print(f"{len(ids)} seeds, directions {dirs}, min year {a.min_year}, cap {a.cap or 'none'}", flush=True)
 
     found, per_dir, failed = {}, {d: 0 for d in dirs}, 0
-    for i, (kind, value) in enumerate(items, 1):
+    seedlist = sorted(ids.items())
+    for i, (given, pid) in enumerate(seedlist, 1):
         for d in dirs:
             try:
-                recs = chase(kind, value, d, key, a.cap, a.min_year)
+                recs = chase(pid, d, headers, a.cap, a.min_year)
             except Exception as e:
                 failed += 1
                 if failed <= 5 or failed % 50 == 0:
-                    print(f"  seed {value} {d}: {e}", flush=True)
+                    print(f"  seed {given} {d}: {e}", flush=True)
                 elif failed == 6:
                     print("  (further failures summarised at the end)", flush=True)
                 continue
@@ -209,8 +276,8 @@ def main():
             for r in recs:
                 found.setdefault(r["record_id"], r)
             time.sleep(0.4 if key else 3.0)
-        if i % 10 == 0 or i == len(items):
-            print(f"  {i}/{len(items)} seeds; {len(found)} unique records so far", flush=True)
+        if i % 10 == 0 or i == len(seedlist):
+            print(f"  {i}/{len(seedlist)} seeds; {len(found)} unique records so far", flush=True)
 
     print(f"\nunique records found: {len(found)}")
     for d in dirs:
