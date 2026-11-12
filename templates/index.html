@@ -9,7 +9,7 @@
     <div class="card dark" style="gap:10px">
       <span class="eyebrow">NEXT SEARCH RUN</span>
       <h3>{{ version.next_search }} - 06:00 UTC</h3>
-      <span class="muted" style="font-size:14px">IEEE Xplore and ACM are searched by hand each quarter; arXiv, Semantic Scholar and OpenAlex are searched through their APIs, by hand for the first runs and on a monthly schedule once those are complete.{% if not counts.has_runs %} No database search has run yet; the review currently holds the {{ total }}-paper hand-curated seed list.{% endif %}</span>
+      <span class="muted" style="font-size:14px">IEEE Xplore and ACM are searched by hand each quarter; arXiv, Semantic Scholar and OpenAlex are searched through their APIs, by hand for the first runs and on a monthly schedule thereafter.{% if not counts.has_runs %} No database search has run yet; the review currently holds the {{ total }}-paper hand-curated seed list.{% endif %}</span>
       <a href="/prisma-s/" style="font-size:14px;font-weight:500;color:#fff">PRISMA flow and search log →</a>
     </div>
     {% if counts.has_runs %}{% set f = counts.flow %}
