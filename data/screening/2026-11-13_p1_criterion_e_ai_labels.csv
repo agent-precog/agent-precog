@@ -1,0 +1,28 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+openalex:W2745437460,include,,"(e) studies semi-autonomous vehicle intervention schemes, shared control and human-automation information flow for interface design and trust.",ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.54941/ahfe1002308,include,,"(e) designs human supervision system for autonomous vehicle fleets, addressing complacency, automation bias and operator awareness.",ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1177/1555343415597344,include,,"(e) analyses auto-throttle mode confusion, flight crew mental model divergence and situation awareness during recovery.",ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.65109/wjzk1703,include,,(e) builds swarm self-healing for a human operator exerting supervisory control via trust signals over a remote swarm.,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/tits.2023.3277015,include,,(e) bargaining game allocates driving control authority between human driver and automation; transfer of authority studied.,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/tase.2023.3320708,include,,"(e) role arbitration assigns leader role to human or robot, studying transfer of authority in physical interaction.",ta-screen-v4+p1-scope+e,2026-11-13
+openalex:W1936348630,include,,(e) multi-UAV supervisory control interfaces and mixed-initiative task allocation evaluated for operator workload and replanning.,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.3390/s17081720,include,,(e) measures multi-robot operator situational awareness and workload across four supervisory interface designs.,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1080/10447318.2019.1676519,include,,"(e) experiment on robot transparency effects on supervisory controller trust, situation awareness and workload.",ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/iros.2016.7759435,include,,(e) mixed-initiative controller for one operator intervening in several robots simultaneously; intervention time measured.,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.48550/arxiv.1909.06480,include,,(e) alert-generation framework warns human supervisor of multi-agent task failures to support operator decision making.,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/tro.2015.2455791,include,,(e) control architecture ensures stable transition from autonomous to teleoperated mode when surgeon takes over robot.,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/iros45743.2020.9341588,include,,(e) alert system notifies human supervisor of multi-robot team to retask agents; supervisor decision performance measured,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/ro-man47096.2020.9223509,include,,(e) adaptive trust calibration between user and semi-autonomous drone; over/under-trust detection evaluated with users,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/hri53351.2022.9889475,include,,(e) models how human trust affects supervisory monitoring of a robot worker; automation bias and complacency,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/tits.2022.3166444,include,,(e) studies commercial drivers' driving styles after take-over transitions from SAE Level 4 automation,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1177/03611981231159122,include,,(e) predicts driver error during automated vehicle takeovers from pre-takeover driver state,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1080/10447318.2020.1815361,include,,(e) measures effect of non-driving-related task attributes on takeover quality in automated driving,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/tits.2021.3135266,include,,(e) driver arousal features for takeover-safety prediction and driver state management in automated driving,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1145/3313831.3376825,include,,(e) participatory design for operator situational awareness in multi-stakeholder multi-UAV emergency response,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.4218/etrij.2026-0204,include,,(e) STPA of driver misuse and failure to respond to takeover requests in Level 3 automation,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.23919/ccc64809.2025.11179575,include,,"(e) task supervisor classifies and reuses human intervention actions in human-multi-agent systems, reducing intervention frequency",ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1145/3689828,include,,(e) human subject study of alerts improving human supervisor decision-making in multi-robot missions,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1109/robio66223.2025.11376207,include,,(e) studies operator performance and haptic awareness feedback under safety-filter intervention in UAV teleoperation,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1016/j.ssci.2023.106294,include,,"(e) analyses operator observability, predictability and directability over warehouse robots in human-machine work system",ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.1115/dscc2018-9174,include,,(e) trust-based runtime verification with human-in-the-loop directing multi-quadrotor team; trust inference forms interaction,ta-screen-v4+p1-scope+e,2026-11-13
+doi:10.3390/s150305402,include,,(e) supervision system notifies human user of failures and hazards across a fleet of autonomous vehicles,ta-screen-v4+p1-scope+e,2026-11-13
