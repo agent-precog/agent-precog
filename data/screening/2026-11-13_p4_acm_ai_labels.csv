@@ -1,44 +1,44 @@
 record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
 doi:10.1145/3736425.3772357,exclude,E1,"Containerised deployment pipeline for crack-detection CNNs; latency benchmark, long-term monitoring with no time-critical safety decision.",ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3774521.3774599,include,,(d) Lightweight adverse-weather restoration with real-time edge inference for safety-critical autonomous driving perception; borderline.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3774521.3774599,exclude,E1,Adverse weather image restoration by distillation; real-time inference merely claimed.,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3842436.3843807,exclude,E1,"Lightweight GNN anomaly detection for smart-home sensors; no safety decision, latency only relative to baselines.",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3774906.3802786,exclude,E1,View-invariant 3D human pose estimation at 15 FPS on edge; no safety decision.,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3714394.3750572,exclude,E1,VLM assistive glasses demo for visually impaired; no explicit latency constraint or time-critical safety decision.,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3769102.3774243,exclude,E1,GNN-pruned routing optimisation on edge nodes; no safety decision or latency deadline,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3769102.3772715,exclude,E1,"Generic deadline-aware edge GPU batching framework; autonomous driving only motivational, no safety decision evaluated",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3842721.3850121,exclude,E1,Per-request paid edge inference service economics; no safety decision,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3841560.3841564,include,,(d) profiles observation-to-command latency of VLA robot control over wireless O-RAN versus wired,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3797248.3815411,include,,(d) VLA inference latency on Jetson measured against 10/20 Hz robot control requirements,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3841560.3841564,include,,(d) Profiles end-to-end observation-to-command latency of VLA robot control over O-RAN versus wired; network path delay analysis.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3797248.3815411,exclude,E1,Energy and carbon footprint of VLA inference; latency secondary to energy contribution.,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3807246.3807377,exclude,E1,Robot object detection deployment claiming low latency; no explicit latency constraint or safety decision,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3774906.3800502,exclude,E1,"NB-IoT time synchronisation protocol; communications timing, no learned safety decision",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3846378,exclude,E1,NPU acceleration of GNN and SSM workloads on AI PCs; no safety application,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3840749.3841574,include,,"(d) onboard language-guided UAV navigation in control loop, 54 FPS on Jetson Orin NX",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3840749.3841574,exclude,E1,Language-guided UAV navigation grounding model; FPS reported only.,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3801359.3801403,exclude,E1,Cloud-edge heterogeneous embedded platform architecture; no safety decision or latency constraint,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3737902.3768360,exclude,E1,On-device multimodal LLM acceleration; driving QA dataset but no explicit deadline or safety decision,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3838323.3838391,include,,(d) monocular 3D detection for autonomous driving with latency and FPS on Jetson Orin Nano,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3611016,include,,(d) audits DNN compiler latency predictability on edge GPUs for real-time safety-critical ADAS,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3838323.3838391,exclude,E1,"Monocular 3D detector co-design; compression and FPS reported, no timing guarantee.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3611016,include,,(d) Audits DNN compilers for inference latency predictability and reproducibility in real-time safety-critical ADAS setting.,ta-screen-v4+p4-scope,2026-11-13
 acm:3535850.3535888,exclude,E1,Differentially private multi-agent resource allocation; no safety or latency question,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3830418.3843893,include,,(d) GPU-aware scheduling cutting p99 perception-to-control latency and deadline misses on robots,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3830418.3843893,include,,(d) GPU-aware scheduling for robotic ML pipelines with bounded launch delay; p99 perception-to-control latency and deadline misses.,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3680207.3765596,exclude,E1,On-device embodied assistant demo for user interaction; no safety decision or explicit deadline,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3582177.3582178,include,,(d) edge object detectors for traffic safety evaluated against real-time 35 ms inference time,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3774906.3800485,include,,"(d) multimodal edge inference under latency constraints, autonomous driving motivation, deployed on UAV testbed",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3582177.3582178,exclude,E1,Benchmark of lightweight detectors on edge; inference time and energy reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3774906.3800485,include,,"(d) borderline: adaptive multimodal inference under latency constraints with early exit, deployed on UAV testbed; safety setting weak, full text decides",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3020078.3021791,exclude,E1,FPGA ConvNet mapping toolflow; hardware accelerator design with no safety application,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3770743.3804235,include,,"(d) real-time BEV 3D detection for autonomous driving, 35.6 FPS on Jetson AGX Orin",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3770743.3804235,exclude,E1,"NAS for a BEV 3D detector; FPS on Jetson reported, no deadline or budget as the contribution",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3745756.3809242,exclude,E1,Sensor-first physical AI architecture evaluated on adaptive-exposure accuracy; no explicit latency constraint on safety decision,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3838177.3841726,include,,(d) scheduler reducing real-time robotics task deadline misses under co-running LLM inference on Jetson,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3838177.3841726,include,,(d) deadline-miss analysis and scheduler protecting real-time robotics tasks from co-running LLM inference on Jetson,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3776734.3794580,exclude,E1,Wearable haptic assistive guidance system description; no learned inference under explicit latency constraint,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3801489.3806906,exclude,E1,Embedded FPGA virtualisation framework; no learned safety decision,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3803291.3803358,exclude,E1,"Quantised action recognition benchmark on Jetson; speed and accuracy only, no safety decision",ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3769102.3774635,include,,(d) edge vision dilemma-zone detection with millisecond latency driving adaptive signal safety control,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3766069,include,,(d) pruned and quantised YOLOv8 on Jetson for timely autonomous driving decisions needing low latency,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3769102.3774635,exclude,E1,"Application system for dilemma-zone signal control on Jetson; latency merely reported, not designed around a stated deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3766069,exclude,E1,Pruning and INT8 quantisation of YOLOv8 reported as speed and accuracy only,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3394171.3416516,exclude,E1,Mobile inference framework benchmark on ImageNet classification; no safety decision,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3617695.3617715,exclude,E1,Pedestrian recognition on Jetson Nano; no explicit latency constraint or safety decision evaluated,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3757232.3757343,include,,(d) wound edge segmentation at 260 ms on Jetson Nano feeding robotic suturing path planning,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3757232.3757343,exclude,E1,Wound-edge segmentation application on Jetson Nano; inference speed merely reported,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3505633,exclude,E1,On-device CNN training accelerator on FPGA; training not safety inference,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3804601.3804712,include,,"(d) occupancy prediction for autonomous ground platforms, 53.8 ms real-time inference on Jetson Xavier NX",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3804601.3804712,exclude,E1,Lightweight occupancy prediction network; inference time is one reported result,ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3446382.3448606,exclude,E1,"Mobile GPU kernel launch overhead optimisation; generic CNN speedup, no safety decision",ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3845814.3850089,include,,(d) characterises VLA inference against per-control-period deadlines on edge hardware in closed-loop robot operation,ta-screen-v4+p4-scope,2026-11-13
-doi:10.1145/3706628.3708862,include,,"(d) FPGA road-scene segmentation for autonomous driving under real-time constraints, 4.2 ms latency",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3845814.3850089,include,,(d) characterises VLA inference against robot control-period deadlines; overruns and stale observations reduce closed-loop task success,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3706628.3708862,exclude,E1,"FPGA implementation of segmentation network; FPS and power reported, no timing guarantee as subject",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3570604,exclude,E1,"Characterises DNN training on Jetson devices; on-device training, no safety decision",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3585341.3585346,exclude,E1,"Porting SYCL ONNX runtime backend to Jetson; talk abstract on portability, no safety decision",ta-screen-v4+p4-scope,2026-11-13
 doi:10.1145/3774906.3802767,exclude,E1,"Contactless PPG sensor for MRI cardiac gating; signal processing timing, no learned safety decision",ta-screen-v4+p4-scope,2026-11-13

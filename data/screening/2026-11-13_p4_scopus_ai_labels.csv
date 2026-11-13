@@ -1,0 +1,512 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+doi:10.1007/978-3-032-28661-1_10,exclude,E1,"Class-split YOLO detector on Jetson Nano; inference-time improvement reported, no deadline design",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.jvcir.2026.104923,exclude,E1,"VLM distillation for industrial defect inspection; no safety-critical decision, latency a reported result",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icivc70586.2026.11686753,exclude,E1,"Pipeline parallelisation of YOLOv4-tiny on DSP-NPU for ball detection; throughput only, no safety use",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/sym18040595,exclude,E1,Instrument detection model for inspection robots; FPS on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.displa.2026.103714,exclude,E1,"Point cloud quality assessment network; off-topic, latency a reported number",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15163570,exclude,E1,"Crowd monitoring IoT framework with federated privacy; latency reported, timing not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16168250,exclude,E1,"LLM multi-agent deliberation architecture for assistive robot; priority scheduling for responsiveness, no deadline or safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/ccwc67433.2026.11393728,exclude,E1,5G network slicing framework for additive manufacturing; no learned inference or safety decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/sceecs68810.2026.11429825,exclude,E1,Survey of GUI automation; off-topic for all criteria,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iccece69715.2026.11492835,exclude,E1,Occupancy estimation CNN on microcontroller; no safety-critical timing contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.22260/isarc2026/0312,exclude,E1,"Lightweight worker action recognition model; latency reported as result, no deadline design",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.aiia.2026.08.003,exclude,E1,"Tomato ripeness detector on AR glasses; agricultural application, no safety timing",ta-screen-v4+p4-scope,2026-11-13
+doi:10.14569/ijacsa.2026.0171026,exclude,E1,Open-pit mine detection on Jetson Nano; FPS and latency merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10020146,exclude,E1,"UAV drowning-victim detection and tracking application; FPS reported, no deadline or budget designed around",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.asej.2026.104425,exclude,E1,New posture-aware detector for autonomous vehicles; latency one result among several,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/i3ctcon68242.2026.11507310,exclude,E1,"Landing-zone detector quantised for Raspberry Pi; latency reported, timing not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1142/s0218194025500640,exclude,E1,Generic DNN operator scheduling for average latency on edge; no safety decision or deadline,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.bios.2026.119229,exclude,E1,Meat freshness colorimetric sensing with edge vision; off-topic,ta-screen-v4+p4-scope,2026-11-13
+scopus:105045570516,exclude,E1,"Downhole tool anomaly detection application on Jetson; latency reported, no deadline-driven design",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-25490-0_6,exclude,E1,"Deblurring module integrated in ROS 2 on Jetson; latency trade-off reported, timing not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.trc.2026.105631,exclude,E1,"Audio-based vehicle counting classifier; traffic monitoring, no safety timing",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.compag.2026.111905,exclude,E1,Beef freshness classification network on edge devices; off-topic,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10060417,exclude,E1,Search-and-rescue drone with blink detection; application reporting inference latency only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.comcom.2026.108466,include,,"(b)/(d) borderline: spatio-temporal graph prediction with latency-budget-aware training, anytime early exits and staleness robustness for connected vehicles",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s42064-026-0328-2,exclude,E1,"Lightweight Martian rock segmentation; FPS on Jetson reported, no deadline as subject",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tensymp68909.2026.11704062,exclude,E1,Pruning and distillation for vehicle classification; compression reported as accuracy and FLOPs,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11227-026-08717-w,exclude,E1,"Lightweight YOLO for fueling-port localisation; real-time claimed, no stated deadline or budget",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1177/14759217251399083,exclude,E1,"Bolt loosening detection with guided waves; latency reported, structural monitoring application",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icaace69793.2026.11508763,exclude,E1,Basketball teaching decision support system; no safety-critical decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1609/aaai.v40i26.39296,exclude,E1,"Low-bit VLM quantisation method; accuracy only, no timing or safety contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.32604/cmc.2025.074682,exclude,E1,Visible-infrared fusion human detector for smoke; FPS on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3389/frobt.2026.1909076,exclude,E1,"Quechua TTS on humanoid robot; real-time factor reported, no safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.rineng.2026.111965,exclude,E1,"Tactile slip detector application; latency is one reported result, no deadline or budget designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26123892,exclude,E1,"Crack detector on Jetson reporting FPS; no deadline, no safety-critical timing contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.55056/jec.1047,exclude,E1,LLM client runtime benchmark on Raspberry Pi; no safety decision or deadline.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.11975/j.issn.1002-6819.202601192,exclude,E1,"Agricultural disease management LLM agent; reasoning efficiency only, no safety timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.psep.2026.109814,exclude,E1,"Lightweight fire/smoke detector; reports latency and FPS, no deadline or budget as the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-39708-9_3,include,,"(d) Early-exit multimodal architecture for autonomous systems evaluated on latency, jitter and deadline-miss rate on Jetson.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.comcom.2026.108525,exclude,E1,"RL plus GenAI navigation framework on Jetson; low latency asserted, no deadline or timing analysis as contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-981-92-2487-6_12,exclude,E1,Stereo matching benchmark for tree-pruning UAV; FPS reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.4108/ew.15089,exclude,E1,"Lightweight pruned YOLO for electric shock monitoring; fps and warning latency reported, no stated deadline designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11370-025-00686-y,include,,(d) Event-clocked perception with fixed FLOP budget giving deterministic P95/P99 latency for robot safety controllers.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00138-026-01816-x,exclude,E1,ADAS lane and sign detection application reporting FPS on Jetson; no deadline or budget.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.neucom.2026.134624,exclude,E1,"Multimodal threat detection pipeline; 9.3 s latency merely reported, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26041313,exclude,E1,Agricultural crop detector compression; speed and accuracy only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3389/fmars.2026.1895210,exclude,E1,Underwater detector query restoration; FPS and mean latency reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-16711-8_3,exclude,E3,Book chapter overview of AI at the edge and federated learning; no specific method or timing result.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/en19163787,exclude,E1,"PV arc fault classifier benchmark; per-window latency reported, no deadline or end-to-end timing guarantee.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15061238,exclude,E1,"LUT-based road user positioning for V2I; classical geometry, latency mentioned only.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.7467/ksae.2026.34.8.947,exclude,E1,"Lightweight YOLOv10 for driving on Jetson; reports 25 FPS, no deadline designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/1361-6668/aeaddd,exclude,E1,"Quench prediction model with compression; inference latency reported, no deadline analysis.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.procs.2026.08.422,exclude,E1,Driver drowsiness detector on Jetson reporting FPS; application paper.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.jisa.2025.104340,exclude,E1,"In-vehicle intrusion detection GNN; latency reported, security classification is the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11760-025-05101-8,exclude,E1,Manhole cover defect detector; lightweight model with reported latency only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1049/itr2.70135,include,,"(d) Deadline-adherent AV perception: WCET, jitter, slack and 150 ms soft-deadline analysis of quantized YOLO on Jetson.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/ecie69549.2026.11565589,exclude,E1,Generic quantization and pruning for ARM deployment; no safety use or deadline.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3837/tiis.2026.08.010,exclude,E1,Generic DQN inference task offloading in MaaS; no learned safety decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10030183,exclude,E1,UAV powerline inspection detector on Jetson TX2 reporting FPS; no deadline.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/dspa69176.2026.11476754,exclude,E1,Lightweight visual odometry model compression; speed and accuracy only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/9781394392834.ch20,exclude,E3,Book chapter overview of TinyML trends and future directions.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10846-026-02434-5,exclude,E1,"Classical multi-camera VIO optimisation; non-learned pipeline, latency reported.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-19684-2_14,exclude,E1,"Wearable fall-risk alert proposal; on-device low latency asserted, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.ssci.2026.107115,exclude,E1,"Compact driving VLM and dataset; sub-second latency reported, no latency budget or deadline as contribution.",ta-screen-v4+p4-scope,2026-11-13
+scopus:105042084244,exclude,E1,"SBC hardware comparison for rollator detector; latency and FPS benchmarked, no deadline or safety decision timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15122579,exclude,E1,"UAV detector pruning and quantization co-design; latency and throughput only, no safety deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10489-026-07560-z,exclude,E1,Rail network traffic classification; latency a reported number.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1080/10589759.2026.2724138,exclude,E1,Weld defect classifier for NDT; edge latency reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26165247,exclude,E1,"IR-depth drogue detector; real-time FPS reported, no deadline or timing analysis.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10791-026-10378-5,exclude,E1,Lightweight YOLOv8 variant for robot guidance; FPS reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11227-026-08283-1,exclude,E1,Lightweight UAV detector; FPS and energy efficiency reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16147319,exclude,E3,Review of AI fault diagnosis and digital twins for combine harvesters.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11227-026-08246-6,exclude,E1,mmWave channel estimation with concurrent on-device fine-tuning; no safety decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iceci69159.2026.11519423,exclude,E3,Survey of task offloading optimisation in mobile edge computing.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1049/itr2.70174,exclude,E1,"Driver monitoring application on Jetson; latency merely reported, no deadline designed around",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/9781394392834.ch16,exclude,E1,"TinyML wearable fall/vitals detector application; low latency claimed, no deadline or timing analysis",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/9781394464746.ch11,exclude,E1,Book chapter overview of edge/fog computing for collaborative learning; no safety-decision timing subject,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/engproc2026124114,exclude,E1,"Emotion-touch SNN classifier for e-skin; latency is a reported number, not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26010236,exclude,E1,"Rail equipment inspection application on Jetson; latency reduction reported, no deadline-driven design",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15184102,exclude,E1,Water treatment anomaly detection framework; edge latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tase.2026.3743062,exclude,E1,"Lightweight pedestrian detector; FPS reported, no stated deadline or timing guarantee",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/cisat71030.2026.11682592,exclude,E1,Efficient VLA architecture under memory budget; no deadline or safety-critical timing contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icws72778.2026.00183,exclude,E1,LLM load balancing with tail latency but no safety-relevant decision setting,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s42486-025-00215-x,exclude,E1,AR user identification from hand pose; inference time reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.14569/ijacsa.2026.0170188,exclude,E1,"Lightweight segmentation model for driving; speed and accuracy reported, no deadline design",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tim.2026.3742099,exclude,E1,"UAV acoustic fault detector application; 20 ms latency reported, no override mechanism or deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/satc69565.2026.11542250,exclude,E1,"Z-score appliance anomaly detection on MCU; non-safety, latency reported",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.atech.2026.102321,exclude,E1,Tea bud detector for harvesting; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/conit69683.2026.11621631,exclude,E1,Federated on-device screen content classification; no safety timing subject,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1038/s41597-026-07818-8,exclude,E1,UXO image dataset with reference detector; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16104896,exclude,E1,"Spiking predictive coding for on-device learning; training-focused, no safety timing",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.imavis.2026.106077,exclude,E1,Lightweight weld defect classifier; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.atech.2026.102124,exclude,E1,Air-quality forecasting in sheep barns; inference latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.ast.2025.110823,exclude,E1,RL/PSO engine specific impulse optimisation; not safety inference timing,ta-screen-v4+p4-scope,2026-11-13
+doi:10.5281/zenodo.20252239,exclude,E1,Federated DRL traffic signal control; edge latency one reported metric among several,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-14041-8_36,exclude,E1,"Driver drowsiness detector; latency reported, no deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/act15100514,exclude,E1,"Pruned neuro-fuzzy UAV controller with stability bounds; guarantees concern stability not timing, latency reported",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/navitec202669090.2026.11692511,exclude,E1,Compressed CNN for GNSS jamming classification; no deadline or timing analysis,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.atech.2025.101742,exclude,E1,Pruned tomato detector; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icosaas68663.2026.11648670,exclude,E1,Distilled traffic anomaly detector on Pi Zero; latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.sysarc.2026.104058,include,,(d) adaptive per-frame inference control under latency/energy budgets with safety arbitration invariants and worst-case bound; safety setting borderline,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-35010-7_23,exclude,E1,"Crop detector for agricultural robot; speed-accuracy model selection, no safety deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3803291.3803379,exclude,E1,Mobile household hazard detection app; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.56578/mits050101,exclude,E1,Lightweight pothole detector; real-time speed reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.3108288,exclude,E1,Pruned/quantised food contaminant classifier; latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/jimaging12060253,exclude,E1,Feature matching network for SLAM; latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15173774,exclude,E1,"Edge hardware comparison for airport inspection; cost/energy, no timing guarantee",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.bspc.2026.111238,exclude,E1,Distilled driver fatigue classifier; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.autcon.2026.106891,exclude,E1,Helmet detector; real-time performance reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/robotics15080145,exclude,E1,UAV 6D pose estimator; FPS and latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-38410-2_8,exclude,E1,Continual on-device learning for action recognition on Loihi; no safety timing,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00138-026-01939-1,include,,(d) streaming trajectory prediction for autonomous driving with deterministic execution bounds and latency-accuracy trade-off; also (b) multi-agent prediction,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/computation14050112,exclude,E1,"TinyML keyword spotting models; latency reported, simulation only",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icietsd68684.2026.11584697,exclude,E1,"Underwater mine detector with tensor-train compression; latency reported, no stated deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/a19060489,exclude,E1,Classical SIFT-based UAV image mosaicing; non-learned pipeline,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10040255,exclude,E1,"UAV pipeline anomaly detector on Jetson; FPS merely reported, no deadline or budget designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1201/9781003716648-30,exclude,E1,"Litter detection and greedy path planning for drones; speed reported only, no safety timing contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/mercon71835.2026.11691528,exclude,E1,"RIS beamforming networks on Raspberry Pi; communications application, latency reported, no safety-critical decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.iot.2026.102138,exclude,E3,"PRISMA survey of industrial IoT architecture including edge latency budgets; review, kept for snowballing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.engappai.2025.113545,exclude,E1,"Lightweight pavement defect detector; FPS on Jetson reported as a result, no deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icbase70763.2026.11619410,exclude,E1,"Model compression for MCU detector of construction vehicles; speed, power and accuracy reported only.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.adhoc.2026.104241,exclude,E1,"TinyML road-user hazard detection framework; compression and sub-50 ms latency reported, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/fi18060293,exclude,E1,"Wearable physiological monitoring with logistic regression on MCU; latency reported, no deadline-driven design.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1142/s0218001426400628,exclude,E1,"Lightweight graph network for line-loss prediction; compression and latency reported, no safety timing subject.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/computers15080512,exclude,E1,"IoMT intrusion detection model comparison; latency one reported number, not safety interception.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icscst70031.2026.11709734,exclude,E1,"Wearable gait monitoring for exoskeleton control; signal processing system, low latency merely claimed.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/computers15040241,exclude,E1,"Gesture-based human-robot interaction on edge devices; runtime reported, no deadline or timing guarantee.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.neucom.2026.133820,exclude,E1,"Spiking object detection benchmark on Loihi 2; energy and inference rate comparison, no timing guarantee.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icscai68849.2026.11648897,exclude,E1,Compressed vision transformer for retail shelf analysis; no safety use.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16031664,exclude,E1,"Lightweight ViT classifying pipeline threat levels; compression with latency reported, no stated deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icipai70034.2026.11605592,exclude,E1,Static analysis of production ADAS stack yielding a reference architecture; no runtime mechanism or timing analysis contributed.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icima68728.2026.11564261,exclude,E1,Offline mobile rice disease detection with treatment guidance; no safety-critical timing.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.compag.2026.111894,exclude,E1,"Greenhouse road segmentation network with navigation demo; FPS reported, new segmenter is the claim.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.cie.2025.111725,exclude,E1,Review of weld defect detection models; off-topic for all criteria.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3389/fnbot.2026.1866481,exclude,E1,Quantized neural image signal processor; compression with speed and quality reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.neucom.2026.135312,exclude,E1,"Efficient time-series anomaly detection network; inference efficiency reported, no safety deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/2575-8411.2026.00094,exclude,E1,Multi-agent RL for charging station energy scheduling and pricing; no safety interception or timing subject.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/lsens.2026.3735933,exclude,E1,"Lightweight pre-impact fall detection filter on MCU; inference time reported, no explicit deadline designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11760-026-05692-w,exclude,E1,Lightweight monocular depth estimation; FPS on Jetson Nano reported as a result.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/jimaging12020064,exclude,E1,"Spiking classifier for barrier pin inspection; latency reported across hardware, application paper.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.eswa.2026.133069,exclude,E1,"Multi-UAV search exploration MARL; FPS reported, no multi-agent safety property or deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.engappai.2026.114805,exclude,E3,Survey of foundation models for autonomous driving covering real-time constraints and safety verification.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s44443-026-01350-w,exclude,E1,Systematic review of TinyML for indoor positioning; off-topic for all criteria.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.3111071,exclude,E1,Lightweight point cloud classifier; parameter reduction and latency reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15071351,exclude,E1,"Smartwatch activity intensity classifier; latency reported, no deadline-driven safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/ictmim68190.2026.11507665,exclude,E1,WebAssembly runtime benchmark for edge workloads; no learned inference or deadline analysis.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/percomworkshops68308.2026.11585415,exclude,E2,On-topic ADAS latency-accuracy evaluation but only a research plan; results not yet reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.procs.2026.06.390,exclude,E1,"Mine air-quality IoT and digital twin with ensemble ML; sub-second detection reported, application system.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15122576,exclude,E1,"Semi-supervised driver head pose estimation; FPS on Orin reported, new estimator is the claim.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.comcom.2026.108654,exclude,E3,Systematic review of edge visual perception for autonomous driving with communication-aware latency analysis.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26103010,exclude,E1,ESP32 neural anomaly detection for irrigation hydraulics; no safety-critical timing contribution.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.3096097,exclude,E1,YOLOv5 ball-pickup robot vision; application with low latency claimed.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-06713-5_3,exclude,E1,"Overview chapter on affective edge computing; emotion recognition, off-topic for all criteria.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-02725-2_16,exclude,E1,Neural network partitioning across accelerators for throughput and energy; no timing guarantee or safety decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/access.2025.3647565,include,,"(d) gesture-to-AAV control designed around stated sub-120 ms safety budget, end-to-end and p95 latency analysed.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.engappai.2026.115186,include,,(c) V2X cooperative accident avoidance with collision-rate reduction as primary outcome; edge latency also reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/chase69719.2026.00090,exclude,E1,"Energy-efficient fall detector on Jetson; 27 ms detection is a reported result, contribution is adaptive sensing and energy, not timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.sysarc.2026.104016,exclude,E1,Latency/energy dispatch of VLM requests across GPU and NPU; no safety-critical decision as the setting.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15174015,exclude,E4,"Safety alignment of a single edge SLM against jailbreak queries; single-input guardrail, latency only reported as overhead.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10791-026-10143-8,exclude,E1,"Surveillance detection and tracking model; real-time speed merely reported, no deadline or budget.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00138-025-01780-y,exclude,E1,"Lightweight camera-LiDAR 3D detector for UGVs; latency below 73 ms is a reported number, not a designed deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11554-025-01832-6,exclude,E1,Pruned lightweight conveyor belt segmentation network; FPS on Jetson reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/biomimetics11090621,exclude,E1,"Low-light image enhancement network; FPS on embedded hardware reported, no timing guarantee or deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/isoirs70157.2026.11545249,exclude,E1,"Optimised YOLOv10 vehicle detector; accuracy and FPS reported, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/lra.2026.3746147,exclude,E1,"Reservoir-computing MPC for phase-change actuator; inference latency reported, no deadline analysis or safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.jocs.2026.102990,exclude,E1,Benchmark of FP16 vs FP32 GNNs on Jetson for efficiency; no safety-relevant use.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16021043,exclude,E1,Lightweight cherry tomato maturity detector; agricultural application reporting speed only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.comnet.2025.111881,exclude,E1,"Edge anomaly monitoring of power corridors with distillation, pruning, quantisation; latency reduction reported, no deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10030226,exclude,E1,"Primary claim is a glare-robust tiny-vessel detector; delay/jitter-mitigating tracker is a secondary component, no stated deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.65109/huot2523,exclude,E1,Distilling game AI agents for mobile devices; no safety-relevant use.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.32604/cmc.2026.082431,exclude,E1,"Aerial crop pest recognition network; latency reduction reported, no safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icadcs70036.2026.11583014,exclude,E1,"Zero-shot UAV landing zone detector; accuracy metrics only, no latency constraint as subject.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s44295-026-00114-6,exclude,E1,Underwater tiny object detector; edge real-time efficiency merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.5281/zenodo.18823749,exclude,E1,"Privacy-preserving split-inference video analytics; latency balanced with privacy but safety use only motivational, generic surveillance.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.array.2026.100940,exclude,E1,"Edge-cloud LSTM-AE anomaly detection for compressors; inference latency reported, no deadline designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/1361-6501/aea87e,include,,(d) Latency-aware architecture search trading accuracy against latency for driver braking prediction in active safety and collision prevention.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.5815/ijitcs.2026.04.04,exclude,E1,"Elderly care robot with voice-triggered detection and LLM assistant; speed reported, no safety timing contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-29909-3_40,exclude,E1,Crop detection on embedded hardware for agricultural robot; application paper.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.tre.2026.105274,exclude,E1,"LLM-based ship trajectory prediction with edge deployment; accuracy is the claim, latency requirement only stated as met.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1142/s230138502650024x,exclude,E1,Lightweight marine organism detector for AUV; speed reported only.,ta-screen-v4+p4-scope,2026-11-13
+scopus:105046397766,exclude,E1,"Astronaut health digital twin; 47 ms latency reported, timing not the contribution, no multi-agent or interception aspect.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.eswa.2026.131964,exclude,E1,"Dump truck bed keypoint detector; FPS on Jetson reported, contribution is perception accuracy.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-37553-7_12,exclude,E1,"Batched physics simulator for Gaussian digital twins; throughput speedup, no safety decision or deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.ast.2026.112350,exclude,E1,"Offline aero-engine blade inspection and damage tracking; maintenance support, real-time inference only mentioned.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.neucom.2026.133585,exclude,E1,"Sparse-query BEV 3D detector; mAP and FPS reported, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/vehicles8020039,exclude,E1,MLLM pipeline generating rider safety tips from video at 1 FPS; no latency constraint or interception mechanism.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-26214-1_14,exclude,E1,"Deep-feature visual SLAM for edge devices; efficiency reported, no safety decision or deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3991/ijim.v20i15.62599,exclude,E1,"Generic compression and offloading to speed edge LLMs on mobile agents; no stated deadline, budget or specific safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11263-026-02869-1,exclude,E1,Sparse quantised vision architecture for embedded systems; compression reported as efficiency gains.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11263-026-03031-7,exclude,E1,Lightweight GUI element grounding VLM; no safety use or timing constraint.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.array.2026.100829,exclude,E1,"Federated adversarially robust traffic sign classifier; robustness and training are the subject, not timing or runtime interception.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-31097-2_36,exclude,E1,Smart parking occupancy system with YOLOv8 and sensors; application reporting latency.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/adma.75390,exclude,E3,Review of bio-integrated edge computing systems for health.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.22260/isarc2026/0144,exclude,E1,Offline wearable bilingual translation assistant for construction safety communication; no latency-constrained safety decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icetci71772.2026.11710754,exclude,E1,"Zero-trust intrusion detection and access control for IoMT; network security, latency reported only.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15040784,exclude,E1,"Lightweight network intrusion detection for CAVs; cyber security classifier, latency reported only.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-32732-1_27,include,,(a) Post-generation validation rules veto LLM outputs against hard parental constraints before robot actuation; runtime interception on edge hardware.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1142/s0218001426400203,exclude,E1,"Energy-accuracy co-optimised edge inference for mobility data; no deadline contribution, no safety-critical decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.32604/cmc.2026.088224,include,,(d) plausible: measures end-to-end latency and jitter of 5G vs Wi-Fi path carrying offloaded perception for autonomous robot control.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/make8020049,include,,(d): LLM suggestions gated by deadline validation to preserve deterministic 50 Hz robot control loop with fallback path; also runtime gating (a).,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/biomimetics11040258,exclude,E1,Narrative review of large animal models for cardiac implants; unrelated to review topics.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.iot.2026.102041,exclude,E1,"Knowledge-distilled crop disease classifier on edge; speed merely reported, no safety deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.11834/jig.260217,exclude,E1,Review of large models for aerial remote sensing interpretation; not about (a)-(e).,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icmsci67830.2026.11469199,exclude,E1,"IoT crowd monitoring system with edge inference and alerting; application paper, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+scopus:105030325305,exclude,E1,Conference proceedings front matter listing 36 unrelated papers; not a single on-topic study.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-27515-8_17,exclude,E1,"Portable edge retinal screening device; application with reported latency, no deadline or time-critical decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icoei68323.2026.11542087,exclude,E1,"Dashcam hazard detection application with YOLOv8; real-time speed only reported, no latency budget as subject.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tce.2025.3649554,exclude,E1,"Robust graph contrastive learning for consumer electronics; training method, no safety inference timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icmlas67792.2026.11483680,exclude,E1,Adaptive user interface architecture; no safety decision or timing guarantee.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/jsan15030048,exclude,E1,"Classical Kalman-filter 3D position estimation; non-learned, offline processing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iccsdfai70505.2026.11647902,exclude,E1,School digital security detector with reported latency; no safety-critical timing contribution.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10586-026-06037-5,exclude,E1,"Fault-tolerant GNN intrusion detection for IIoT-5G; latency reported only, security topic not (a)-(e).",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11263-026-03029-1,exclude,E1,Object detection dataset and benchmark for intersections; edge inference times merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/9781394311729.ch14,exclude,E1,"Lane and obstacle detector on Jetson; fps reported, no deadline designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/taslpro.2026.3703169,exclude,E1,"Audio tagging model adaptation for siren recognition; detector and dataset study, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/jimaging12100467,exclude,E1,"Correction notice for anomaly detection paper; corrected latency figures only, no contribution on timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1177/17248035251390608,exclude,E1,Traffic sign detector with TensorRT optimisation; speed and accuracy reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1177/03611981261465417,exclude,E1,Lightweight pruned vehicle detector; compression reported as fps and accuracy only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.oceaneng.2025.124064,exclude,E1,CNN-assisted SARIMAX order selection for ship roll forecasting; no deadline or safety interception subject.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icras70064.2026.11717989,exclude,E1,"Tunnel crack detector on Jetson; fps reported, inspection application.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00607-026-01704-2,exclude,E1,YOLOv8 benchmarking on single-board computers for passenger monitoring; no stated deadline and no time-critical safety decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.aei.2026.104635,exclude,E1,Lightweight transformer for acoustic emission monitoring on microcontroller; latency merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3389/frcmn.2025.1697204,exclude,E1,"Federated RL intrusion defence for IIoT with reported latency; cybersecurity, not (a)-(e).",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.aap.2026.108410,include,,"(c) plausible: primary claim is outline-based vehicle conflict detection and proactive collision warning among vehicles at cooperative intersections, low-latency on edge.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.engappai.2026.116206,exclude,E1,Vibration structural health monitoring on ultra-low-power microcontroller; energy and latency reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26154894,include,,"(b) plausible: joint-embedding latent predictive model for collaborative multi-vehicle perception and cooperative decisions, with latency-constrained offloading (d).",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10040270,exclude,E1,"UAV perching perception and control system; edge real-time inference reported, no deadline analysis.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1201/9781003671466-12,exclude,E1,"Book chapter overview of edge computing and ML in 6G; generic, no safety inference timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iict68374.2026.11468658,exclude,E1,Sensor fault detection and reconstruction in smart buildings; no time-critical safety decision timing.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16020675,exclude,E1,"Driver phone-use detector on Jetson; fps reported, application paper.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.enbuild.2026.118003,exclude,E1,Edge learning for building energy control; no safety decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11517-026-03649-2,exclude,E1,"Bone layer recognition network for robotic grinding; latency vs 50 ms cycle is one reported result, classifier is the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3788/lop252572,exclude,E1,"Low-light image enhancement lookup table; speed reported on Jetson, no safety decision timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iwcmc69287.2026.11580044,exclude,E1,Smartphone siren detection model evaluation; latency under one second merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1080/01691864.2026.2707053,exclude,E1,"Graph RL coordination policy for smart-home assistance; task coordination, no safety property, world model or deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16168042,exclude,E1,"EEG-EMG fusion exoskeleton controller; latency reported only, no deadline contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1201/9781003667766-15,exclude,E1,"Handbook chapter overview of Edge AI for IoT; generic, not about latency-constrained safety decisions.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-35974-2_10,exclude,E1,"Voice interface for cobot control; engineering integration, low latency merely claimed.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/2631-8695/ae98f7,exclude,E1,"Gearbox fault classifier; Jetson latency merely reported, no deadline or timing contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icmi68585.2026.11539770,exclude,E1,"Visual place recognition CNN; response time reported as a result, no deadline or safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icici68773.2026.11581062,exclude,E1,"Lunar rover crater detection and RL path planning; real-time only asserted, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1201/9781003776291-5,exclude,E3,Book chapter reviewing edge-cloud architectures for wearable health AI.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/twc.2025.3593802,exclude,E1,"Accuracy under latency constraint for distributed sensing, but safety use is one motivating sentence only; wireless protocol design.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00371-026-04567-y,exclude,E1,Lightweight apple detector for harvesting; edge speed reported only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/2631-8695/ae76eb,exclude,E1,"Improved YOLO road object detector; FPS on Jetson reported, no deadline-designed timing contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/9781394404384.ch13,exclude,E1,Smart umbrella rain prediction on ESP32; no safety decision or timing contribution.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-34867-8_21,include,,(d) Timing determinism and jitter analysis of GPU inference workloads for safety-critical aerospace AI.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10070549,exclude,E1,UAV battery SOC/RUL model comparison; inference latency merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tce.2026.3746590,exclude,E1,"Energy-aware RL traffic signal controller; latency envelope is a sizing target, profiled by proxy, not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/1361-6501/ae7c90,exclude,E1,Cross-domain bearing fault diagnosis; millisecond latency merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icce67443.2026.11449870,exclude,E1,Helmet with on-device EEG classifier; no timing contribution or deadline.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.tust.2026.107563,exclude,E1,"Compressed tunnel-lining defect detector; FPS reported, compression for speed and accuracy only.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.18687/laccei2026.1.1.976,exclude,E1,"TinyML citrus disease detection architecture; no safety decision, latency merely reported.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1111/exsy.70385,exclude,E3,Review of neuromorphic hardware and software platforms.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/access.2026.3663490,exclude,E1,"UAV detection and ranging framework; FPS reported, timing not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11227-026-08829-3,include,,(d) Latency-constrained output selection with dynamic time budgets and zero deadline-miss rate for robot control perception.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11554-026-01888-y,exclude,E1,Segmentation dataset for water monitoring; FPS and power analysis only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.engappai.2026.114690,exclude,E1,"Steel surface defect detector; FPS reported, no safety decision deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1177/1088467x261419772,exclude,E1,Video anomaly detection GNN; latency under 200 ms merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.phycom.2026.103131,exclude,E1,"Federated learning resource scheduling at wireless edge; training focus, no learned safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/wevj17090458,exclude,E1,EV energy management digital twin; worst-case latency reported against deadline but timing is not the contribution.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15163652,exclude,E1,"Fleet offloading and energy optimisation with task deadlines; generic resource scheduling, no learned safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-34384-0_28,exclude,E1,UAV reconnaissance vehicle detector robust to degradation; real-time on Jetson merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/ai7090386,exclude,E3,Survey of adaptive IIoT intrusion detection.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/isctis70043.2026.11572649,exclude,E1,"Lightweight sEMG decoder for exoskeletons; latency reduction reported, no stated deadline or budget.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1201/9781003714804-5,exclude,E1,Chapter on blockchain-anchored trust for TinyML; none of (a)-(e) is the subject.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/computation14100247,exclude,E1,Benchmark of data-driven UGV dynamics identification; latency merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00607-026-01629-w,exclude,E1,Cascaded small language models for voice intent detection; no safety use.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/qre.70226,exclude,E1,"UAV sensor fault diagnosis network; per-inference latency reported, no stated deadline or budget designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icssit69151.2026.11656451,exclude,E1,YOLOv8 traffic sign detection pipeline; FPS merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-29365-7_8,exclude,E1,"FPGA keyword spotting with GNN; hardware implementation, no safety use.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00530-026-02639-6,exclude,E1,"Efficient stereo matching network; FPS reported, timing not designed around a deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/wacv61042.2026.00760,exclude,E1,Spacecraft pose estimation ViT; latency per frame merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1177/09544070261463672,exclude,E1,Hybrid residual vehicle dynamics model; inference latency merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/fi18080406,exclude,E1,Hospitality LLM assistant dataset and pipeline; no safety or timing aspect.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.13374/j.issn2095-9389.2026.01.20.001,exclude,E1,Lightweight pavement distress detector; latency on Jetson merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-02725-2_15,exclude,E1,"FPGA CNN accelerator for arc fault detection; low latency reported, no timing guarantee as subject.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.32604/cmc.2025.071533,include,,(d) Gesture recognition designed for real-time deadlines; p99 latency and fail-safe triggering for safety-critical emergency-stop command.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-38236-8_14,exclude,E1,"Catheter segmentation for AR guidance; accuracy-latency trade-off reported, no stated deadline or safety decision timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/chips5030028,exclude,E1,"TinyML IoT sensing architecture; latency reduction reported, no deadline or safety-critical decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.31763/ijrcs.v6i3.2753,exclude,E1,Robot sorting retrofit application; latency merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s44443-026-00870-9,exclude,E1,"Consumer robot navigation architecture; stuck detector triggers replanning, latency only reported",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.compag.2025.111329,exclude,E1,"Lightweight cattle behaviour detector; FPS reported, no safety use",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s44163-025-00779-8,exclude,E1,Agricultural robot perception application; delay and FPS merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/dlcv69906.2026.11635272,exclude,E1,Lightweight UAV small-object detector; model size and accuracy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-27754-1_6,exclude,E1,"Assistive sign-language recogniser on ESP32; latency reported, no safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.fraope.2026.100766,exclude,E1,"Multimodal emergency-prediction network; latency and model size reported as results, not a designed deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.6180/jase.202610_33.048,exclude,E1,"Fuzzy PID bed-chair control, non-learned; response time reported",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3774905.3794685,exclude,E1,Latency analysis of blockchain and homomorphic crypto in ICS; no learned inference or safety decision model,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icce67443.2026.11449769,exclude,E1,On-device LLM design-space overview for enterprise PCs; no safety use,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3778/j.issn.1002-8331.2410-0048,exclude,E1,Monocular 3D occupancy network for driving; FPS merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.16791/j.cnki.sjg.2026.08.027,exclude,E1,Teaching laser-engagement vehicle platform; frame delay reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/rob.70331,exclude,E1,Paddy-field navigation line segmentation; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics15163753,exclude,E1,Lightweight bearing fault diagnosis with pruning; latency reported as speed only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.neucom.2026.134970,exclude,E1,"ICS intrusion detection transformer; latency mentioned as met, not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-981-92-4805-6_46,include,,(d) device-edge co-inference scheduling for VLA robot control meeting a 20 Hz real-time SLO; timing constraint is the design target,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-981-96-7514-2_39,exclude,E1,Classical KCF plus Kalman tracker; FPS reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/bdcc10070227,exclude,E1,"Score-based fall detector for wearables; latency bounded but one result among several, non-learned scoring",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icdsaai69492.2026.11505091,exclude,E1,CNN acceleration and compression for mobile; speed and energy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3776734.3794426,exclude,E1,Benchmark of small LLMs for teaching-assistant robot; no safety decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.11975/j.issn.1002-6819.202508144,exclude,E1,Weed detection model for laser weeding; speed and accuracy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/1361-6501/ae4371,exclude,E1,Lightweight miner pose detector; real-time feasibility merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/info17030284,exclude,E1,"Maritime LLM decision-support agent; per-token latency reported, accuracy is the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-981-95-7289-2_24,exclude,E1,"Hybrid YOLO-SNN obstacle detector; FPS and energy reported, no designed deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/lsens.2026.3730033,exclude,E1,SONAR classification augmentation strategy; latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/technologies14060322,exclude,E1,Railway foreign-object detector; FPS on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-981-95-8411-6_2,exclude,E1,FPGA accelerator for pose estimation; no timing guarantee or safety use,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icsccc69031.2026.11599999,exclude,E1,Compressed EMG speech recognition model; no safety use,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.icte.2025.11.024,exclude,E1,Broad review of AI in 5G/6G networks; none of (a)-(e) is the subject,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app16021037,exclude,E1,Driver-state and visibility classifier with pruning; latency reported as a result only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/en19133184,exclude,E1,Mobile CNN classifier for fire investigation traces; no time-critical decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.12086/oee.2026.260043,exclude,E1,Steel surface defect detector; speed and accuracy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-25694-2_38,exclude,E1,"Generic LLM agent orchestration architecture; latency reduction, no learned safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26144628,exclude,E1,UAV branch segmentation network; inference latency merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s44174-026-00730-0,exclude,E1,"Vital-sign classification architecture; low latency claimed, no stated budget, accuracy is the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones10050345,exclude,E1,"End-to-end monocular avoidance network for fixed-wing UAV; latency reported, single agent, no designed deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3389/frai.2026.1824067,exclude,E1,Lightweight hazardous sound classifier; real-time capability merely claimed,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10791-026-10344-1,exclude,E1,"Federated intrusion detection training with latency-aware round control; federated training, not timed safety inference",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/access.2026.3657052,exclude,E1,Single-camera forward collision warning application; inference time merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/2631-8695/ae95b6,exclude,E1,"Stackelberg incentive control for human-machine teams; p95 latency is one reported result, not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s26113474,exclude,E1,"Agricultural leaf disease detector on edge device; speed merely reported, no safety use",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.ijcce.2026.04.001,exclude,E1,"Emotion recognition for smart city; latency reported only, no deadline or safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/engproc2026129017,exclude,E1,"Energy and carbon-aware telemedicine architecture; latency envelope is a constraint met, not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tcsvt.2025.3633725,exclude,E1,"New 3D detector for deployment; speed reported as a result, no deadline or budget designed around",ta-screen-v4+p4-scope,2026-11-13
+scopus:85167562758,exclude,E1,"CNN crater hazard detection on Jetson for lunar landing; real-time merely claimed, no deadline or timing analysis",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.robot.2023.104558,exclude,E1,Comparison of YOLO detectors and trackers on Jetson for ADAS; reports FPS only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s24030777,exclude,E1,"Keypoint detector for UAV solar inspection; FPS reported, no deadline-centred contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.atech.2025.101494,exclude,E1,Crop row detection network; latency reported as one result,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/sas51076.2021.9530007,exclude,E1,"On-device incremental learning for sEMG gestures; training focus, latency only reported",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/347706,include,,(d) Offloading of AV control DNN designed around real-time latency constraints; autonomous vehicle control setting,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics14030638,exclude,E1,"Benchmark of YOLOv8 on edge devices for UAVs; speed, energy and quantisation reported only",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3716368.3735245,exclude,E1,On-sensor backdoor defence hardware; no timing guarantee or deadline as subject,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/globecom59602.2025.11432556,exclude,E1,"Inference outage under latency constraints, but safety use is only one-sentence motivation; communication theory",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/hydcon48903.2020.9242815,exclude,E2,"Vision of 5G cognition-as-a-service; no method, result or study reported",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3850/978-981-11-2724-3_0119-cd,exclude,E1,"Network-calculus packet delay bounds for cooperating CPS; no learned inference, classical communication analysis",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icirca65293.2025.11089629,exclude,E1,"AR gauge digitisation application; latency reported only, no safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11554-025-01763-2,exclude,E1,Lightweight gesture detector for home HRI; speed reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.2514/6.2025-1431,exclude,E1,Vehicle detection in aerial images on Jetson Nano; speed merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/3scea68071.2026.11603033,exclude,E1,Hand hygiene recognition on Jetson Nano; application with no deadline or timing contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tmc.2025.3636950,include,,"(d) Deadline-aware multi-DNN CPU-GPU scheduling, deadline miss rate measured on autonomous driving platform",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/jmse13101854,exclude,E1,Classical point cloud registration (ICP) for vessels; non-learned pipeline,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/jproc.2019.2941458,exclude,E3,Overview article on edge ML building blocks and enablers with case studies; survey-type,ta-screen-v4+p4-scope,2026-11-13
+doi:10.11999/jeit250291,exclude,E1,"Early-exit DNN partitioning under latency constraints, but safety use is only passing motivation; generic edge inference",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/itl2.70038,exclude,E1,Public opinion anomaly detection with TinyML; no safety-critical timing decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.ins.2024.120567,exclude,E1,"Neural architecture search for efficient on-device inference; speed and size only, no safety use",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.future.2024.107513,exclude,E1,Characterisation of inference workloads for spatiotemporal models on accelerators; no deadline or safety decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/wcnc45663.2020.9120768,exclude,E1,"Latency-budget-aware compression selection, but autonomous driving is one-sentence motivation; generic edge offloading",ta-screen-v4+p4-scope,2026-11-13
+scopus:85137830126,exclude,E1,"Motion sickness cost function in MPC; classical controller, no learned inference timing",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.psep.2025.108058,exclude,E1,PPE detection model on Jetson Nano; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.24963/ijcai.2018/677,exclude,E1,"Efficient grasp detection CNN; real-time speed reported, no deadline contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3716368.3735272,exclude,E1,"TinyML bearing fault classifier; latency reported only, no deadline designed around",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-48590-9_10,exclude,E1,Jetson Nano evaluation for traffic risk pattern analysis; performance and energy reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/globecom54140.2023.10437676,exclude,E1,Comparison of lightweight models for surgical instrument detection on Raspberry Pi; accuracy-efficiency reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/spe.70122,exclude,E1,"Wildlife detection edge-IoT architecture for orchards; inference time reported, no safety timing",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3560905.3568520,include,,"(d) Cross-processor real-time DNN inference scheduling, deadline miss rate on autonomous driving platform",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/eccst68196.2025.11441149,exclude,E1,Knowledge-distilled action recognition on Jetson; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.23919/iccas66577.2025.11301174,exclude,E1,Comparison of web frameworks for ROS2 image streaming; no learned safety inference,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icites66466.2025.11274303,exclude,E1,UAV RF fingerprint recognition with YOLOv8; latency reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/most60774.2024.00019,exclude,E1,"TensorRT precision workflow comparison for vehicle detection; quantisation speed and accuracy only, no deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s23146485,exclude,E1,Small-footprint place recognition for service robot; inference time reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icra48506.2021.9560977,exclude,E1,"Efficient semantic segmentation network; FPS reported, no deadline or timing guarantee",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1177/18724981251380391,exclude,E1,Wearable injury-risk prediction with federated learning; latency only mentioned; no deadline-designed safety inference.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iccit68739.2025.11491302,exclude,E1,Generic edge-cloud microservice architecture and scheduling; no learned safety decision under a latency budget.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icct62411.2024.10946488,exclude,E1,"Edge-cloud LLM driving system; latency reduction is a reported benefit, no stated deadline or budget as the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.sysarc.2024.103266,include,,"(d) Worst-case execution time and timing variability analysis for safety-critical Linux, applied to autonomous emergency braking on Jetson.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icras70064.2026.11717994,include,,(d) Deployment-aware scaling targeting P99 latency and worst-case runtime of segmentation for autonomous delivery robots.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/bsn66969.2025.11337705,include,,(d) Tremor estimator designed to a stated sub-80 ms sensor-to-actuator budget for safe exoskeleton actuator triggering.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.5220/0013308700003905,include,,"(d) Inference-time reduction for forklift obstacle detection, analysed as distance travelled during inference versus accuracy loss.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s25164944,exclude,E1,"UAV fault-detection application on edge devices; latency under 50 ms merely reported, no deadline-centred contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.35633/inmateh-75-62,exclude,E1,"Wheat impurity detector on Jetson Nano; agricultural application, no safety decision or latency budget.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/cict67193.2025.11399010,exclude,E1,"Accident-reporting surveillance prototype on Jetson; low latency claimed only, no timing analysis or deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icmic66299.2025.11257814,exclude,E1,"On-drone detection speedup by image rearrangement; speed and accuracy reported, no deadline or safety decision setting.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1201/9781003541370-14,exclude,E1,Kernel-optimised Gaussian process regression for photonic sensors; no safety-critical decision or timing guarantee.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/khpiweek61436.2025.11288401,exclude,E1,Hand-pose latency measurement on Apple devices for motor assessment; not a safety-critical timed decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.14569/ijacsa.2025.0161094,exclude,E1,"Distracted-driving detector deployed on edge; FPS merely reported, new detector is the claim.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.22266/ijies2025.1231.39,exclude,E1,"6G resource allocation with multi-agent RL; communications resource management, no learned safety decision inference.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3389/fmars.2025.1581794,exclude,E1,"Lightweight sonar segmentation with reported latency; speed-accuracy application, no stated deadline as contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/ese3.70204,exclude,E1,"Pipeline overpressure prediction models; millisecond latency reported, application paper without deadline-designed inference.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/isaeece70502.2026.11635192,exclude,E1,"UAV state-estimation residual learning; accuracy is the claim, inference latency one reported result.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s19061309,exclude,E1,Multi-vehicle tracking method on Jetson TX2; real-time speed merely reported.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11760-025-04237-x,exclude,E1,"Lightweight pruned vehicle detector; FPS and accuracy only, no deadline or budget.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/wcnc61545.2025.10978307,exclude,E1,"Physical-layer security resource allocation in vehicular networks; communications optimisation, no safety inference timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-21065-5_25,exclude,E1,"YOLO detector and tracker comparison on Jetson; FPS reported, no deadline-centred contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.3078737,exclude,E1,"EV thermal management with pruned LSTM; energy efficiency focus, not a safety-critical timed decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.jmsy.2022.01.010,exclude,E3,Survey of edge computing in intelligent manufacturing; kept for snowballing only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/micro56248.2022.00033,exclude,E1,Automated SoC design-space exploration for UAVs; hardware design with no inference timing guarantee as subject.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10489-025-06993-2,exclude,E1,"Lightweight traffic-light detector on Jetson Nano; FPS and accuracy reported, no stated deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s23239495,exclude,E1,Benchmark of edge devices running AI models; no safety use or deadline analysis.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.5220/0010866000003124,exclude,E1,"LiDAR motion segmentation architecture; 8 ms latency reported, new segmenter is the claim.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00371-025-03847-3,exclude,E1,"Lightweight instance segmentation of barriers; quantised FPS reported, no deadline-centred contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.ijepes.2025.111327,exclude,E1,IoT malware detection with edge LSTM; no safety-critical timed decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3625687.3625804,exclude,E1,"On-device meta continual learning system; on-device training, out of pillar scope.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/ecsa-12-26519,exclude,E1,TinyML cattle behaviour classification; no safety-critical decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-15074-6_12,exclude,E1,"Compressed DNN ragweed detection from drones; vegetation survey, latency merely reported.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/wcnc61545.2025.10978459,exclude,E1,"QoS-aware data distribution platform for vehicular digital twins; middleware, no learned safety inference timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.58346/jisis.2025.i3.003,exclude,E1,"Application-aware 5G handover prediction; mobility management, no safety decision inference.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.12142/ztecom.202002005,exclude,E1,"Overview of communication-efficient wireless edge inference; generic low-latency design, no safety decision deadline.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/ewdts67441.2025.11303675,exclude,E1,"Cross-platform hardware benchmark of YOLO localization; speed and power comparison, no deadline or safety setting.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tcc.2020.2978846,exclude,E1,"Collaborative GNN inference for mobile edge WLAN; generic edge inference, no safety use.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1186/s13634-025-01271-2,exclude,E1,"Lightweight radar 3D detector; FPS and mAP reported, new detector is the claim.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/jiot.2026.3726937,exclude,E1,"O-RAN satellite-UAV resource optimisation with DNN splitting; generic QoS scheduling, no safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tnsm.2023.3348137,exclude,E1,"5G core resilience and scaling with LSTM; network management, off-topic.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iros58592.2024.10801747,include,,"(d) end-to-end latency profiling of networked robot inference pipelines; timing analysis is the contribution, teleoperation and robotics setting",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/en18071668,exclude,E1,"Lightweight insulator defect detector; FPS on Jetson merely reported, no deadline-designed inference",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s25175548,exclude,E1,"Driver attention recognition application; latency is a reported number, not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iccet65872.2025.11082608,exclude,E1,Quantisation and pruning of segmentation model reported as FPS and accuracy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10489-023-04872-2,exclude,E1,Depth estimation architecture search balancing speed and accuracy; no stated deadline or budget,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/su142315539,exclude,E1,Agricultural monitoring robot with CPU-GPU acceleration; no safety decision or learned timing contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-25538-0_31,exclude,E1,Secure CV2X communications over LTE on smartphones; no learned inference,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-63992-0_36,exclude,E1,"FPGA soft sensor for fluid flow estimation; speed reported, no safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/jiot.2025.3598979,exclude,E1,Fire and smoke detection application in cloud; per-frame detection time merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/infocom59046.2026.11571656,exclude,E1,LLM-based WLAN handover control; latency studied but no safety-relevant use,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icise-ie68873.2025.11379786,exclude,E1,UAV small object detector improvement; accuracy and complexity reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/rcsm67767.2025.11507334,exclude,E1,On-device fashion recommendation assistant; no safety use,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/ijcnn64981.2025.11228606,exclude,E1,"Lightweight multi-task perception network on MCU; inference time reported, no deadline as subject",ta-screen-v4+p4-scope,2026-11-13
+doi:10.31763/ijrcs.v5i6.2213,exclude,E1,Lightweight SMT defect classifier; compression reported as speed and accuracy,ta-screen-v4+p4-scope,2026-11-13
+doi:10.14569/ijacsa.2025.0160503,exclude,E1,YOLOv4 quantisation on Jetson reported as speed and accuracy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tsc.2025.3612401,exclude,E1,Generic edge inference task scheduling to reduce latency; no safety decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/socc.2018.8618555,exclude,E1,Memory interference throttling for mixed-criticality tasks; no learned inference in scope,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.iot.2025.101771,exclude,E1,Federated learning training framework for ad-hoc IoT networks,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/access.2022.3199384,exclude,E1,Classical MSCKF visual-inertial pipeline parallelised on GPU; non-learned,ta-screen-v4+p4-scope,2026-11-13
+doi:10.11975/j.issn.1002-6819.2021.09.007,exclude,E1,Agricultural obstacle detection application on Jetson; processing time merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s25206449,exclude,E1,Parking space detector; FPS on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s42044-025-00267-3,exclude,E1,"sEMG torque estimation LSTM on Jetson Nano; latency reported, application paper",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s24041345,exclude,E1,Low-light image enhancement network; processing time reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/aipip66876.2025.11299129,exclude,E1,YOLOv8 vehicle crash detection application; real-time merely claimed,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/systems13121117,exclude,E1,Predictive maintenance and anomaly detection framework on edge; latency a reported number,ta-screen-v4+p4-scope,2026-11-13
+doi:10.22399/ijcesen.1165,exclude,E1,"Generic edge intelligence framework; latency reduction reported, no safety deadline as subject",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/slaai-icai68534.2025.11318484,exclude,E1,Federated GNN intrusion detection in 5G; inference latency merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/slaai-icai68534.2025.11318494,exclude,E1,Lightweight image enhancement model; real-time possibility only mentioned,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1088/1741-2552/ac2a8d,exclude,E1,"Neuroprosthetic hand with embedded decoder; latency reported, application demonstration",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/maic67965.2025.11468854,exclude,E1,Driver braking intensity predictor; inference latency on Jetson a reported result,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iscas56072.2025.11043770,exclude,E1,Analog ReRAM hardware for gesture recognition training and inference; no timing guarantee,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/wevj16090483,exclude,E1,Improved YOLOv5s small-target detector; FPS on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-032-16711-8_2,exclude,E3,Review chapter on edge AI for time-sensitive decision making; kept for snowballing,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11554-024-01610-w,exclude,E1,Lightweight underwater organism detector; latency on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/maic67965.2025.11468845,exclude,E1,"Wearable IMU ground reaction force estimation; on-device application, no safety deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-84100-2_29,exclude,E1,YOLOv8 versus YOLOv10 traffic light detection comparison; speed and accuracy reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tim.2025.3612649,exclude,E1,Wheel-rail force identification model; computation time on Raspberry Pi merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-030-69535-4_42,exclude,E1,Compact underwater segmentation network; FPS on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/math13193066,exclude,E1,Adaptive MPC controller for manipulators is the claim; timing not the contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-030-87059-1_10,exclude,E3,Overview chapter of edge inference optimisation and on-device training techniques,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3233/atde251128,exclude,E1,Lightweight PPE detection models; FPS on Jetson merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3711875.3729147,include,,(d) adaptive 3D detection designed around 100-500 ms latency budgets under contention for autonomous vehicles; accuracy traded against budget,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.eswa.2022.117010,exclude,E1,"Off-road segmentation application and dataset; FPS reported, no deadline or budget the work is designed around",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/sta66620.2025.11364680,exclude,E1,"YOLOv5 fall detector on Jetson Nano; reports FPS only, no deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icft66708.2025.11336276,exclude,E1,IoT anomaly/compliance monitoring application; latency is one reported number,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-981-96-6932-5_31,exclude,E1,"Federated learning and RISC-V deployment architecture; on-device training, no timing guarantee",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s22197382,exclude,E1,Model reduction and quantisation of image-based RL reported as efficiency gain; no stated deadline or budget,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/app15052418,exclude,E1,Small language models for graph tasks; no safety use or timing contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.21177/1998-4502-2025-17-3-1711-1723,exclude,E1,UAV ecosystem segmentation application; FPS and latency merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s10845-026-02897-1,exclude,E1,"Zero-shot fault diagnosis via LLM distillation; latency reported, not the contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3233/faia250735,exclude,E1,Low-light action recognition framework with compression; speed and accuracy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s11227-025-07426-0,exclude,E1,"Smart-city traffic optimisation application; decision latency reported, no deadline design",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/lra.2025.3531152,exclude,E1,GPU-parallel kinodynamic sampling planner; classical non-learned pipeline,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/access.2025.3603738,exclude,E1,"Emotion-aware HRI planner on edge devices; latency reported, no safety timing contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.11591/ijra.v14i4.pp376-386,exclude,E1,Distilled segmentation training pipeline; real-time claimed only as a result,ta-screen-v4+p4-scope,2026-11-13
+scopus:85183305644,exclude,E1,"Efficient BEV detector design with speedups; latency-aware but no deadline, budget or timing guarantee",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3576914.3587489,exclude,E1,Driver behaviour modelling with machine unlearning; latency one result among several,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3711875.3736677,exclude,E1,Extended abstract on adaptive perception under latency budgets; safety use only one-sentence motivation,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tcsvt.2024.3469933,exclude,E1,Lightweight object counting network; speed and accuracy only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/wacv61041.2025.00505,exclude,E1,Wildfire smoke segmentation training method; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/pimrc62392.2025.11274690,exclude,E1,Radar-vision digital twin anomaly detection; low latency merely reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/s25226816,exclude,E1,Lightweight LSTM temperature prediction on edge; no timing contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3524453,exclude,E1,Edge matrix processor hardware; no timing guarantee as subject,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/machines13080684,exclude,E1,Comparison of object detectors on edge devices for UAVs; speed and accuracy reported,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icta68203.2025.11329854,exclude,E1,Lightweight image deblurring network; speed reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3233/faia250534,exclude,E1,Autoencoder predictive maintenance latency benchmark across runtimes; no deadline or safety-critical decision setting,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3360468.3366773,exclude,E1,GNN network performance model extension; not inference timing for a safety decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/info16121091,exclude,E1,"DNN partitioning for AR maintenance; generic latency/energy offloading optimisation, no safety decision deadline",ta-screen-v4+p4-scope,2026-11-13
+scopus:85129523297,exclude,E1,"Worst-case output error bounds for pruned/quantised networks; not timing, none of (a)-(e)",ta-screen-v4+p4-scope,2026-11-13
+doi:10.31838/jvcs/07.01.26,exclude,E1,VLSI neural signal processing hardware; no timing guarantee or safety decision,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s43926-025-00196-4,exclude,E1,"Edge fault detection in IoT networks; response time reported, no deadline design",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/globecom52923.2024.10900993,exclude,E1,Information-bottleneck feature compression for collaborative video analytics; latency not the contribution,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.3059702,exclude,E1,Generic edge image-processing optimisation framework; no safety decision or deadline,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/rob.22384,exclude,E1,"5G edge offload for harvesting robots; speedup reported, no safety-critical deadline",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1145/3680207.3765586,exclude,E1,"Demo of view-invariant pose estimation; frame rate reported, no safety timing contribution",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/ised67359.2025.11404792,exclude,E1,Lightweight UAV detector; accuracy and model size only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.atech.2025.101280,exclude,E1,Pest detection model deployed on Jetson; FPS reported only,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/inista68122.2025.11249604,exclude,E1,Knowledge distillation for seizure prediction; compression reported as speed and accuracy,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iiswc66894.2025.00018,exclude,E1,LLM latency-accuracy characterisation under latency budgets on edge GPUs; safety-relevant use only motivational,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iisa66859.2025.11311273,exclude,E1,"Federated DRL drone navigation; on-device training, real-time only claimed",ta-screen-v4+p4-scope,2026-11-13
+scopus:105024972446,exclude,E1,Conference proceedings front matter listing papers; not a paper on (a)-(e),ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics14152977,exclude,E1,"Benchmark of inference frameworks on Jetson; speed and resource metrics, no deadline or safety decision",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/cict67193.2025.11399172,exclude,E1,"IIoT intrusion anomaly detector; latency merely reported, no deadline design or safety-critical decision setting.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/access.2025.3625433,exclude,E1,"Traffic congestion forecasting model; 100 ms budget mentioned as a result, contribution is the forecaster, not safety-critical timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icc52391.2025.11161501,exclude,E1,"Latency-constrained edge sensing over short packets; timing central but safety use only a one-sentence motivation, generic distributed sensing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icerect65215.2025.11376005,exclude,E1,"Edge traffic-violation detector for enforcement; reports FPS only, no deadline or latency budget as the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/icedge67252.2025.11412676,exclude,E1,"Radar object classifier (PCA+SVM) on edge kit; latency reported only, no deadline-centred contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-95017-9_28,exclude,E1,"YOLOv8 traffic sign detector on Jetson Nano; application paper claiming real-time, no stated deadline or timing analysis.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/fire7110387,exclude,E1,"Smoke detector architecture improvements; FPS reported as a result, no deadline or latency budget designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.2587097,exclude,E1,"Pedestrian detection framework on Jetson TX2; real-time speed reported, timing is not the contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/drones8100551,exclude,E1,WebRTC multi-UAV ground control and video streaming prototype; no learned safety inference under timing guarantees.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics14193760,exclude,E1,"Industrial gasket defect detector based on YOLOv8; low latency only reported, quality inspection application.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.scico.2015.06.006,exclude,E1,WCET certification of conventional embedded programs on multicores; no learned model inference or safety decision by a learned system.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.23919/date64628.2025.10993255,exclude,E1,"Control-flow integrity architecture for low-end IoT devices; security topic, none of (a)-(e).",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/delcon68055.2025.11400122,exclude,E1,"Battery thermal-runaway anomaly detector on Jetson with quantisation; latency reported as result, no deadline-centred timing contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s00521-025-11368-2,exclude,E1,"On-device multimodal emotion recognition on NPU; latency and power reported, no safety-critical decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.3013967,exclude,E1,"Data sampling for on-device continual learning in remote sensing; training efficiency, not inference timing.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/iciprob69625.2026.11497809,exclude,E1,"Helmet detection for ATM surveillance on edge hardware; application detector, no timing contribution.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/tcomm.2024.3511931,include,,(d) Ultra-low-latency feature transmission for robot task execution; classification accuracy analysed under explicit transmission latency constraints.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/s41870-025-02985-0,exclude,E1,"SDN intrusion detection ensemble with mitigation policies; network security, no latency-bounded safety decision.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/cloud55607.2022.00032,exclude,E1,Edge cloud power management and cost estimation; no learned inference or safety decision.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/electronics10060689,include,,"(d) Real-time scheduling framework with schedulability analysis for deep learning on RTOS, deterministic low-latency control in safety-critical edge nodes.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1002/9781394355037.ch2,exclude,E3,Book chapter overview of optimising deep learning models for edge devices; no specific method or study.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.62762/tetai.2025.654854,exclude,E3,"Review of the YOLO family v1-v8 across accuracy and speed metrics; survey, not timing-guarantee work.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1109/ficloud66139.2025.00072,exclude,E1,"Random-forest intrusion detection on 5G mini computers; cybersecurity, latency merely reported.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1117/12.3004707,exclude,E1,"Neural RL inverse-kinematics arm controller on Jetson Nano; low latency mentioned, no deadline or timing analysis.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.1016/j.asoc.2024.111366,exclude,E1,Lightweight crowd density estimation via reparameterisation and distillation; compression reported as speed and accuracy only.,ta-screen-v4+p4-scope,2026-11-13
+doi:10.1007/978-3-031-97907-1_17,exclude,E1,"TinyML speech command recognition on ESP32; no safety use, latency reported only.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3389/fcomp.2025.1636758,exclude,E1,"Fire and smoke detector with pruning and quantisation on Jetson; inference time reported, no deadline designed around.",ta-screen-v4+p4-scope,2026-11-13
+doi:10.3390/make7040117,exclude,E1,"DRL-based DNN partitioning for video analytics offloading; latency-cost optimisation, safety use only passing motivation, no stated deadline.",ta-screen-v4+p4-scope,2026-11-13
