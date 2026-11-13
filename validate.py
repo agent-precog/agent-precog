@@ -117,12 +117,13 @@ def check_coverage():
         for r in csv.DictReader(open(path, newline="", encoding="utf-8")):
             if not r.get("duplicate_of"):
                 screened.add(r["record_id"])
-    decided, unlabelled = set(), []
+    decided, latest = set(), {}
     for d in rows("decisions.csv"):
         if d["stage"] in ("title_abstract", "title_abstract_2"):
             decided.add(d["record_id"])
-            if d["ai_label"] == "unlabelled" and not d["human_decision"]:
-                unlabelled.append(d["record_id"])
+            latest[d["record_id"]] = d  # the latest row for a record governs
+    unlabelled = [i for i, d in latest.items()
+                  if d["ai_label"] == "unlabelled" and not d["human_decision"]]
     missing = screened - decided
     if missing:
         warn(f"{len(missing)} screened records have no title/abstract decision: {sorted(missing)[:5]}")
