@@ -8,3 +8,13 @@ Applied on top of ta-screen-v4 to every Pillar 5 record. Pillar 5 is human-autom
 - A record may be in scope even where the automation is not learned or AI: this pillar does not carry the Pillar 1 learned-system ruling.
 - Use E2, E3 and E7 as the prompt defines them. Surveys of the human-factors literature are E3 and are kept for reference.
 - An empty or missing abstract is not by itself a reason to exclude. Judge on the title.
+
+## Multi-agent supervision ruling (maintainer, 2026-11-14)
+
+The first screen under the text above passed 742 of 1,307 records, because the Pillar 5 query lands in the mature human-factors literature on automated driving. The maintainer narrowed the pillar so that it speaks to the review's subject, autonomous multi-agent systems, rather than becoming a general survey of single-vehicle takeover research. Applied on top of everything above:
+
+- A record passes ONLY IF both hold. (1) A MEASURED HUMAN OUTCOME: the paper measures something about the person, such as takeover time or quality, a situation-awareness score, a trust measure, workload, vigilance, or human error or performance. Design concepts, frameworks, architectures, attitude and acceptance surveys, and models of operator behaviour with no human participants do not qualify. (2) MULTI-AGENT OR FLEET SUPERVISION: the person supervises, monitors, teams with or takes over from MORE THAN ONE automated agent, or from a system presented as a fleet, swarm, robot team, multi-UAV group, platoon or one-to-many setting.
+- Exclude E4 (wrong level) where the human outcome is measured but the setting is a single vehicle, a single robot or a single automated system. This removes most driving-simulator takeover research, which is in scope for the field but not for this review.
+- Exclude E2 where the setting is multi-agent but nothing about the human is measured.
+- Say in the reason how many agents the person supervises, and name the human measure.
+- The maintainer accepts the consequence, stated on the methods page: Pillar 5 covers human supervision of multiple agents, and single-agent human-automation interaction is out of scope by design rather than by oversight.
