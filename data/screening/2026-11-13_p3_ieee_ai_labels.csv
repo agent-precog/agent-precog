@@ -1,144 +1,144 @@
 record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
-doi:10.1109/bigdata62323.2024.10825864,include,,"(a) semi-supervised learning-to-defer framework with limited human predictions, evaluated on lung diagnosis data",ta-screen-v4,2026-11-13
-doi:10.1109/dicta68720.2025.11302495,include,,"(a) learning to defer to a population of experts from few demonstrations, evaluated on three datasets",ta-screen-v4,2026-11-13
-doi:10.23919/fruct67853.2025.11239207,include,,(a) learning-to-defer policies from intermediate representations; accuracy-coverage trade-off evaluated,ta-screen-v4,2026-11-13
-doi:10.1109/cascon66301.2025.00097,include,,(a)/(e) rule-based escalation from LLM confidence to human care levels with selective prediction evaluation,ta-screen-v4,2026-11-13
-doi:10.1109/tcss.2025.3649665,include,,(a) confidence-based deferral of low-confidence meme classifications to human experts,ta-screen-v4,2026-11-13
-doi:10.1109/embc.2017.8037479,include,,(a) reject option for EEG motor-imagery decoding with optimized rejection threshold,ta-screen-v4,2026-11-13
+doi:10.1109/bigdata62323.2024.10825864,include,,(i) Learning to defer to human expert with limited human predictions is the main contribution.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/dicta68720.2025.11302495,include,,(i)/(iii) Learning to defer to a population of experts from few demonstrations.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.23919/fruct67853.2025.11239207,include,,(i) Learning-to-defer policy to human expert using intermediate features.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/cascon66301.2025.00097,include,,(i) Rule-based escalation policy mapping LLM confidence to care/hand-off levels in human-in-the-loop workflow.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/tcss.2025.3649665,include,,(i) Deferral strategy delegating low-confidence samples to human experts is the main contribution.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/embc.2017.8037479,exclude,E4,One-shot classifier with reject option applied to EEG motor imagery; none of (i)-(v).,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/icmla69890.2026.00165,exclude,E1,"Narrative emotion-shift trajectory modeling; selective prediction is only an incidental preprocessing component, not the subject",ta-screen-v4,2026-11-13
-doi:10.1109/icmla55696.2022.00096,include,,(a) IDPS signature classifier with reject option handing uncertain cases to experts,ta-screen-v4,2026-11-13
+doi:10.1109/icmla55696.2022.00096,exclude,E4,"Signature classifier with a reject option applied to IDPS domain; one-shot, no learned deferral rule.",ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/cpeee64598.2025.10987276,exclude,E1,Power-system investment capacity deferral benefit allocation; unrelated sense of deferral,ta-screen-v4,2026-11-13
 doi:10.1109/rams.2016.7447975,exclude,E1,"STPA safety assessment of missile programs; deferral means delayed engineering effort, no runtime interception",ta-screen-v4,2026-11-13
-doi:10.1109/etcc69750.2026.11682017,include,,(a) legal RAG assistant that abstains when evidence is insufficient; abstention behavior evaluated as safety mechanism,ta-screen-v4,2026-11-13
+doi:10.1109/etcc69750.2026.11682017,exclude,E4,Legal RAG assistant that abstains on single queries lacking evidence; none of (i)-(v).,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/eeeic/icpseurope64998.2025.11169240,exclude,E1,"Electrical safety risk matrix under import tariffs; no abstention, deferral or runtime interception",ta-screen-v4,2026-11-13
-doi:10.1109/jbhi.2025.3639425,include,,"(a) selective prediction model with abstention term for mortality prediction, prompting human intervention",ta-screen-v4,2026-11-13
-doi:10.1109/ccece68150.2026.11610350,include,,(a) multi-expert fusion classifier with confidence-thresholded abstention and coverage-accuracy trade-off,ta-screen-v4,2026-11-13
-doi:10.1109/access.2026.3717180,include,,"(a)/(e) deployment-time routing of legal AI outputs to review or escalation, compared against calibration-only abstention",ta-screen-v4,2026-11-13
+doi:10.1109/jbhi.2025.3639425,exclude,E4,"One-shot selective prediction for mortality risk; evaluated by selective risk, none of (i)-(v).",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/ccece68150.2026.11610350,exclude,E1,Audio classification fusion; confidence-thresholded abstention is only a side analysis.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/access.2026.3717180,exclude,E1,Workflow observability measurement protocol for legal AI; abstention only a baseline comparison.,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/acdsa67686.2026.11467863,exclude,E1,"MEC task scheduling; deferral means delaying task offloading, not safety abstention or handoff",ta-screen-v4,2026-11-13
 doi:10.1109/tase.2026.3752238,exclude,E1,"Lunar constellation task scheduling; deferral is a scheduling action, unrelated sense",ta-screen-v4,2026-11-13
-doi:10.1109/dsaa65442.2025.11248029,include,,(a) black-box selective prediction system rejecting likely-incorrect LLM answers,ta-screen-v4,2026-11-13
-doi:10.1109/coins65080.2025.11125785,include,,(a) conformal prediction with abstention threshold for selective prediction in LiDAR-camera perception,ta-screen-v4,2026-11-13
-doi:10.1109/iccwamtip72078.2026.11769177,include,,(a) sequential three-way classification with stage-specific deferral criteria for staged diagnosis,ta-screen-v4,2026-11-13
-doi:10.1109/icsft67370.2026.11566374,include,,"(a)/(e) Six Sigma governance framework including model abstention and human-review reliability budgeting; borderline, full text decides",ta-screen-v4,2026-11-13
-doi:10.1109/worldsuas70880.2026.11766287,include,,(a) causal representation model with uncertainty-based selective prediction and abstention; selective risk evaluated,ta-screen-v4,2026-11-13
-doi:10.13052/jwe1540-9589.2516,include,,(a) content moderation with abstention-based triage to human review and formal optimal abstention intervals,ta-screen-v4,2026-11-13
-doi:10.1109/icesc70182.2026.11687017,include,,"(a) calibrated selective prediction with accept, review and defer-to-expert decisions for leaf disease classification",ta-screen-v4,2026-11-13
-doi:10.1109/icdar.2017.43,include,,(a) multi-classifier reject option postponing gesture recognition decisions under ambiguity,ta-screen-v4,2026-11-13
+doi:10.1109/dsaa65442.2025.11248029,exclude,E4,Selective prediction for LLM single answers via external rejector; none of (i)-(v).,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/coins65080.2025.11125785,exclude,E4,Conformal selective prediction for perception evaluated on static image/point-cloud benchmarks; no runtime gate on a system.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/iccwamtip72078.2026.11769177,include,,(ii) Sequential multi-stage three-way classification with stage-adaptive deferral criteria for further examination.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icsft67370.2026.11566374,exclude,E1,Conceptual Six Sigma governance framework; model abstention is one ingredient among many.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/worldsuas70880.2026.11766287,exclude,E1,Causal representation learning for robustness; selective prediction is one component.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.13052/jwe1540-9589.2516,exclude,E1,Blockchain content moderation framework; abstention triage for human review is one component among several.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icesc70182.2026.11687017,exclude,E4,"Leaf disease classifier with calibration; selective prediction applied to a domain, one-shot.",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icdar.2017.43,include,,(ii) Reject option postpones decision over incremental gesture drawing; sequential early recognition.,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/cogmi67134.2025.00052,exclude,E1,"Post-hoc fairness edit layer; abstains from applying a bias mitigation at audit time, not runtime prediction deferral",ta-screen-v4,2026-11-13
-doi:10.1109/srse70977.2026.11694702,include,,(a) applicability-domain selective prediction deferring unsupported corrosion queries to inspection,ta-screen-v4,2026-11-13
-doi:10.1109/icoei68323.2026.11542028,include,,(a) uncertainty-based three-way triage deferring ambiguous wrist radiographs to advanced imaging,ta-screen-v4,2026-11-13
-doi:10.1109/aiei69164.2026.11497227,include,,(a) coverage-constrained selective classification with learned abstention,ta-screen-v4,2026-11-13
+doi:10.1109/srse70977.2026.11694702,exclude,E4,One-shot selective regression with applicability domain for corrosion; none of (i)-(v).,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icoei68323.2026.11542028,exclude,E4,"MC-dropout classifier with uncertainty-threshold reject to imaging referral; one-shot, no learned deferral rule.",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/aiei69164.2026.11497227,exclude,E4,"Coverage-constrained selective classifier on Fashion-MNIST; empirical one-shot, not foundational theory.",ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/icssa70263.2026.11765905,exclude,E3,Scoping review of XAI and uncertainty quantification including abstention and human review in ASD education,ta-screen-v4,2026-11-13
-doi:10.1109/idss69894.2026.11691473,include,,(a) abstention-aware multi-model deepfake screening with fusion policy and human triage,ta-screen-v4,2026-11-13
-doi:10.1109/aimlsystems67835.2025.11330849,include,,(a) selective prediction with deferral classifiers in early-exit DNNs deferring hard samples to an expert,ta-screen-v4,2026-11-13
-doi:10.1109/icicacs68679.2026.11578877,include,,(a) calibration and span-consistent selective prediction for Telugu NER under controlled coverage,ta-screen-v4,2026-11-13
-doi:10.1109/icsc67292.2026.00056,include,,(a) geometric abstention mechanism for LLMs on non-realizable inputs; method contribution,ta-screen-v4,2026-11-13
-doi:10.1109/icaiset66439.2026.11541930,include,,"(a) MC-dropout uncertainty with selective prediction, accuracy versus coverage evaluated",ta-screen-v4,2026-11-13
-doi:10.1109/access.2026.3672553,include,,(a) glucose forecasting with conformal risk control and an explicit deferral policy; deferral rate reported,ta-screen-v4,2026-11-13
-doi:10.1109/csmla70906.2026.11724473,include,,(a) multi-agent adjudication producing answer-or-abstain decisions; abstention and false-commitment rates measured,ta-screen-v4,2026-11-13
-doi:10.1109/etfa68377.2026.11725169,include,,(a)/(e) selective hybrid inspection policy that confirms or defers to the expert rule,ta-screen-v4,2026-11-13
-doi:10.1109/commantel68363.2025.11368546,include,,(a) multi-agent clinical architecture with runtime safety checks and abstention mechanisms,ta-screen-v4,2026-11-13
-doi:10.1109/click68749.2026.11742269,include,,(a) self-reflective network with reliability head and selective prediction mechanism,ta-screen-v4,2026-11-13
+doi:10.1109/idss69894.2026.11691473,exclude,E1,Deepfake screening evaluation framework; abstention means VLM refusals handled as a measurement issue.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/aimlsystems67835.2025.11330849,include,,(i) Deferral classifiers at each early-exit layer defer hard samples to an expert; deferral is main contribution.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icicacs68679.2026.11578877,exclude,E4,"Calibration and entropy-based selective prediction for NER; one-shot, none of (i)-(v).",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icsc67292.2026.00056,exclude,E4,LLM abstention mechanism for unanswerable single inputs; none of (i)-(v).,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icaiset66439.2026.11541930,exclude,E4,MC-dropout medical image classifier with selective prediction by coverage; one-shot.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/access.2026.3672553,exclude,E1,Glucose forecasting framework; deferral policy is one component among forecasting and RL parts.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/csmla70906.2026.11724473,exclude,E4,LLM answer-or-abstain adjudication of single stereotype-prone questions; none of (i)-(v).,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/etfa68377.2026.11725169,include,,"(i) Selective hybrid policy that recommends, confirms or defers to existing expert rule as fallback.",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/commantel68363.2025.11368546,exclude,E1,Hierarchical Bayesian multi-agent clinical framework; abstention mechanisms are one component.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/click68749.2026.11742269,exclude,E4,Self-reflective network with reliability head and one-shot selective prediction; none of (i)-(v).,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/ijcnn69854.2026.11728876,exclude,E1,"Edge task scheduling with MARL; deferral means delaying task execution, no safety handoff",ta-screen-v4,2026-11-13
 doi:10.1109/iisa66859.2025.11311255,exclude,E1,PV-battery bidding and demand-response load deferral; unrelated sense of deferral,ta-screen-v4,2026-11-13
-doi:10.1109/icpr.2016.7900107,include,,(a) bag-of-visual-words classifier with reject option for unknown objects in open-world inspection,ta-screen-v4,2026-11-13
-doi:10.1109/dcoss-iot69657.2026.00167,include,,(a)/(e) escalation gate combining abstention and ranked uncertainty for expert review; pattern plus re-analysis,ta-screen-v4,2026-11-13
+doi:10.1109/icpr.2016.7900107,exclude,E4,Open-set classifier rejecting unknown objects in visual inspection; one-shot reject.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/dcoss-iot69657.2026.00167,include,,(i) Escalation gate handing uncertain predictions to expert arbitration is the proposed deployment pattern.,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/bibm66473.2025.11356967,exclude,E1,Physician evaluation of GPT-4o interaction modes; abstention rate is only an incidental observation,ta-screen-v4,2026-11-13
 doi:10.1109/globecom59602.2025.11432502,exclude,E1,Wi-Fi channel access backoff via MARL; access deferral is a communications-protocol sense,ta-screen-v4,2026-11-13
 doi:10.1109/icpct64145.2025.10941595,exclude,E1,ML for RPL routing security in IoT; deferral appears to mean network delay,ta-screen-v4,2026-11-13
-doi:10.1109/ubmk71847.2026.11745401,include,,"(a) proposes abstention rule blocking autonomous execution, with qualitative synthesis; borderline conceptual, full text decides",ta-screen-v4,2026-11-13
+doi:10.1109/ubmk71847.2026.11745401,include,,"(iv) Proposes abstention rule blocking autonomous execution above harm ceiling; conceptual, borderline E2, full text decides.",ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/jiot.2026.3675581,exclude,E1,"Truck-drone routing; deferral means delivery time-window shift, not model deferral.",ta-screen-v4,2026-11-13
 doi:10.1109/pesgm52009.2025.11225597,exclude,E1,Deferring network reinforcement investment in power distribution planning; unrelated sense of deferral.,ta-screen-v4,2026-11-13
 doi:10.1109/icarc68737.2026.11453821,exclude,E1,"Hallucination mitigation via RAG/MCP prompting; abstention only a reported metric, no abstain or defer mechanism studied.",ta-screen-v4,2026-11-13
-doi:10.1109/icbcb69424.2026.11621198,include,,"(a) Spell-correction safety layer that abstains from editing under uncertainty via runtime safety gates; borderline, full text decides.",ta-screen-v4,2026-11-13
-doi:10.1109/cars67163.2025.11337402,include,,(a) Evaluates how persona vectors change abstention behaviour of small LLMs; abstention is the main measured outcome; borderline.,ta-screen-v4,2026-11-13
-doi:10.1109/thms.2026.3714654,include,,(a)/(e) Learning-to-defer framework with surrogate loss deferring uncertain cases to human-AI module.,ta-screen-v4,2026-11-13
-doi:10.1109/gseact68539.2026.11620182,include,,(a)/(e) Selective prediction for VLMs with automatic escalation to human experts when ambiguity is high.,ta-screen-v4,2026-11-13
-doi:10.1109/icosaas68663.2026.11648543,include,,(a)/(e) Confidence-aware abstention mechanism referring doubtful LLM-judge predictions to human assessors.,ta-screen-v4,2026-11-13
+doi:10.1109/icbcb69424.2026.11621198,exclude,E1,"Spell-correction preprocessing layer; abstention means not editing tokens, unrelated sense.",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/cars67163.2025.11337402,exclude,E1,Persona vector hallucination analysis; abstention is only an evaluation metric.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/thms.2026.3714654,include,,(i) Fallback cognitive deferral from machine to human-AI module with learned switching and surrogate loss.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/gseact68539.2026.11620182,exclude,E1,Trustworthy VLM framework; selective prediction and escalation to experts are components among several.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icosaas68663.2026.11648543,exclude,E1,LLM-as-judge rubric repair; abstention referral to human assessors is a secondary component.,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/tpwrd.2020.3011618,exclude,E1,Investment deferral of feeder upgrades via cable thermal rating; unrelated sense of deferral.,ta-screen-v4,2026-11-13
-doi:10.1109/jsen.2015.2513818,include,,(a) Classifier with reject option refusing low-confidence panels in safety-critical e-nose testing.,ta-screen-v4,2026-11-13
-doi:10.1109/access.2026.3669074,include,,(a) OOD-aware abstention mechanism flags low-confidence samples as No Result; threshold sensitivity evaluated.,ta-screen-v4,2026-11-13
-doi:10.1109/ojcoms.2026.3743761,include,,"(a)/(e) Multi-agent LLM pipeline escalating ambiguous cases to human, formalised as classification with reject option.",ta-screen-v4,2026-11-13
+doi:10.1109/jsen.2015.2513818,exclude,E1,E-nose pattern classification strategy; reject option is an added component.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/access.2026.3669074,exclude,E4,Meat freshness classifier with OOD-aware abstention; one-shot classification in a domain.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/ojcoms.2026.3743761,include,,"(i) Escalation to human analyst formalised as reject option with closed-form thresholds; plausibly main, thin.",ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/rtas65571.2025.00008,exclude,E1,Real-time processor reservation scheduling; shielded and deferred timer handling are OS senses.,ta-screen-v4,2026-11-13
-doi:10.1109/icact70625.2026.11748704,include,,(a) Confidence-aware selective prediction with risk-coverage evaluation in crop disease diagnosis.,ta-screen-v4,2026-11-13
-doi:10.1109/ijcnn69854.2026.11729084,include,,(a) Risk-controlled selective generation escalating to stronger expert with conformal selective-risk guarantees.,ta-screen-v4,2026-11-13
+doi:10.1109/icact70625.2026.11748704,exclude,E1,Crop disease diagnosis framework; selective prediction is one of six components.,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/ijcnn69854.2026.11729084,exclude,E1,Cascade/MoE router escalating to stronger model for compute savings; no human or safety interception element.,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/access.2026.3692236,exclude,E4,"Uncertainty-aware deepfake detector that re-evaluates ambiguous cases; no abstain, reject, defer or hand-off decision.",ta-screen-v4,2026-11-13
 doi:10.1109/globecom38437.2019.9013440,exclude,E1,"Game-theoretic information provisioning among agencies; abstention is a cost-function term, unrelated sense.",ta-screen-v4,2026-11-13
 doi:10.1109/nnice68970.2026.11466238,exclude,E1,Offshore wind maintenance scheduling; deferral opportunity cost is deferred maintenance.,ta-screen-v4,2026-11-13
-doi:10.1109/srse70977.2026.11694870,include,,"(a)/(e) LLM decision agent policy balancing submission, evidence acquisition, abstention and expert review.",ta-screen-v4,2026-11-13
-doi:10.1109/aiiot65859.2025.11105216,include,,(a)/(e) Intrusion detection with indeterminacy-based abstention flagging predictions for human review.,ta-screen-v4,2026-11-13
-doi:10.1109/wacvw68408.2026.00041,include,,(a)/(e) Contextual-bandit RL with explicit deferral action to experts under uncertainty.,ta-screen-v4,2026-11-13
-doi:10.1109/iri69576.2026.00026,include,,"(a) Reliability diagnostic gating activation edits, with abstention from intervention as first-class output; borderline.",ta-screen-v4,2026-11-13
+doi:10.1109/srse70977.2026.11694870,include,,"(i)/(ii) Agent policy choosing among submission, evidence acquisition, abstention and expert review over decision states.",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/aiiot65859.2025.11105216,include,,(i) abstention on high-indeterminacy predictions flagged for human review is the central idea; include for full-text check,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/wacvw68408.2026.00041,include,,(i)/(ii) RL contextual bandit with explicit learned deferral of ambiguous screening cases to experts,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/iri69576.2026.00026,exclude,E4,"Gate that abstains from an activation edit in a language model; one-shot, no human, sequential or safety-runtime aspect",ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/powertech55446.2023.10202978,exclude,E1,"Smart EV charging expansion planning; deferral of network investment, unrelated sense.",ta-screen-v4,2026-11-13
-doi:10.1109/srse70977.2026.11694964,include,,(a)/(e) Rejection-enabled selective diagnosis with risk-coverage analysis trading automatic diagnosis against manual review.,ta-screen-v4,2026-11-13
-doi:10.1109/icscst70031.2026.11709521,include,,(a) Confidence-gated abstention in RAG so answers are generated only with sufficient evidence.,ta-screen-v4,2026-11-13
-doi:10.1109/access.2026.3745280,include,,(a) Workload estimator with explicit uncertainty and abstention driving a gated selective intervention policy; borderline.,ta-screen-v4,2026-11-13
-doi:10.1109/mocast70204.2026.11626445,include,,"(a) Selective rejection of unreliable inputs under adversarial attack, accuracy-coverage trade-off.",ta-screen-v4,2026-11-13
-doi:10.1109/jiot.2026.3743453,include,,(a) Two-stage abstention gate guarding generator plus read-back verification before device deployment.,ta-screen-v4,2026-11-13
-doi:10.1109/cvpr52733.2024.01032,include,,(a) Selective prediction letting black-box vision-language models abstain on unreliable answers.,ta-screen-v4,2026-11-13
-doi:10.1109/isdfs69419.2026.11459053,include,,(a) Quality gating and refusal policy abstaining from publishing vitals on insufficient evidence.,ta-screen-v4,2026-11-13
-doi:10.1109/icecet65726.2026.11632544,include,,(a)/(d) Uncertainty-aware selective prediction with abstention at coverage level on edge devices.,ta-screen-v4,2026-11-13
+doi:10.1109/srse70977.2026.11694964,exclude,E4,Calibrated selective image diagnosis evaluated by risk-coverage; one-shot reject option in an industrial domain,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icscst70031.2026.11709521,exclude,E4,RAG model abstaining from single oncology questions under low confidence; one-shot LLM abstention,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/access.2026.3745280,exclude,E1,Adaptive LLM post-editing assistance; abstention is only a component of the workload estimator,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/mocast70204.2026.11626445,exclude,E4,One-shot selective rejection of unreliable inputs for an image classifier under adversarial attack,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/jiot.2026.3743453,exclude,E1,Industrial device auto-configuration RAG pipeline; abstention gate is one component among many,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/cvpr52733.2024.01032,exclude,E4,One-shot selective prediction for black-box VQA via neighbourhood consistency; no human or sequential aspect,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/isdfs69419.2026.11459053,exclude,E4,"rPPG telemetry pipeline with signal-quality gating that withholds outputs; selective publishing, no hand-off or action veto",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icecet65726.2026.11632544,exclude,E1,Multimodal ordinal damage classifier on edge devices; selective prediction is one component,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/cloud-summit64795.2025.00028,exclude,E1,RL scheduler deferring serverless function execution for cache reuse; deferred execution sense.,ta-screen-v4,2026-11-13
 doi:10.1109/nelex69209.2026.11590028,exclude,E3,Survey of fake news detection covering uncertainty estimation and selective abstention.,ta-screen-v4,2026-11-13
-doi:10.1109/access.2026.3723798,include,,(a) Empirical study of LLM over-commitment versus abstention trade-off and commitment thresholds.,ta-screen-v4,2026-11-13
-doi:10.1109/wiecon-ece69386.2025.11525910,include,,(a)/(e) Selective prediction with confidence threshold sending uncertain cases to expert review.,ta-screen-v4,2026-11-13
-doi:10.1109/peccii70991.2026.11662015,include,,(a) Selective prediction and risk-coverage analysis with calibration for chest X-ray screening.,ta-screen-v4,2026-11-13
+doi:10.1109/access.2026.3723798,exclude,E4,LLM commitment versus abstention trade-off on single ambiguity-sensitive cases; no (i)-(v) criterion met,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/wiecon-ece69386.2025.11525910,exclude,E1,Breast cancer model comparison with explainability; selective prediction is a side component,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/peccii70991.2026.11662015,exclude,E4,Calibration and risk-coverage analysis of a chest X-ray classifier; one-shot selective prediction,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/tdc-la.2016.7805605,exclude,E1,Multi-energy demand response for distribution network capacity; no abstention or deferral by a model.,ta-screen-v4,2026-11-13
 doi:10.1109/isgt-asia.2016.7796479,exclude,E1,Demand side response techno-economic optimisation; no abstention or deferral by a model.,ta-screen-v4,2026-11-13
 ieee:11615493,exclude,E1,Autonomous racing MPC; selective prediction horizon points is an unrelated sense.,ta-screen-v4,2026-11-13
-doi:10.1109/access.2026.3750251,include,,(a) Constrained repair system that abstains when no safe repair exists; coverage-safety trade-off measured; borderline.,ta-screen-v4,2026-11-13
-doi:10.1109/icitiit68860.2026.11499577,include,,"(a) Confidence-based abstention letting classifier defer uncertain breast cancer cases, accuracy versus coverage.",ta-screen-v4,2026-11-13
-doi:10.1109/icosec70158.2026.11735728,include,,(a)/(e) Confidence-based accept-or-defer selective prediction analysis for expert review.,ta-screen-v4,2026-11-13
+doi:10.1109/access.2026.3750251,exclude,E1,Deterministic repair of BI packages; abstention when no safe repair is a component of the repair method,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icitiit68860.2026.11499577,exclude,E4,"Confidence-threshold abstention for breast cancer classifiers; one-shot reject option, no learned hand-off to human",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icosec70158.2026.11735728,exclude,E1,Plant disease classifier evaluation; accept-or-defer selective prediction is one analysis among several metrics,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/jiot.2026.3717891,exclude,E1,DAG task scheduling in SAGIN; bounded deferral is task scheduling delay.,ta-screen-v4,2026-11-13
-doi:10.1109/cec55065.2022.9870382,include,,"(a) Budgeted sequential classifiers with confidence-based reject options optimising accuracy, cost, coverage.",ta-screen-v4,2026-11-13
+doi:10.1109/cec55065.2022.9870382,include,,(ii) budgeted sequential classifiers with confidence-based reject options over multi-step feature acquisition; reject is main objective,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/apwcs71511.2026.11743027,exclude,E1,Wi-Fi channel access; deferral state is CSMA/CA medium access.,ta-screen-v4,2026-11-13
-doi:10.1109/iaecst68792.2025.11414929,include,,(a) Selective identification with conservative conformal-prediction abstention for boundary samples.,ta-screen-v4,2026-11-13
+doi:10.1109/iaecst68792.2025.11414929,exclude,E1,Industrial printer asset identification framework; conformal abstention is an added component,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/fie61694.2024.10893539,exclude,E1,Student mental health and sports access study; exam deferral is unrelated.,ta-screen-v4,2026-11-13
-doi:10.1109/icesst69086.2026.11582873,include,,(a)/(e) Selective triage accepting confident predictions and escalating low-confidence cases to human review.,ta-screen-v4,2026-11-13
-doi:10.1109/ichi61247.2024.00104,include,,"(a) abstention method for CNN ECG classifiers, evaluated on MIT-BIH",ta-screen-v4,2026-11-13
+doi:10.1109/icesst69086.2026.11582873,include,,(i) selective triage escalating low-confidence chest X-ray cases to human review is the stated core mechanism,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/ichi61247.2024.00104,exclude,E4,Abstention method for ECG CNN classifiers via prototypical spaces; one-shot reject option in a domain,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/tpami.2021.3085983,exclude,E4,"Confidence estimator for failure prediction; no abstain, reject or defer decision described",ta-screen-v4,2026-11-13
 doi:10.1109/rbme.2026.3704162,exclude,E3,Survey of agentic AI in biomedicine; abstention and oversight only as discussed considerations,ta-screen-v4,2026-11-13
 doi:10.1109/ubmk71847.2026.11745345,exclude,E4,Calibration and risk-ranking triage for damage classifier; no abstain or defer decision rule,ta-screen-v4,2026-11-13
-doi:10.1109/access.2026.3682338,include,,(a) Trust-Abstain classifier for selective answering in LLM medical QA,ta-screen-v4,2026-11-13
-doi:10.1109/jiot.2026.3745163,include,,(a) autonomous healthcare IoT controller whose actions include abstention and clinician escalation,ta-screen-v4,2026-11-13
-doi:10.1109/tic68483.2026.11703014,include,,(a) marginal: pipeline includes abstention guardrail for deployed security ML; full text decides,ta-screen-v4,2026-11-13
+doi:10.1109/access.2026.3682338,exclude,E4,Trust-abstain error-risk classifier for LLM medical QA; selective answering of single questions,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/jiot.2026.3745163,exclude,E1,Causal edge digital twin for aneurysm risk; abstention and clinician escalation are among many actions,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/tic68483.2026.11703014,exclude,E1,ML-for-cybersecurity pipeline study; abstention is one guardrail among several,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/ojvt.2026.3737480,exclude,E1,"Deferral is postponed execution of offloaded reasoning steps under energy budget, not safety abstention",ta-screen-v4,2026-11-13
-doi:10.1109/siu71813.2026.11636620,include,,"(a)/(c) multi-agent critique plus symbolic verifier gating final decision, with reported abstention rate",ta-screen-v4,2026-11-13
-doi:10.1109/isit54713.2023.10206654,include,,(a) formal error-exponent analysis of two-phase classification test with a reject option,ta-screen-v4,2026-11-13
+doi:10.1109/siu71813.2026.11636620,exclude,E1,Multi-agent reasoning audit framework on StrategyQA; abstention rate is only a reported metric,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/isit54713.2023.10206654,include,,(v) formal error-exponent analysis of two-phase M-ary classification test built around a reject option,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/cloud72782.2026.00030,exclude,E1,Tail-latency estimation for cloud databases; abstention is minor gate in a statistical screening rule,ta-screen-v4,2026-11-13
 doi:10.1109/tase.2023.3292189,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
-doi:10.1109/iciccs67901.2026.11502985,include,,(a) framework with selective prediction and calibration for MRI tumor diagnosis,ta-screen-v4,2026-11-13
+doi:10.1109/iciccs67901.2026.11502985,exclude,E1,Explainable brain tumour MRI classification; selective prediction is one component,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/tim.2026.3747073,exclude,E4,"Uncertainty gate triggers internal correction stage; no abstain, reject or hand-off decision",ta-screen-v4,2026-11-13
 doi:10.1109/ctems.2018.8769138,exclude,E1,Adder circuit design; deferral means circuit delay,ta-screen-v4,2026-11-13
-doi:10.1109/icassp49357.2023.10095947,include,,(a) formal error-exponent analysis of two-phase hypothesis test with a reject option,ta-screen-v4,2026-11-13
+doi:10.1109/icassp49357.2023.10095947,include,,(v) formal error-exponent analysis of two-phase M-ary hypothesis test triggered by a reject option,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/ptc.2015.7232486,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
-doi:10.1109/assic70037.2026.11717227,include,,(a)/(e) selective prediction referring low-confidence chest X-ray cases to expert review,ta-screen-v4,2026-11-13
-doi:10.1109/ssci51031.2022.10022139,include,,"(a) semifactual explanations for reject options, evaluated on conformal reject option",ta-screen-v4,2026-11-13
-doi:10.1109/isit50566.2022.9834418,include,,(a) formal error-exponent analysis of two-phase binary classification with a reject option,ta-screen-v4,2026-11-13
+doi:10.1109/assic70037.2026.11717227,exclude,E1,Pneumonia decision-support pipeline; selective deferral is one component beside calibration and Grad-CAM,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/ssci51031.2022.10022139,exclude,E4,"Semifactual explanations of why a one-shot reject option rejected; explains rejects, none of (i)-(v) holds",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/isit50566.2022.9834418,include,,(v) formal error-exponent analysis of two-phase binary classification test built around a reject option,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/tpwrs.2020.3045723,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
 doi:10.1109/access.2026.3684508,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
 doi:10.1109/rfat69041.2026.11634074,exclude,E1,"RF filter QA benchmark for RAG; abstention is one question type, not the subject",ta-screen-v4,2026-11-13
 doi:10.1109/melecon53508.2022.9842934,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
-doi:10.1109/icassp55912.2026.11463914,include,,(a) label-free risk score for selective prediction and clinician review of CXR cases,ta-screen-v4,2026-11-13
+doi:10.1109/icassp55912.2026.11463914,exclude,E4,Augmentation-sensitivity risk score to flag error-prone chest X-rays; one-shot failure-detection estimator,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/icisc47916.2020.9171143,exclude,E1,Online pharmacy app review; deferral means mail delay,ta-screen-v4,2026-11-13
 doi:10.1109/pesgm41954.2020.9281710,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
 doi:10.1049/icp.2023.0770,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
 doi:10.1049/icp.2024.2102,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
 doi:10.1049/icp.2025.2138,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
-doi:10.23919/iiai-aaicps00095.2026.00060,include,,"(a)/(c) evaluation layer scoring whether agents clarify or defer under incomplete information, with pilots",ta-screen-v4,2026-11-13
-doi:10.1109/icnc68183.2026.11416826,include,,(a) marginal: RAG traffic-analysis pipeline with abstention mechanism; full text decides,ta-screen-v4,2026-11-13
+doi:10.23919/iiai-aaicps00095.2026.00060,exclude,E1,"Evaluation layer for agent information use; deferral is one of several assessed behaviours, not the contribution",ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icnc68183.2026.11416826,exclude,E1,RAG network traffic analysis framework; abstention mechanism is one pipeline component,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/access.2025.3536498,exclude,E1,Fuzzy MCDM for accountant firms; abstention is a fuzzy membership degree,ta-screen-v4,2026-11-13
-doi:10.23919/ipec-nagasaki2026-ec64663.2026.11596910,include,,(a) Bayesian classifier providing reject option for unreliable IGBT aging predictions,ta-screen-v4,2026-11-13
-doi:10.1109/icimia69818.2026.11745027,include,,(a) assistant with reliability-aware abstention withholding responses when evidence is insufficient,ta-screen-v4,2026-11-13
+doi:10.23919/ipec-nagasaki2026-ec64663.2026.11596910,exclude,E4,Bayesian aging-state classifier with uncertainty-based reject option; one-shot selective classification in a domain,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icimia69818.2026.11745027,exclude,E1,Offline multimodal crop assistant; abstention when evidence insufficient is one component,ta-screen-v4+p3-scope,2026-11-13
 ieee:10162272,exclude,E1,Linux device driver book; work deferral is a kernel mechanism,ta-screen-v4,2026-11-13
 doi:10.1109/tsg.2014.2327482,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
-doi:10.1109/ticps.2025.3539997,include,,(a) evidential abstention classifier for open-set fault diagnosis,ta-screen-v4,2026-11-13
-doi:10.1109/tgrs.2026.3661208,include,,(a) OOD abstention under conformal risk control for SAR flood mapping,ta-screen-v4,2026-11-13
+doi:10.1109/ticps.2025.3539997,exclude,E4,Evidential abstention classifier for open-set fault diagnosis; one-shot reject of unknown classes,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/tgrs.2026.3661208,exclude,E4,SAR flood mapping uncertainty with OOD abstention and conformal sets; one-shot selective prediction,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/gucon50781.2021.9573767,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
 doi:10.1109/acoit62457.2024.10939356,exclude,E1,WSN clustering and routing; deferral means network delay,ta-screen-v4,2026-11-13
-doi:10.1109/icecet65726.2026.11632629,include,,(a)/(c) tool-augmented RAG agent with tool mediation and outage-aware abstention policies,ta-screen-v4,2026-11-13
-doi:10.1109/ichi69079.2026.00139,include,,(a) confidence-based filtering with deferral-driven review load trade-offs in seizure detection,ta-screen-v4,2026-11-13
-doi:10.1109/icisc69558.2026.11681841,include,,(a) confidence-thresholded abstention for LLM consumer-rights question answering,ta-screen-v4,2026-11-13
+doi:10.1109/icecet65726.2026.11632629,exclude,E1,Secure tool-augmented RAG architecture for IIoT diagnostics; outage-aware abstention is one component,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/ichi69079.2026.00139,exclude,E1,Quality-assurance governance framework for seizure detection; confidence filtering and deferral load are components,ta-screen-v4+p3-scope,2026-11-13
+doi:10.1109/icisc69558.2026.11681841,exclude,E4,Confidence-threshold response control so an LLM declines single consumer-rights questions; one-shot abstention,ta-screen-v4+p3-scope,2026-11-13
 doi:10.1109/epsic70071.2026.11589989,exclude,E1,"Deferral here means grid investment/reinforcement deferral, not model abstention; none of (a)-(e)",ta-screen-v4,2026-11-13
 doi:10.1109/iciptm59628.2024.10563935,exclude,E1,VANET routing protocol; deferral means end-to-end delay,ta-screen-v4,2026-11-13
 doi:10.1109/tii.2018.2869296,exclude,E1,Guest editorial on demand response; deferral is network reinforcement deferral,ta-screen-v4,2026-11-13
