@@ -33,7 +33,7 @@
     "short": "Edge inference",
     "blurb": "TensorRT, quantisation, wireless jitter, hardware-software co-design.",
     "scope": "Running learned models on edge silicon under hard latency budgets, and the effect of wireless tail latency on time-critical decisions.",
-    "query": "(\"edge inference\" OR \"edge deployment\" OR \"Jetson\" OR \"TensorRT\" OR \"on-device\" OR \"embedded GPU\") AND (\"latency\" OR \"real-time\" OR \"deadline\" OR \"tail latency\" OR \"p99\" OR \"jitter\" OR \"quantiz*\" OR \"INT8\") AND (\"safety\" OR \"graph neural\" OR \"GNN\" OR \"robot*\" OR \"wireless\" OR \"Wi-Fi\" OR \"5G\")"
+    "query": "(\"edge inference\" OR \"edge deployment\" OR \"Jetson\" OR \"TensorRT\" OR \"on-device\" OR \"embedded GPU\") AND (\"deadline\" OR \"tail latency\" OR \"p99\" OR \"jitter\" OR \"worst-case\" OR \"hard real-time\" OR \"latency budget\" OR \"time-critical\") AND (\"safety\" OR \"safety-critical\" OR \"graph neural\" OR \"GNN\" OR \"multi-robot\" OR \"multi-agent\" OR \"control loop\")"
   },
   {
     "n": 5,
