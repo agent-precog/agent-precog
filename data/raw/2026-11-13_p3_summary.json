@@ -1,0 +1,17 @@
+{
+ "arxiv": {
+  "query": "(all:\"learning to defer\" OR all:\"learn to defer\" OR all:\"learning-to-defer\" OR all:\"selective prediction\" OR all:\"reject option\" OR all:\"abstention\" OR all:\"deferral\") AND (all:\"sequential\" OR all:\"reinforcement\" OR all:\"trajectory\" OR all:\"multi-step\" OR all:\"expert\" OR all:\"human-in-the-loop\" OR (all:\"shield\" OR all:\"shields\" OR all:\"shielding\" OR all:\"shielded\") OR (all:\"runtime monitor\" OR all:\"runtime monitoring\" OR all:\"runtime monitors\") OR all:\"safety\") AND submittedDate:[201501010000 TO 209912312359]",
+  "hits": 435,
+  "downloaded": 435
+ },
+ "openalex": {
+  "query": "(\"learning to defer\" OR \"learn to defer\" OR \"learning-to-defer\" OR \"selective prediction\" OR \"reject option\" OR \"abstention\" OR \"deferral\") AND (\"sequential\" OR \"reinforcement\" OR \"trajectory\" OR \"multi-step\" OR \"expert\" OR \"human-in-the-loop\" OR (\"shield\" OR \"shields\" OR \"shielding\" OR \"shielded\") OR (\"runtime monitor\" OR \"runtime monitoring\" OR \"runtime monitors\") OR \"safety\")",
+  "hits": 2221,
+  "downloaded": 2221
+ },
+ "semanticscholar": {
+  "query": "(\"learning to defer\" | \"learn to defer\" | \"learning-to-defer\" | \"selective prediction\" | \"reject option\" | \"abstention\" | \"deferral\") + (\"sequential\" | \"reinforcement\" | \"trajectory\" | \"multi-step\" | \"expert\" | \"human-in-the-loop\" | \"shield*\" | \"runtime monitor*\" | \"safety\")",
+  "hits": 4628,
+  "downloaded": 4628
+ }
+}

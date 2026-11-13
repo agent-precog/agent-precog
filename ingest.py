@@ -102,7 +102,7 @@ def prior_index(run):
     """DOI, arXiv id and normalised title of everything already in an earlier run or in the review."""
     idx = {}
     for p in sorted(glob.glob(str(OUT / "*_records.csv"))):
-        if Path(p).name.startswith(run):
+        if Path(p).name == f"{run}_records.csv":
             continue
         for r in csv.DictReader(open(p, newline="", encoding="utf-8")):
             for k in (f"doi:{r['doi']}" if r.get("doi") else "", f"arxiv:{r.get('arxiv_id','')}" if r.get("arxiv_id") else "", "t:" + norm_title(r["title"])):
@@ -132,6 +132,8 @@ def main():
     a = ap.parse_args()
 
     files = sorted(glob.glob(str(RAW / f"{a.run}_*.csv")) + glob.glob(str(RAW / f"{a.run}_*.bib")))
+    if a.database == "api":   # an API run "<date>_pN" must not also pick up "<date>_pN_ieee_1.csv" and the like
+        files = [f for f in files if re.fullmatch(re.escape(a.run) + r"_(arxiv|openalex|semanticscholar)\.csv", Path(f).name)]
     if not files:
         sys.exit(f"no raw files matching data/raw/{a.run}_*.csv or .bib")
     records, seen = [], {}
