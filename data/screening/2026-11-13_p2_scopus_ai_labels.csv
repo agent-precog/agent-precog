@@ -1,0 +1,47 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+doi:10.1016/j.eml.2026.102518,exclude,E1,Category-theoretic scientific discovery framework; symbolic world model is not over graphs or multi-agent state.,ta-screen-v4,2026-11-13
+scopus:105020724613,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105047078114,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.3390/s21217254,exclude,E1,"Reliable spanning-tree routing in sensor networks; possible world model is uncertain-graph semantics, not a learned world model.",ta-screen-v4,2026-11-13
+scopus:105054140389,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:85174856499,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.65109/wcei7331,exclude,E2,"Vision and agenda paper on foundation world models with verification; reports no method, result or study.",ta-screen-v4,2026-11-13
+scopus:85164826567,include,,(b) plausible: object-centric world model predicting interactions via relational features among entities.,ta-screen-v4,2026-11-13
+doi:10.1142/9789811286490_0004,exclude,E3,Book chapter overview of dynamic 3D scene representations including GNN particle dynamics and world models.,ta-screen-v4,2026-11-13
+scopus:105054077610,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.1016/j.eswa.2026.134775,exclude,E1,Corrigendum correcting bibliographic entries of a bearing fault diagnosis paper.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-92744-7_25,exclude,E1,"Knowledge graph embedding with text and structure; no world model, latent dynamics prediction or safety aspect.",ta-screen-v4,2026-11-13
+doi:10.65109/belb5985,exclude,E1,Single-agent offline RL with world model rollouts on D4RL; no graph or multi-agent state.,ta-screen-v4,2026-11-13
+doi:10.65109/eaji2382,exclude,E1,Single-agent DreamerV3 world model under random delays; no graph or multi-agent state.,ta-screen-v4,2026-11-13
+doi:10.11834/jig.250544,exclude,E1,Survey of vision-language-action models for embodied AI; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.11834/jig.260203,exclude,E1,Survey of UAV vision-language navigation; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:85037042913,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.11834/jig.240774,exclude,E1,Survey of autonomous driving trajectory planning algorithms; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.11925/infotech.2096-3467.2026.0248,exclude,E1,Conceptual human-AI model for intelligence analysis work; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:105042219800,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105048592038,exclude,E1,"Neuroscience-inspired meta-controller for offline replay; single-agent, no graph or multi-agent world model.",ta-screen-v4,2026-11-13
+scopus:105045917367,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105054226618,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105051921059,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.1016/j.autcon.2026.107067,include,,(a) plausible: worker-robot collaboration with safety monitoring and local safety control governing robot actions at execution.,ta-screen-v4,2026-11-13
+doi:10.4271/01-15-02-0010,include,,(b) learned predictive dynamics model of interactions among multiple aircraft in adversarial multi-agent environments.,ta-screen-v4,2026-11-13
+doi:10.1109/tkde.2026.3731233,exclude,E1,"JEPA for table cell embeddings; latent prediction but over tables, no explicit graph or multi-agent state.",ta-screen-v4,2026-11-13
+doi:10.1109/iccar55106.2022.9782646,exclude,E1,"VAE-LSTM prediction of one pedestrian's visual perception; image-based single-agent model, no graph or multi-agent state.",ta-screen-v4,2026-11-13
+doi:10.12913/22998624/224196,include,,(b) plausible: joint-embedding self-supervised pretraining over superpixel adjacency graphs.,ta-screen-v4,2026-11-13
+scopus:105023169027,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105023167798,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.1145/3774904.3792742,include,,(b) plausible: learns surrogate latent dynamics of networked node interactions under hidden topology for influence prediction.,ta-screen-v4,2026-11-13
+doi:10.11959/j.issn.2096-6652.202433,include,,(b) plausible: orthopedic world model built with multi-agent methods to simulate and predict treatment outcomes.,ta-screen-v4,2026-11-13
+doi:10.1016/j.aei.2026.105308,include,,(b) hierarchical world models with latent dynamics over service-dependency graphs and latent imagination for UAV edge caching.,ta-screen-v4,2026-11-13
+scopus:105043936766,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105051775417,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.70102/aej.2026.18.4s.20,include,,(b) graph-attention digital twin predicting grid state with topology dreaming; also (a) rule-based safety shield on controller.,ta-screen-v4,2026-11-13
+scopus:105046220379,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105041795021,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+doi:10.1609/aaai.v40i41.40806,include,,(c) reliability of LLM multi-agent systems under Byzantine faulty agents is primary claim and measured outcome.,ta-screen-v4,2026-11-13
+doi:10.1527/tjsai.39-6_b-nb1,exclude,E1,MARL communication mechanism using VAE and attention for message selection; no world model or safety property.,ta-screen-v4,2026-11-13
+scopus:85115649189,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13
+scopus:105023641445,exclude,E1,"Formal result that general agents learn world models; single-agent, no graph or multi-agent state.",ta-screen-v4,2026-11-13
+doi:10.11834/jig.250550,exclude,E1,Survey of embodied AI evaluation benchmarks; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1109/tmech.2026.3694680,include,,(b) multiagent transformer world model for closed-loop traffic simulation with online risk monitoring.,ta-screen-v4,2026-11-13
+scopus:105046286071,exclude,E1,"Proceedings volume listing, not an individual paper; no single (a)-(e) contribution to judge.",ta-screen-v4,2026-11-13

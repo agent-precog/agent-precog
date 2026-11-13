@@ -1,0 +1,895 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+doi:10.1016/j.apenergy.2026.129167,exclude,E1,"EV charging-robot fleet optimisation and dispatch; no safety interception, world model or multi-agent hazard subject.",ta-screen-v4,2026-11-13
+doi:10.3390/fi18060326,exclude,E1,Survey of LLM multi-agent orchestration frameworks and protocols; safety is not the subject.,ta-screen-v4,2026-11-13
+doi:10.1007/s11424-026-5006-1,exclude,E1,Mathematical bead-chain model of a magnetic cilium; multi-agent in name only.,ta-screen-v4,2026-11-13
+doi:10.1145/3800227.3800266,exclude,E1,"Multi-agent RAG for contract clause risk review; application task performance, not agent safety.",ta-screen-v4,2026-11-13
+doi:10.1002/ecj.70021,exclude,E1,Hierarchical transport and coverage control; collision avoidance is one constraint among several.,ta-screen-v4,2026-11-13
+doi:10.3390/app16157688,exclude,E1,AV adoption survey and traffic microsimulation of dedicated lanes; traffic efficiency study.,ta-screen-v4,2026-11-13
+doi:10.1061/jtepbs.teeng-9352,exclude,E1,Campus e-scooter adoption survey and logistic regression.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-00686-8_37,include,,(c) Provable resilience of communicative multi-agent systems to malicious agents and communication attacks is the primary claim.,ta-screen-v4,2026-11-13
+doi:10.1109/ic3sis69949.2026.11608318,include,,(a) Deterministic execution layer validating transitions and restricting LLM agent actions at runtime.,ta-screen-v4,2026-11-13
+doi:10.1109/southeastcon63549.2026.11475978,exclude,E1,"CRM agent benchmark centred on execution accuracy; safety metrics secondary, single-agent, fails primacy test.",ta-screen-v4,2026-11-13
+doi:10.1007/s10207-026-01244-y,include,,(c) Privacy leakage among interacting generative agents measured and mitigated as the primary outcome.,ta-screen-v4,2026-11-13
+doi:10.1109/ines69513.2026.11661226,exclude,E3,Systematic mapping study of LLM agent failure modes and guardrails in software development.,ta-screen-v4,2026-11-13
+doi:10.1007/s10846-026-02382-0,exclude,E1,"Decentralized swarm behaviour design with Gibbs random fields; coordination, not safety.",ta-screen-v4,2026-11-13
+doi:10.3390/robotics15070119,exclude,E1,"MARL multi-robot coverage; collision penalty is one reward term, no safety guarantees.",ta-screen-v4,2026-11-13
+scopus:105052923801,exclude,E1,Workshop proceedings front matter on AI for aging and assisted living; not a paper on (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1016/j.firesaf.2026.104648,exclude,E1,"VLM agents reduce false alarms in fire detection; perception task, not multi-agent hazard.",ta-screen-v4,2026-11-13
+doi:10.4018/979-8-2600-2601-4.ch004,exclude,E1,Broad book chapter overview of agentic AI architectures and quantum trajectories; safety only in passing.,ta-screen-v4,2026-11-13
+doi:10.2478/cee-2026-0002,exclude,E1,Logistic regression of motorcyclist gap acceptance at crosswalks; human traffic behaviour.,ta-screen-v4,2026-11-13
+doi:10.18653/v1/2026.acl-demo.17,include,,(c) Toolkit for instantiating and measuring emergent risks such as collusion in LLM multi-agent systems.,ta-screen-v4,2026-11-13
+doi:10.1016/j.aei.2026.104681,exclude,E1,"LLM agents automate construction safety risk documents; safety domain is construction, not agent behaviour.",ta-screen-v4,2026-11-13
+doi:10.1016/j.sysconle.2026.106352,exclude,E1,Time-varying constrained convex optimisation method; multi-agent only as a numerical example.,ta-screen-v4,2026-11-13
+doi:10.1016/j.trip.2026.102337,exclude,E1,Survey of barriers to public EV fleet adoption.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-35173-9_12,exclude,E1,MILP task allocation with zone locking for robot fleets; scheduling and allocation.,ta-screen-v4,2026-11-13
+doi:10.1007/s10458-026-09766-4,exclude,E1,Theoretical multi-agent path finding in dense polyominoes; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-38260-3_28,exclude,E1,"Ventilator decision support with preference learning; clinician approves recommendations, no deferral or handoff mechanism studied.",ta-screen-v4,2026-11-13
+doi:10.3390/ai7020051,exclude,E1,LLM and rule-agent decision-support architecture for clean-in-place monitoring; no interception of an acting system.,ta-screen-v4,2026-11-13
+doi:10.3390/a19060447,exclude,E1,"Tool retrieval and selection at scale for LLM agents; recall, not safety.",ta-screen-v4,2026-11-13
+doi:10.3390/app16178852,exclude,E1,Formation-preserving potential-field control; collision avoidance is a constraint in a formation controller.,ta-screen-v4,2026-11-13
+doi:10.1145/3786159.3788484,exclude,E2,Self-declared vision paper proposing rule-based supervision of agents; on topic for (a) but reports nothing yet.,ta-screen-v4,2026-11-13
+doi:10.1002/rnc.70425,exclude,E1,Cooperative target-fencing control of mobile manipulators; formation control with repulsion term.,ta-screen-v4,2026-11-13
+doi:10.3390/robotics15060106,exclude,E1,Correction notice on references and AI disclosure; no contribution on (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.3390/s26196120,include,,(a) Deterministic safety governor holds exclusive execution authority over critic-scored requests; safety challenges tested.,ta-screen-v4,2026-11-13
+doi:10.30919/es1927,exclude,E1,LTL multi-robot firefighting task planning; collision avoidance is one planner component.,ta-screen-v4,2026-11-13
+doi:10.3390/app16199669,exclude,E1,Simulation feasibility study of a single AMR for intralogistics.,ta-screen-v4,2026-11-13
+doi:10.3846/aviation.2026.26028,exclude,E1,"NLP communication KPIs for aviation maintenance logs; human factors, no acting autonomous system.",ta-screen-v4,2026-11-13
+doi:10.12142/ztecom.202602008,exclude,E1,"Ontology alignment for semantic drift in LLM agents; outcome is task success and tokens, not safety.",ta-screen-v4,2026-11-13
+scopus:105055661555,exclude,E1,Conflict-based search path finding in shuttle warehouses under storage density; generic routing.,ta-screen-v4,2026-11-13
+doi:10.1016/j.oceaneng.2026.125408,exclude,E1,"MAPPO for multi-USV search with wave prediction in reward; training-time term, hazard is environmental not inter-agent.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-30573-2_3,exclude,E1,Prospective view of agentic AI for farming; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.5220/0014933400004015,include,,"(a) Runtime cryptographic verification of tool responses in LLM agent pipelines, detecting tampering before the agent acts.",ta-screen-v4,2026-11-13
+doi:10.1145/3748522.3779805,exclude,E1,Predictive maintenance models for truck components.,ta-screen-v4,2026-11-13
+doi:10.7736/jkspe.025.044,exclude,E1,MAPF computation-time improvement via agent merging and splitting; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.3389/frobt.2026.1877762,exclude,E1,Single versus multi-agent LLM orchestration cost benchmark for rover decision support; not agent safety.,ta-screen-v4,2026-11-13
+doi:10.3390/math14132274,exclude,E1,Geometric smoothing of MAPF trajectories; path quality with collision checks as constraints.,ta-screen-v4,2026-11-13
+doi:10.3390/app16105095,exclude,E1,Fuzzy multi-criteria selection of warehouse robots for procurement.,ta-screen-v4,2026-11-13
+doi:10.1177/09596518261420380,exclude,E1,Fault-tolerant UAV-UGV formation tracking; formation control with collision avoidance as one component.,ta-screen-v4,2026-11-13
+doi:10.1088/1748-3190/aeae93,include,,"(c) Multi-agent collision avoidance is the primary subject and measured outcome, including simulated controller collision rates.",ta-screen-v4,2026-11-13
+scopus:105031237137,exclude,E1,Reproduction of GovSim cooperation and sustainability benchmark; cooperation capability rather than hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1016/j.oceaneng.2026.126687,exclude,E1,Statistical analysis of ship detention and labour deficiencies; no agent safety topic.,ta-screen-v4,2026-11-13
+doi:10.1145/3744916.3764546,include,,(a) Runtime enforcement DSL that blocks unsafe LLM agent actions at execution time.,ta-screen-v4,2026-11-13
+doi:10.3390/fi18080391,exclude,E3,Survey of agentic AI and multi-agent collaboration in healthcare including safety mechanisms.,ta-screen-v4,2026-11-13
+doi:10.1016/j.engappai.2026.116109,exclude,E1,Fuzzy MCDM prioritisation of green freight strategies; off-topic.,ta-screen-v4,2026-11-13
+doi:10.65109/vexw9837,exclude,E1,"Graph-theoretic solvability of multi-robot motion planning; generic planning feasibility, not safety interception.",ta-screen-v4,2026-11-13
+doi:10.1002/rob.70260,exclude,E1,Multi-robot cooperative navigation planner; collision avoidance one constraint among several.,ta-screen-v4,2026-11-13
+scopus:105046184002,exclude,E1,Conference proceedings volume listing; not a single paper with any (a)-(e) subject.,ta-screen-v4,2026-11-13
+doi:10.1145/3788853.3801584,exclude,E1,"Demo of LLM agent visualization generation; reliability rules serve task completion, not safety interception.",ta-screen-v4,2026-11-13
+doi:10.1007/s40032-026-01399-6,exclude,E1,Hazardous waste emission factors in ship recycling; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.inffus.2025.103865,exclude,E1,Software architecture modeling framework for LLM agents; no runtime safety or hazard detection claim.,ta-screen-v4,2026-11-13
+doi:10.32604/cmc.2026.078188,exclude,E4,Harmful-prompt classifier for single LLM inputs via in-context learning; single-input guardrail.,ta-screen-v4,2026-11-13
+doi:10.1016/j.renene.2026.126679,exclude,E1,Monte Carlo cost simulation of wind farm decommissioning; off-topic.,ta-screen-v4,2026-11-13
+doi:10.3390/futuretransp6050200,exclude,E1,Locker demand and road-risk prediction for last-mile planning; off-topic.,ta-screen-v4,2026-11-13
+doi:10.65109/szpu6292,exclude,E1,"LLM agent supply chain behavioural simulation; inefficiency and bias, not a safety property.",ta-screen-v4,2026-11-13
+doi:10.1016/j.tra.2026.104905,exclude,E1,Survey of police perceptions of autonomous vehicles; no deferral or handoff mechanism studied.,ta-screen-v4,2026-11-13
+doi:10.1016/j.jclepro.2026.148735,exclude,E1,Simulation comparing last-mile delivery modes on cost and sustainability; off-topic.,ta-screen-v4,2026-11-13
+doi:10.3390/smartcities9090157,include,,(a) Deterministic verifier gates LLM supervisor proposed actions at runtime; unsafe execution measured.,ta-screen-v4,2026-11-13
+doi:10.1109/gaiis69281.2026.11519347,exclude,E1,"Multi-agent LLM pipeline for post-hoc microservice root cause analysis; diagnosis, not safety interception.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ssci.2026.107556,exclude,E1,Organisational readiness survey for occupational road safety; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.neunet.2025.108196,include,,(c) Multi-UAV collision avoidance is primary claim and measured outcome (avoidance success rate).,ta-screen-v4,2026-11-13
+doi:10.1109/tcyb.2026.3668806,exclude,E1,Swarm formation control; collision avoidance is one constraint within formation tracking.,ta-screen-v4,2026-11-13
+doi:10.1016/j.engappai.2025.113489,exclude,E1,"MADRL evacuation route simulation platform; coordination planning, not multi-agent safety interception.",ta-screen-v4,2026-11-13
+doi:10.65109/inst9866,exclude,E1,"Single-vehicle LiDAR pedestrian detector; perception model, no explicit latency-bounded safety decision.",ta-screen-v4,2026-11-13
+doi:10.22260/isarc2026/0038,exclude,E1,MARL fleet scheduling; collision avoidance one objective among productivity trade-offs.,ta-screen-v4,2026-11-13
+scopus:105054155407,exclude,E1,Conference proceedings volume listing; not a single paper with any (a)-(e) subject.,ta-screen-v4,2026-11-13
+scopus:105055470756,exclude,E1,Conference proceedings volume listing; not a single paper with any (a)-(e) subject.,ta-screen-v4,2026-11-13
+scopus:105051904394,exclude,E1,Multi-agent recipe-to-comic generation pipeline; off-topic.,ta-screen-v4,2026-11-13
+doi:10.32604/cmc.2026.077691,exclude,E1,Multi-agent LLM explanation of motor fault diagnosis; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-981-92-4392-1_62,exclude,E1,Multi-UAV path planning and optical link maintenance; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.3390/robotics15100189,exclude,E1,Integrated multi-robot task allocation and trajectory optimisation; generic planning.,ta-screen-v4,2026-11-13
+doi:10.65109/ocap7538,exclude,E1,Agent-based economic model of climate information contagion among firms; not autonomous agent safety.,ta-screen-v4,2026-11-13
+doi:10.1145/3787457,exclude,E1,"Task migration algorithm for industrial chain disruption; task allocation, not hazard detection.",ta-screen-v4,2026-11-13
+doi:10.12011/setp2025-1339,exclude,E1,Hierarchical MARL for task allocation and path planning; collision only a reward penalty.,ta-screen-v4,2026-11-13
+doi:10.3390/aerospace13080731,include,,"(a) plausible: LTL safety specifications guard MARL action exploration, shield-like; full text decides if runtime.",ta-screen-v4,2026-11-13
+doi:10.1145/3832783.3834501,exclude,E1,"Multi-agent LLM root cause analysis for cloud incidents; post-hoc diagnosis, not safety interception.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-32216-6_4,exclude,E1,Formation-preserving potential-field controller; formation control with collision avoidance as constraint.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-30836-8_39,include,,(c) Empirical safety evaluation of misalignment and emergent risks in multi-agent versus single-agent LLM systems.,ta-screen-v4,2026-11-13
+doi:10.3390/app16052256,exclude,E1,Metaheuristic trajectory planning for multi-rotor; swarm optimisation.,ta-screen-v4,2026-11-13
+doi:10.1016/j.energy.2026.141362,exclude,E1,"Safe RL for electric vehicle routing; safety inside routing policy, not runtime interception.",ta-screen-v4,2026-11-13
+doi:10.1145/3776734.3794393,include,,"(a)(e) Agent detects conflicting vessel signals, escalates and defers to human supervision; handoff workflow evaluated.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-09967-9_9,include,,(c) Scalable multi-robot collision detection is the primary claim; checking time and missed collisions measured.,ta-screen-v4,2026-11-13
+doi:10.1109/icaace69793.2026.11508644,include,,(a) Runtime monitor-classifier-recovery framework intercepting LLM agent tool-use failures during execution.,ta-screen-v4,2026-11-13
+doi:10.3390/machines14050491,exclude,E1,FMEA economic risk prioritisation for industrial vehicle maintenance; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/s12065-026-01282-4,exclude,E1,Multi-robot path planning actor-critic; collision rate secondary to task return.,ta-screen-v4,2026-11-13
+doi:10.1007/s00146-026-03343-9,include,,(c) Theoretical account plus single-case experiment on failure modes of deployed LLM agents.,ta-screen-v4,2026-11-13
+doi:10.3390/app16157675,exclude,E1,Calibration scheduling for measuring instruments; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1145/3843915.3843923,include,,(c) Framework and analytical study for adversarial agent-to-agent safety evaluation of LLM agents.,ta-screen-v4,2026-11-13
+doi:10.1145/3843282.3844428,include,,"(a) Control plane with deterministic validation, repair, fallback and human checkpoints over LLM planner output.",ta-screen-v4,2026-11-13
+doi:10.1007/s12555-026-00137-z,exclude,E1,"Formation control law; collision avoidance is one constraint of the consensus controller, not a runtime interception or hazard detector.",ta-screen-v4,2026-11-13
+doi:10.1016/j.eswa.2026.131801,exclude,E1,"Verification of LLM-extracted knowledge-graph facts; no acting system, multi-agent hazard, deferral or handoff.",ta-screen-v4,2026-11-13
+doi:10.1109/ojcoms.2026.3718178,exclude,E1,"LLM-agent wireless access protocol optimising age of information; communications protocol, no safety interception.",ta-screen-v4,2026-11-13
+doi:10.1111/exsy.70437,exclude,E1,"Systematic review of LLMs for software vulnerability management; cybersecurity application, not agent safety reflexes.",ta-screen-v4,2026-11-13
+doi:10.1016/j.adhoc.2026.104179,exclude,E1,"MARL task offloading for mobile edge computing; resource scheduling, no safety decision mechanism.",ta-screen-v4,2026-11-13
+doi:10.1016/j.jmsy.2026.09.010,include,,(a) Critic agent enforces safety bounds and provenance before recommendations reach human approval; runtime verification gate in multi-agent LLM system.,ta-screen-v4,2026-11-13
+doi:10.1109/aetcse69203.2026.11504027,include,,"(c) Proposes failure-pattern graph memory to prevent hallucination cascades and cross-agent conflicts in LLM multi-agent systems; architecture contribution, full text decides.",ta-screen-v4,2026-11-13
+doi:10.1007/s44163-026-01684-4,exclude,E1,Decentralised multi-UAV routing policy via behavioural cloning; legality masks are constraints within a path planner.,ta-screen-v4,2026-11-13
+doi:10.18280/jesa.590601,exclude,E1,Aircraft spare-parts inventory and reverse logistics study; unrelated to agent safety.,ta-screen-v4,2026-11-13
+doi:10.1109/icad69378.2026.11608655,include,,"(c)(a) Empirical safety evaluation of tool-using LLM agents (safety drift, livelock) plus runtime supervision layer with forced termination.",ta-screen-v4,2026-11-13
+doi:10.3390/systems14060630,exclude,E1,Digital transformation and firm performance econometrics; multi-agent used metaphorically.,ta-screen-v4,2026-11-13
+doi:10.4271/2026-01-0521,exclude,E1,Methodology for assessing autonomous-vehicle safety case documents; no runtime mechanism or multi-agent hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1007/s44163-026-01373-2,include,,(a)(e) Supervisor agent halts or defers worker-agent steps to a human by confidence thresholds; evaluated dynamic oversight.,ta-screen-v4,2026-11-13
+doi:10.1007/s44443-026-01173-9,exclude,E1,"Hierarchical RL robot tutoring framework; safety only a reward term, pedagogy is the subject.",ta-screen-v4,2026-11-13
+doi:10.1109/dsn69566.2026.00070,exclude,E1,"LLM coding agents for firmware decompilation; evaluates decompilation correctness, not agent safety.",ta-screen-v4,2026-11-13
+doi:10.1016/j.knosys.2026.115413,exclude,E1,Multi-robot pathfinding planner using MCTS; conflict avoidance is a constraint inside the planner.,ta-screen-v4,2026-11-13
+doi:10.1016/j.eswa.2026.134253,exclude,E1,Multi-objective genetic algorithm for UAV maritime patrol planning; task planning optimisation.,ta-screen-v4,2026-11-13
+doi:10.5220/0014456800004052,exclude,E1,"LLM multi-agent system for IT infrastructure outage remediation; AIOps recovery, not safety of the agents' interactions.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-36813-3_3,include,,(a)(c) Anticipatory safety monitor issuing override constraints for hazardous multi-agent traffic configurations; firing conditions formalised in Lean.,ta-screen-v4,2026-11-13
+scopus:105048693715,exclude,E1,"Conference proceedings volume listing, not an individual paper reporting a method or study.",ta-screen-v4,2026-11-13
+doi:10.1145/3813822.3813966,exclude,E1,"LLM agent with stochastic inventory optimisation for supply chains; safety stock, not system safety.",ta-screen-v4,2026-11-13
+doi:10.1109/iccvbic71195.2026.11689044,include,,"(a) Runtime monitor detecting goal-to-plan semantic drift from prompt injection in agentic LLM pipelines, 1.22 ms latency.",ta-screen-v4,2026-11-13
+doi:10.3233/atde260875,include,,"(c) Dynamic-graph spatiotemporal attention model for conflict prediction and collision alert among apron vehicles, personnel and aircraft.",ta-screen-v4,2026-11-13
+doi:10.11999/jeit250887,exclude,E1,Chaotic-map complete coverage path planning for a single robot; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1145/3802133.3802134,exclude,E1,LLM-agent framework automating ML research workflow; safety mentioned only as future need.,ta-screen-v4,2026-11-13
+scopus:105052218979,exclude,E1,"Conference proceedings volume listing, not an individual paper reporting a method or study.",ta-screen-v4,2026-11-13
+doi:10.1109/icca69928.2026.11618176,exclude,E1,Communication-free swarm target assignment and flocking control; coordination planner with collision avoidance as one constraint.,ta-screen-v4,2026-11-13
+doi:10.3390/app16157646,exclude,E1,"LLM cyber threat intelligence framework with analyst review; security intelligence generation, not safety interception of acting agents.",ta-screen-v4,2026-11-13
+doi:10.1007/s00498-024-00403-7,include,,(c) Formal proof of uniform-in-time minimal inter-agent distance (collision absence) in drone swarms; collision safety is the primary claim.,ta-screen-v4,2026-11-13
+doi:10.3389/frobt.2026.1920106,include,,(c) Heterogeneous multi-agent air-ground risk perception with real-time risk score validated against time-to-collision; borderline with planning.,ta-screen-v4,2026-11-13
+scopus:105039177216,exclude,E1,"Conference proceedings volume listing, not an individual paper reporting a method or study.",ta-screen-v4,2026-11-13
+doi:10.13182/nets26-10432,exclude,E1,Programme overview of nuclear instrumentation collaboration; no agent safety topic.,ta-screen-v4,2026-11-13
+doi:10.1109/ccssta69471.2026.11635209,include,,(a)(c) Decoupled runtime safety shield correcting MAPPO actions for multi-ship collision avoidance; collision rate is primary outcome.,ta-screen-v4,2026-11-13
+scopus:105016568016,exclude,E1,"Conference proceedings volume listing, not an individual paper reporting a method or study.",ta-screen-v4,2026-11-13
+doi:10.3390/su18010253,exclude,E1,"Agent-based simulation of ecological product supply policy; social simulation, no safety mechanism.",ta-screen-v4,2026-11-13
+doi:10.3390/robotics14120192,exclude,E1,Potential-field swarm formation and trajectory controller; obstacle avoidance one objective among several.,ta-screen-v4,2026-11-13
+doi:10.1016/j.tre.2025.104217,exclude,E1,Truck-drone order fulfilment optimisation heuristic; logistics scheduling.,ta-screen-v4,2026-11-13
+doi:10.1017/s0373463325101380,exclude,E1,"Statistical analysis of UK port accident data; human-operated shipping, no autonomous agents.",ta-screen-v4,2026-11-13
+doi:10.15587/978-617-8360-19-1,exclude,E1,Collective monograph on industrial process control and maintenance; not agent safety.,ta-screen-v4,2026-11-13
+doi:10.3390/su18020988,exclude,E1,Hybrid genetic algorithm for vehicle routing with 3D loading; logistics optimisation.,ta-screen-v4,2026-11-13
+doi:10.3390/electronics14234773,exclude,E1,"Pruned vision detector plus LLM assistant for factory helmet-violation monitoring; worker PPE detection, not agent safety.",ta-screen-v4,2026-11-13
+doi:10.3233/atde250887,exclude,E1,"DRL distributed formation control with obstacle avoidance; formation planner, safety not primary claim.",ta-screen-v4,2026-11-13
+doi:10.31763/ijrcs.v6i2.2592,exclude,E1,"Driver fatigue and distraction detection with early warning; monitors human driver, no autonomous agent or handoff.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2025.07.045,exclude,E1,Adaptive coverage control for mobile sensor network; obstacle avoidance secondary to parameter convergence.,ta-screen-v4,2026-11-13
+scopus:105005402906,exclude,E1,"MARL radio resource reservation for C-V2X; packet collisions in communications, not physical safety.",ta-screen-v4,2026-11-13
+scopus:105027994574,exclude,E1,"Conference proceedings volume listing, not an individual paper reporting a method or study.",ta-screen-v4,2026-11-13
+scopus:105031590765,exclude,E1,"Conference proceedings volume listing, not an individual paper reporting a method or study.",ta-screen-v4,2026-11-13
+doi:10.1109/csnt69054.2026.11502199,exclude,E1,IoT decision-support framework for petroleum logistics routing; no agent safety mechanism.,ta-screen-v4,2026-11-13
+doi:10.1049/cps2.70048,exclude,E1,UAV object detection and geo-referencing pipeline for mining digital twin; none of (a)-(e).,ta-screen-v4,2026-11-13
+scopus:105041695010,exclude,E1,"Whole-conference proceedings listing, not a single paper; no specific (a)-(e) subject.",ta-screen-v4,2026-11-13
+doi:10.3390/en18184975,exclude,E1,LNG marine fuel economics and emissions; off topic.,ta-screen-v4,2026-11-13
+doi:10.1109/ictmim68190.2026.11507686,exclude,E1,IoT battery monitoring for EV swapping stations; no multi-agent safety interception.,ta-screen-v4,2026-11-13
+doi:10.4230/lipics.ecrts.2025.5,exclude,E1,"Multi-robot mission planning and scheduling under resource uncertainty; planner, not runtime interception or hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1145/3672608.3707769,exclude,E1,ML network intrusion classification for vehicular networks with LIME; not (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1109/wcncw67598.2026.11555077,exclude,E1,MADDPG trajectory and communication resource scheduling for UAV-USV perception; energy objective.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-17801-5_1,exclude,E1,Complexity results for multi-agent reconfiguration ordering and motion planning; generic planning.,ta-screen-v4,2026-11-13
+doi:10.1016/j.rineng.2025.107080,exclude,E1,"Formation control with repulsive-field collision avoidance; formation controller where collision avoidance is a constraint, fails (c) primacy.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-01486-3_28,exclude,E1,"Cooperative underwater obstacle-avoidance navigation paradigm; navigation method, not hazard detection or interception.",ta-screen-v4,2026-11-13
+doi:10.1117/12.3089325,exclude,E1,MARL multi-agent path finding with waypoints and HER; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-34174-7_41,exclude,E1,"Neural trajectory planner for construction machinery obstacle avoidance; planner, not runtime interception.",ta-screen-v4,2026-11-13
+doi:10.1007/s11241-025-09446-8,exclude,E2,"On topic for (d) predictable real-time AI, but discusses issues and research directions only; no method or study.",ta-screen-v4,2026-11-13
+doi:10.1109/icscai68849.2026.11649445,include,,(a) plausible: predictive switching transfers control to redundant modules at runtime with multi-agent diagnosis and latency focus.,ta-screen-v4,2026-11-13
+doi:10.1515/9783111633909-014,exclude,E1,Book chapter on industrial deployment of RL in robotics; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-24045-3_1,exclude,E1,Driver alcohol prediction from physiological signals with blockchain logging; off topic.,ta-screen-v4,2026-11-13
+doi:10.1007/s10288-026-00625-2,exclude,E1,Operations-research vehicle routing with hazard risk; branch-and-price and ALNS optimisation.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-99732-7_5,exclude,E1,BPMN visual mission scripting for simulated agents; no safety mechanism.,ta-screen-v4,2026-11-13
+doi:10.1016/j.tre.2026.105364,exclude,E1,MARL energy-efficient truck platoon coordination; safety is one objective among several.,ta-screen-v4,2026-11-13
+scopus:105045882086,exclude,E1,Whole-conference proceedings listing on communications and signal processing; not a single paper.,ta-screen-v4,2026-11-13
+doi:10.3390/s25185877,exclude,E1,"Review of UAV swarm trajectory planning paradigms; planning survey, not on (a)-(e).",ta-screen-v4,2026-11-13
+doi:10.1007/978-981-95-0537-1,exclude,E1,"Monograph on fault-tolerant cooperative control design for multi-agent systems; control theory, no interception or hazard detection.",ta-screen-v4,2026-11-13
+doi:10.11999/jeit251103,exclude,E1,Review of bio-inspired DRL behaviour modelling for UAV swarms; off topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ejcon.2025.101330,exclude,E1,"Distributed Gaussian process regression via Kalman filtering; estimation method, off topic.",ta-screen-v4,2026-11-13
+doi:10.56578/jemse040305,exclude,E1,Predictive spare-parts inventory optimisation for aircraft fleets; off topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2025.11.706,exclude,E1,MADDPG collaborative decision-making for UAV-USV; coordination with collision penalty in reward.,ta-screen-v4,2026-11-13
+doi:10.1145/3712004,exclude,E1,Software-engineering perspective on collective computing paradigm; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.32604/cmc.2026.065539,exclude,E1,Wave-equation single-robot path planning algorithm; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.3390/electronics14204122,include,,(c)/(a): standardized deception detection battery across LLMs and RL agents plus runtime correction wrapper and real-time auditing.,ta-screen-v4,2026-11-13
+doi:10.1016/j.clscn.2025.100232,exclude,E1,Review of alternative marine fuels; off topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2025.11.587,include,,(c) plausible: inter-robot collision prevention via responsibility-aware control barrier functions is the primary claim.,ta-screen-v4,2026-11-13
+doi:10.3390/su18021014,exclude,E1,LLM multi-agent disaster response platform with RAG and routing; not safety evaluation or interception.,ta-screen-v4,2026-11-13
+scopus:105044945621,exclude,E1,Whole-conference proceedings listing on microelectronics and telecom; not a single paper.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-18834-2_7,include,,(a)/(e): multi-agent clinical framework with guardrails that pauses and defers to clinician feedback before proceeding.,ta-screen-v4,2026-11-13
+doi:10.1109/ccssta69471.2026.11635614,exclude,E1,Reward shaping for MARL UAV formation navigation; training-time safety terms only.,ta-screen-v4,2026-11-13
+doi:10.4018/979-8-3373-8954-7.ch009,exclude,E1,"Driver whole-body vibration and fatigue monitoring framework chapter; no multi-agent, interception or handoff subject.",ta-screen-v4,2026-11-13
+doi:10.1049/cit2.70002,exclude,E1,"RL formation control with potential-field obstacle avoidance; formation controller, fails (c) primacy.",ta-screen-v4,2026-11-13
+doi:10.1109/icce70609.2026.11658454,exclude,E1,Hierarchical DRL trajectory tracking with collision avoidance for multi-UAV; navigation planner.,ta-screen-v4,2026-11-13
+doi:10.31763/ijrcs.v6i3.2617,exclude,E1,Reactive virtual force field navigation for multi-robot systems; navigation method.,ta-screen-v4,2026-11-13
+doi:10.1109/tccn.2026.3694034,exclude,E1,MADRL UAV trajectory and task scheduling for edge computing throughput; off topic.,ta-screen-v4,2026-11-13
+scopus:105023412027,exclude,E1,Whole-conference proceedings listing on intelligent automation; not a single paper.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2025.10.245,exclude,E1,"MPC trajectory planner with stochastic obstacle prediction; constraint inside a planner, not (a) or (c).",ta-screen-v4,2026-11-13
+doi:10.1117/12.3078485,exclude,E1,"Generic enterprise agentic LLM architecture; guardrail and human-review layer is incidental, not the subject.",ta-screen-v4,2026-11-13
+doi:10.1080/00207179.2026.2620460,exclude,E1,Distributed swarm self-organisation protocol for sweeping coverage; coordination control.,ta-screen-v4,2026-11-13
+doi:10.2514/6.2026-0644,exclude,E1,Bayesian compliance modelling of satellite post-mission disposal; off topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ejcon.2025.101352,exclude,E1,Event-triggered consensus control for hot-pressing cylinder arrays; industrial control.,ta-screen-v4,2026-11-13
+doi:10.11999/jeit251246,exclude,E1,Broad review of intelligent UAV technology for low-altitude economy; off topic.,ta-screen-v4,2026-11-13
+doi:10.1109/tccn.2025.3637411,exclude,E1,Hierarchical RL trajectory planning for UAV formation; navigation and formation planner.,ta-screen-v4,2026-11-13
+scopus:105047426813,exclude,E1,"Conference proceedings volume, not a single paper; none of (a)-(e) is the subject.",ta-screen-v4,2026-11-13
+doi:10.7527/s1000-6893.2025.31621,exclude,E1,"UAV logistics path planner; conflict resolution is one planning layer, not a primary multi-agent safety claim.",ta-screen-v4,2026-11-13
+scopus:105044937501,exclude,E1,"HCI proceedings volume, not a single paper; none of (a)-(e) is the subject.",ta-screen-v4,2026-11-13
+doi:10.1016/j.robot.2025.105000,include,,(c)/(b): team agents build predictive models of external agents to anticipate conflicts; collision events are a primary outcome.,ta-screen-v4,2026-11-13
+doi:10.1016/j.engappai.2025.112125,exclude,E1,"Target trajectory prediction for UAV swarm tracking; tracking control, no safety interception or multi-agent hazard primacy.",ta-screen-v4,2026-11-13
+doi:10.1109/lcsys.2026.3745613,exclude,E1,Event-triggered fencing/formation control; collision avoidance is one potential term among several.,ta-screen-v4,2026-11-13
+doi:10.1109/ojits.2026.3655473,exclude,E1,Agent-based traffic simulation for work zone emissions policy; not a safety interception topic.,ta-screen-v4,2026-11-13
+doi:10.1145/3733155.3736793,exclude,E1,UAV evacuation guidance system and simulator; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1201/9781003753728,exclude,E1,General book overview of agentic and quantum AI agents; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1515/9783112223062-012,exclude,E1,Overview chapter on agentic AI applications; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:105045279738,exclude,E4,"Detector of AI-generated text per message; single-input classifier with no multi-agent, latency or handoff aspect.",ta-screen-v4,2026-11-13
+doi:10.1145/3728985.3728988,exclude,E1,"MADDPG multi-robot path planning; obstacle avoidance is one objective, generic path planning.",ta-screen-v4,2026-11-13
+doi:10.1016/j.aap.2025.108252,exclude,E1,"EEG workload of human drivers interacting with AVs; no deferral, takeover or multi-agent hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1109/comst.2026.3683120,exclude,E1,"Survey of MLLM-driven sensing, communication and computation for multi-robot networks; not a safety topic.",ta-screen-v4,2026-11-13
+doi:10.1109/aiiot68874.2026.11569604,exclude,E1,"Production readiness maturity framework for enterprise agentic AI; deployment governance, not safety interception or hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1109/dcas69364.2026.11544244,exclude,E1,Voice-controlled drone autonomy and HITL swarm simulation platform; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1109/icnc68183.2026.11416848,include,,(d): edge DRL for multi-UAV vertiport operations with explicit 100 ms latency budget and collision reduction as outcome.,ta-screen-v4,2026-11-13
+scopus:105044812925,exclude,E1,"Conference proceedings volume, not a single paper; none of (a)-(e) is the subject.",ta-screen-v4,2026-11-13
+doi:10.1007/s11042-024-19951-w,exclude,E1,Learned multi-agent path finding with communication; generic path planning.,ta-screen-v4,2026-11-13
+scopus:105032071500,exclude,E1,Epidemic-style knowledge diffusion model in industries; unrelated to agent safety.,ta-screen-v4,2026-11-13
+scopus:105046120122,include,,"(c): methodology to analyse failure modes emerging from multi-human multi-robot interaction, with case study; full text decides.",ta-screen-v4,2026-11-13
+doi:10.1109/icsp69961.2026.11540643,include,,(a): MARL platooning with cascaded one-step kinematic safety supervisor overriding actions at runtime to guarantee collision avoidance.,ta-screen-v4,2026-11-13
+doi:10.1007/s42401-026-00562-2,exclude,E1,Perspective on transferring intralogistics control methods to low-altitude logistics; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:105042157292,exclude,E1,"Conference proceedings volume, not a single paper.",ta-screen-v4,2026-11-13
+doi:10.1002/9781394275113.ch11,exclude,E1,Overview chapter on reinforcement learning for autonomous vehicle control; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:105017367815,exclude,E1,"Conference proceedings volume, not a single paper.",ta-screen-v4,2026-11-13
+scopus:105041274075,exclude,E1,"Conference proceedings volume, not a single paper.",ta-screen-v4,2026-11-13
+scopus:105038479904,exclude,E1,"Conference proceedings volume, not a single paper; none of (a)-(e) is the subject.",ta-screen-v4,2026-11-13
+doi:10.2514/1.i011744,exclude,E1,Cooperative drone route planner compared with RRT*; collision avoidance is one metric among several.,ta-screen-v4,2026-11-13
+doi:10.1007/978-981-95-7676-0_46,exclude,E1,Coverage path planning for tethered UAVs; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1109/ton.2026.3700387,exclude,E1,MARL coordination for UAV target tracking and capture; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:105031955358,exclude,E1,"Conference proceedings volume, not a single paper.",ta-screen-v4,2026-11-13
+doi:10.1007/s42452-025-06827-3,exclude,E1,Class-imbalance handling for vehicle predictive maintenance classification; unrelated to agent safety.,ta-screen-v4,2026-11-13
+doi:10.1080/15472450.2025.2497503,exclude,E1,"Opinion survey of traffic officers about robotaxis; no deferral, handoff or hazard detection mechanism.",ta-screen-v4,2026-11-13
+doi:10.1109/isaes70982.2026.11669583,exclude,E1,Monte Carlo efficiency-loss model for Earth-Moon transport; not multi-agent safety.,ta-screen-v4,2026-11-13
+scopus:105042705323,exclude,E1,"Conference proceedings volume, not a single paper.",ta-screen-v4,2026-11-13
+scopus:105032790427,exclude,E1,"Conference proceedings volume, not a single paper.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2026.01.076,exclude,E1,Multi-spacecraft inspection trajectory optimisation; collision avoidance is a constraint inside the planner.,ta-screen-v4,2026-11-13
+doi:10.1515/9783111633909-001,exclude,E1,General review chapter on reinforcement learning; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2025.09.278,exclude,E1,Complexity and approximation results for warehouse multi-agent path finding; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2025.09.192,exclude,E1,Conceptual empathy framework for self-organizing production agents; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1016/j.apenergy.2025.126252,exclude,E1,Mobile charging robot scheduling for power system resilience; power-system multi-agent optimisation.,ta-screen-v4,2026-11-13
+doi:10.1177/03611981261425976,exclude,E1,Crash data analysis of tall vehicles and pedestrians; no autonomous multi-agent system.,ta-screen-v4,2026-11-13
+doi:10.1016/j.jai.2025.05.001,exclude,E1,Erratum listing competing-interest declarations; no research content.,ta-screen-v4,2026-11-13
+doi:10.3390/electronics15020331,exclude,E1,Crowdsourced multi-UAV logistics dispatch with incentives; collision cost is one factor among several.,ta-screen-v4,2026-11-13
+doi:10.1016/j.procs.2026.03.041,exclude,E1,LLM agent workflow for agricultural sensor data-quality monitoring; not safety interception of an acting system.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-21524-6_41,include,,(a)/(d): runtime controller filtering LLM inputs and outputs in embedded critical systems with deterministic timing on edge hardware.,ta-screen-v4,2026-11-13
+doi:10.1145/3736789,exclude,E1,Robotic art installation description; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.12263/dzxb.20250418,exclude,E3,"Survey of MARL including multi-agent safe RL; review article, kept for snowballing.",ta-screen-v4,2026-11-13
+doi:10.1109/ecai69016.2026.11613648,exclude,E1,"Conceptual study of DRL engine calibration with digital twins; single-plant control, none of (a)-(e).",ta-screen-v4,2026-11-13
+doi:10.1145/3725783.3764388,include,,"(c) plausible: empirical evaluation of LLM tool-calling agents diagnosing failures across microservices, with agent failure modes analysed.",ta-screen-v4,2026-11-13
+doi:10.1007/978-981-95-3320-6_19,exclude,E1,"Multimodal LLM agent for power-line inspection and dispatch strategy; perception application, no runtime interception or multi-agent hazard.",ta-screen-v4,2026-11-13
+scopus:105028422737,exclude,E1,Proceedings volume listing for an applied algorithms conference; not an individual on-topic paper.,ta-screen-v4,2026-11-13
+doi:10.32604/cmes.2026.080888,exclude,E1,Review and blueprint for enterprise RAG/LLM systems on attribution and governance; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.3390/app152211867,exclude,E1,Reliability analysis with importance measures and FMEA for waste truck fleet; no agents or runtime interception.,ta-screen-v4,2026-11-13
+doi:10.3390/app152111414,exclude,E1,"Multi-agent federated predictive maintenance in ceramic manufacturing; equipment health prediction, not multi-agent hazard or interception.",ta-screen-v4,2026-11-13
+scopus:105025360632,exclude,E1,Proceedings volume listing for PRIMA 2025; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1007/s00500-026-11519-0,exclude,E1,"Decoupled RL policy for single UAV vision control; navigation performance, collision avoidance only one outcome.",ta-screen-v4,2026-11-13
+doi:10.1109/jiot.2026.3729931,exclude,E1,ADMM-based distributed task allocation for UAV swarms; task-allocation planner excluded by (c) primacy test.,ta-screen-v4,2026-11-13
+doi:10.1515/9783112223062-002,exclude,E1,"Book chapter overview of agentic AI architecture and applications; general, none of (a)-(e) is the subject.",ta-screen-v4,2026-11-13
+doi:10.1109/tfr.2026.3741806,exclude,E1,Design and field evaluation of small autonomous sailing drone hardware; no safety interception or hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1016/j.procs.2026.08.197,exclude,E1,"Enterprise knowledge-graph platform with adaptive agents; information management, none of (a)-(e).",ta-screen-v4,2026-11-13
+scopus:105032579657,exclude,E1,Proceedings volume listing for a space conference; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1515/9783111633909-030,exclude,E1,"Book chapter overview of reinforcement learning trends; general, none of (a)-(e) is the subject.",ta-screen-v4,2026-11-13
+doi:10.1016/j.conengprac.2025.106262,exclude,E1,"Attitude consensus control laws for rigid-body networks; coordination control, no safety property.",ta-screen-v4,2026-11-13
+scopus:105028452577,exclude,E1,Proceedings volume listing for PRCV 2025; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1109/iceesi68020.2026.11583055,exclude,E1,RL UAV swarm coordination for disaster mapping; coordination planner where collision risk is one metric among several.,ta-screen-v4,2026-11-13
+scopus:105005982746,exclude,E1,Conceptual smart-port digital transformation model and roadmap; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-032-30819-1_25,exclude,E1,Software platform for electric motorcycle fleet logistics; no agent safety interception or hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1017/s0263574726103506,exclude,E1,Flocking navigation for multiple agents with obstacle avoidance; formation/navigation planner excluded by (c) primacy test.,ta-screen-v4,2026-11-13
+scopus:105043313865,exclude,E1,Proceedings volume listing for lean construction conference; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1002/aisy.202501403,exclude,E1,"Behavioural differentiation in phototactic robot collectives; collective behaviour study, not safety.",ta-screen-v4,2026-11-13
+scopus:105043921801,exclude,E1,Proceedings volume listing for Baltic DB and IS 2026; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1109/access.2026.3703330,exclude,E1,"LLM hierarchical multi-agent robot navigation with replanning after execution failure; task recovery, not safety interception or hazard detection.",ta-screen-v4,2026-11-13
+scopus:105020045277,exclude,E1,Proceedings volume listing for ICMCE 2024; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1016/j.procs.2025.10.151,exclude,E1,Distributed RL formation control with obstacle avoidance; formation planner excluded by (c) primacy test.,ta-screen-v4,2026-11-13
+scopus:105009865711,include,,(c) plausible: CTL model checking of vGOAL agent programs for safety of a multi-robot logistics system; verification method passes to full text.,ta-screen-v4,2026-11-13
+doi:10.1109/smartgridcomm65349.2025.11204591,include,,"(c): formalises, measures and attributes operational collisions among independent AI agents in energy systems; multi-agent safety is primary claim.",ta-screen-v4,2026-11-13
+doi:10.3390/s24113639,exclude,E1,Spatiotemporal A* trajectory planning among multiple robots; path planner with collision avoidance as constraint.,ta-screen-v4,2026-11-13
+scopus:105030479435,exclude,E1,Proceedings volume listing for SITA 2025; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.18280/ijtdi.090119,exclude,E1,Maintenance reliability statistics for mining dump truck fleet; no agents or safety interception.,ta-screen-v4,2026-11-13
+doi:10.1007/s40430-024-05165-6,exclude,E1,CL-RRT path planning and formation for robot groups; planner with collision avoidance as constraint.,ta-screen-v4,2026-11-13
+doi:10.1007/978-981-96-7352-0_12,exclude,E1,"Multi-robot target enclosing controller with repulsion term; coordination control, not hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1109/tmc.2024.3459896,exclude,E1,MARL resource management for underwater sensor networks; communications protocol optimisation.,ta-screen-v4,2026-11-13
+scopus:105014150523,exclude,E1,Proceedings volume listing for ICMLC 2025; not an individual paper.,ta-screen-v4,2026-11-13
+scopus:105018613590,exclude,E1,Proceedings volume listing for a design research conference; not an individual paper.,ta-screen-v4,2026-11-13
+scopus:105042094299,exclude,E1,Proceedings volume listing for IEEE Telepresence 2025; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1049/pbme028e_ch1,exclude,E1,Evaluation index system for construction safety management among human organisations; not autonomous agents.,ta-screen-v4,2026-11-13
+doi:10.1109/cepsi66359.2025.11403600,exclude,E1,Two-dimensional condition assessment for power transformer fleet asset management; no agents or interception.,ta-screen-v4,2026-11-13
+doi:10.1109/ichveps66913.2025.11351162,exclude,E1,"Clustering and classification for transformer risk prioritisation; asset management, none of (a)-(e).",ta-screen-v4,2026-11-13
+doi:10.1109/tnnls.2025.3586603,exclude,E1,"Constrained policy optimisation via Markov-game formulation for single-agent safe RL; training-time constraint, not runtime interception.",ta-screen-v4,2026-11-13
+doi:10.1109/lra.2025.3559826,include,,"(a) plausible: virtual fixtures override unsafe actions and push the surgical robot back to the safe region, with dynamic constraints.",ta-screen-v4,2026-11-13
+scopus:105009775821,exclude,E1,"LLM agents generating iterated Prisoner's Dilemma strategies; cooperation study, no safety property as primary outcome.",ta-screen-v4,2026-11-13
+doi:10.1201/9781779643599-6,exclude,E1,Book chapter on IoT monitoring for fleet sustainability and air quality; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.70102/afts.2025.1834.619,exclude,E1,DRL swarm UAV coverage for post-disaster inspection; coordination planner with collision avoidance as one objective.,ta-screen-v4,2026-11-13
+doi:10.1109/pimrc62392.2025.11274801,include,,(d) plausible: edge AI agents in O-RAN RIC with safety-aligned reward and proactive anomaly detection under near-real-time constraints.,ta-screen-v4,2026-11-13
+scopus:105009817974,exclude,E1,"LLM-agent cooperation norms in donor game; cooperation benchmark, not a multi-agent safety hazard or interception question",ta-screen-v4,2026-11-13
+doi:10.1007/978-981-96-3973-1_9,include,,(c) improved RVO-3D model whose primary claim and outcome is cooperative collision avoidance among multiple UAS,ta-screen-v4,2026-11-13
+scopus:105015528354,exclude,E1,Proceedings volume listing control papers; no single contribution on (a)-(e),ta-screen-v4,2026-11-13
+scopus:105010850109,exclude,E1,Proceedings volume on image and vision systems; no single contribution on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.22260/isarc2025/0040,exclude,E1,Social navigation algorithm aimed at efficiency and yielding; collision avoidance not the primary measured safety outcome,ta-screen-v4,2026-11-13
+doi:10.1049/rsn2.70033,include,,(c) robust constrained MARL with risk estimator against adversarial attacks causing multi-vehicle collisions; safety is primary claim,ta-screen-v4,2026-11-13
+doi:10.1016/j.eswa.2024.123201,exclude,E1,Multi-UAV motion planning for aerial 3D printing; collision avoidance is a planner constraint,ta-screen-v4,2026-11-13
+doi:10.1109/cloudcom67567.2025.11331512,exclude,E1,Single soft-robot pose control with DDPG-PSO; no multi-agent safety topic,ta-screen-v4,2026-11-13
+doi:10.1109/tase.2024.3436922,exclude,E1,"Self-triggered MPC for teleoperated networked robots; control design, no interception or handoff question",ta-screen-v4,2026-11-13
+doi:10.11999/jeit250051,exclude,E1,UAV RF signal classification with wavelet entropy and SVM; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/icdsca67083.2025.11349860,exclude,E1,Competitive MARL DQN variant for hunting performance; safety not the primary claim,ta-screen-v4,2026-11-13
+scopus:85213325100,exclude,E1,Trade magazine item on ammonia-fuelled car carriers; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/cdc57313.2025.11312967,exclude,E1,UAV formation control via NMPC with RL tuning; collision avoidance one constraint among several,ta-screen-v4,2026-11-13
+doi:10.1109/tiv.2024.3427359,exclude,E1,Multi-cyclist trajectory prediction with interaction model; not a world model or latent prediction contribution,ta-screen-v4,2026-11-13
+doi:10.7717/peerj-cs.3376,exclude,E1,"Bi-objective robot-team route planning with ant colony optimisation; planning, not hazard detection",ta-screen-v4,2026-11-13
+doi:10.3390/electronics14040776,exclude,E1,AGV team control with ArUco markers and behaviour trees; generic multi-robot control,ta-screen-v4,2026-11-13
+scopus:105009784263,include,,(c) multi-UAV collision avoidance policy with causal feature selection; collision avoidance is primary claim and outcome,ta-screen-v4,2026-11-13
+doi:10.1016/j.artint.2024.104195,exclude,E1,"Sample-based risk-measure bounds for offline policy synthesis and verification; multi-agent only a showcase, not runtime",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-93429-2_11,exclude,E1,Mixed-reality AI assistant framework for manufacturing; no (a)-(e) subject,ta-screen-v4,2026-11-13
+doi:10.1007/s42461-024-01092-1,exclude,E1,Stochastic optimisation of a mining complex plan; off-topic,ta-screen-v4,2026-11-13
+doi:10.20965/jaciii.2025.p1182,exclude,E1,Auction-based coalition formation for firefighting resources; task allocation,ta-screen-v4,2026-11-13
+scopus:105006580506,exclude,E1,Proceedings volume on European robotics; no single contribution on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.52202/083088-0120,exclude,E1,"Robotic swarm prototype for orbital inspection; platform description, no safety interception or hazard detection",ta-screen-v4,2026-11-13
+doi:10.1109/isgteurope64741.2025.11305347,include,,(a) MARL volt-var control with safety layer projecting unsafe actions to feasible space at execution time,ta-screen-v4,2026-11-13
+scopus:105033968371,exclude,E1,Generative-AI route planning for a single mobile robot; generic path planning,ta-screen-v4,2026-11-13
+scopus:85219170541,exclude,E1,Proceedings volume on industrial production and logistics; no single contribution on (a)-(e),ta-screen-v4,2026-11-13
+scopus:105002885628,exclude,E1,Comparison of aircraft freighter conversion strategies; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/ccdc65474.2025.11090716,exclude,E1,"MADRL with graph attention for UAV countermeasure decisions; combat decision-making, not safety hazard detection",ta-screen-v4,2026-11-13
+doi:10.23919/empc63132.2025.11222406,exclude,E1,Prognostics of solder fatigue in rail power converters; off-topic,ta-screen-v4,2026-11-13
+scopus:105009856241,exclude,E1,"Single-robot MCTS motion planner with velocity obstacles; generic planning, no runtime override or multi-agent safety claim",ta-screen-v4,2026-11-13
+doi:10.52202/078572-0060,exclude,E1,Pipeline dent inspection with robotic crawler and laser sensor; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/itnac66378.2025.11302564,exclude,E1,"Feasibility of start-delay scheduling for drone flocks; scheduling analysis, collision avoidance a constraint",ta-screen-v4,2026-11-13
+doi:10.1007/s11370-024-00582-x,exclude,E1,Decentralised multi-robot formation control with ORCA and RRT; formation planner,ta-screen-v4,2026-11-13
+doi:10.1109/itechsecom64750.2025.11307451,exclude,E1,IoT predictive maintenance for electric vehicles; off-topic,ta-screen-v4,2026-11-13
+doi:10.12785/ijcds/1571012134,exclude,E1,GPS-GSM-IoT vehicle tracking system; off-topic,ta-screen-v4,2026-11-13
+scopus:105009813967,exclude,E1,Multimodal safety dialogue system for one embodied agent advising humans; none of (a)-(e),ta-screen-v4,2026-11-13
+scopus:105035601878,exclude,E1,Proceedings volume on automation technology; no single contribution on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-76824-8_18,exclude,E1,Telemetry subscription service concept for piloted general aviation; not an autonomous multi-agent system,ta-screen-v4,2026-11-13
+doi:10.1007/s10846-024-02177-1,exclude,E1,"Cooperative hunting with rule-based and TD3 control; coordination, not safety",ta-screen-v4,2026-11-13
+doi:10.1109/lra.2025.3546091,exclude,E1,Humanoid upper-body motion optimisation for object carrying; single robot planning,ta-screen-v4,2026-11-13
+doi:10.1016/j.jsr.2024.06.007,exclude,E1,Crash statistics on vehicle front-end geometry and pedestrian injury; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/wrcsara68202.2025.11194931,exclude,E1,Single-robot DRL navigation among pedestrians; navigation planner,ta-screen-v4,2026-11-13
+doi:10.1109/yac66630.2025.11149845,exclude,E1,Sliding-mode anti-skid control for four-wheel drive vehicle; off-topic control,ta-screen-v4,2026-11-13
+doi:10.1109/icus66297.2025.11294344,exclude,E1,Multi-agent task allocation and planning under temporal logic; collision avoidance one constraint,ta-screen-v4,2026-11-13
+doi:10.1109/iceeng64546.2025.11031316,exclude,E1,Optimisation algorithm for multi-agent multi-target assignment; task allocation,ta-screen-v4,2026-11-13
+doi:10.1109/fllm67465.2025.11391085,exclude,E1,Driver identification from truck CAN bus signals; off-topic,ta-screen-v4,2026-11-13
+doi:10.3390/en17174414,exclude,E1,LNG demand estimation for Baltic shipping; off-topic,ta-screen-v4,2026-11-13
+scopus:105016612847,exclude,E1,Proceedings volume for ICRA 2025; no single contribution on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1016/j.biosystemseng.2024.04.007,exclude,E1,"Two-tractor coverage path planner; collision avoidance is one planning constraint, not primary safety claim",ta-screen-v4,2026-11-13
+doi:10.1016/j.atech.2024.100461,exclude,E1,Drone target allocation and trajectory planning for pollination; collision avoidance one constraint among several,ta-screen-v4,2026-11-13
+doi:10.1109/icus66297.2025.11294347,exclude,E1,Multi-USV pursuit-evasion control with potential-field obstacle avoidance; coordination planner,ta-screen-v4,2026-11-13
+doi:10.11999/jeit250122,exclude,E1,MAPF with selective communication and conflict resolution; path-planning performance is the outcome,ta-screen-v4,2026-11-13
+doi:10.52202/083076-0088,exclude,E1,MARL coverage path planning for lunar rovers; collision rate is a secondary metric,ta-screen-v4,2026-11-13
+scopus:105002338020,exclude,E1,Proceedings volume record on reliability engineering; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+scopus:105008380281,exclude,E1,Proceedings volume record on distributed computing theory; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.3390/smartcities8010016,exclude,E1,Survey-based study of scooter-sharing adoption barriers; no agent safety topic,ta-screen-v4,2026-11-13
+doi:10.1109/mdm65600.2025.00021,exclude,E1,Spatial partitioning data structure for fleet response time; generic planning,ta-screen-v4,2026-11-13
+doi:10.1017/aer.2024.37,exclude,E1,"FRAM and flight-data risk model for runway overrun; no multi-agent, runtime interception or handoff aspect",ta-screen-v4,2026-11-13
+doi:10.3390/drones8120782,exclude,E1,Single-UAV vision DRL navigation with privileged learning; generic navigation,ta-screen-v4,2026-11-13
+doi:10.3390/drones9030161,exclude,E1,Decentralized USV sweep-coverage formation control law; collision avoidance one objective among several,ta-screen-v4,2026-11-13
+doi:10.1109/itsc60802.2025.11423646,exclude,E1,"MADDPG trajectory optimisation for virtually coupled trains; action masking sits inside training, efficiency is the outcome",ta-screen-v4,2026-11-13
+doi:10.52842/conf.caadria.2025.1.193,exclude,E1,LLM agents for architectural design exploration; no safety topic,ta-screen-v4,2026-11-13
+doi:10.1109/icdcs63083.2025.00043,exclude,E1,Drone task assignment under stochastic failure; task-allocation optimisation,ta-screen-v4,2026-11-13
+scopus:105038778753,exclude,E1,Proceedings volume record on automation and robotics; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1016/j.mechatronics.2024.103206,exclude,E1,Reconfigurable MARL for cooperative transport; no safety contribution,ta-screen-v4,2026-11-13
+scopus:105004789907,exclude,E1,"Explainability of learned MARL communication via causal discovery; safety is motivation, not the measured claim",ta-screen-v4,2026-11-13
+doi:10.1109/cloud-summit64795.2025.00024,exclude,E1,"LLM multi-agent Kubernetes troubleshooting framework and benchmark; task accuracy, not agent safety evaluation",ta-screen-v4,2026-11-13
+scopus:105007714531,exclude,E1,"Proceedings volume record on cognitive ergonomics; not an individual paper, though some listed papers touch (e)",ta-screen-v4,2026-11-13
+doi:10.1109/icetci64844.2025.11084247,exclude,E1,Model-free adaptive UAV tracking control tuned by PSO; single-agent control,ta-screen-v4,2026-11-13
+scopus:105009810807,exclude,E1,"Priority-aware potential-field UAV collision avoidance planner; measured outcome is completion time, not safety",ta-screen-v4,2026-11-13
+doi:10.1109/iccta68914.2025.11519998,exclude,E1,Hybrid A* neural heuristic path planning for IoT multi-robot systems; generic path planning,ta-screen-v4,2026-11-13
+doi:10.1109/iccams65118.2025.11234544,exclude,E1,"CNN-LSTM fault classification for EV powertrain components; component diagnostics, none of (a)-(e)",ta-screen-v4,2026-11-13
+doi:10.1016/j.robot.2024.104698,exclude,E1,Turn-angle assignment path planner for multiple robots; outcomes are energy and mission time,ta-screen-v4,2026-11-13
+doi:10.1109/icdsns65743.2025.11168744,exclude,E1,MAPPO with spatial attention for UAV swarm navigation; collision avoidance is a reward term,ta-screen-v4,2026-11-13
+doi:10.1049/cth2.12692,include,,(a) control barrier functions modify nominal formation controllers at runtime to enforce safety in multi-agent system,ta-screen-v4,2026-11-13
+doi:10.1109/dcoss-iot65416.2025.00094,exclude,E1,Predictive maintenance of trucks from telemetry and warranty data; none of (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1016/j.cie.2024.110310,exclude,E1,"Ontology and vision framework for worker health reasoning; occupational safety, not agent safety interception",ta-screen-v4,2026-11-13
+scopus:105030851984,exclude,E1,Proceedings volume record on robotics and control; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1109/icca66035.2025.11430901,exclude,E1,Aircraft predictive maintenance ML pipeline on fault messages; none of (a)-(e),ta-screen-v4,2026-11-13
+doi:10.2514/6.2025-0710,exclude,E1,Clustering of aircraft brake wear patterns for maintenance; none of (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1109/exp.at2565440.2025.11348437,exclude,E1,Cooperative UAV search and coverage for wildfire using historical data matching; coordination planning,ta-screen-v4,2026-11-13
+scopus:105009793665,exclude,E1,RL multi-robot task allocation in warehouses; collision avoidance a practical constraint,ta-screen-v4,2026-11-13
+doi:10.15199/48.2025.03.65,exclude,E1,Logistic-map model of autonomous vehicle fleet size and traffic organisation; none of (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1109/cac67268.2025.11487560,exclude,E1,LTL-based multi-robot firefighting path planning; collision repulsion one element of planner,ta-screen-v4,2026-11-13
+doi:10.3390/systems13040294,exclude,E1,Blockchain cyber-systemic methodology for human-machine hybrid reality; no (a)-(e) subject,ta-screen-v4,2026-11-13
+doi:10.1007/978-981-97-0372-2_53,exclude,E1,Converting Arctic mining vehicles to natural gas; environmental topic,ta-screen-v4,2026-11-13
+scopus:85182582225,exclude,E1,Proceedings volume record on agents and AI; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1007/s40747-023-01088-2,exclude,E1,Decoupling method to speed up MAPF solvers; generic path finding,ta-screen-v4,2026-11-13
+doi:10.3390/e25040582,exclude,E1,Decentralized formation and navigation controller with obstacle avoidance; formation control,ta-screen-v4,2026-11-13
+doi:10.1117/12.2675162,exclude,E1,Competitive DRL for robot control and formation; collision avoidance one constraint,ta-screen-v4,2026-11-13
+doi:10.20858/tp.2023.19.2.14,exclude,E1,Policy overview of renewable energy in transport and energy sectors; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/access.2024.3350777,exclude,E1,Federated learning for maritime predictive maintenance; none of (a)-(e),ta-screen-v4,2026-11-13
+scopus:85163583549,exclude,E1,Two-phase polygon formation control laws for agents; formation control,ta-screen-v4,2026-11-13
+scopus:85169058692,exclude,E1,Proceedings volume record on multi-agent applications; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.12700/aph.21.6.2024.6.7,exclude,E1,Review of Bayesian dose-finding in oncology trials; multi-agent means multi-drug,ta-screen-v4,2026-11-13
+doi:10.1109/hpcc64274.2024.00085,exclude,E1,MADDPG with pheromone mechanism for UAV coverage path planning; coverage and energy outcomes,ta-screen-v4,2026-11-13
+doi:10.1109/i3ceet61722.2024.10994007,exclude,E1,Agent-based cloud information-security risk assessment framework with fuzzy inference; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1109/tvt.2023.3328266,exclude,E1,"Multi-agent DRL energy scheduling for UAM charging prosumers; scheduling, no safety interception.",ta-screen-v4,2026-11-13
+doi:10.1109/aeeca62331.2024.00077,exclude,E1,"Consensus-protocol cooperative train control; coordination control, safety not the primary measured claim.",ta-screen-v4,2026-11-13
+doi:10.1109/icra57147.2024.10611293,exclude,E1,Single-robot multi-task manipulation policy learning with augmentation; no safety or multi-agent topic.,ta-screen-v4,2026-11-13
+scopus:85195119048,exclude,E1,"Single-robot MCTS motion planning with velocity-obstacle action pruning; collision constraint inside a planner, not runtime interception.",ta-screen-v4,2026-11-13
+doi:10.3389/frobt.2024.1426282,exclude,E1,"Reward design for foraging swarm coordination; swarm performance, not multi-agent hazard detection.",ta-screen-v4,2026-11-13
+scopus:85199811710,exclude,E1,Conference proceedings volume listing; not an individual paper on (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1007/s10846-024-02059-6,exclude,E1,Pheromone-based UAV swarm task allocation with connectivity; task allocation.,ta-screen-v4,2026-11-13
+doi:10.1016/j.tcs.2023.114187,exclude,E1,Distributed algorithms for robots filling maximal independent set on graphs; no safety topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-58676-7_30,exclude,E1,Cooperative multi-robot deformable object manipulation; obstacle avoidance is one constraint among several.,ta-screen-v4,2026-11-13
+scopus:85196359653,exclude,E2,Doctoral consortium abstract outlining safe interactive multi-robot autonomy efforts; reports no specific method or result.,ta-screen-v4,2026-11-13
+doi:10.1007/s42979-022-01475-5,exclude,E1,"Multi-agent pickup and delivery path/action planner; collision-free planning, generic path planning.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-66428-1_30,exclude,E1,Position plea for engineering principles in trustworthy human-AI systems; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1109/icci61671.2024.10485085,exclude,E1,Deep-learning detection of human driver distraction behaviours; not safety of autonomous agents.,ta-screen-v4,2026-11-13
+doi:10.1007/s11721-023-00225-4,exclude,E1,Effect of swarm density on collective target tracking performance; no safety topic.,ta-screen-v4,2026-11-13
+doi:10.1007/s10015-022-00843-x,exclude,E1,Experimental distributed swarm navigation with collision avoidance; navigation with collision avoidance as a constraint.,ta-screen-v4,2026-11-13
+scopus:85186733059,exclude,E1,Conference proceedings volume listing; unrelated electrical and communications topics.,ta-screen-v4,2026-11-13
+scopus:85216463754,exclude,E1,"IROS proceedings volume listing; not an individual paper, cannot be judged on (a)-(e).",ta-screen-v4,2026-11-13
+scopus:85189525259,exclude,E1,Conference proceedings volume listing on economics and management IT; off-topic.,ta-screen-v4,2026-11-13
+scopus:105030332479,exclude,E1,Conference proceedings volume listing on reliability and maintenance; not an individual paper.,ta-screen-v4,2026-11-13
+doi:10.1109/icaace61206.2024.10549724,exclude,E1,"Federated RL for manipulator grasp control; data safety only, no safety interception.",ta-screen-v4,2026-11-13
+scopus:85195537005,exclude,E1,"Conference proceedings volume listing, mostly fault diagnosis and maintenance engineering; not an individual paper.",ta-screen-v4,2026-11-13
+doi:10.1007/978-981-97-3332-3_49,exclude,E1,Cooperative multi-robot search with Voronoi partition; search and coordination.,ta-screen-v4,2026-11-13
+doi:10.1609/aaai.v37i13.27058,exclude,E1,Q-learning drone path planning demo with obstacle avoidance; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1049/pbtr046e_ch11,exclude,E1,Book chapter on system architecture for autonomous mobility-on-demand fleets; no safety interception subject.,ta-screen-v4,2026-11-13
+scopus:85208993192,include,,(a)/(c): decentralised control barrier functions constrain MARL lane-change actions at runtime to guarantee multi-vehicle safety.,ta-screen-v4,2026-11-13
+doi:10.1109/eiect60552.2023.10442778,exclude,E1,"MARL multi-UAV target tracking; collision term in reward, tracking performance is the outcome.",ta-screen-v4,2026-11-13
+scopus:85168320275,exclude,E1,Trade magazine piece on fleet management software for mobile robots; off-topic.,ta-screen-v4,2026-11-13
+doi:10.3772/j.issn.1006-6748.2023.03.006,exclude,E1,Greedy multi-agent path finding for AGVs; generic path planning.,ta-screen-v4,2026-11-13
+scopus:105014918866,exclude,E1,GNN-based task reallocation for heterogeneous multi-robot combat systems; task allocation.,ta-screen-v4,2026-11-13
+doi:10.24507/icicel.17.12.1417,exclude,E1,Fuzzy adaptive leader-follower formation control; formation with collision avoidance as a constraint.,ta-screen-v4,2026-11-13
+scopus:85196398827,exclude,E4,"Offline probabilistic safety verification of a single-agent RL policy; no runtime, multi-agent, latency or handoff aspect.",ta-screen-v4,2026-11-13
+scopus:85169042516,include,,"(c) plausible: implemented formal approach for verifiably safe decision-making, validated on three-robot logistics system; doctoral summary, full text decides.",ta-screen-v4,2026-11-13
+doi:10.1109/khpiweek61434.2024.10878020,exclude,E1,Attraction-repulsion self-organisation control for multicopter swarm; coordination with collision prevention as a constraint.,ta-screen-v4,2026-11-13
+scopus:105001590023,exclude,E1,Conference proceedings volume listing; not an individual paper on (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.3390/s23021025,exclude,E1,Collaborative swarm SLAM for energy-efficient navigation; no safety interception.,ta-screen-v4,2026-11-13
+scopus:85171304914,exclude,E1,"Line-of-sight connectivity maintenance for multi-robot networks; connectivity and coordination, not hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1177/02783649231182453,exclude,E1,Inverse dynamic-game learning of player objectives from partial observations; not a world model nor safety interception.,ta-screen-v4,2026-11-13
+scopus:85176423057,exclude,E1,Trade magazine note on IoT fleet management; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-981-97-2757-5_43,exclude,E1,Multi-robot path planning with safe corridors and MPC; path length is the outcome.,ta-screen-v4,2026-11-13
+scopus:85164180689,exclude,E1,Overview of new MAPF and MAPD problem variants; generic path finding.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-43111-1_14,exclude,E1,"Robustness of learnable decentralised MAPF to communication packet loss; path-finding performance, not safety.",ta-screen-v4,2026-11-13
+doi:10.1109/iros58592.2024.10802009,exclude,E1,Diffusion-based local navigation planner for a single robot; navigation with collision avoidance.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-68372-5_27,exclude,E1,Conceptual digital platform for port logistics coordination; off-topic.,ta-screen-v4,2026-11-13
+scopus:85196386103,exclude,E4,"Distilling a single-agent DRL policy into small verifiable networks; offline verification, no runtime or multi-agent aspect.",ta-screen-v4,2026-11-13
+doi:10.3390/en17071758,exclude,E1,Genetic-algorithm LNG bunker distribution model; logistics optimisation.,ta-screen-v4,2026-11-13
+doi:10.52202/074563-0048,exclude,E1,"Principal-agent analysis of cold-chain finance supervision cost; economic agents, off-topic.",ta-screen-v4,2026-11-13
+doi:10.1007/s42154-023-00241-4,exclude,E1,Design thinking on lightweight shared passenger vehicles; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-43789-2_35,exclude,E1,"Conceptual emergent-intelligence digital twin framework; no runtime interception, world model or multi-agent hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1109/ccdc62350.2024.10587891,exclude,E1,"USV swarm path planning with MADDPG; collision avoidance is one planning constraint, not primary safety claim.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2023.10.1416,exclude,E1,Distributed coverage control for quadrotors; collision avoidance incidental.,ta-screen-v4,2026-11-13
+scopus:85171307265,include,,"(c) plausible: epistemic side effects as multi-agent AI safety problem, extends side-effect avoidance method; blue-sky track, full text decides.",ta-screen-v4,2026-11-13
+doi:10.1109/ict-dm62768.2024.10798957,exclude,E1,Agent-based IoT flood prediction framework; not about agent safety interception or multi-agent hazards.,ta-screen-v4,2026-11-13
+scopus:85204362456,exclude,E1,"Conference proceedings volume listing, not an individual paper; topics are general robotics.",ta-screen-v4,2026-11-13
+scopus:85171268816,exclude,E1,Emergent referential communication among visual networks; no safety subject.,ta-screen-v4,2026-11-13
+doi:10.1016/j.jfranklin.2023.12.040,exclude,E1,Persistent coverage control with quadrotors; collision avoidance incidental.,ta-screen-v4,2026-11-13
+doi:10.1007/979-8-8688-0902-6,exclude,E1,Practitioner book on enterprise AI application architecture; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1145/3631613,exclude,E1,"Delay-compensating neural filter for CACC control performance; not a world model, runtime interception or hazard detection.",ta-screen-v4,2026-11-13
+scopus:105000367492,include,,"(c) plausible: decentralized UAS detect-and-avoid, primary measured outcome is separation losses between agents.",ta-screen-v4,2026-11-13
+scopus:85190555640,exclude,E1,"Conference proceedings volume listing, not an individual paper; mechatronics topics.",ta-screen-v4,2026-11-13
+doi:10.3390/su151310420,exclude,E1,Economic incentive modelling for power enterprises; multi-agent in principal-agent sense only.,ta-screen-v4,2026-11-13
+doi:10.1016/j.aap.2023.107139,exclude,E1,Pedestrian injury risk epidemiology from crash data; not multi-agent autonomous system safety mechanisms.,ta-screen-v4,2026-11-13
+doi:10.23055/ijietap.2024.31.3.9861,exclude,E1,Centralized multi-UAV path planning optimisation; collision avoidance is a planning constraint.,ta-screen-v4,2026-11-13
+doi:10.1109/lra.2024.3364450,exclude,E1,"Collaborative multi-object tracking uncertainty propagation; perception accuracy, not hazard detection or interception.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-70932-6_17,exclude,E1,"Swarm navigation conflict resolution for congestion; coordination planner, not primary safety outcome.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-21090-7_22,include,,(b)/(c) plausible: probabilistic prediction of multi-agent modes at intersections; collision frequency is the primary measured outcome.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ssci.2023.106294,include,,"(c) plausible: FRAM plus interdependence safety analysis of human-robot multi-agent warehouse interactions; qualitative study, full text decides.",ta-screen-v4,2026-11-13
+doi:10.1109/robio64047.2024.10907558,exclude,E1,Single-robot crowd navigation via RL value network; navigation planner.,ta-screen-v4,2026-11-13
+scopus:85178514408,exclude,E1,"Conference proceedings volume listing, not an individual paper; general IT topics.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2023.10.430,include,,(c) plausible: provably collision-free multi-agent guarantee under unknown social preferences is the primary claim.,ta-screen-v4,2026-11-13
+doi:10.15587/1729-4061.2024.302286,exclude,E1,Agent-based supply chain simulation of driver cognitive energy; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1109/icdscnc62492.2024.10941220,exclude,E1,"MARL resource allocation in IIoT for energy; packet collisions, not agent safety.",ta-screen-v4,2026-11-13
+doi:10.1109/iceccme57830.2023.10252814,exclude,E1,"V2V speech encryption algorithm; communications security, off-topic.",ta-screen-v4,2026-11-13
+doi:10.1117/12.3025879,exclude,E1,"UGV cluster search with MARL; task scheduling and coordination, collision avoidance incidental.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-21432-5_148,exclude,E1,Agricultural digitalization economics; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1109/icfcr64128.2024.10763026,exclude,E1,Multi-UAV delivery route planning with conflict resolution; generic path planning.,ta-screen-v4,2026-11-13
+scopus:85195112277,exclude,E1,"Multi-agent pickup and delivery planning using external-agent behaviour model; path planning, collision avoidance a constraint.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-65633-0_15,include,,(c) plausible: falsification of safety requirements for reconfigurable multi-agent CPS; safety evaluation method and tool.,ta-screen-v4,2026-11-13
+doi:10.1016/j.cie.2023.109563,exclude,E1,Truck-drone humanitarian vehicle routing optimisation; off-topic.,ta-screen-v4,2026-11-13
+doi:10.20965/jaciii.2024.p0159,exclude,E1,"Ant colony path generation for formation transitions; fairness and distance, not safety.",ta-screen-v4,2026-11-13
+doi:10.1007/s12369-021-00795-5,exclude,E1,"Socially aware single-robot obstacle avoidance planner with human model; navigation, not runtime interception.",ta-screen-v4,2026-11-13
+scopus:85171293603,exclude,E1,"Reward shaping for multi-robot navigation policy; safety term in training reward, outcomes are success rate and travel time.",ta-screen-v4,2026-11-13
+doi:10.1109/ucc63386.2024.00063,exclude,E1,"GAN data rebalancing for traffic sign recognition; perception classifier, off-topic.",ta-screen-v4,2026-11-13
+doi:10.1109/icicv62344.2024.00084,exclude,E1,IoT sensor fleet management with ML; off-topic.,ta-screen-v4,2026-11-13
+scopus:85192335560,exclude,E1,Learning-guided large neighbourhood search for multi-agent path finding; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1109/ias55788.2024.11023822,exclude,E1,"EV charging impacts on distribution grid; power systems, off-topic.",ta-screen-v4,2026-11-13
+scopus:85135232575,exclude,E1,Industry talk on digital operations platform for chemical plants; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1007/s12555-020-0309-9,exclude,E1,Adaptive line coverage control for multi-agent networks; collision avoidance incidental.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-18326-3_15,exclude,E1,Projecting robot assembly intent cues for human-robot collaboration; no deferral or handoff to a person.,ta-screen-v4,2026-11-13
+scopus:85123592593,exclude,E1,"Conference proceedings volume listing, not an individual paper.",ta-screen-v4,2026-11-13
+doi:10.13182/npichmit23-40427,exclude,E1,High-temperature sensor for nuclear reactors; off-topic.,ta-screen-v4,2026-11-13
+scopus:85101583908,exclude,E1,"Conference proceedings volume listing, not an individual paper; reliability engineering topics.",ta-screen-v4,2026-11-13
+doi:10.1109/icrae56463.2022.10056224,exclude,E1,Distributed sweep coverage navigation law for robot teams; collision avoidance one constraint among several.,ta-screen-v4,2026-11-13
+doi:10.1016/j.trc.2021.103191,exclude,E1,"Multi-agent inverse RL modelling of cyclist-pedestrian behaviour; behaviour simulation, not hazard detection or world model.",ta-screen-v4,2026-11-13
+doi:10.1007/s10514-021-10023-8,exclude,E1,Game-theoretic human-robot coordination planner with Bayesian equilibrium inference; collisions one outcome alongside task time.,ta-screen-v4,2026-11-13
+doi:10.2507/32nd.daaam.proceedings.032,exclude,E1,"Formal specification of modular mobile robot control architecture; single-robot navigation, off-topic.",ta-screen-v4,2026-11-13
+doi:10.1007/s10015-020-00657-9,exclude,E1,Biological agent-based aggregation models for swarm robotics inspiration; no safety interception or hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1145/3534678.3539219,exclude,E1,"Thermal image segmentation for cable hotspots; infrastructure inspection, none of (a)-(e).",ta-screen-v4,2026-11-13
+doi:10.1109/lra.2022.3156648,exclude,E1,"Branch MPC motion planner; safety handled as risk measure inside planner, not runtime interception.",ta-screen-v4,2026-11-13
+scopus:85134352470,exclude,E1,Decentralized swarm data storage and routing; not a safety topic.,ta-screen-v4,2026-11-13
+scopus:85172281703,exclude,E1,Proceedings volume on biomedical and converging technologies; off-topic.,ta-screen-v4,2026-11-13
+scopus:85089463797,exclude,E1,Proceedings volume listing; no single on-topic contribution.,ta-screen-v4,2026-11-13
+scopus:85123042791,exclude,E1,Proceedings volume listing; off-topic.,ta-screen-v4,2026-11-13
+doi:10.3390/s22155647,exclude,E1,"Cognitive radio spectrum access, routing and beamforming; communications protocol.",ta-screen-v4,2026-11-13
+doi:10.13182/npichmit23-41462,exclude,E1,EMI/RFI separation distances for wireless in nuclear plants; not agent safety.,ta-screen-v4,2026-11-13
+scopus:85171275601,exclude,E1,"Constraint-based planner generating safe policies for one robotic system; safety inside planner, not runtime override.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2023.03.060,exclude,E1,Swarm formation control through corridors; collision avoidance one constraint among several.,ta-screen-v4,2026-11-13
+scopus:85123936640,exclude,E1,Proceedings volume listing; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1109/icuas54217.2022.9836193,exclude,E1,Multi-agent path planning and trajectory generation; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1109/apsit58554.2023.10201755,exclude,E1,Ensemble ML for transformer fault diagnosis; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-10161-8_1,exclude,E1,"Requirements embedded in MARL reward function; training-time shaping, not runtime interception or hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1175/jtech-d-20-0092.1,exclude,E1,Remotely piloted charge-release aircraft for geoengineering; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/s10015-020-00656-w,exclude,E1,Biological agent-based migration models for swarm robotics inspiration; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.tcs.2020.10.037,exclude,E1,Robot gathering algorithms with running-time bounds; coordination algorithm where collision-freeness is one property.,ta-screen-v4,2026-11-13
+doi:10.3390/s22249858,exclude,E1,MCDA comparison of last-mile delivery technologies; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2023.01.134,exclude,E1,Multi-agent pickup and delivery solution quality bounds; task allocation and path finding.,ta-screen-v4,2026-11-13
+doi:10.1109/cdc49753.2023.10383940,exclude,E1,Multi-robot cooperative localization and active target tracking; collision avoidance incidental.,ta-screen-v4,2026-11-13
+doi:10.13182/physor22-37544,exclude,E1,Nuclear fuel assembly optimisation for plutonium recycling; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-50812-8,exclude,E1,Book on multi-objective freight logistics optimisation; off-topic.,ta-screen-v4,2026-11-13
+scopus:85112342809,exclude,E1,Pedestrian behaviour simulation around autonomous vehicle via social force model; not (a)-(e).,ta-screen-v4,2026-11-13
+scopus:85101532119,exclude,E1,Proceedings volume listing; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1115/pvp2022-84897,exclude,E1,Design code guidance for high temperature modular reactors; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/s10846-021-01342-0,exclude,E1,Hybrid Dec-POMDP/PID formation guidance for UAVs; formation controller with collision avoidance as one component.,ta-screen-v4,2026-11-13
+scopus:85135828788,exclude,E1,Proceedings volume listing; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-87672-2_27,include,,"(c) Logic-based verification that a multi-agent vehicle system can safely self-coordinate; multi-agent safety is primary claim, formal result.",ta-screen-v4,2026-11-13
+doi:10.3920/978-90-8686-549-9_079,exclude,E1,Sensor-actuator integration for tractor teleoperation and autonomy; no deferral or multi-agent hazard question.,ta-screen-v4,2026-11-13
+scopus:85131318402,exclude,E1,Workshop proceedings volume listing; no single on-topic contribution.,ta-screen-v4,2026-11-13
+scopus:85126205474,exclude,E1,"Warehouse robot deadlock and collision prevention evaluated on flow time; coordination planner, fails primacy test.",ta-screen-v4,2026-11-13
+doi:10.1109/apccas51387.2021.9687754,exclude,E1,"Game-theoretic drone positioning for wireless coverage; coordination, collision avoidance secondary.",ta-screen-v4,2026-11-13
+doi:10.1007/s11370-021-00354-x,exclude,E1,UAV flocking protocol to cut flight time and congestion; coordination.,ta-screen-v4,2026-11-13
+doi:10.5220/0010789100003116,exclude,E1,Group multi-agent path finding via SAT; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1002/rnc.5914,include,,(a)/(c) Cooperative control barrier functions as robust runtime safety filter for multi-robot collision avoidance; safety is primary claim.,ta-screen-v4,2026-11-13
+doi:10.3389/fmars.2021.675245,exclude,E1,Whale vessel strike reporting study; off-topic.,ta-screen-v4,2026-11-13
+scopus:85104842199,exclude,E1,Proceedings volume listing; off-topic.,ta-screen-v4,2026-11-13
+scopus:85151093774,exclude,E1,Proceedings volume listing; off-topic.,ta-screen-v4,2026-11-13
+scopus:85112260397,exclude,E1,Doctoral thesis on convex optimisation for motion planning; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.robot.2021.103848,exclude,E1,Multi-UAV wildfire search and area estimation; off-topic.,ta-screen-v4,2026-11-13
+scopus:85167790822,exclude,E1,"Evolved cooperation in two simulated robots; emergent cooperation, not safety hazards.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacsc.2020.100117,exclude,E1,Multi-vehicle formation control with obstacle avoidance; formation planner.,ta-screen-v4,2026-11-13
+scopus:85167578953,exclude,E1,"Multi-agent deep RL planning for lunar rovers; coordination planner, collision avoidance one objective.",ta-screen-v4,2026-11-13
+scopus:85171266855,exclude,E2,Doctoral proposal on explainable human-agent communication and situational awareness; touches (e) but research statement reporting nothing.,ta-screen-v4,2026-11-13
+scopus:85116324806,exclude,E1,Proceedings volume listing; no single on-topic contribution.,ta-screen-v4,2026-11-13
+scopus:85172010787,exclude,E1,Proceedings volume listing; no single on-topic contribution.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2022.07.607,exclude,E1,Decentralized multi-agent navigation via potential functions; collision avoidance one objective among several.,ta-screen-v4,2026-11-13
+scopus:85103818926,exclude,E1,"Reward shaping for specification compliance is training-time, not runtime interception or hazard detection",ta-screen-v4,2026-11-13
+doi:10.18280/ijsse.110101,include,,(c) plausible: STPA hazard analysis of loss scenarios in multi-robot control architectures is primary claim,ta-screen-v4,2026-11-13
+doi:10.1177/02783649211037731,exclude,E1,Decentralized multiagent navigation planner; collision avoidance is a planning constraint,ta-screen-v4,2026-11-13
+scopus:85126215681,exclude,E1,Proceedings volume on mathematical modeling; no single on-topic contribution,ta-screen-v4,2026-11-13
+scopus:85145200535,exclude,E1,Proceedings volume on robotics algorithms; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-24848-1_1,exclude,E1,Distributed robot algorithm for maximal independent set filling; off-topic,ta-screen-v4,2026-11-13
+scopus:85116486719,exclude,E1,Conference digest listing mixed topics; off-topic,ta-screen-v4,2026-11-13
+doi:10.3390/robotics10020075,exclude,E1,Leader-follower platoon control law; collision-free tracking is a control constraint,ta-screen-v4,2026-11-13
+doi:10.3390/safety7020043,exclude,E1,Maritime fleet monetary risk and inspection statistics; off-topic,ta-screen-v4,2026-11-13
+scopus:85180815916,exclude,E1,Proceedings volume on agents and AI; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.14569/ijacsa.2022.0130281,exclude,E1,Simulation framework for flocking motion coordination; off-topic,ta-screen-v4,2026-11-13
+doi:10.2514/1.i010972,exclude,E1,Offline ML prediction of unstable approach pilot error; no multi-agent or runtime interception,ta-screen-v4,2026-11-13
+doi:10.1109/cdc51059.2022.9992478,exclude,E1,Adaptive cooperative manipulation control for disturbance rejection; off-topic,ta-screen-v4,2026-11-13
+doi:10.3390/electronics10202510,exclude,E1,"Last-mile delivery optimisation with vans, truck and drone; off-topic",ta-screen-v4,2026-11-13
+doi:10.1016/j.robot.2021.103801,exclude,E1,Multi-agent temporal-logic planner; collision avoidance is a constraint inside the planner,ta-screen-v4,2026-11-13
+doi:10.1109/lcsys.2021.3135746,exclude,E1,Differential-game control robust to communication delays; no safety interception,ta-screen-v4,2026-11-13
+scopus:85146274580,exclude,E1,Proceedings volume on robotics and sensors; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/lra.2020.3047788,exclude,E1,Multi-agent interaction and coverage planning; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/iros45743.2020.9341367,exclude,E1,Multi-robot navigation architecture with prioritized global planning; generic path planning,ta-screen-v4,2026-11-13
+doi:10.1080/23249935.2018.1517135,exclude,E1,Cellular automaton traffic simulation under V2V; no runtime interception or hazard detector,ta-screen-v4,2026-11-13
+doi:10.1145/3450521,exclude,E1,Game-theoretic multi-robot navigation and coordination planner; off-topic,ta-screen-v4,2026-11-13
+doi:10.1007/978-981-19-7784-8,exclude,E1,General reinforcement learning textbook; none of (a)-(e) is the subject,ta-screen-v4,2026-11-13
+scopus:85148236036,exclude,E1,Proceedings volume on manufacturing automation; off-topic,ta-screen-v4,2026-11-13
+doi:10.4271/12-05-03-0022,exclude,E1,Single-vehicle rule-based behaviour planner with ADAS features; no runtime override or multi-agent hazard claim,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2021.11.267,exclude,E1,"Robots forming visual roadway signs for drivers; human perception study, off-topic",ta-screen-v4,2026-11-13
+doi:10.13182/psa21-34683,exclude,E1,Economic generation risk tool for nuclear plants; off-topic,ta-screen-v4,2026-11-13
+scopus:85101671077,exclude,E1,Proceedings volume on reliability engineering; off-topic,ta-screen-v4,2026-11-13
+doi:10.1016/j.scs.2021.103167,exclude,E1,Electric van energy efficiency in deliveries; off-topic,ta-screen-v4,2026-11-13
+scopus:85113737688,exclude,E1,Proceedings volume on industrial management; off-topic,ta-screen-v4,2026-11-13
+doi:10.1145/3426826.3426839,exclude,E1,"Deep RL policies for AGV swarm logistics and traffic flow; coordination, not safety primacy",ta-screen-v4,2026-11-13
+scopus:85151088769,exclude,E1,Proceedings volume on robot intelligence; not an individual paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1007/978-3-031-18872-5_9,include,,(d) plausible: edge agents make fast safety risk assessments under network constraints in cloud-edge architecture,ta-screen-v4,2026-11-13
+doi:10.1109/med51440.2021.9480223,include,,(a) plausible: reference governor overrides commands at runtime to guarantee constraints during communication blackouts,ta-screen-v4,2026-11-13
+doi:10.1109/scisisis55246.2022.10002048,exclude,E1,Ant colony formation transition planning for UAV shows; off-topic,ta-screen-v4,2026-11-13
+scopus:85101597820,exclude,E1,Proceedings volume on reliability engineering; off-topic,ta-screen-v4,2026-11-13
+scopus:105024941777,include,,(a)/(c): runtime arbiter and safety monitor preventing collisions among heterogeneous robot teams,ta-screen-v4,2026-11-13
+doi:10.1109/jmass.2022.3195660,exclude,E1,Single UAV vision and EKF target tracking; off-topic,ta-screen-v4,2026-11-13
+doi:10.1177/1729881420960342,exclude,E1,"Consensus and reinforcement learning flocking for predator avoidance; coordination, off-topic",ta-screen-v4,2026-11-13
+doi:10.3389/frai.2020.00050,exclude,E1,Fuzzy hierarchical multirobot navigation and arrival-time control; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/iccmc51019.2021.9418415,exclude,E1,Sports guidance system with agent model and video tracking; off-topic,ta-screen-v4,2026-11-13
+doi:10.32604/iasc.2021.014811,exclude,E1,Stacked ensemble classifier for medical diagnosis; off-topic,ta-screen-v4,2026-11-13
+doi:10.1016/j.jsr.2020.04.010,exclude,E1,Statistical modelling of cargo tank truck crash factors; off-topic,ta-screen-v4,2026-11-13
+scopus:85134306740,include,,(a)/(e) plausible: agent queries human preferences to avoid unsafe actions during safety-critical learning,ta-screen-v4,2026-11-13
+doi:10.1016/j.tcs.2020.11.009,exclude,E1,"Robot gathering algorithm theory with time bounds; collision property secondary, off-topic",ta-screen-v4,2026-11-13
+doi:10.1016/j.aap.2021.106087,exclude,E1,Survey-based logit model of bus driver crash involvement; off-topic,ta-screen-v4,2026-11-13
+scopus:85104426313,exclude,E1,Proceedings volume on intelligent transport; off-topic,ta-screen-v4,2026-11-13
+scopus:85116322606,exclude,E1,Proceedings volume on computational logistics; off-topic,ta-screen-v4,2026-11-13
+scopus:85145884033,exclude,E1,Overview of rotating machinery fleet maintenance practices; off-topic,ta-screen-v4,2026-11-13
+doi:10.1016/j.knosys.2021.106972,exclude,E1,"Trajectory data mining of truck platooning patterns; no runtime interception, world model or multi-agent hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1007/s10915-021-01700-y,exclude,E1,"Multi-robot motion planner; collision avoidance is a proven property of a formation planner, not the primary safety claim.",ta-screen-v4,2026-11-13
+doi:10.14569/ijacsa.2021.0120324,exclude,E1,"Movement-permit allocation algorithm for COVID distancing; resource allocation, none of (a)-(e).",ta-screen-v4,2026-11-13
+doi:10.1016/j.ipm.2021.102511,exclude,E1,"Blockchain GDPR reference model for vehicle data logging; privacy and ledger design, none of (a)-(e).",ta-screen-v4,2026-11-13
+scopus:85124968645,exclude,E1,Proceedings volume listing mixed topics; no single paper contribution on (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.17580/em.2022.02.19,exclude,E1,Environmental monitoring scheme for quarries; not multi-agent safety interception.,ta-screen-v4,2026-11-13
+scopus:85159881072,exclude,E1,Proceedings volume with mixed topics; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1109/tem.2020.2995141,exclude,E1,Agent-based simulation of product design management; no safety topic.,ta-screen-v4,2026-11-13
+doi:10.1109/lra.2021.3118091,exclude,E1,"Distributed MPC swarm navigation planner; collision avoidance is one constraint of a flocking controller, not a world model.",ta-screen-v4,2026-11-13
+doi:10.1117/12.2644369,exclude,E1,Single-agent reinforcement learning for driving from LiDAR; no runtime interception or multi-agent aspect.,ta-screen-v4,2026-11-13
+scopus:85101626425,exclude,E1,Proceedings volume on reliability engineering; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.2514/6.2023-1655,exclude,E1,Swarm-optimiser multi-robot exploration planner; generic path planning.,ta-screen-v4,2026-11-13
+scopus:85137972458,exclude,E1,Proceedings volume with mixed robotics topics; no single paper contribution to judge.,ta-screen-v4,2026-11-13
+doi:10.1109/lra.2022.3152701,exclude,E1,Multi-robot path planning with due times via ILP; generic path planning and scheduling.,ta-screen-v4,2026-11-13
+scopus:85138767878,exclude,E1,Proceedings volume on ICT in education; none of (a)-(e).,ta-screen-v4,2026-11-13
+scopus:85113400875,exclude,E1,Proceedings volume on cloud and IoT applications; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1109/etcm53643.2021.9590745,exclude,E1,Multi-robot testbed with path planner and motion controllers; collision prevention is one planner routine.,ta-screen-v4,2026-11-13
+doi:10.52842/conf.caadria.2021.1.101,exclude,E1,Reinforcement learning in architectural generative design; no safety topic.,ta-screen-v4,2026-11-13
+scopus:85171289295,exclude,E1,"Human-swarm teaming simulator demo measuring task performance; supervisory control, not automation deferring or safety interception.",ta-screen-v4,2026-11-13
+scopus:85171306110,exclude,E1,"Distributed coverage optimisation with collision constraints in a factor graph; coordination planner, constraint inside planner.",ta-screen-v4,2026-11-13
+doi:10.2514/6.2023-2659,exclude,E1,Conflict-free UAS route planning with A* and DRL; planner with safety as a planning constraint.,ta-screen-v4,2026-11-13
+doi:10.1109/icsess49938.2020.9237661,exclude,E1,Blockchain supervision platform for hazardous chemicals; none of (a)-(e).,ta-screen-v4,2026-11-13
+scopus:85145276624,exclude,E1,Proceedings volume on control and robotics; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1080/18824889.2022.2032542,exclude,E1,Potential-function obstacle avoidance for formation swarm; formation and navigation controller.,ta-screen-v4,2026-11-13
+doi:10.1109/access.2022.3202208,exclude,E1,"DRL swarm navigation and multi-target tracking; navigation and formation, safety not primary.",ta-screen-v4,2026-11-13
+doi:10.3850/978-981-18-5183-4_s03-02-164-cd,exclude,E1,Asset management software overview for defence; no multi-agent safety topic.,ta-screen-v4,2026-11-13
+doi:10.1109/access.2022.3158758,exclude,E1,"Flocking scalability under visual occlusion; swarm coordination algorithm, collision freedom not the primary claim.",ta-screen-v4,2026-11-13
+scopus:85124011571,exclude,E1,"Proceedings volume on multi-robot systems; coordination and planning topics, no single paper to judge.",ta-screen-v4,2026-11-13
+scopus:85091311349,exclude,E1,Proceedings volume on AI and industry; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:85117118645,exclude,E1,Proceedings volume on AI; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:85146237355,exclude,E1,Game-theoretic RL policy for cyber-attack response in a plant controller; not runtime shielding of an acting agent system.,ta-screen-v4,2026-11-13
+scopus:85106740979,exclude,E1,Proceedings volume on computer and automation engineering; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1016/j.eswa.2022.117710,exclude,E1,"Imitation and inverse RL models of road-user behaviour; trajectory prediction for behaviour modelling, not hazard detection or world model.",ta-screen-v4,2026-11-13
+scopus:85127974346,exclude,E1,Proceedings volume of a robotics conference; no single paper contribution to judge.,ta-screen-v4,2026-11-13
+scopus:85167805483,exclude,E1,Proceedings volume of a control conference; no single paper contribution to judge.,ta-screen-v4,2026-11-13
+doi:10.5220/0010472900002932,exclude,E1,Survey-based study of transport and supply chain challenges; no (a)-(e) topic.,ta-screen-v4,2026-11-13
+doi:10.3390/drones5040124,exclude,E1,Distributed Voronoi coverage and flocking control for UAV teams; coordination planner with collision avoidance as constraint.,ta-screen-v4,2026-11-13
+doi:10.1177/1729881419829667,exclude,E1,"Multi-robot stealth chasing controller; formation control, collision avoidance secondary.",ta-screen-v4,2026-11-13
+scopus:85079291185,exclude,E1,Inventory and fleet replacement optimisation under emission policy; not multi-agent safety.,ta-screen-v4,2026-11-13
+scopus:85046476917,exclude,E1,"Influencing-agent behaviours for joining and leaving flocks; coordination, no safety interception.",ta-screen-v4,2026-11-13
+scopus:85110261799,exclude,E1,"Monte Carlo fleet sizing with life cycle cost; reliability economics, none of (a)-(e).",ta-screen-v4,2026-11-13
+scopus:85117593893,exclude,E1,Proceedings volume on smart manufacturing; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.3390/sym11070864,exclude,E1,"Principal-agent incentive contract model for sales teams; economics, no safety topic.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-51532-8_28,exclude,E1,"Correct-by-construction mission and motion planner synthesis; design-time planner guarantees, not runtime interception.",ta-screen-v4,2026-11-13
+doi:10.1115/dscc2017-5176,exclude,E1,Kalman-filter road profile estimation for one vehicle; no multi-agent or interception aspect.,ta-screen-v4,2026-11-13
+scopus:85013662417,exclude,E1,Proceedings volume on cybernetics and control; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.20858/sjsutst.2019.104.15,exclude,E1,Descriptive overview of safety and security issues in shared mobility; no (a)-(e) topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.neucom.2019.05.062,include,,(a) plausible: multi-policy control system steers DRL agent behaviour in real time to preserve safety; full text decides whether it overrides.,ta-screen-v4,2026-11-13
+scopus:85123042442,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-94779-2_35,exclude,E1,"Cognitive architecture for vehicle geolocation in tunnels; no deferral, handoff or multi-agent hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1109/icarcv.2018.8581231,exclude,E1,Single robot person detection and following; not a safety interception or multi-agent hazard paper.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-55583-2_18,exclude,E1,Edge analytics for fleet data compression and overload detection; no latency-bound safety decision or interception.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2017-5259,exclude,E1,Induction motor fault classification by sparse representation; off-topic.,ta-screen-v4,2026-11-13
+doi:10.3390/s19071524,exclude,E1,Decentralized gas mapping and information-driven path planning; collision avoidance incidental.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2018-9096,exclude,E1,Multi-robot sampling navigation and scheduling for crop phenotyping; coordination planner.,ta-screen-v4,2026-11-13
+scopus:85077075166,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+doi:10.12783/shm2017/14212,exclude,E1,Army fleet management cost-benefit assessment model; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1109/tem.2018.2832049,exclude,E1,Bi-objective hazmat vehicle routing optimisation; off-topic.,ta-screen-v4,2026-11-13
+scopus:85065316962,exclude,E1,Concept for lunar rover fleet building heliostats; none of (a)-(e).,ta-screen-v4,2026-11-13
+scopus:85097680128,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+scopus:85127920272,exclude,E1,Swarm robotics framework for self-organizing architectural structures; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1155/2020/4723687,exclude,E1,"Lyapunov navigation controllers with obstacle avoidance for multiple agents; motion control, fails (c) primacy.",ta-screen-v4,2026-11-13
+scopus:85054621971,exclude,E1,Blue-sky discussion of autonomous fishing vessels; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1504/ijrs.2017.089708,include,,(a) Multi-agent dynamic safety system using case-based reasoning to identify and react to risks at runtime.,ta-screen-v4,2026-11-13
+doi:10.1109/mrs.2019.8901050,exclude,E1,Scalable swarm foraging transportation network; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2017-5183,exclude,E1,Bearing fault diagnosis feature extraction from vibration signals; off-topic.,ta-screen-v4,2026-11-13
+doi:10.13053/cys-21-1-2583,exclude,E1,Crowd panic simulation with cultural diversity; off-topic.,ta-screen-v4,2026-11-13
+scopus:85031919131,exclude,E1,Pursuit-evasion path planning on graphs against an adversary; not safety interception or hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-53956-6_58,exclude,E1,Genetically optimised flocking model for swarm navigation; collision avoidance one requirement among several.,ta-screen-v4,2026-11-13
+doi:10.1177/1729881420969076,exclude,E1,RRT*-based cooperative path planning for USV fleet; generic path planning.,ta-screen-v4,2026-11-13
+doi:10.1049/et.2017.0708,exclude,E1,Magazine news item on an autonomous shuttle trial; no research contribution on (a)-(e).,ta-screen-v4,2026-11-13
+scopus:85055313347,exclude,E1,Swarm controller synthesis from temporal logic; collision avoidance is one constraint in a coordination planner.,ta-screen-v4,2026-11-13
+doi:10.1016/j.oceaneng.2020.107238,exclude,E1,Multi-robot oil spill tracking with fuzzy control and potential fields; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1145/3029798.3038327,include,,(a)/(c) Distributed runtime monitoring in which each agent detects anomalous behaviour of neighbouring robots in a swarm.,ta-screen-v4,2026-11-13
+doi:10.1115/imece2017-72076,include,,"(e) Human-swarm teaming architecture giving operator situational awareness, supervisory control and trust controller; plausible handoff relevance.",ta-screen-v4,2026-11-13
+doi:10.1109/sose.2019.00054,exclude,E1,Decentralized multi-agent motion planning; collision avoidance one component of a planner.,ta-screen-v4,2026-11-13
+doi:10.1007/s11277-018-5263-y,exclude,E1,Decentralized flocking and aggregation control for robotic sensors; coordination control.,ta-screen-v4,2026-11-13
+scopus:85021794048,exclude,E1,Overview of nuclear external hazard probabilistic safety research; not agent safety interception.,ta-screen-v4,2026-11-13
+scopus:85030184327,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+doi:10.1109/isie.2017.8001408,exclude,E1,UAV team coordination architecture for persistent surveillance; task allocation and coverage.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2017-5138,exclude,E1,"Structural analysis for transmission fault diagnosis; single powertrain component diagnostics, off-topic.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-59394-4_20,exclude,E3,"Brief review of humanoid fall prediction, avoidance and damage control strategies.",ta-screen-v4,2026-11-13
+scopus:85172576585,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+scopus:85077093208,exclude,E1,"Game-theoretic and RL treatment of swarm spatial coordination performance; coordination, not safety primacy.",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-60337-3_10,exclude,E1,Task distribution algorithms in multi-agent robotic systems; task allocation.,ta-screen-v4,2026-11-13
+doi:10.22260/isarc2020/0054,include,,"(a) Safety concept and architecture with safety functions for an autonomous haulage truck fleet, deployed and tested.",ta-screen-v4,2026-11-13
+doi:10.3390/s19194349,exclude,E1,Drone swarm information gathering system design; collision avoidance incidental.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-03098-8_28,exclude,E1,Agent-based urban traffic simulation of flood response; off-topic.,ta-screen-v4,2026-11-13
+scopus:85127983765,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+scopus:85096475971,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+scopus:85096637471,exclude,E1,Swarm task allocation algorithms and emergent intelligence; task allocation.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ejor.2017.06.012,exclude,E1,Hazmat fleet mix and routing optimisation; off-topic.,ta-screen-v4,2026-11-13
+scopus:85053516090,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+scopus:85079482850,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+scopus:85040221279,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+scopus:85077088189,exclude,E1,"Proceedings volume listing, not a single paper; none of (a)-(e) is its subject.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2020.12.2644,include,,(c)/(a): formal analysis of deadlock as emergent failure of CBF safety filters in multi-robot systems,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-61118-1_1,exclude,E1,Conference proceedings volume on ambient intelligence; no single on-topic contribution,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2018-9006,exclude,E1,Single-robot barrier Lyapunov constrained control design; not runtime interception or multi-agent hazard,ta-screen-v4,2026-11-13
+scopus:85092930033,exclude,E1,Conference proceedings volume on collaborative robotics; no single on-topic contribution,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-03146-6_24,exclude,E1,Ant colony optimisation for AGV traffic management; swarm optimisation overview,ta-screen-v4,2026-11-13
+doi:10.22260/isarc2019/0037,exclude,E1,E-construction tools for highway resurfacing; unrelated to criteria,ta-screen-v4,2026-11-13
+doi:10.1109/msn48538.2019.00061,exclude,E1,Reinforcement learning for small autonomous vehicle driving; no runtime safety interception,ta-screen-v4,2026-11-13
+doi:10.1016/j.conengprac.2019.05.002,exclude,E1,Decentralised consensus law and communication protocol for quadrotors; coordination and communications,ta-screen-v4,2026-11-13
+doi:10.1016/j.neucom.2016.08.160,exclude,E1,Framework for intelligent virtual environments and modular robot evolution; not safety,ta-screen-v4,2026-11-13
+doi:10.1007/s11370-017-0244-7,exclude,E1,Multi-robot path planning with bee colony and evolutionary programming; generic path planning,ta-screen-v4,2026-11-13
+doi:10.1017/s0263574716000102,exclude,E1,Formation MPC controller where collision avoidance is one objective among several; fails primacy test,ta-screen-v4,2026-11-13
+scopus:85016223392,exclude,E1,Conceptual resilience model of logistics supply networks; not agent safety interception,ta-screen-v4,2026-11-13
+doi:10.22260/isarc2019/0123,exclude,E1,MARL path planning for rebar design clash resolution in BIM; not agent safety,ta-screen-v4,2026-11-13
+scopus:85108105847,exclude,E1,Literature overview of AGV fleet research trends; none of (a)-(e) is the subject,ta-screen-v4,2026-11-13
+scopus:85065318167,exclude,E1,Pyrotechnic device technology for space launchers; unrelated,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-27538-9_9,include,,"(c): multi-agent collision avoidance (ORCA) is primary claim with stability proof; borderline formation controller, full text decides",ta-screen-v4,2026-11-13
+doi:10.1016/j.automatica.2019.108554,exclude,E1,Persistent coverage hybrid control with intruder interception; coverage planning not safety hazard detection,ta-screen-v4,2026-11-13
+scopus:85054752120,exclude,E1,"Modelling approach for multi-agent coverage problems; coordination planning, no world-model learning or safety primacy",ta-screen-v4,2026-11-13
+scopus:85020620054,exclude,E1,Agent-based evolutionary generation of simulation models; not world model over multi-agent state or safety,ta-screen-v4,2026-11-13
+doi:10.1109/infocom41043.2020.9155295,exclude,E1,"Dynamic mechanism design for incentive-compatible security management; game-theoretic, not runtime interception",ta-screen-v4,2026-11-13
+scopus:85063813875,exclude,E1,Conference proceedings volume on transport and logistics; no single on-topic contribution,ta-screen-v4,2026-11-13
+scopus:85096720369,exclude,E1,Vision paper on multi-robot offshore wind farm maintenance; none of (a)-(e) is the subject,ta-screen-v4,2026-11-13
+doi:10.1007/s00146-018-0815-y,exclude,E1,Robotised wireless sensor network for environmental monitoring; not agent safety,ta-screen-v4,2026-11-13
+scopus:85074541763,exclude,E1,"Formation control and obstacle avoidance laws compared; coordination controller, fails primacy test",ta-screen-v4,2026-11-13
+scopus:85053851812,exclude,E1,Conference proceedings volume on collaborative robotics; no single on-topic contribution,ta-screen-v4,2026-11-13
+doi:10.3390/s19071600,exclude,E1,UAV formation generation by social cognitive optimisation; swarm optimisation,ta-screen-v4,2026-11-13
+doi:10.1155/2020/2685238,exclude,E1,"Evolutionary game model of coal-mine safety stakeholders; human organisational safety, not autonomous agents",ta-screen-v4,2026-11-13
+scopus:85021405938,exclude,E1,Conference proceedings volume on human factors in simulation; no single on-topic contribution,ta-screen-v4,2026-11-13
+doi:10.1177/0278364919867133,include,,"(a)/(c): invariance control enforces constraints at runtime by correcting control inputs across multiple robots, guaranteed satisfaction",ta-screen-v4,2026-11-13
+scopus:85086603205,exclude,E1,Crash fatality risk statistics for rear versus front seat occupants; unrelated,ta-screen-v4,2026-11-13
+scopus:85135192470,exclude,E1,Conference proceedings volume on design and manufacturing; no single on-topic contribution,ta-screen-v4,2026-11-13
+doi:10.1145/3215525.3215537,exclude,E1,UAV multihop emergency communication in mines; communications protocol,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2019-9160,exclude,E1,"Single-robot distributionally robust MPC; collision constraint inside planner, not runtime interception",ta-screen-v4,2026-11-13
+doi:10.3389/fnbot.2018.00028,exclude,E1,"Flow-field path planning for agents sharing space with humans; navigation planner, fails primacy test",ta-screen-v4,2026-11-13
+doi:10.1201/9781315210469-439,exclude,E1,"Failure prognosis methods for product fleets; reliability statistics, unrelated",ta-screen-v4,2026-11-13
+doi:10.1007/s40999-017-0226-3,exclude,E1,Crashworthiness indices for car brands by logistic regression; unrelated,ta-screen-v4,2026-11-13
+scopus:85105972823,exclude,E1,"SIEM security event logging for connected vehicles; cybersecurity monitoring, not action interception",ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-60337-3_6,exclude,E1,Multi-agent navigation pipeline combining planners; navigation planner excluded by primacy test despite deadlock metric,ta-screen-v4,2026-11-13
+scopus:85073284550,exclude,E1,"Remaining useful life estimation for circuit breakers; prognostics, unrelated",ta-screen-v4,2026-11-13
+scopus:85011072137,exclude,E1,Conference proceedings volume on automation; no single on-topic contribution,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-58285-2_16,exclude,E1,Multi-agent path finding via SMT with sum-of-costs objective; generic path planning,ta-screen-v4,2026-11-13
+doi:10.1117/12.2299987,exclude,E1,"Cooperative vehicle perception to extend field of view; perception sharing, not multi-agent hazard detection",ta-screen-v4,2026-11-13
+scopus:85096656470,exclude,E1,Swarm shape formation and morphing algorithm; formation with collision avoidance as a constraint,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-66412-1_15,exclude,E1,"Levy walk and flocking model for swarm surveillance coverage; coordination, not safety",ta-screen-v4,2026-11-13
+doi:10.1016/j.jclepro.2017.02.137,exclude,E1,Cascading failure model of coal industrial symbiosis networks under economic shocks; not agents/robots/services,ta-screen-v4,2026-11-13
+doi:10.4018/978-1-7998-0951-7.ch012,exclude,E1,Wave-based longitudinal distance regulation for robot platoon; coordination control,ta-screen-v4,2026-11-13
+scopus:85057344644,exclude,E1,Conference proceedings volume on collaborative enterprise technologies; no single on-topic contribution,ta-screen-v4,2026-11-13
+doi:10.1177/0278364918779704,exclude,E1,Emergent distributed neural network for swarm collective decision-making; not safety,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2020-3208,exclude,E1,single robot arm trajectory optimization; collision avoidance is a planner constraint,ta-screen-v4,2026-11-13
+doi:10.3390/s20020484,exclude,E1,multi-robot information gathering planner; collision avoidance one constraint among several,ta-screen-v4,2026-11-13
+doi:10.1016/j.aap.2019.105288,exclude,E1,survey of mobile phone crashes among motorcycle taxi drivers; no autonomous agents,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2018-9174,include,,(a) trust-based runtime verification with violation avoidance controller for multi-quadrotor; human-in-the-loop also touches (e),ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2017.08.2102,exclude,E1,agent-based simulation of worker ergonomics in production systems,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-33954-8_34,exclude,E1,mining dump truck payload engineering study,ta-screen-v4,2026-11-13
+doi:10.1504/ijics.2020.109477,exclude,E1,SCADA forensic investigation review and conceptual framework; not runtime safety of agents,ta-screen-v4,2026-11-13
+scopus:85016187430,exclude,E1,product reliability engineering trends; no multi-agent safety topic,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2020.12.2607,exclude,E1,multi-agent area exploration and coverage; collision avoidance incidental,ta-screen-v4,2026-11-13
+scopus:85077074208,exclude,E1,explicable task planning for human expectations; no runtime interception or deferral,ta-screen-v4,2026-11-13
+scopus:85113812951,exclude,E1,proceedings volume on harbor logistics simulation; not a paper on (a)-(e),ta-screen-v4,2026-11-13
+scopus:85046458902,exclude,E1,swarm leader placement effect on steering; coordination study,ta-screen-v4,2026-11-13
+scopus:85059070954,exclude,E1,proceedings volume on risk analysis simulation; not a paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.24507/icicel.14.07.661,exclude,E1,formation control for multi-agent systems; collision avoidance one constraint,ta-screen-v4,2026-11-13
+scopus:85076901076,exclude,E1,decentralized task assignment and path planning; coordination planner,ta-screen-v4,2026-11-13
+scopus:85054763867,exclude,E1,"risk-averse imitation learning; safety term in training objective, single agent",ta-screen-v4,2026-11-13
+doi:10.1177/0037549717733050,exclude,E1,agent-based crane simulation aimed at productivity; scheduling/logistics,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-66412-1_17,exclude,E1,POMCP explainability with prior knowledge; single-robot planner,ta-screen-v4,2026-11-13
+doi:10.1051/matecconf/201818805006,exclude,E1,"MAS architecture for IIoT fault detection in manufacturing; equipment failure handling, not safety interception",ta-screen-v4,2026-11-13
+scopus:85065318685,exclude,E1,human multi-robot planetary exploration software infrastructure; coordination and connectivity,ta-screen-v4,2026-11-13
+doi:10.1109/milcom.2018.8599800,exclude,E1,MANET routing protocol with game-theoretic RL; communications,ta-screen-v4,2026-11-13
+scopus:85021219884,exclude,E1,proceedings volume PAAMS 2017; not a paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2017.08.2319,exclude,E1,multi-robot coordination with connectivity and collision avoidance specifications; coordination planner,ta-screen-v4,2026-11-13
+scopus:85175795186,include,,(c) plausible: probabilistic safety guarantees for planning among multiple agents via learned trajectory predictor; also near (b),ta-screen-v4,2026-11-13
+doi:10.1017/s0263574716000539,exclude,E1,decentralized sweep boundary coverage navigation; coordination,ta-screen-v4,2026-11-13
+doi:10.1007/s10660-017-9278-3,exclude,E1,multi-agent simulation of e-commerce capital chain rupture,ta-screen-v4,2026-11-13
+scopus:85074360666,exclude,E1,RL with actor-based simulation for supply chain control,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2017-5367,exclude,E1,PDE-based fault detection in Li-ion batteries; no agents,ta-screen-v4,2026-11-13
+scopus:85095362022,exclude,E1,multi-item pickup and delivery task assignment; path planning,ta-screen-v4,2026-11-13
+doi:10.1016/j.nucengdes.2017.02.021,exclude,E1,nuclear severe accident code modification for cladding materials,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-50115-4_72,exclude,E1,emergent neural network across robot swarm for collective sensing,ta-screen-v4,2026-11-13
+scopus:85042115948,exclude,E1,proceedings volume SOHOMA 2017; not a paper on (a)-(e),ta-screen-v4,2026-11-13
+scopus:85071466775,exclude,E1,reliability modelling of infant mortality in asset fleets,ta-screen-v4,2026-11-13
+doi:10.15607/rss.2018.xiv.065,include,,(c) plausible: collision avoidance among multi-robot agents is the primary claim of the algorithm,ta-screen-v4,2026-11-13
+scopus:85055333924,exclude,E1,"POMDP policy synthesis with safe-reachability; single-agent planner constraint, not runtime interception",ta-screen-v4,2026-11-13
+doi:10.4271/2018-01-0548,exclude,E1,crash injury risk statistics for passenger vehicles,ta-screen-v4,2026-11-13
+scopus:85048597912,exclude,E1,proceedings volume SOCO/CISIS/ICEUTE; not a paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.22260/isarc2020/0142,exclude,E1,agent-based wildfire evacuation simulation,ta-screen-v4,2026-11-13
+scopus:85041711721,exclude,E1,proceedings volume PSI 2017; not a paper on (a)-(e),ta-screen-v4,2026-11-13
+scopus:85148876696,exclude,E1,fuel transport risk management programme for human-driven fleets,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-57602-8_32,exclude,E1,multi-AGV pathfinding algorithm; generic path planning,ta-screen-v4,2026-11-13
+scopus:85079556653,exclude,E1,proceedings volume INTSYS 2019; not a paper on (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1016/j.procs.2019.04.059,exclude,E1,distributed formation control with collision avoidance; formation planner,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2019-9237,exclude,E1,chance-constrained multi-agent motion planner; collision risk is a planner constraint,ta-screen-v4,2026-11-13
+scopus:85077085111,exclude,E1,multi-robot path-planning algorithm completeness and move reduction,ta-screen-v4,2026-11-13
+doi:10.1109/iros.2017.8206602,exclude,E1,mixed-initiative mission planning and task reallocation for AUV fleets; planning,ta-screen-v4,2026-11-13
+doi:10.1177/1729881418797494,exclude,E1,distributed area coverage control; collision avoidance an added property,ta-screen-v4,2026-11-13
+scopus:85030548852,exclude,E1,automotive technology curriculum roadmap; education,ta-screen-v4,2026-11-13
+doi:10.1016/j.jclepro.2016.09.163,exclude,E1,Hazmat vehicle routing optimisation; none of (a)-(e).,ta-screen-v4,2026-11-13
+scopus:85099307242,exclude,E1,Structural integrity database system for offshore assets; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.asoc.2018.09.024,exclude,E1,"Metaheuristic optimisation for UAV swarm oil-spill tracking; swarm optimisation, no safety interception.",ta-screen-v4,2026-11-13
+doi:10.1007/s10015-018-0477-3,exclude,E1,Agent-based biological model of amoeba aggregation; off-topic.,ta-screen-v4,2026-11-13
+scopus:85098197177,exclude,E1,"Geometric modelling of ORCA navigation algorithm; navigation planner, no multi-agent safety outcome measured.",ta-screen-v4,2026-11-13
+scopus:85105784303,exclude,E1,Agricultural machine-to-machine communication standardisation; communications protocol.,ta-screen-v4,2026-11-13
+scopus:85027858616,exclude,E1,Whole conference proceedings volume; not a single paper on (a)-(e).,ta-screen-v4,2026-11-13
+scopus:85064964462,exclude,E1,Risk management training for fishing fleet; off-topic.,ta-screen-v4,2026-11-13
+scopus:85040343786,exclude,E1,Whole workshop proceedings volume; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.procs.2018.07.103,exclude,E1,Multi-agent path planning and scheduling via ILP; generic planning.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2019.11.662,exclude,E1,Formation control with collision avoidance as one constraint; fails (c) primacy test.,ta-screen-v4,2026-11-13
+doi:10.4018/978-1-7998-1754-3.ch070,exclude,E1,Distributed swarm coordination with barrier functions; collision avoidance one objective among several.,ta-screen-v4,2026-11-13
+doi:10.2514/6.2018-5354,exclude,E1,"Factor-graph relative-state estimation for satellites; sensor fusion, not world model or hazard detection.",ta-screen-v4,2026-11-13
+doi:10.1115/dscc2020-3139,exclude,E1,"Attack-resilient observer for single robot path tracking; state estimation, no action override.",ta-screen-v4,2026-11-13
+scopus:85067348463,exclude,E1,Whole conference proceedings volume; not a single paper on (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1109/tits.2017.2742600,exclude,E1,Hazmat bi-objective vehicle routing; off-topic.,ta-screen-v4,2026-11-13
+scopus:85096688397,exclude,E1,Single-agent RL representation and interference study; off-topic.,ta-screen-v4,2026-11-13
+scopus:85037075660,exclude,E1,Whole conference proceedings volume; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/s10514-017-9660-y,exclude,E1,Multi-robot formation and connectivity coordination controller; fails (c) primacy test.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-97589-4_34,exclude,E1,RL comparison for air-defence decoy control; collision avoidance incidental.,ta-screen-v4,2026-11-13
+doi:10.1145/3388218.3388222,exclude,E1,High-level comparison of CPS analysis approaches with RL; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-030-59535-7_7,exclude,E1,Multi-agent path finding solver; generic path planning.,ta-screen-v4,2026-11-13
+scopus:85041168680,exclude,E1,Whole conference proceedings volume; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2018-9231,exclude,E4,"Single-robot LiDAR negative obstacle detector for wheelchair; no multi-agent, latency or handoff aspect.",ta-screen-v4,2026-11-13
+scopus:85031744752,exclude,E1,GNSS/IMU localization for autonomous vehicles; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.aap.2020.105434,exclude,E1,Crash injury risk regression model; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ins.2018.04.034,exclude,E1,"Distributed MPC communication reduction scheme; coordination, not safety interception.",ta-screen-v4,2026-11-13
+doi:10.1109/sieds49339.2020.9106688,exclude,E1,Safety patrol route scheduling with genetic algorithm; scheduling.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-65289-4_68,exclude,E1,AUV formation control by flocking and consensus; fails (c) primacy test.,ta-screen-v4,2026-11-13
+scopus:85032680136,exclude,E1,Whole conference proceedings volume; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.conengprac.2019.104245,exclude,E1,Switching formation control with obstacle avoidance; fails (c) primacy test.,ta-screen-v4,2026-11-13
+doi:10.5220/0008163000880099,exclude,E1,"Simulation framework for human-robot production teams; safety is one evaluable property, not primary claim.",ta-screen-v4,2026-11-13
+scopus:85076884830,include,,(a) runtime execution monitor deciding when robot must stop manipulation; halts nominal action at execution time.,ta-screen-v4,2026-11-13
+scopus:85057226707,exclude,E1,Whole conference proceedings volume; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1201/b19094-229,exclude,E1,Petri-net reliability models for maintenance business cases; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-25524-8_24,exclude,E1,Knowledge-based decision support for human-robot space teams; no automation deferral or handoff mechanism.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9718,include,,(a) fall-back safety surveillance and control layer for autonomous systems; runtime safety supervision plausible,ta-screen-v4,2026-11-13
+doi:10.1109/tase.2015.2499195,exclude,E1,Software framework comparing surgical collaboration models; not deferral-triggered handoff or safety interception,ta-screen-v4,2026-11-13
+doi:10.1115/imece2015-52458,exclude,E1,Remaining useful life prediction for asset fleets; off-topic,ta-screen-v4,2026-11-13
+doi:10.1109/milcom.2015.7357535,exclude,E1,"Distributed UAV task assignment and trajectory planning; coordination planner, hazards only one constraint",ta-screen-v4,2026-11-13
+doi:10.1007/978-4-431-55879-8_24,exclude,E1,"Decentralized path selection planner; conflict and deadlock avoidance within navigation, not hazard detection",ta-screen-v4,2026-11-13
+doi:10.1007/s10015-015-0197-x,exclude,E1,Formation controller with obstacle avoidance under input constraints; formation control,ta-screen-v4,2026-11-13
+doi:10.1016/j.jsr.2015.09.001,exclude,E1,Road fatality trend model for Italy; off-topic,ta-screen-v4,2026-11-13
+doi:10.2118/178841-ms,exclude,E1,Human systems integration best practices for drilling consoles; not about automation deferring to a person,ta-screen-v4,2026-11-13
+scopus:84994607467,exclude,E1,Wireless gas sensor node design; off-topic,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9791,exclude,E1,"MPC steering path planner for single vehicle; collision avoidance by planning, not runtime interception",ta-screen-v4,2026-11-13
+scopus:84959515469,exclude,E1,"Proceedings volume; not a single paper, topics are control and formation",ta-screen-v4,2026-11-13
+scopus:84950313286,exclude,E1,"Proceedings volume; not a single paper, no specific on-topic subject",ta-screen-v4,2026-11-13
+doi:10.5220/0005219501400147,exclude,E1,Emergent-behaviour task allocation and scheduling; scheduling,ta-screen-v4,2026-11-13
+doi:10.3390/s150305402,include,,(a)/(c): runtime supervisor for autonomous vehicle fleet detects failures and potential collisions and executes neutralising actions,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-50983-9_8,exclude,E1,"Agent programming architecture with perception filters; collision scenario only a performance test, not multi-agent safety",ta-screen-v4,2026-11-13
+scopus:85048242848,exclude,E1,Architecture design conference proceedings volume; off-topic,ta-screen-v4,2026-11-13
+doi:10.1016/j.compind.2015.08.004,exclude,E1,Overview of industrial cyber-physical systems technologies and challenges; none of (a)-(e),ta-screen-v4,2026-11-13
+scopus:85014242641,exclude,E1,"DCOP-MST for mobile sensing robot teams; coordination and coverage, not safety",ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9882,exclude,E1,Single manipulator base placement and motion planning optimisation; off-topic,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2015.06.166,exclude,E1,"Multi-agent patient flow planning decision support in hospitals; scheduling, off-topic",ta-screen-v4,2026-11-13
+doi:10.1109/oceans.2016.7761410,exclude,E1,Organisational overview of military unmanned systems consortium; no (a)-(e) subject,ta-screen-v4,2026-11-13
+scopus:84926466055,exclude,E1,"Distributed formation/target-enclosing control; collision avoidance is a secondary constraint, fails (c) primacy test",ta-screen-v4,2026-11-13
+doi:10.1177/0278364914546174,exclude,E1,"Multi-agent LTL plan synthesis and revision; safety is a constraint inside the planner, not runtime interception under strict (a)",ta-screen-v4,2026-11-13
+doi:10.1117/12.2179905,include,,(c) plausible: trust model detecting untrustworthy agents in a multi-robot convoy to mitigate unsafe behaviours; full text decides primacy,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9835,exclude,E1,"Single-vehicle MPC obstacle grouping for path planning; collision constraint inside planner, none of (a)-(e)",ta-screen-v4,2026-11-13
+doi:10.1016/j.aap.2015.04.006,exclude,E1,Epidemiological study of rear seat occupant injury risk in car crashes; none of (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1115/gt2015-42505,exclude,E1,Gas turbine blade failure analysis with coupled aero-thermal-structural models; none of (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-19629-9_25,exclude,E4,"Single-robot LIDAR collision avoidance with deceleration control; no multi-agent, sequential, latency or handoff aspect",ta-screen-v4,2026-11-13
+doi:10.1115/jrc2015-5615,exclude,E1,Retrospective on freight locomotive crashworthiness standards and injury statistics; none of (a)-(e),ta-screen-v4,2026-11-13
+doi:10.1016/j.trc.2016.09.008,exclude,E1,"Hazard-based choice model of vehicle selection in carsharing; statistical hazard, not safety; none of (a)-(e)",ta-screen-v4,2026-11-13
+scopus:85006043717,exclude,E1,Earthquake emergency logistics network simulation with complex network theory; no agent safety interception or hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1007/s00500-014-1330-9,exclude,E1,Artificial reaction network cell-like agents for biological simulation and swarm robotics; no safety topic.,ta-screen-v4,2026-11-13
+scopus:84995933303,exclude,E1,Workshop proceedings front matter listing many topics; not a single method paper on (a)-(e).,ta-screen-v4,2026-11-13
+scopus:84939197404,include,,"(c) Distributed collision detection, negotiation and avoidance among mobile robot agents is the primary claim, validated on real robots.",ta-screen-v4,2026-11-13
+doi:10.1109/devlrn.2015.7346143,include,,"(c) Caregiver robot predicts other agents' behaviour, identifies risk regions and mitigates harm; multi-agent safety is primary measured outcome.",ta-screen-v4,2026-11-13
+doi:10.4271/2015-22-0004,exclude,E1,Side-impact crash regulation and injury risk statistics; no autonomous agent safety mechanism.,ta-screen-v4,2026-11-13
+scopus:84942058634,exclude,E1,Commentary on road accident rates and prevention measures in Russia; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1007/978-90-481-9707-1_82,exclude,E1,Multi-UAV task assignment and path planning; collision avoidance is one planner constraint among several.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2016.07.757,exclude,E1,"Vehicle-passenger matching for autonomous carsharing; assignment/scheduling problem, not safety.",ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9790,include,,(c) plausible: collision avoidance against a stochastic malicious agent is the titled primary claim; full text decides.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-44365-2_33,exclude,E1,Decentralized mobile-sensor estimation of forest fire spread; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1016/j.procs.2016.05.155,exclude,E1,Warranty data mining clustering for fleet industry; off-topic.,ta-screen-v4,2026-11-13
+scopus:84995701408,exclude,E1,"Conference proceedings volume on distributed systems, not a single paper; no (a)-(e) subject.",ta-screen-v4,2026-11-13
+scopus:84956683998,exclude,E1,"Conference proceedings volume on distributed robotics, not a single paper; coordination topics.",ta-screen-v4,2026-11-13
+doi:10.3390/s16081269,exclude,E1,Aerial-ground multi-robot system for herbicide treatment; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-27149-1_30,exclude,E1,Coordinated agent team for maze exploration competition; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.3389/frobt.2015.00003,exclude,E1,Dynamic coverage control for multi-robot networks; collision avoidance is one constraint among several.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ejor.2015.05.069,exclude,E1,Inventory safety stock and transportation capacity optimisation; off-topic.,ta-screen-v4,2026-11-13
+scopus:84942804873,exclude,E2,Invited-talk abstract on formally verifying autonomous agent decisions; no method or result reported in this record.,ta-screen-v4,2026-11-13
+doi:10.4271/2015-01-1446,exclude,E1,Validation of fire-apparatus vehicle data recorder for collision investigation; none of (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1177/0278364914555543,exclude,E1,"Kalman-filter pedestrian motion prediction for robot navigation; no world model or runtime interception, safety not primary claim.",ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9898,exclude,E1,Iterative learning control for machine tool paths; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-90-481-9707-1_79,exclude,E1,UAV logistic support and RAMS handbook chapter; off-topic.,ta-screen-v4,2026-11-13
+scopus:84944688673,exclude,E1,"Doctoral statement on adversarial coverage planning; coverage path planning, not (a)-(e).",ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9741,exclude,E1,"Single-vehicle lane change decision and H-infinity controller; planner/controller, not runtime interception or multi-agent hazard detection.",ta-screen-v4,2026-11-13
+scopus:84991735482,exclude,E1,Conference proceedings front matter on general control and automation; no single on-topic contribution.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ins.2014.12.011,exclude,E1,Agent-based simulation of disaster spread among storage nodes and rescue timing; not autonomous multi-agent safety.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-40159-1_30,exclude,E1,LIDAR and RGB-D depth fusion for 2D navigation maps; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1109/icra.2016.7487253,exclude,E1,UAV fleet event handling and coverage architecture; task allocation with collision avoidance as a constraint.,ta-screen-v4,2026-11-13
+doi:10.1016/j.robot.2015.05.008,exclude,E1,"Decentralized boundary-tracking navigation for multiple robots; coordination planner, collision avoidance secondary.",ta-screen-v4,2026-11-13
+doi:10.1109/iros.2015.7354107,include,,(b) plausible: decentralized multi-agent learning and sharing of state transition models (CF-Dec-iFDD); full text decides.,ta-screen-v4,2026-11-13
+scopus:85027406490,exclude,E1,Trade magazine commentary on automation in cars; not a research contribution on (a)-(e).,ta-screen-v4,2026-11-13
+doi:10.1109/cts.2016.84,exclude,E1,Machine-to-machine argumentation among IoT agents for collaboration; no safety interception or hazard detection.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9708,exclude,E1,Mechanical design and control of variable stiffness actuator; off-topic.,ta-screen-v4,2026-11-13
+scopus:84944685084,exclude,E1,Demonstration of OpenEASE robot knowledge processing web interface; off-topic.,ta-screen-v4,2026-11-13
+doi:10.3233/978-1-61499-589-0-179,exclude,E1,AGV task assignment and trajectory planning; planner with collision avoidance as constraint.,ta-screen-v4,2026-11-13
+scopus:84988952938,exclude,E1,General overview of automated driving status and societal impact; none of (a)-(e) is the subject.,ta-screen-v4,2026-11-13
+scopus:84944688469,exclude,E1,"Doctoral abstract on learning for multi-robot navigation efficiency; navigation planner, safety not primary.",ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2015.06.297,exclude,E1,Hybrid discrete-event and agent-based simulation of reconfigurable manufacturing; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.ifacol.2016.11.061,exclude,E1,Mobile robots in hybrid wireless sensor network for pollution perimeter tracking; off-topic.,ta-screen-v4,2026-11-13
+scopus:84975815581,exclude,E1,Electromagnetic immunity testing of nuclear plant equipment for wireless; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1142/9789813149137_0028,exclude,E1,Combined aerial and surface vehicle system proposed for marine path planning; generic path planning.,ta-screen-v4,2026-11-13
+scopus:84938571262,exclude,E1,Potential-function formation control of rectangular agents; formation planner with collision avoidance as constraint.,ta-screen-v4,2026-11-13
+doi:10.1016/j.tra.2015.04.032,exclude,E1,"Shipping fleet risk exposure assessment framework; maritime statistics, not autonomous multi-agent safety.",ta-screen-v4,2026-11-13
+doi:10.2316/journal.206.2015.3.206-4247,exclude,E1,Behaviour-agent fuzzy control architecture for single mobile robot navigation; off-topic.,ta-screen-v4,2026-11-13
+scopus:84942612794,exclude,E1,Proceedings front matter on e-technologies; off-topic.,ta-screen-v4,2026-11-13
+scopus:84963850014,exclude,E1,"Trade news on driverless rental yard equipment; not a research paper, off-topic.",ta-screen-v4,2026-11-13
+scopus:84996969436,exclude,E1,Crash injury statistics by vehicle manufacturing year; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1016/j.artint.2014.11.001,exclude,E1,"M* multirobot path planning algorithm; generic path planning, collisions as constraint.",ta-screen-v4,2026-11-13
+scopus:84944681991,exclude,E1,Synchronization regimes of mobile pulse-coupled oscillators; no safety topic.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9644,exclude,E1,"Evasive steering path planner for single vehicle; geometric planning, no explicit runtime override or multi-agent safety claim.",ta-screen-v4,2026-11-13
+doi:10.1109/iros.2015.7354198,exclude,E1,"Human-robot collaboration models for surgical debridement; shared control comparison, not deferral or takeover handoff.",ta-screen-v4,2026-11-13
+scopus:85139814737,exclude,E1,Proceedings front matter on vibroengineering; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9910,exclude,E1,"Robust safety-critical QP control for single bipedal robot; constraint inside controller, no multi-agent or interception aspect.",ta-screen-v4,2026-11-13
+scopus:84955287184,exclude,E1,Proceedings front matter on machine learning and optimization; off-topic.,ta-screen-v4,2026-11-13
+scopus:85013382575,exclude,E1,Proceedings front matter on modeling and simulation technologies; off-topic.,ta-screen-v4,2026-11-13
+doi:10.1007/978-3-319-16595-0_2,exclude,E1,Centralized swarm navigation via cluster hierarchies; navigation planner with collision-free guarantee as constraint.,ta-screen-v4,2026-11-13
+doi:10.1115/dscc2016-9752,exclude,E1,Leader-follower multi-agent formation deployment; formation control with collision avoidance as constraint.,ta-screen-v4,2026-11-13
+scopus:84951198236,exclude,E1,Proceedings front matter on computational logistics; off-topic.,ta-screen-v4,2026-11-13
+scopus:85014281944,exclude,E1,Experience-based RRT path planning for single robot; generic path planning.,ta-screen-v4,2026-11-13
