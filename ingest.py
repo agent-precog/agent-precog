@@ -56,7 +56,7 @@ def api_rows(path):
 
 
 def bibtex_rows(path):
-    """ACM Digital Library citation export (BibTeX). One record per @type{key, ...} block."""
+    """ACM Digital Library or Scopus citation export (BibTeX). One record per @type{key, ...} block."""
     text = open(path, encoding="utf-8-sig", errors="replace").read()
     for block in re.split(r"\n(?=@)", text):
         if not block.lstrip().startswith("@"):
@@ -77,10 +77,12 @@ def bibtex_rows(path):
             mdoi = re.search(r"10\.\d{4,9}/[^\s,}]+", block.split("abstract", 1)[0])
             doi = mdoi.group(0).lower().rstrip(",}") if mdoi else ""
         kind = (block.lstrip()[1:].split("{", 1)[0] or "").lower()
-        yield {"record_id": f"doi:{doi}" if doi else "acm:" + de(block.lstrip()[1:].split("{", 1)[1].split(",", 1)[0]),
+        sid = re.search(r"scopus\.com/pages/publications/(\d+)", block)   # Scopus export: entry keys repeat, use the Scopus id
+        rid = f"doi:{doi}" if doi else f"scopus:{sid.group(1)}" if sid else "acm:" + de(block.lstrip()[1:].split("{", 1)[1].split(",", 1)[0])
+        yield {"record_id": rid,
                "title": de(fields.get("title")), "authors": "; ".join(a.strip() for a in de(fields.get("author", "")).split(" and ")),
                "year": de(fields.get("year", ""))[:4], "venue": de(fields.get("booktitle") or fields.get("journal") or fields.get("series", "")),
-               "type": {"inproceedings": "Conference", "article": "Journal", "incollection": "Book chapter",
+               "type": {"inproceedings": "Conference", "conference": "Conference", "article": "Journal", "incollection": "Book chapter",
                         "book": "Book", "phdthesis": "Thesis"}.get(kind, kind),
                "doi": doi, "url": de(fields.get("url", "")) or (f"https://doi.org/{doi}" if doi else ""),
                "arxiv_id": "", "abstract": de(fields.get("abstract", "")), "database": "ACM Digital Library"}
@@ -91,7 +93,7 @@ def reader_for(path):
         head = f.read(4000)
     if "Document Title" in head:
         return ieee_rows
-    if head.lstrip().startswith("@"):
+    if head.lstrip().startswith("@") or re.search(r"^@\w+\{", head, re.M):   # ACM, or Scopus (which puts two header lines first)
         return bibtex_rows
     return api_rows
 
