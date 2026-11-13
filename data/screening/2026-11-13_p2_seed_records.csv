@@ -1,0 +1,3 @@
+record_id,pillar,database,title,authors,year,venue,type,doi,url,arxiv_id,in_review,duplicate_of,abstract
+arxiv:2106.08417,2,arXiv,Scene Transformer: A unified architecture for predicting multiple agent trajectories,Jiquan Ngiam; Benjamin Caine; Vijay Vasudevan; Zhengdong Zhang; Hao-Tien Lewis Chiang; Jeffrey Ling; Rebecca Roelofs; Alex Bewley; Chenxi Liu; Ashish Venugopal; David Weiss; Ben Sapp; Zhifeng Chen; Jonathon Shlens,2021,arXiv,preprint,10.48550/arxiv.2106.08417,https://arxiv.org/abs/2106.08417,2106.08417,,,
+arxiv:2205.14953,2,arXiv,Multi-Agent Reinforcement Learning is a Sequence Modeling Problem,Muning Wen; Jakub Grudzien Kuba; Runji Lin; Weinan Zhang; Ying Wen; Jun Wang; Yaodong Yang,2022,arXiv,preprint,,https://arxiv.org/abs/2205.14953,2205.14953,,,
