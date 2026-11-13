@@ -1,47 +1,47 @@
 [
-  {
-    "n": 1,
-    "slug": "multi-agent-systems",
-    "name": "Multi-agent systems & enterprise scale",
-    "short": "Multi-agent systems",
-    "blurb": "Dec-POMDPs, factored state, AMR swarms, emergent catastrophes.",
-    "scope": "How hazards arise from the interaction of many agents, and how multi-agent state can be represented tractably enough to evaluate safety over it.",
-    "query": "(\"multi-agent\" OR \"multiagent\" OR \"Dec-POMDP\" OR \"decentralized POMDP\" OR \"agent swarm\" OR \"fleet\") AND (\"safety\" OR \"hazard\" OR \"collision\" OR \"emergent\" OR \"cascading failure\" OR \"catastroph*\") AND (\"warehouse\" OR \"logistics\" OR \"industrial\" OR \"enterprise\" OR \"robot*\" OR \"AMR\" OR \"tool call*\" OR \"LLM agent*\")"
-  },
-  {
-    "n": 2,
-    "slug": "world-models",
-    "name": "World models & representation learning",
-    "short": "World models",
-    "blurb": "JEPA, Graph-JEPA, hyperbolic embeddings, latent prediction.",
-    "scope": "Non-generative world models that predict in latent space, and graph or hyperbolic representations suited to hierarchical enterprise structure.",
-    "query": "(\"joint-embedding predictive\" OR \"JEPA\" OR \"world model\" OR \"latent dynamics\" OR \"latent prediction\") AND (\"graph\" OR \"relational\" OR \"hyperbolic\" OR \"Poincar*\" OR \"multi-agent\") AND (\"self-supervised\" OR \"action-conditioned\" OR \"predict*\" OR \"anomaly\" OR \"safety\")"
-  },
-  {
-    "n": 3,
-    "slug": "learning-to-defer",
-    "name": "Learning to defer & safety interception",
-    "short": "Learning to defer",
-    "blurb": "Sequential L2D, selective prediction, shielding, time-to-irreversibility.",
-    "scope": "When a model should abstain or hand off to a human or safeguard, from the reject option through consistent surrogate losses to sequential and multi-expert deferral.",
-    "query": "(\"learning to defer\" OR \"learn to defer\" OR \"learning-to-defer\" OR \"selective prediction\" OR \"reject option\" OR \"abstention\" OR \"deferral\") AND (\"sequential\" OR \"reinforcement\" OR \"trajectory\" OR \"multi-step\" OR \"expert\" OR \"human-in-the-loop\" OR \"shield*\" OR \"runtime monitor*\" OR \"safety\")"
-  },
-  {
-    "n": 4,
-    "slug": "edge-inference",
-    "name": "Edge inference & real-time constraints",
-    "short": "Edge inference",
-    "blurb": "TensorRT, quantisation, wireless jitter, hardware-software co-design.",
-    "scope": "Running learned models on edge silicon under hard latency budgets, and the effect of wireless tail latency on time-critical decisions.",
-    "query": "(\"edge inference\" OR \"edge deployment\" OR \"Jetson\" OR \"TensorRT\" OR \"on-device\" OR \"embedded GPU\") AND (\"deadline\" OR \"tail latency\" OR \"p99\" OR \"jitter\" OR \"worst-case\" OR \"hard real-time\" OR \"latency budget\" OR \"time-critical\" OR \"inference latency\" OR \"low-latency\" OR \"latency constraint\" OR \"real-time constraint\" OR \"real-time inference\" OR \"end-to-end latency\") AND (\"safety\" OR \"safety-critical\" OR \"graph neural\" OR \"GNN\" OR \"multi-robot\" OR \"multi-agent\" OR \"control loop\" OR \"robot*\" OR \"autonomous\")"
-  },
-  {
-    "n": 5,
-    "slug": "human-automation",
-    "name": "Human-automation interaction",
-    "short": "Human-automation",
-    "blurb": "Situation awareness, out-of-the-loop, trust, moral crumple zones.",
-    "scope": "What a human supervisor needs to take over from automation, how automation erodes that capacity, and who carries responsibility when it fails.",
-    "query": "(\"situation awareness\" OR \"out-of-the-loop\" OR \"out of the loop\" OR \"automation surprise\" OR \"takeover\" OR \"handover\" OR \"human-automation\" OR \"moral crumple zone\" OR \"ironies of automation\") AND (\"autonomous\" OR \"AI\" OR \"robot*\" OR \"agent*\" OR \"supervisory control\" OR \"alarm\") AND (\"operator\" OR \"supervisor\" OR \"trust\" OR \"workload\" OR \"explanation\" OR \"recovery\")"
-  }
+ {
+  "n": 1,
+  "slug": "multi-agent-systems",
+  "name": "Multi-agent systems & enterprise scale",
+  "short": "Multi-agent systems",
+  "blurb": "Dec-POMDPs, factored state, AMR swarms, emergent catastrophes.",
+  "scope": "How hazards arise from the interaction of many agents, and how multi-agent state can be represented tractably enough to evaluate safety over it.",
+  "query": "(\"multi-agent\" OR \"multiagent\" OR \"Dec-POMDP\" OR \"decentralized POMDP\" OR \"agent swarm\" OR \"fleet\") AND (\"safety\" OR \"hazard\" OR \"collision\" OR \"emergent\" OR \"cascading failure\" OR \"catastroph*\") AND (\"warehouse\" OR \"logistics\" OR \"industrial\" OR \"enterprise\" OR \"robot*\" OR \"AMR\" OR \"tool call*\" OR \"LLM agent*\")"
+ },
+ {
+  "n": 2,
+  "slug": "world-models",
+  "name": "World models & representation learning",
+  "short": "World models",
+  "blurb": "JEPA, Graph-JEPA, hyperbolic embeddings, latent prediction.",
+  "scope": "Non-generative world models that predict in latent space, and graph or hyperbolic representations suited to hierarchical enterprise structure.",
+  "query": "(\"joint-embedding predictive\" OR \"JEPA\" OR \"world model\" OR \"latent dynamics\" OR \"latent prediction\") AND (\"graph\" OR \"relational\" OR \"hyperbolic\" OR \"Poincar*\" OR \"multi-agent\") AND (\"self-supervised\" OR \"action-conditioned\" OR \"predict*\" OR \"anomaly\" OR \"safety\")"
+ },
+ {
+  "n": 3,
+  "slug": "learning-to-defer",
+  "name": "Learning to defer & safety interception",
+  "short": "Learning to defer",
+  "blurb": "Sequential L2D, selective prediction, shielding, time-to-irreversibility.",
+  "scope": "When a model should abstain or hand off to a human or safeguard, from the reject option through consistent surrogate losses to sequential and multi-expert deferral.",
+  "query": "(\"learning to defer\" OR \"learn to defer\" OR \"learning-to-defer\" OR \"selective prediction\" OR \"reject option\" OR \"abstention\" OR \"deferral\") AND (\"sequential\" OR \"reinforcement\" OR \"trajectory\" OR \"multi-step\" OR \"expert\" OR \"human-in-the-loop\" OR \"shield*\" OR \"runtime monitor*\" OR \"safety\")"
+ },
+ {
+  "n": 4,
+  "slug": "edge-inference",
+  "name": "Edge inference & real-time constraints",
+  "short": "Edge inference",
+  "blurb": "TensorRT, quantisation, wireless jitter, hardware-software co-design.",
+  "scope": "Running learned models on edge silicon under hard latency budgets, and the effect of wireless tail latency on time-critical decisions.",
+  "query": "(\"edge inference\" OR \"edge deployment\" OR \"Jetson\" OR \"TensorRT\" OR \"on-device\" OR \"embedded GPU\") AND (\"deadline\" OR \"tail latency\" OR \"p99\" OR \"jitter\" OR \"worst-case\" OR \"hard real-time\" OR \"latency budget\" OR \"time-critical\" OR \"inference latency\" OR \"low-latency\" OR \"latency constraint\" OR \"real-time constraint\" OR \"real-time inference\" OR \"end-to-end latency\") AND (\"safety\" OR \"safety-critical\" OR \"graph neural\" OR \"GNN\" OR \"multi-robot\" OR \"multi-agent\" OR \"control loop\" OR \"robot*\" OR \"autonomous\")"
+ },
+ {
+  "n": 5,
+  "slug": "human-automation",
+  "name": "Human-automation interaction",
+  "short": "Human-automation",
+  "blurb": "Situation awareness, out-of-the-loop, trust, moral crumple zones.",
+  "scope": "What a human supervisor needs to take over from automation, how automation erodes that capacity, and who carries responsibility when it fails.",
+  "query": "(\"situation awareness\" OR \"out-of-the-loop\" OR \"out of the loop\" OR \"automation surprise\" OR \"takeover\" OR \"human-automation\" OR \"moral crumple zone\" OR \"ironies of automation\") AND (\"autonomous\" OR \"robot*\" OR \"supervisory control\") AND (\"operator\" OR \"supervisor\" OR \"trust\" OR \"workload\")"
+ }
 ]
