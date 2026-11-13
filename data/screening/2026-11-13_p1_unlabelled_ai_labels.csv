@@ -1,0 +1,52 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+arxiv:2610.28285,exclude,E1,"Conformal certification of classical nonlinear consensus protocol; no learned system guarded, contribution is a deadline certificate not a world model",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.26852,include,,"(b) learned cross-robot occupancy forecasting of future joint state with uncertainty, guarding multi-agent RL navigation policy",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.27045,exclude,E3,"Monograph reviewing physical AI definitions, methodologies and applications; survey kept for snowballing",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.26369,exclude,E1,"Agentic architecture and benchmarking blueprint for mining operation centres; productivity is primary, multi-agent safety not primary measured outcome",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.26106,exclude,E1,"GPU coverage-planning and routing pipeline for multi-robot inspection; no learned system guarded, collision checking one constraint among several",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.25946,exclude,E1,"Code-space policy search for multi-agent pathfinding; throughput is primary outcome, no runtime safety interception of a learned system",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.25630,exclude,E2,"Research program on controlled emergence; hypotheses untested and pilot verifies only protocol executability, so reports nothing yet",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.25455,include,,(a) admission pipeline with invariant monitors vetoes LLM-proposed behavior-tree patches before execution on safety-critical drone controller,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.25281,exclude,E1,"LLM multi-agent feature engineering for impact forecasting on concept graphs; bibliometric link prediction, no world model, no safety",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.24603,include,,"(a) multi-agent rule-graph verification refuses harmful sub-tasks at runtime, guarding an LLM-enabled robot planner; attack success rate measured",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.33048,exclude,E1,"LLM multi-agent framework for collaborative task performance; coordination and accuracy primary, no safety interception or hazard detection",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.23673,exclude,E1,Audits reliability of LLM-agent preference weights for healthcare optimization; decision-quality not a multi-agent safety property,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.22882,include,,(c) empirical safety evaluation of LLM agents in multi-agent collective-risk game; one agent's shortfall causes group failure,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.22198,exclude,E1,Reachability-based control barrier functions for collision avoidance of conventionally controlled pursuit agents; no learned policy guarded,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.21984,exclude,E1,"Graph relational reward shaping for diffusion driving planner; training-time objective, collision one metric among several, no runtime gate",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.21746,exclude,E1,"Game-theoretic and LLM-simulation study of delegation and polycentric governance; institutional economics, not safety deferral or hazard detection",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.20437,include,,(c) forensic analysis and containerized recreation of privilege escalation by RL/RLHF-trained LLM agents; safety evaluation of AI agents,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.19714,exclude,E1,"Uncertainty-driven self-play training scheme for driving policies; generalization primary, failure-rate detector secondary, no runtime interception",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.19566,exclude,E1,"LLM multi-agent fuzzing finds logic flaws in hand-written PX4 autopilot code; system analysed is conventional, not learned",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.18808,exclude,E1,"Extremum-seeking control of behavioral diversity target during MARL training; coordination performance only, no safety mechanism",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.15577,include,,(a) conflict-aware arbitration layer overrides unsafe Stop/Go intentions of graph MARL policy at execution time under imperfect V2X,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.15224,exclude,E1,"LLM orchestration delegating robots to coordination protocols; task allocation, not abstention to human or safeguard, no safety gate",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.14576,exclude,E1,"Prompt-then-distill lifecycle for serving a small model; latency reported as cost, no explicit real-time safety constraint",ta-screen-v4+p1-scope,2026-11-13
+doi:10.1007/978-3-032-40421-3_24,exclude,E1,"Configuration-driven platform for reproducible MARL swarm experiments; tooling and reproducibility, no safety interception or hazard detection",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2610.13118,exclude,E1,"Evolutionary robotics study of emergent signalling between two e-puck robots; communication emergence, not safety interception or hazard detection",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2303.01619,exclude,E1,"Conflict-based model predictive control for multi-robot motion planning; classical planner, no learned system guarded",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2303.01379,exclude,E1,Thesis on temporal-logic planning and control with hand-designed cooperative controllers; no learned system guarded.,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2303.00460,exclude,E1,"Multi-agent RL task planning for fruit harvesting; efficiency is the claim, no runtime safety interception.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.14833,exclude,E1,Offline RL for autonomous mobility-on-demand fleet control; no safety interception or multi-agent hazard detection.,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.14289,exclude,E1,"Distributed task allocation and path finding; collision awareness is one planner constraint, nothing learned is guarded.",ta-screen-v4+p1-scope,2026-11-13
+doi:10.1109/tcds.2023.3250393,exclude,E1,Deep RL locomotion policies with embedded central pattern generators; no safety interception or hazard detection.,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.13124,exclude,E1,"Imitation learning of communication-aware swarm coordination; coverage and colouring tasks, no safety gate or hazard detection.",ta-screen-v4+p1-scope,2026-11-13
+doi:10.1016/j.softx.2023.101443.,exclude,E1,"Multi-vehicle physics simulator for robotics research; no safety interception, hazard detection or latent multi-agent prediction.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.10030,exclude,E1,"Verified task-level properties enter the training penalty, not a runtime override; single-agent safe DRL navigation.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.09167,exclude,E1,"RL mixed traffic control from image observations; throughput and velocity are the claim, no safety gate.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.07583,exclude,E1,Goal-based pedestrian trajectory regressor with social forces; no learned world model of joint agent dynamics.,ta-screen-v4+p1-scope,2026-11-13
+doi:10.15607/rss.2023.xix.105,exclude,E1,"Graph attention MARL fleet coordination policy; no runtime safety filter, hazard detector or latent future-state model.",ta-screen-v4+p1-scope,2026-11-13
+doi:10.1109/access.2024.3434552,exclude,E1,"Learned crossing order feeding sequential trajectory optimisation; safety is a planner constraint, efficiency the measured outcome.",ta-screen-v4+p1-scope,2026-11-13
+doi:10.1088/1748-3190/ac98e6,exclude,E1,Decentralized UAV swarm collective navigation with reactive collision avoidance; no learned component guarded.,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.04321,exclude,E1,"Safe MARL behavior planner for connected vehicles; safety sits in the learning objective, efficiency co-primary outcome.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2302.01586,exclude,E1,"MARL-guided distributed MPC conflict resolution; collision avoidance is a constraint inside the planner, not runtime veto.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2301.10704,exclude,E1,"Plan-deviation attack detection for centrally planned warehouse robots; conventional multi-agent control, no learned system guarded.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2301.08030,exclude,E1,Competitive multi-agent RL environment and emergent-behaviour experiments; no safety interception or hazard detection question.,ta-screen-v4+p1-scope,2026-11-13
+doi:10.1177/02783649241284069,exclude,E1,"Decentralized MARL mixed traffic coordination at intersections; congestion and waiting time measured, no runtime safety gate.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2301.04446,exclude,E1,"Online multi-agent path finding efficiency; classical solver, no safety interception or learned system guarded.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2301.03634,include,,Criterion (b): attention-based recurrent VAE with Koopman latent predicting future joint vehicle states for anomaly detection.,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2212.14556,exclude,E1,"Bayesian particle-flow multisensor multiobject tracking; estimation accuracy only, no safety interception or multi-agent hazard claim.",ta-screen-v4+p1-scope,2026-11-13
+arxiv:2212.13857,exclude,E1,Reconfigurable autonomous vehicle software platform and trade studies; no runtime safety interception or hazard detection.,ta-screen-v4+p1-scope,2026-11-13
+arxiv:2212.08231,exclude,E1,Localization and mapping requirements framework for driver assistance levels; no runtime safety gate or handoff study.,ta-screen-v4+p1-scope,2026-11-13
+doi:10.1109/tits.2026.3740283,exclude,E3,Survey of 86 studies on reinforcement learning security attacks and defenses for autonomous driving; kept for snowballing.,ta-screen-v4+p1-scope,2026-11-13
+doi:10.1186/s40163-026-00296-8,exclude,E1,Scoping review of social robot crime threats and countermeasures; none of criteria (a)-(e) is the subject.,ta-screen-v4+p1-scope,2026-11-13
