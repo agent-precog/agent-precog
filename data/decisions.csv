@@ -48521,3 +48521,994 @@ doi:10.1109/access.2020.3022048,1,full_text,exclude,E9,title marks the paper as 
 doi:10.1109/acroset66531.2025.11280890,1,title_abstract,exclude,E9,title marks the paper as retracted or withdrawn,exclude,E9,2026-11-14,rule-E9,"protocol v1.15; retracted or withdrawn, assigned by rule and applied retrospectively"
 doi:10.1109/icfts62006.2025.11031767,1,title_abstract,exclude,E9,title marks the paper as retracted or withdrawn,exclude,E9,2026-11-14,rule-E9,"protocol v1.15; retracted or withdrawn, assigned by rule and applied retrospectively"
 doi:10.1109/icacite57410.2023.10182607,1,title_abstract,exclude,E9,title marks the paper as retracted or withdrawn,exclude,E9,2026-11-14,rule-E9,"protocol v1.15; retracted or withdrawn, assigned by rule and applied retrospectively"
+arxiv:2611.05667,5,title_abstract,exclude,E2,"Proactive intervention framework; outcomes are robot policy success rates, nothing measured about the operator; single manipulator.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2611.01759,5,title_abstract,exclude,E2,"VR teleoperation system demonstration; no human outcome measured, only system feasibility on one service robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2610.35005,5,title_abstract,exclude,E1,Surgical phase and instrument recognition; no human supervisory takeover topic.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2610.17748,5,title_abstract,exclude,E4,"Takeover duration measured, but operator corrects one robot at a time; single-agent setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2610.17339,5,title_abstract,include,,"Eighteen participants, SART and NASA-TLX, supervisory monitoring of heterogeneous autonomous ground and aerial vehicles.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2610.15001,5,title_abstract,include,,"Sixteen participants; mission time, collisions, cognitive load, situational awareness while teleoperating two robots in multi-operator system.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2610.07477,5,title_abstract,include,,"Twenty participants; workload, situational awareness, trust while supervising and intervening in LLM-based multi-robot teams.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2610.04013,5,title_abstract,exclude,E1,Autonomous MAV exploration and reconstruction planning; no human supervisor component.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.23919/ifipnetworking70592.2026.11579007,5,title_abstract,exclude,E2,"Camera-LiDAR fusion and transmission pipeline for teleoperation; perception and bandwidth metrics only, no human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/cqr62340.2024.10705883,5,title_abstract,exclude,E2,Compression effects on object recognition and segmentation accuracy; no measure of the human operator.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2609.17210,5,title_abstract,exclude,E2,Engineering platform for embodied policies with takeover tooling; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2609.11805,5,title_abstract,exclude,E2,"Attitude, anxiety and trust survey about maritime AI technology in general; no task-based human performance study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2609.07350,5,title_abstract,exclude,E2,Distributed multi-robot wildfire detection framework evaluated in simulation; nothing measured about a human.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2609.06009,5,title_abstract,exclude,E4,"Operator intervention burden measured, but setting is one dexterous hand; single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.aei.2026.104823,5,title_abstract,exclude,E4,"Installer supervision time measured, but a single assembly robot in simulation; single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2608.29347,5,title_abstract,exclude,E2,"LLM and ontology architecture for one UUV, compared across models; no human outcome measured.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2608.26696,5,title_abstract,exclude,E2,Runtime governance primitives and architecture for AI agents; no human study or human measure.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2609.27938,5,title_abstract,exclude,E4,"Workload, presence and response time with N=21, but one teleoperated robot arm; single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2608.19866,5,title_abstract,exclude,E1,Dataset and learned yaw controller for micro-UAV autonomy; no human supervisory measure.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2608.14767,5,title_abstract,exclude,E4,"Driver situational-awareness annotations collected, but drivers operate their own single vehicle; not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2608.02780,5,title_abstract,exclude,E4,"Workload and situational awareness measured in user studies, but a single teleoperated robot; single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2609.26083,5,title_abstract,exclude,E2,"Situation-aware locomotion for two cobots evaluated in simulation; situational awareness is the robots', no humans measured.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2514/6.2026-4010,5,title_abstract,include,,Preliminary human-factors evaluation with seven participants of VLM coordination across human-UAV loop and multiple UAV assets.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2607.27288,5,title_abstract,exclude,E1,Benchmark for agentic cyber-defense posture investigation; off-topic for human supervisory takeover.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2607.16582,5,title_abstract,exclude,E4,"Participant ratings of VR hazard annotations, but one exploring robot; single-agent setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2607.10945,5,title_abstract,exclude,E4,"Strong takeover readiness, workload and physiological measures, but a single automated vehicle; single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2607.09776,5,title_abstract,include,,"Two operators concurrently supervise twelve robots; human efficiency, takeovers and throughput per unit human labour measured.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2607.09756,5,title_abstract,exclude,E3,"Review of architecture, enabling technologies and open problems for agentic UAV swarms.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2607.03818,5,title_abstract,exclude,E1,Autonomous monocular indoor navigation and stair recognition for search-and-rescue UAVs; no human measure.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2606.29697,5,title_abstract,exclude,E1,"Monocular 6-DoF UAV pose estimation; purely perception, no human supervisor.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2606.15409,5,title_abstract,exclude,E1,"Spacecraft classification, detection and segmentation challenge entry; off-topic for the pillar.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2606.10371,5,title_abstract,exclude,E4,"Human attacker takeover success reported, but the target is one visuomotor policy; single-agent and adversarial.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2606.14767,5,title_abstract,exclude,E1,Synthetic-to-real segmentation pipeline for autonomous landing zones; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2606.10241,5,title_abstract,exclude,E1,Auditable self-improvement loop for an agent runtime on a memory benchmark; off-topic.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2605.16892,5,title_abstract,exclude,E1,"Vision-language risk captioning for driving scenes; benchmark performance only, no human supervisor.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2605.13525,5,title_abstract,exclude,E4,"Participants rated teleoperation video quality to retrain VMAF, but the setting is one remotely operated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2604.26892,5,title_abstract,exclude,E1,Repository mining of hot-fix commits by humans and coding agents; no supervisory human-automation outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2604.21741,5,title_abstract,exclude,E2,"Human corrections inside a world model; reported outcomes are policy success rates, not human measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2604.13476,5,title_abstract,exclude,E2,Surround-view vision system and reconstruction framework for teleoperation; no human study conducted.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2604.13248,5,title_abstract,exclude,E2,Digital twin architecture for teleoperated medical response; claims awareness benefits but measures nothing about people.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2604.11298,5,title_abstract,exclude,E1,Perspective on SAR as shared sensing infrastructure for low-altitude economy; no human supervisory element.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/ojvt.2026.3704953,5,title_abstract,exclude,E1,"Dash-cam accident anticipation network; benchmark precision and time-to-accident only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2604.01659,5,title_abstract,exclude,E4,"Takeover frequency reduction measured for shared autonomy, but one mobile machine; single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2604.14160,5,title_abstract,include,,"Nuclear control room crew supervising many automatic programs; workload, situational awareness and human error probability assessed on simulator.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2603.18595,5,title_abstract,exclude,E1,Distributed consensus protocol for cooperative lane changes; no human supervisor measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2603.18344,5,title_abstract,include,,"Thirty participants; eye tracking, biosignals and ground-truth situational awareness latency during remote human-robot teaming.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2603.14972,5,title_abstract,exclude,E2,"Takeover data used for driving policy post-training; outcomes are closed-loop driving scores, not human measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1145/3776734.3794402,5,title_abstract,exclude,E2,"Robot predicts human intention in shared labs; efficiency of the robot measured, nothing about the person.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2603.07824,5,title_abstract,exclude,E4,"Human interaction frequency reduced, but a single UAV is planned for; single-agent setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2603.04057,5,title_abstract,exclude,E1,Sim-to-real reinforcement learning for autonomous vessel navigation; no human supervisor.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2603.02487,5,title_abstract,exclude,E2,Simulation framework for verification and validation of autonomous ships; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2602.23694,5,title_abstract,exclude,E2,Gesture recognition accuracy and dataset for teleoperation; no human supervisory outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/csndsp68462.2026.11654478,5,title_abstract,exclude,E2,"Semantic video compression for remote vehicle operation; latency and data-rate results only, no human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2602.15237,5,title_abstract,exclude,E4,"Accuracy, situational awareness and workload measured, but one depth-sensing robot assistant; single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2602.11472,5,title_abstract,exclude,E2,Vision and architecture for mining safety and security; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2602.10555,5,title_abstract,exclude,E2,"Ontology-driven knowledge base on four UGVs; situation awareness is the platforms', no human measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2601.13451,5,title_abstract,exclude,E1,Hybrid spiking network obstacle detection for robot navigation; no human element.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2601.11812,5,title_abstract,exclude,E3,Review of the authors' decade of human-centered human-AI interaction frameworks and practice.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.18008872,5,title_abstract,exclude,E1,Agentic AI framework for credit risk decisions; off-topic for human-automation supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2512.13561,5,title_abstract,exclude,E1,Near-field perception sensing tiers for mobile robots in manufacturing; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2512.05303,5,title_abstract,exclude,E1,Sonar-LiDAR mapping system for an autonomous surface vehicle; no human supervision or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2511.18718,5,title_abstract,exclude,E2,"Human-in-the-loop aviation testbed, but only system latency and warning times reported; no human outcome measured.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2511.13171,5,title_abstract,exclude,E1,UAV-based localization of cellular user equipment; signal processing work with no human supervisor.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/milcom64451.2025.11310632,5,title_abstract,exclude,E1,Passive direction-finding hardware for electromagnetic sensing; no human-automation interaction or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2511.10448,5,title_abstract,exclude,E4,Operator interface for one robotized bolting system; single-agent supervision and no formal human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2511.00884,5,title_abstract,exclude,E1,Swarm UAV planning algorithm evaluated in simulation only; no human in the study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2510.26023,5,title_abstract,exclude,E2,"LLM recovery module benchmarked on driving scenarios; passenger guidance simulated, nothing measured about the person.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2510.22699,5,title_abstract,exclude,E1,Reinforcement learning for spacecraft inspection maneuvers; no human operator involved.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2510.16692,5,title_abstract,exclude,E2,"Attitude questionnaire on responders' perceptions of robot semantics; acceptance survey, no measured human performance.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2510.02594,5,title_abstract,exclude,E4,"User study of VR-haptic teleoperation measures performance, but the operator controls a single ROV.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2510.01751,5,title_abstract,exclude,E1,Conceptual framework mapping AI agent types to a cybersecurity framework; no people studied.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2509.15507,5,title_abstract,exclude,E2,Augmented reality see-through system evaluated on pose alignment and detection; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2509.14949,5,title_abstract,exclude,E2,"Human-in-the-loop semantic SLAM evaluated on map accuracy and room detection, not on the operator.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2509.13428,5,title_abstract,exclude,E3,Discussion article reviewing feasibility and regulation of autonomous chest X-ray reporting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2508.16016,5,title_abstract,exclude,E1,Aerial instance segmentation dataset and detector; no human supervisor or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2508.11887,5,title_abstract,exclude,E2,"Conceptual gaze-redirection framework for driver takeover; proposal only, no human study, single vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2508.06892,5,title_abstract,exclude,E1,Autonomous solar flare forecasting pipeline benchmarked against forecasters; no supervision study or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2508.09159,5,title_abstract,exclude,E1,"Agentic marketplace for 6G network slice brokering; evaluated on network metrics, no humans.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.17875,5,title_abstract,exclude,E1,Trust-based sensor fusion among UAV agents; machine trust estimation with no human participants.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.16859,5,title_abstract,exclude,E4,"Operator fatigue detection from human sensor data, but generic human-machine setting, not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.15049,5,title_abstract,exclude,E2,UAV platform with VR and LLM support; field evaluation reports latency and link quality only.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.14034,5,title_abstract,exclude,E2,Taxonomy of human-AI interaction modes from case studies; no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.12499,5,title_abstract,exclude,E1,"End-to-end autonomous driving reasoning framework; planning accuracy only, no human involved.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-032-35586-7_1,5,title_abstract,exclude,E1,"Prompt injection attacks on LLM agents; security evaluation of models, not human supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.04762,5,title_abstract,exclude,E1,Multi-agent 3D object tracking robustness against adversarial noise; no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.02708,5,title_abstract,exclude,E1,Optimization of robot team start locations for ergodic search; algorithmic study with no humans.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.02699,5,title_abstract,exclude,E1,Prompt injection attacks against email agents; no human-automation supervision or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2507.02245,5,title_abstract,exclude,E1,Cooperative infrastructure perception dataset and benchmark; machine perception metrics only.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2506.15293,5,title_abstract,exclude,E2,Position paper proposing an intent-communication design space for one cobot; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2506.15082,5,title_abstract,exclude,E1,Environment-aware reinforcement learning for an autonomous underwater vehicle; no human participants.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2506.14589,5,title_abstract,exclude,E1,Adapter interfacing general and specialized driving models; benchmark evaluation with no humans.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2506.07633,5,title_abstract,exclude,E4,"User study models driver behaviour with one transparent automated vehicle; single-agent, driver is not a fleet supervisor.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2506.06476,5,title_abstract,exclude,E1,Multi-modal underwater SLAM for robust perception; no human operator outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2505.21609,5,title_abstract,exclude,E1,Data fusion defence against adversarial attacks on maritime autonomy; model loss metrics only.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1145/3748777.3748779,5,title_abstract,exclude,E1,"Physics-informed neural network for vessel trajectory prediction; prediction error only, no humans.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2505.11535,5,title_abstract,exclude,E2,"Vision-language alert model for lane keeping evaluated on prediction accuracy; no human outcome, single vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2505.01547,5,title_abstract,exclude,E2,"Field report integrating two robots under one base station; system feasibility only, no human measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2505.00599,5,title_abstract,exclude,E1,"Video-based vessel detection and trajectory prediction; tracking accuracy only, no human measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2504.17170,5,title_abstract,exclude,E4,"Empirical studies measure rider trust and driving performance, but with a single automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2504.05755,5,title_abstract,exclude,E3,Review and research outlook on human-AI teaming.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2504.05071,5,title_abstract,exclude,E3,Survey of AI-driven tactical military communications and networking.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2504.04103,5,title_abstract,exclude,E1,"Lightweight accident anticipation model; predictive accuracy and efficiency metrics, no human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2504.03983,5,title_abstract,exclude,E1,Reinforcement learning satellite evasion using intercepted RF signals; no human supervisor.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/s11227-025-07758-x,5,title_abstract,exclude,E1,Quantum-era SCADA communication cybersecurity discussion; no human measures or agent supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2503.14810,5,title_abstract,include,,User study with swarm operators measuring subjective and objective situation awareness plus task performance.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7302/25266,5,title_abstract,include,,Between-subjects experiment on human-robot team training measuring team performance and situational awareness gains.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2503.06359,5,title_abstract,exclude,E4,Immersive semi-autonomous control of a single magnetic micro-robot; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2503.02579,5,title_abstract,exclude,E1,Multimodal operating room dataset for scene graph generation; no supervision or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2503.00659,5,title_abstract,exclude,E1,"Reputation system securing cooperative perception messages; simulation metrics, no humans.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/icarm65671.2025.11293594,5,title_abstract,exclude,E1,"Distributed volumetric mapping with multiple robots and radar; mapping quality only, no human measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2502.13677,5,title_abstract,exclude,E2,Framework and metric for semantic situational awareness in one remote robot; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2502.09379,5,title_abstract,exclude,E2,Technical system description of robotic disaster response platform; no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2502.03914,5,title_abstract,exclude,E1,Fiber Bragg Grating force sensor for soft robotic grippers; sensor characterization only.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2501.08507,5,title_abstract,exclude,E2,Qualitative interview study deriving a situational awareness framework; no measured human performance or awareness score.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2412.19582,5,title_abstract,exclude,E1,Hierarchical scene graph for autonomous inspection planning; no human study or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2412.03887,5,title_abstract,exclude,E1,Maritime multi-radar dataset for odometry and navigation; no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2412.03760,5,title_abstract,exclude,E1,"Submap-based dense 3D sonar mapping; perception performance only, no human involvement.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2411.18750,5,title_abstract,include,,Pilot-in-command evaluation measures workload and situation awareness while supervising increasing numbers of uncrewed aircraft.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2411.13994,5,title_abstract,exclude,E2,"Dual-arm teleoperation platform for nuclear hot cells; test operations reported, nothing measured about the operator.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2411.06615,5,title_abstract,exclude,E1,Field testing of a vine robot's capabilities in collapsed structures; no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2411.05683,5,title_abstract,exclude,E2,"Multi-agent RL common operational picture; StarCraft-2 simulation only, no human participants or human outcome measured.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2411.05164,5,title_abstract,exclude,E2,Haptic controller stiffness for teleoperation evaluated in simulation only; no human participants and single end-effector.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2411.03465,5,title_abstract,exclude,E1,Digital twin framework methodology for autonomous surface vessels; no human supervisor and no human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2410.17602,5,title_abstract,exclude,E2,LLM-based UAV control review with proof-of-concept demos; no human study or measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2410.16943,5,title_abstract,exclude,E4,"NASA-TLX and UEQ measured for AR drone interface, but operator flies a single UAV.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2410.16686,5,title_abstract,exclude,E2,Cross-reality synchronization framework measuring latency and positional error; nothing measured about the person.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2410.12556,5,title_abstract,include,,Field study and focus groups show AR system improves remote and on-site operators situational awareness in UAV search-and-rescue.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.25144/22274,5,title_abstract,exclude,E1,Sound speed profile inversion simulation study for underwater sensing; no human-automation interaction content.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2409.01915,5,title_abstract,exclude,E2,AR and SLAM integration described as system development; no human study or human measures reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2408.17435,5,title_abstract,exclude,E1,"Information-based trajectory planning for cislunar spacecraft tracking; purely autonomous, no human supervisor involved.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2408.12084,5,title_abstract,exclude,E1,Vision-based satellite target detection models; computer vision work with no human-automation interaction.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2407.16288,5,title_abstract,exclude,E3,Comprehensive overview and review of immersive digital technologies and digital twins for UAVs.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2407.12105,5,title_abstract,exclude,E4,"Operator collisions and workload measured for vibrotactile feedback, but teleoperation of one UAV only.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2407.18953,5,title_abstract,exclude,E2,Hypothetical benchmark proposing metrics for human-automation interaction; no participants and nothing measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2405.05916,5,title_abstract,exclude,E2,Position statement calling for human-centered AI in immersive environments; no empirical human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2404.13027,5,title_abstract,exclude,E4,"Driver-initiated takeovers and satisfaction measured with 17 participants, but single-vehicle ADAS setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2404.11800,5,title_abstract,exclude,E2,Conceptual systems-level framework for human-AV situational awareness communications; no human study conducted.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2404.09621,5,title_abstract,exclude,E2,"Vehicle digital twin teleoperation system; assessments verify data fidelity and control, not operator outcomes.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2403.06942,5,title_abstract,exclude,E1,AI foundation model for power grid monitoring and fault detection; no human supervisor measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2402.14723,5,title_abstract,exclude,E2,Run time assurance filter design for spacecraft attitude; control-theoretic work with no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2402.14863,5,title_abstract,exclude,E4,"Operator takeover prompting evaluated with user perceptions, but supervising one attentive listening dialogue system.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2402.07556,5,title_abstract,exclude,E2,"Underwater digital twin claims improved awareness and workload but reports only feasibility, no human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2401.13903,5,title_abstract,exclude,E4,Preliminary user testing of speech and haptic supervisory interface for a single Spot robot.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.datak.2025.102416,5,title_abstract,exclude,E1,LLM explanations of business processes rated by users; not automation supervision or takeover.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2401.11709,5,title_abstract,exclude,E4,"Surgeon performance and safety measured with haptic collaborative robot, but a single surgical robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2401.11371,5,title_abstract,exclude,E1,Modeling fidelity analysis for autonomous deep space spacecraft onboard autonomy; no human outcomes.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2401.10156,5,title_abstract,exclude,E1,Cooperative perception resource allocation for connected vehicles via simulation; no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2401.04032,5,title_abstract,exclude,E1,Digital twin with predictive safety filter for autonomous vessels; no human supervisor measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2401.02199,5,title_abstract,exclude,E1,Neural network dynamic risk indicator for automated driving; no human participants or measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2311.12154,5,title_abstract,exclude,E3,Survey of cognitive architectures for user-like software bots.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2311.03221,5,title_abstract,exclude,E1,Radar point cloud semantic segmentation for drone collision hazards; perception accuracy only.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2310.18966,5,title_abstract,exclude,E1,Reinforcement learning for autonomous spacecraft collision avoidance decisions; removes rather than measures human.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2310.15883,5,title_abstract,exclude,E1,"Gaussian process attitude takeover control of space targets; machine takeover, no human involved.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4204/eptcs.385.29,5,title_abstract,exclude,E4,"Driver situation awareness modelling with eye-tracking, but single semi-autonomous vehicle takeover setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2308.11839,5,title_abstract,exclude,E2,Bayesian model of human sketch inputs validated in simulation; no human participants measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-032-22202-2_40,5,title_abstract,exclude,E1,"Image processing method for autonomous volume calculation; machine vision only, no human factors.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.ymssp.2023.111051,5,title_abstract,exclude,E2,"Mining truck motion planner benchmarked in simulator; collisions and takeovers are planner metrics, not human measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2307.08966,5,title_abstract,exclude,E2,"Multi-robot patrol algorithm; base station situation awareness is a computed system metric, no humans.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2307.06258,5,title_abstract,exclude,E2,Dependability cage safety concept with remote safety driver; lab and track evaluation reports no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2306.16567,5,title_abstract,exclude,E4,"Trust profiles and takeover behaviour measured in simulator, but single conditionally automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2305.17769,5,title_abstract,exclude,E4,"Situation awareness, trust and workload measured for conventional drivers encountering AVs; bystanders, not supervisors.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2305.11674,5,title_abstract,exclude,E2,Simulink robustness assessment of teleoperation reference tracking; no human operators in the study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2305.00911,5,title_abstract,exclude,E2,Simulation comparison of teleoperation control approaches under delay; no human participants or measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2304.10360,5,title_abstract,exclude,E4,"Trust measured with MDMT across calibration strategies, but participants team with one social robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2303.16055,5,title_abstract,exclude,E2,Augmented reality teleoperation application for dual-arm manipulators; implementation described without user study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2303.13799,5,title_abstract,exclude,E3,Meta-analysis and review of human-automation trust questionnaires.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2303.04841,5,title_abstract,exclude,E3,Position paper revisiting trust literature in human-robot interaction; no new empirical study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/iros55552.2023.10342004,5,title_abstract,exclude,E4,"Pilot study measured clinician performance and workload, but guidance concerns one surgical navigation system.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2302.02881,5,title_abstract,exclude,E4,Vibrotactile awareness feedback tested with two human subjects co-carrying with a single robot.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2302.01817,5,title_abstract,exclude,E1,Information fusion case studies on underwater infrastructure surveillance; no human operator measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2302.00916,5,title_abstract,exclude,E2,Cooperative obstacle detection and AR rendering evaluated on pothole datasets; no human participants measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2301.07853,5,title_abstract,exclude,E4,"Benchmarking results including trust and situation awareness tests, but each sUAS flown and rated individually.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2212.08742,5,title_abstract,exclude,E4,"Task performance and user experience compared in simulation, but haptic teleoperation of one mobile robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2211.01813,5,title_abstract,exclude,E2,"Modular autonomy testbed for sUAS missions; module capabilities tested, nothing measured about operators.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2211.01801,5,title_abstract,exclude,E3,Handbook of test methods for evaluating sUAS in subterranean environments.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2210.09411,5,title_abstract,exclude,E4,"User study measured navigation performance and preferences, but operators drive a single telepresence robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2210.05417,5,title_abstract,exclude,E2,Work-in-progress perception-driven telerobotics framework; no human study or measured operator outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2208.01703,5,title_abstract,exclude,E1,Ontology and policy framework for secure battlefield IoT information sharing; no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.ifacol.2022.10.435,5,title_abstract,exclude,E1,COLREGs-compliant autonomous navigation framework demonstrated in simulation; no human supervisor measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/itsc55140.2022.9922163,5,title_abstract,exclude,E1,Occupancy grid threat region identification for automated vehicle perception; no human outcomes.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/iv51971.2022.9827008,5,title_abstract,exclude,E4,"SA measured with 20 drivers in simulator, but setting is one partially autonomous vehicle, not multiple agents.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2206.02245,5,title_abstract,exclude,E2,Multi-robot networking architecture evaluated on comms performance; nothing measured about human operators.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2204.12906,5,title_abstract,exclude,E2,Autonomous surface vessel COLREGs navigation; no human participants or human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2203.12987,5,title_abstract,exclude,E2,Millimeter-wave sensing concept for robot safety; no human study or human measure.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2203.03905,5,title_abstract,exclude,E2,"Radar object detection pipeline; purely technical detection metrics, no human outcome.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2203.02131,5,title_abstract,exclude,E2,"Endoscopic depth estimation method; user study judges the algorithm, no SA, trust or workload measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2201.03998,5,title_abstract,exclude,E2,"Video streaming latency solution for remote driving and platooning; network metrics only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2112.07313,5,title_abstract,exclude,E2,"Reinforcement learning for UAV base station placement; throughput metrics only, no human outcome.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2112.04095,5,title_abstract,exclude,E4,"Situational trust and takeover measured with 42 participants, but single conditionally automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2111.14092,5,title_abstract,exclude,E2,Position paper on cognitive factors in agricultural autonomy adoption; no human study conducted.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2111.07162,5,title_abstract,exclude,E2,"Stochastic MPC for cooperative adaptive cruise control; control simulation only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2110.04418,5,title_abstract,exclude,E4,Trust violation study with one robot in search and rescue; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/icra46639.2022.9811972,5,title_abstract,exclude,E2,Aircraft trajectory dataset and prediction model; no human outcome measured about pilots.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2109.02077,5,title_abstract,include,,User studies with sUAS operators on UI explanations and situation awareness while supervising drone swarms.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2107.01763,5,title_abstract,exclude,E2,Visualization concepts for AV trust calibration; prototype not yet tested with drivers.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2106.14507,5,title_abstract,exclude,E2,Rover teleoperation control system design with field tests; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2105.04764,5,title_abstract,exclude,E2,"Autonomous swarm mission planning algorithms; machine situational awareness only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2104.08904,5,title_abstract,exclude,E2,Autonomous UAS swarm planning and tracking algorithms; no human participants or measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.biosystemseng.2015.12.010,5,title_abstract,exclude,E2,Multi-sensor perception for agricultural vehicle obstacle detection; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.buildenv.2022.109714,5,title_abstract,exclude,E1,Liquid crystal elastomer actuators for responsive buildings; outside human-automation interaction scope.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2103.08968,5,title_abstract,exclude,E2,"Bayesian multiobject tracking method for radar; algorithmic performance only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/icra48506.2021.9560991,5,title_abstract,exclude,E4,"Twelve users, SA and satisfaction measured, but operator flies a single simulated UAV.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2011.10898,5,title_abstract,exclude,E4,"Twelve expert operators with TLX workload measures, but controlling one dual-arm remote robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/access.2020.3017659,5,title_abstract,exclude,E2,"Adaptive workload allocation framework for multi-human multi-robot teams; architecture only, no human-subject study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-981-13-2245-7,5,title_abstract,exclude,E3,Research monograph surveying unmanned vehicle autonomy and mission planning literature.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.arcontrol.2018.07.002,5,title_abstract,exclude,E3,Comprehensive survey of autonomous mission planning and management for AUVs and UAVs.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/mcs.2020.3019151,5,title_abstract,exclude,E4,"Trust and workload measured in human-subject experiments, but interaction is with one decision-aid system.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/plans46316.2020.9109938,5,title_abstract,exclude,E1,Proposal for LEO satellite navigation service; not about human supervision of automation.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2005.08120,5,title_abstract,exclude,E4,"SA and cognitive load measured in teleoperated assembly, but one rover and arm operated directly.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2005.04439,5,title_abstract,exclude,E2,"Failure-mode explanation algorithm for handover; human-subject studies only proposed, nothing measured yet.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2005.02432,5,title_abstract,exclude,E2,"UAV radio map estimation and route planning; estimation accuracy only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2004.13997,5,title_abstract,exclude,E2,Reconfigurable heterogeneous swarm computing architecture; no human study or human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1145/3342102,5,title_abstract,exclude,E2,"Commentary on automation levels, liability and driver attention; argument only, no measured human outcome.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2001.06347,5,title_abstract,exclude,E2,Autonomous tethered aerial visual assistant design and autonomy evaluation; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:2001.04509,5,title_abstract,exclude,E4,"Takeover time and quality measured with 32 participants, but single conditionally automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1910.14275,5,title_abstract,exclude,E2,Collision-tolerant blimp platform design for subterranean search; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1910.04323,5,title_abstract,exclude,E2,Gradual takeover control strategy with MPC and simulation; no human participants or human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1908.00981,5,title_abstract,exclude,E2,Traffic simulation of situation-aware automated vehicle control; no human participants measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1906.08716,5,title_abstract,exclude,E2,"CNN aerial image classification for disaster response; classification accuracy only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/icac.2016.43,5,title_abstract,exclude,E2,"Multi-agent reinforcement learning for disaster 3D mapping; mapping evaluation only, no human outcome.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1904.00078,5,title_abstract,exclude,E2,Autonomous tethered UAV visual assistant for teleoperation; no human participants or measures reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-319-08234-9_274-1,5,title_abstract,exclude,E3,Overview chapter on augmented reality potential in intelligent transportation systems; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1806.02989,5,title_abstract,exclude,E1,"Robotic telescope for distance science teaching; educational acceptance, not supervision of automation.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1803.02100,5,title_abstract,exclude,E2,ORCA Hub project vision for offshore robot teams and transparency; no human study reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2514/1.a34106,5,title_abstract,exclude,E1,Optical identification beacon for satellites; unrelated to human supervision of automation.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1708.04935,5,title_abstract,exclude,E1,Random matrix theory analysis of smart grid measurement data; no human-automation interaction content.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1611.05842,5,title_abstract,exclude,E3,Survey of electro-optical video processing for maritime object detection and tracking.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1607.08665,5,title_abstract,exclude,E2,"Learned failure prediction for vision systems; machine introspection only, no human measure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1604.07898,5,title_abstract,exclude,E2,Hierarchical AUV mission planning framework evaluated in simulation; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+arxiv:1604.07002,5,title_abstract,exclude,E2,Evolutionary path planning for AUV rendezvous; simulation study with no human measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.7328058,5,title_abstract,exclude,E2,Legal analysis of reduced human oversight in maritime autonomy; no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7225281681,5,title_abstract,exclude,E3,"Review synthesizing seven studies on transparency, trust, workload and SA in swarm operations.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7167292136,5,title_abstract,exclude,E4,"Workload, gaze and takeover performance measured, but setting is a single autonomous vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17210/jhsk.2019.05.14.2.21,5,title_abstract,exclude,E7,Abstract written in Korean; record not in English.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7302/25612,5,title_abstract,exclude,E4,"Trust and SA methods for human-robot teams, but no indication the human supervises multiple robots.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-031-10784-9_17,5,title_abstract,exclude,E4,"Risk communication and trust in semi-autonomous driving; single vehicle, not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5100/jje.61.3e01-01,5,title_abstract,exclude,E4,"Takeover time, glances and workload measured with 20 participants, but one autonomous vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.63620/mkjavdim.2026.1017,5,title_abstract,exclude,E2,"Computational model with 24 synthetic operator profiles; simulation-only operator behaviour, no real people.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.31234/osf.io/ukwrh_v2,5,title_abstract,include,,"95 participants monitoring multiple AUVs; trust, attention, situation awareness and response measures reported.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/b978-0-12-800057-1.00008-0,5,title_abstract,exclude,E3,"Handbook chapter on process control, operator situation awareness and alarm management; no study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5143/jesk.2019.38.2.61,5,title_abstract,exclude,E4,"Simulator study measures driver workload during takeover, but setting is one driver in one automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.4186593,5,title_abstract,exclude,E4,"Takeover performance and trust under alcohol concerns a single automated vehicle, not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5143/jesk.2020.39.3.169,5,title_abstract,exclude,E4,Workload measures across takeover lead times in one conditionally automated vehicle; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.7342110,5,title_abstract,exclude,E3,"Discussion article on maritime remote operations, situation awareness and training; no empirical human study reported.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1145/3366550.3372258,5,title_abstract,exclude,E4,"Interface acceptance tests with drivers in a simulator; single semi-autonomous vehicle, not multiple agents.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1177/1071181319631523,5,title_abstract,exclude,E4,Takeover lead time effect on driver workload in one automated vehicle; single-agent supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.ress.2026.113198,5,title_abstract,exclude,E4,Explainable framework for situation awareness in driving takeovers; setting is a single automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2571983325,5,title_abstract,exclude,E2,Presentation outlining future human-automation-robotics integration challenges; nothing measured about the person.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5422077,5,title_abstract,include,,"Remote safety operator display interface evaluated by takeover performance; remote operations supervision of automated vehicles. Thin abstract, plausible include.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.6749323,5,title_abstract,exclude,E1,Function-based taxonomy for healthcare robotics; off-topic for human supervisory takeover of automation.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781003679479-9,5,title_abstract,exclude,E3,Book chapter summarising existing models of human supervisory control; review with no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5027725,5,title_abstract,exclude,E3,Bibliometric review of trust factors in autonomous driving takeover behaviour.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2763009708,5,title_abstract,exclude,E2,Functional architecture and design requirements for trust in one unmanned aerial system; no human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7111544133,5,title_abstract,exclude,E7,Abstract in Swedish; record not in English.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.22215/etd/2025-16864,5,title_abstract,exclude,E4,"Trust, attentional capacity and situation awareness measured in drivers of one semi-autonomous vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3126468987,5,title_abstract,exclude,E2,Thesis develops blended shared control methods for machines; no measured human outcome reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781003679479-11,5,title_abstract,exclude,E3,Book chapter presenting a conceptual model of human supervisory control; no empirical human data.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.31390/gradschool_theses.5590,5,title_abstract,exclude,E4,Workload measured while participants supervised one collaborative robot; single automated agent.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1353/asa.2019.0022,5,title_abstract,exclude,E1,"Cultural essay on automation, algorithms and identity; off-topic for supervisory takeover of automation.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1177/10711813261485929,5,title_abstract,exclude,E4,Trust and time in manual versus automated driving measured for one conditionally automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.36227/techrxiv.173933240.06072066/v1,5,title_abstract,exclude,E2,"Proposes a personalised takeover framework for automated vehicles; conceptual, with no human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2747803258,5,title_abstract,exclude,E2,Design guidelines and interface prototype for one semi-autonomous cargo vessel; no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.4129030,5,title_abstract,exclude,E2,Computational model of driver perceived risk; modelling work with no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7204611017,5,title_abstract,exclude,E4,"Shared situation awareness measured, but participants remotely supervised one FarmBot platform; single automated agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.6179620,5,title_abstract,exclude,E4,Comparison of takeover request modalities for elderly drivers of a single automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.54097/tr5g0e77,5,title_abstract,exclude,E4,Questionnaire study of cognitive factors in driver takeover; single automated vehicle setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.22742317,5,title_abstract,exclude,E4,Trust and situation awareness measured with HUD transparency levels for one automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17605/osf.io/5hw6e,5,title_abstract,exclude,E3,Registration of a systematic review of robotic systems in wildfire response.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1177/1064804617697283,5,title_abstract,exclude,E3,Short commentary on making human-automation interaction safer in self-driving cars; no study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-319-59719-5_7,5,title_abstract,exclude,E3,Chapter reviewing research considerations and evaluation tools for unmanned systems; no human study reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1299/jsmermd.2017.2a1-e11,5,title_abstract,exclude,E4,Workload and usability measured for control-authority allocation on one disaster response robot.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2974309314,5,title_abstract,exclude,E2,Design and implementation of haptic feedback for UGV teleoperation; no measured human outcome reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1088/1742-6596/3299/1/012010,5,title_abstract,exclude,E4,NASA-TLX measured with eight seafarers teleoperating one research vessel; single-agent remote control.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.25675/3.025654,5,title_abstract,exclude,E2,"Acceptance and trust survey of prospective passengers of air vehicles; attitudes, not supervisory performance.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-031-10784-9_14,5,title_abstract,exclude,E2,"Attitudinal study of conditions to trust an autonomous shuttle service; passengers, no supervisory measures.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5100/jje.61.2d07-02,5,title_abstract,exclude,E4,NASA-TLX workload during non-driving tasks in one automated vehicle; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5143/jesk.2020.39.3.179,5,title_abstract,exclude,E4,Information level effects on takeover performance and workload in one conditionally automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2572738498,5,title_abstract,exclude,E2,Overview of challenges for human-automation-robot integration in NASA missions; nothing measured about the person.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.23977/ftte.2025.050102,5,title_abstract,exclude,E2,Questionnaire-based structural model of general trust attitudes toward semi-autonomous vehicle technology.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5011629,5,title_abstract,exclude,E4,"Speaking to automation and situation awareness; setting is interaction with one automated system, not multiple agents.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3384/9789179294908,5,title_abstract,include,,Visual analytics interfaces evaluated with air traffic controllers supervising many aircraft; control room multi-agent supervision with performance measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4271/12-06-03-0023,5,title_abstract,exclude,E4,Simulator experiment with eighteen participants cooperating with one automated driving system; single agent.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2312/egve.20251351,5,title_abstract,exclude,E4,Trust and situation awareness measured for AR visualisations inside one autonomous vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781003050841-23,5,title_abstract,exclude,E4,"Workload, trust and usability measured for customisable takeover HMI in one automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5098488,5,title_abstract,exclude,E2,"Conceptual treatment of human-automation redundancy, overreliance and shirking; no measured human outcome.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1609/aimag.v40i3.2865,5,title_abstract,exclude,E3,Magazine article reviewing context-driven AI research for human-robot teaming; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.13140/rg.2.2.18975.23209,5,title_abstract,exclude,E2,Concept paper proposing operator support functions for shore control centres; no human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.31274/etd-180810-5470,5,title_abstract,exclude,E4,"Workload, performance and arousal measured in human-computer and single-robot interaction; not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5360435,5,title_abstract,exclude,E2,Identifies and evaluates influence factors for human-automation teaming; sociotechnical analysis without measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7302/23549,5,title_abstract,exclude,E4,Situation awareness prediction and explanations for one automated vehicle's driver and surrounding road users.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.54941/ahfe1004514,5,title_abstract,exclude,E2,Demonstration and experiment proposal for situation awareness training; no results measured on people.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.21236/ada616862,5,title_abstract,exclude,E4,"Situation awareness, trust and workload measured while monitoring one autonomous squad member vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781003050841-8,5,title_abstract,exclude,E4,Workload and usability measured for situation awareness feedback during transfer of control in one vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2945925115,5,title_abstract,exclude,E4,Situation awareness and mental workload measured for a tractor-air seeder interface; one machine with subsystems.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3384/9789180753371,5,title_abstract,exclude,E2,Dissertation develops flexible automation design concepts for air traffic control; no measured human outcome reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3207097297,5,title_abstract,exclude,E2,Theoretical framework for designing and training trust in advanced air mobility; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4271/2024-01-3961,5,title_abstract,exclude,E4,"SAGAT, SART and NASA-TLX measured across partial autonomy levels in one vehicle; single agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2514/6.2015-3033,5,title_abstract,exclude,E2,Describes natural language interface efforts for operators teaming with vehicle fleets; no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3850/978-981-18-8071-1_p203-cd,5,title_abstract,exclude,E2,Concept paper on alarm and hand-over design for remote operators of several ships; no human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.32657/10356/152630,5,title_abstract,exclude,E4,Framework and interaction design for one telepresence robot; single-agent teleoperation setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1186/s41072-018-0028-z,5,title_abstract,exclude,E4,"Workload and EDA measured in bridge pilotage teams, but setting is one vessel crew, not supervision of multiple automated agents.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7302/21951,5,title_abstract,exclude,E4,"Physiological prediction of takeover performance measured, but driver supervises a single Level 3 vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W1820319065,5,title_abstract,include,,"Operator trust, workload and performance measured in multi-robot management under varying agent transparency.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9780429459542-7,5,title_abstract,exclude,E3,Book chapter reviewing human-factors frameworks and methods for human-co-robot teams; no empirical human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.18130/366a-4a44,5,title_abstract,exclude,E2,Portfolio of NLP prototype and cultural analysis of AV advertising; nothing measured about a supervising person.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.6519519,5,title_abstract,exclude,E4,Human-centered validation of takeover prediction for an automated heavy goods vehicle; single-vehicle setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.31235/osf.io/p7gxd_v1,5,title_abstract,exclude,E2,"Survey and interviews on beliefs, agency attribution and machine-care practices; attitudes only, no supervisory performance measured.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4119/unibi/2953489,5,title_abstract,exclude,E4,"Trust, workload and performance with a robot co-worker or algorithmic supervisor; single agent, partly meta-analytic.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2884475261,5,title_abstract,exclude,E4,"Physiological operator-state estimation measured, but mission involves one ground robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.1491542,5,title_abstract,exclude,E4,Driver de-skilling studied with online study and pilot interviews; single semi-automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1115/1.2017-jun-5,5,title_abstract,exclude,E2,Conceptual article on gray-box transparency and the SAT model; no human data collected.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.22215/etd/2023-15513,5,title_abstract,exclude,E4,"Takeover performance, situation awareness and workload measured, but single automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7142568766,5,title_abstract,exclude,E4,Usability and situation awareness measured for remote supervision of one autonomous sprayer; single-machine setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3233/nicsp260006,5,title_abstract,exclude,E3,Synthesis of human-factors mechanisms and design guidelines for remote vessel supervision; review with illustrative design cases.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.3718020,5,title_abstract,exclude,E4,Acceptance study with physiological responses to proximity of one industrial robot; no multi-agent supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1177/10711813261485891,5,title_abstract,exclude,E3,Review of human-factors challenges for autonomous nuclear operations; no human data.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1177/2327857915041036,5,title_abstract,exclude,E3,Literature review proposing a conceptual trust-repair framework for health-care automation.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/conf.fnhum.2018.227.00012,5,title_abstract,exclude,E4,Crew performance quantification in human-robotic operations under time delay; single robotic asset.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7137452929,5,title_abstract,exclude,E4,"Warning modality effects on operator awareness measured, but remote supervision of one agricultural machine.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.25236/ajets.2025.080409,5,title_abstract,exclude,E4,"Takeover time, workload and awareness measured in simulator and road tests of a single automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.21203/rs.3.rs-10162072/v1,5,title_abstract,exclude,E2,Legal tort liability framework for control transfer; nothing measured about the operator.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5282/edoc.26920,5,title_abstract,exclude,E4,Driver studies on smart-infrastructure interfaces and explanations; driver supervises one automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7302/25501,5,title_abstract,exclude,E4,"Astronaut takeover decision-making measured, but one spacecraft with automated rendezvous subsystems is single-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2947414086,5,title_abstract,include,,Trust measured across single- versus four-agent home automation with separately automated room components.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.21203/rs.3.rs-10484850/v1,5,title_abstract,exclude,E4,"NASA-TLX and task success measured for VR teleoperation, but operators control one manipulator at a time.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.58940/2329-258x.2208,5,title_abstract,exclude,E4,"Trust and situation awareness measured in air-taxi passengers, who are carried rather than supervising automation.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4043/36918-ms,5,title_abstract,exclude,E3,Abbreviated literature review of human factors for offshore small modular reactors.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2913321670,5,title_abstract,exclude,E4,Longitudinal simulator study of behavioural adaptation to lane keeping; single vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7169745842,5,title_abstract,exclude,E3,PRISMA systematic review of workload effects on worker health.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.26102/2310-6018/2021.34.3.027,5,title_abstract,exclude,E7,Record text is Russian; proposes HMI quality criteria for heterogeneous agricultural robot groups.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2618554272,5,title_abstract,exclude,E4,Survey and study of Tesla drivers and AR head-up displays; driver supervises one vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.65542/djei.v1i1.8,5,title_abstract,exclude,E3,Review synthesising VR studies of takeover training and automated-vehicle human-machine interaction.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5937114,5,title_abstract,exclude,E4,Predictive modelling of user perceptions of alerts in a conditional automated vehicle; single-vehicle setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5465/ambpp.2021.13662abstract,5,title_abstract,include,,Error rates of rail operators using autonomous decision systems analysed across a network-wide operational dataset.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17760/d20292404,5,title_abstract,exclude,E4,"Gaze, workload and awareness measured with one humanoid robot and one driver-vehicle setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7222370788,5,title_abstract,exclude,E3,Conceptual integrative review building a multistage human-AI trust framework for military systems.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17077/etd.t8oc-qav3,5,title_abstract,exclude,E4,"Driver hazard perception, mental models and trust in automation studied in single-vehicle driving.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1177/1541931218621028,5,title_abstract,exclude,E4,Human dyads simulate an operator and one robot teammate; single supervised agent.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.6353198,5,title_abstract,exclude,E2,Behavioural governance framework for autonomous decision systems in private equity; no human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.25777/e3ce-8x78,5,title_abstract,exclude,E4,"Trust learning, decline and repair measured over seven drives, but single automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1093/sleep/zsz067.192,5,title_abstract,exclude,E4,Sleepiness and eye movements measured while supervising one automated vehicle.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.21236/ad1215148,5,title_abstract,exclude,E3,Report reviewing prior research on supervision of multiple unmanned vehicles; no new human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/conf.fnhum.2018.227.00092,5,title_abstract,exclude,E4,Trust and physiological measures collected during on-road automated driving; single vehicle supervised.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17605/osf.io/jrq83,5,title_abstract,exclude,E4,"Survey dataset on trust, perceived safety and takeover intention for one automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.mlwa.2024.100599,5,title_abstract,exclude,E4,Working memory load and moral choices measured in AV dilemma scenarios; participants supervise nothing.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7203591346,5,title_abstract,exclude,E4,"Cognitive ergonomic outcomes rated for cobot communication concepts, but one collaborative robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5261455,5,title_abstract,exclude,E4,Biometric human-factors modelling of accident risk in autonomous driving; single-vehicle driver setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.51483/ijaiml.6.9s.2026.1487-1499,5,title_abstract,exclude,E2,Proposes a tiered bounded-autonomy remediation framework; no measurement of the human operator.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.6084/m9.figshare.34867470,5,title_abstract,exclude,E4,"Response time, NASA-TLX and SART measured for remote takeover of a single autonomous forklift.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3125741841,5,title_abstract,exclude,E2,Technical and legal analysis of autonomy thresholds for military robots; no human outcome measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/fpsyg.2026.1917625,5,title_abstract,exclude,E4,"Certainty ratings from automated-vehicle passengers, who neither command nor take over the automation.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1016/j.juro.2017.02.1614,5,title_abstract,exclude,E4,Surgeon EEG stress measured during robot-assisted surgery with one teleoperated console.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7451/cbe.2025.67.2.1,5,title_abstract,exclude,E4,Warning modality effects on situation awareness measured for remote supervision of one autonomous sprayer.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/frobt.2025.1766766,5,title_abstract,exclude,E3,Journal editorial reviewing contributions on embodied intelligence and social cognition.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.21203/rs.3.rs-9752188/v1,5,title_abstract,exclude,E2,Scenario-coded safety requirements engineering for maritime autonomy; nothing measured about operators.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.19427861,5,title_abstract,exclude,E3,Bibliometric analysis dataset of connected and autonomous vehicle safety literature.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.54941/ahfe1006747,5,title_abstract,exclude,E2,Human readiness level assessment of a ferry and remote operations centre; notes absent human performance measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4121/b61ddc8f-0c07-44b5-b570-6208edc2f4cb,5,title_abstract,exclude,E4,Supplementary data on passenger certainty ratings; passengers do not supervise or take over.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2514/6.2015-3036,5,title_abstract,exclude,E3,State-of-the-art survey of transportation automation and human-machine system safety functions.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.19377478,5,title_abstract,exclude,E2,Self-constructing governance architecture technical report; no human participants or measures.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.6333560,5,title_abstract,exclude,E4,"Driver interacting with one in-vehicle LLM agent; single-agent automated driving setting, not fleet or multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.37766/inplasy2023.12.0100,5,title_abstract,exclude,E3,Scoping review protocol on trust in human-autonomy teaming; no primary human data collected.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7165824440,5,title_abstract,exclude,E7,Swedish-language thesis on accounting assistants and robotic process automation; not in English.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4121/b61ddc8f-0c07-44b5-b570-6208edc2f4cb.v1,5,title_abstract,exclude,E4,"Passengers rating certainty about one automated vehicle; affected riders, not supervisors of multiple agents.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2523793947,5,title_abstract,exclude,E4,"Measures SA, trust, workload well, but operators work with a single search-and-rescue robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.23387309,5,title_abstract,exclude,E1,Defense budget and infrastructure autonomy policy paper; off-topic for human-automation supervision pillar.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781003215349-4,5,title_abstract,exclude,E3,Book chapter reviewing agent transparency frameworks and findings; review rather than primary human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.21101598,5,title_abstract,exclude,E2,Project deliverable presenting human factors analysis and participatory design toolkit; no measured human outcome study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5824/ajite.2026.03.001.x,5,title_abstract,exclude,E3,"Conceptual review of AI-assisted VFX compositing; taxonomy only, no human participants.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7205475002,5,title_abstract,exclude,E7,Turkish-language version of the VFX compositing conceptual review; not in English.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/s42454-024-00051-x,5,title_abstract,include,,"Simulator study, fifteen remote operators supervising ten automated trucks; situation awareness, trust, out-of-the-loop findings reported.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5824/1309-1581,5,title_abstract,exclude,E3,Journal-level record of the conceptual VFX compositing review; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7112942876,5,title_abstract,exclude,E4,"Operator trust, workload and SA modelled from sensor data, but one adaptive autonomous system supervised.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2990864214,5,title_abstract,exclude,E4,Pilot-in-the-loop haptic assist evaluation for teleoperating a single UAV; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.63125/gr54qy93,5,title_abstract,include,,"188 control room operators across SCADA, DCS and PLC plants; NASA-TLX, situation awareness and performance measured.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5455/jjcit.71-1510942341,5,title_abstract,exclude,E2,Design and implementation of VR head-mounted display for one rescue rover; no human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7302/dspace/29797,5,title_abstract,exclude,E4,Trajectory generation for a single robotic inspector supporting one operator; single-agent supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781315576138,5,title_abstract,exclude,E3,"Edited book on decision making in complex environments; collected review chapters, no single human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2989140228,5,title_abstract,include,,"Human-in-the-loop experiment, eight controllers monitoring automated air traffic control; workload and takeover performance after automation failure.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.21245129,5,title_abstract,exclude,E2,Conceptual essay on mixed human-machine care teams and oversight; no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781003380887-2,5,title_abstract,exclude,E3,Chapter summarising mining automation benefits and credible failure modes; no primary human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1299/jsmemecj.2017.k18200,5,title_abstract,exclude,E3,Review talk on human factors of automated driving levels; no empirical human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1002/sst3.70055,5,title_abstract,exclude,E2,"Cross-sectional perception survey of mining workers' views on automation; attitudinal only, no measured human performance.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.31979/mti.2022.2164,5,title_abstract,exclude,E4,"Takeover performance with tactile displays measured, but setting is one semi-automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.82901/nemar.on004844.v1.0.0,5,title_abstract,exclude,E4,"Neuroimaging trust dataset from simulated semi-automated driving; single leader-follower vehicle, not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7208100169,5,title_abstract,exclude,E4,Adaptive multimodal takeover interface for a single automated vehicle driver; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.20044258,5,title_abstract,exclude,E1,AI innovation and regulation governance analysis; off-topic for supervisory human-automation interaction.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3004619591,5,title_abstract,exclude,E2,Position paper announcing a research programme on automation as teammate; no results or measures reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1201/9781003401353-13,5,title_abstract,exclude,E3,"Chapter reviewing aviation surprise, startle and training via an accident case study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2118/204114-ms,5,title_abstract,exclude,E2,Technical approach to safe mode handover in drilling automation; no human participants measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1109/ichms56717.2022.9980710,5,title_abstract,exclude,E1,Conference cover page and front matter; not a research record.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2795562559,5,title_abstract,exclude,E2,Conceptual paper on maritime autonomy paradigm choices and human factors challenges; no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1136/bmjqs-2017-006907,5,title_abstract,exclude,E3,Editorial commentary on intraoperative non-technical skills in robotic surgery; no primary data.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.25777/6j2b-5178,5,title_abstract,exclude,E4,"Workload and SA measured during teleoperation, but operators control one search robot.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.54554/jmet.2025.17.01.005,5,title_abstract,exclude,E4,"Passengers' motion sickness and SA in one automated vehicle; riders, not multi-agent supervisors.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.7336001,5,title_abstract,exclude,E2,"Evaluation of agentic AI autonomy, robustness and governance; nothing measured about human operators.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.7534219,5,title_abstract,exclude,E2,Explainable AI control architecture for safety-critical systems; no human study or measured outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.4119548,5,title_abstract,exclude,E2,"Cross-country behavioural intention and acceptance survey about automated driving; attitudes only, no human performance.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.54941/ahfe1005677,5,title_abstract,exclude,E2,Augmented reality transparency concept for intelligent agent systems; design concept with no human evaluation.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2172/3012259,5,title_abstract,exclude,E3,Landscape analysis report reviewing published advanced reactor autonomy concepts; no human participants measured.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.20739646,5,title_abstract,exclude,E2,"Working paper theorising operator judgment and constraint migration; conceptual framework, no human measurement.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.7496118,5,title_abstract,exclude,E1,Formal systems theory of open complex giant systems; off-topic for this pillar.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.20455040,5,title_abstract,exclude,E2,"Formal reformulation of Asimovian constraints with theorems and proofs; formal work, no humans.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4324/9781003111320-2,5,title_abstract,exclude,E1,Discursive chapter on immersive communication and public relations; off-topic for supervisory takeover.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.6084/m9.figshare.32957111,5,title_abstract,exclude,E3,PRISMA systematic review of 120 studies on hybrid human-agentic AI human factors.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.20578272,5,title_abstract,exclude,E2,Conceptual paper defining harness alignment and drift for LLM agents; no human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.5957275,5,title_abstract,include,,Manned-unmanned teaming interface with stakeholder decisions and user experience; thin abstract but plausible multi-agent human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.13140/rg.2.2.17452.28809,5,title_abstract,exclude,E2,Licentiate thesis exploring maritime automation sociotechnical impacts conceptually; no measured human outcome reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.26077/0dmx-af91,5,title_abstract,exclude,E2,Automated anomaly response engineering for a satellite constellation; nothing measured about human operators.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5445/ir/1000193457,5,title_abstract,exclude,E3,Position review of teleoperation network and human factors bottlenecks; no primary human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W4310653650,5,title_abstract,exclude,E4,"Physiological and SA measures in a user study, but operator manages one highly automated UAV.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4995/dataset/10251/225573,5,title_abstract,exclude,E4,Driving simulator validation dataset for takeover and workload; single automated vehicle setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3011231897,5,title_abstract,exclude,E2,"Proposes characterisation scheme for ship autonomy levels; conceptual classification, no human measurement.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W4367061183,5,title_abstract,exclude,E4,Duplicate UCAV decision-making study; human measures present but single highly automated vehicle supervised.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.20613913,5,title_abstract,exclude,E2,"Practitioner note offering four reflective questions on human-AI performance; framework only, no measurement.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2591062233,5,title_abstract,exclude,E2,Formal specification runtime monitor to enhance UAV awareness; verification work with no human study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-031-19149-7_1,5,title_abstract,exclude,E1,AI and sentencing from a human rights perspective; off-topic for operator supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1249/01.mss.0001061228.31024.8c,5,title_abstract,exclude,E4,"Takeover timeliness, workload and eye tracking after mild traumatic brain injury; single automated vehicle.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.14989/doctor.k18689,5,title_abstract,exclude,E4,"Empirical driver interaction analyses with advanced driver assistance systems; single-vehicle, single-agent setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.24023916,5,title_abstract,exclude,E1,Systems-science law of causal residual for feedback attribution; off-topic for human-automation supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.6334958,5,title_abstract,exclude,E2,Proposed ethics protocol and accountability architecture for military AI; no human participants or measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5703/1288284318713,5,title_abstract,exclude,E3,"Literature review plus racetrack anecdotes on high-speed AV challenges and HMI; review, not primary human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1007/978-3-658-45196-7_9,5,title_abstract,exclude,E2,Technical map-confidence strategies triggering takeover requests; no human study or measured operator outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.20780405,5,title_abstract,exclude,E2,"Design discipline, patterns and framework for workstream continuity; conceptual design bible with no human study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2517831966,5,title_abstract,exclude,E7,Article written in German on psychological questions of automated driving; not in English.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.6130946,5,title_abstract,exclude,E2,Governance paper on human-in-command oversight of agentic customer service AI; no measured human outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.22691548,5,title_abstract,exclude,E1,Enterprise capital productivity and systems-science formalism; unrelated to human supervision of automation.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.7557899,5,title_abstract,exclude,E1,Essay on complexity science as science of sciences; off-topic for human-automation interaction.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7113672222,5,title_abstract,exclude,E4,"Measures crew trust, workload, situation awareness, but setting is one spacecraft crew, not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7163300260,5,title_abstract,exclude,E4,"Measures teamwork, situation awareness and NASA-TLX in medical training; crews manage emergency, not multiple automated agents.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.18526175,5,title_abstract,exclude,E4,"Human-AI collaborative framework for driver takeover; single vehicle and driver, not multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2322/jjsass.72.196,5,title_abstract,exclude,E4,Display format evaluation for situation awareness and workload on one regional jet flight deck; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1177/1541931213601030,5,title_abstract,include,,Eighteen participants supervised two helicopters and three UAVs; input methods compared on monitoring performance and workload.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3009268720,5,title_abstract,exclude,E2,Discussion thesis on out-of-the-loop issues in Industry 4.0; no measured human outcome reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.7302/7332,5,title_abstract,exclude,E4,"Occupants of buildings and vehicles are affected, not supervising automation; comfort and energy focus.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/conf.fnhum.2018.227.00042,5,title_abstract,exclude,E4,"Mind wandering and vigilance in automation monitoring, but single supervised system, not multi-agent or fleet.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17605/osf.io/73h4n,5,title_abstract,exclude,E3,"Rapid review of factors influencing human-autonomy team performance; secondary synthesis, not primary study.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.7441503,5,title_abstract,exclude,E2,Prospective dispatch protocol for personal digital twins; protocol proposal with no human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3384/lic-diva-162132,5,title_abstract,exclude,E1,Data-driven vehicle health estimation for mining machines; no human supervisor dimension at all.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.20861927,5,title_abstract,exclude,E2,Explicitly a conceptual signal grammar and interface pattern with no empirical evaluation of people.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17605/osf.io/4cgma,5,title_abstract,exclude,E3,"Systematic review protocol on pedestrian-AV communication; review, and pedestrians are bystanders not supervisors.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7220821477,5,title_abstract,exclude,E1,University research newsletter listing unrelated announcements; not a study of human-automation interaction.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1360/csb-2025-5793,5,title_abstract,exclude,E1,Multi-agent LLM systems for energy materials discovery; no human supervisor outcome or oversight focus.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3191962646,5,title_abstract,exclude,E4,"Measures situation awareness and mental workload, but operators use one tractor air seeder; single-agent setting.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5270/esa-gnc-icatt-2023-071,5,title_abstract,exclude,E1,Guidance and control flight test campaign for a re-entry parafoil; no human factors content.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W3100506659,5,title_abstract,exclude,E4,"Human factors studies of head-up displays for individual drivers; single vehicle, not fleet supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.4233/uuid:c290585a-8e2d-448a-9b31-52540877195e,5,title_abstract,exclude,E1,Radar sensor management algorithms for tracking; no human participants or operator measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1115/1.4054673,5,title_abstract,exclude,E3,Special section editorial summarising contributed papers on human-AI partnership; not a primary study.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.13272/j.issn.1671-251x.17988,5,title_abstract,exclude,E2,Conceptual HCPS theory and technology path for intelligent coal mines; no human study or measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.52202/078372-0013,5,title_abstract,exclude,E2,On-board satellite anomaly detection to offload operators; no human participants or measured outcome.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2478/ijmbr-2024-0002,5,title_abstract,exclude,E1,Book review about AI in the music business; unrelated to supervisory control of automation.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.54941/ahfe1003971,5,title_abstract,exclude,E2,Proposes digital twin and sensor box framework for decision support; no human study results reported.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5281/zenodo.21864624,5,title_abstract,exclude,E2,"Comparative case study of agent incidents and oversight placement; documents incidents, measures nothing about people.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/conf.fnhum.2018.227.00056,5,title_abstract,exclude,E4,"EEG and physiological prediction of driver response latency; single partially automated vehicle, not multi-agent.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.17605/osf.io/n4usx,5,title_abstract,exclude,E4,Human-AI joint action study of co-representation and agency with one artificial partner; single-agent setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7155465195,5,title_abstract,exclude,E4,"Vigilance decrement studies in healthcare and a driving simulator; single task or vehicle, not fleet supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5858/arpa.2019-0229-ed,5,title_abstract,exclude,E1,Editorial on regulating AI in pathology practice; no supervisory takeover focus or human measurement.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2139/ssrn.7391298,5,title_abstract,exclude,E1,"Legal analysis of AI-empowered one-person companies; corporate law, not human supervision of automation.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2966288470,5,title_abstract,exclude,E4,Gaze-based situation awareness measurement in one instrumented self-driving car; single-agent driving setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.2514/1.i010493,5,title_abstract,exclude,E2,"Algorithmic hidden Markov inference for detecting mode confusion; computational method, no measured human outcome.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/conf.fnhum.2018.227.00115,5,title_abstract,exclude,E4,Passive BCI study of sustained attention during system monitoring; no multi-agent or fleet supervision setting.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W2769581765,5,title_abstract,exclude,E1,Study of offshore outsourcing in asset servicing industry; unrelated to automation supervision.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.3389/conf.fnhum.2018.227.00067,5,title_abstract,exclude,E4,"Classifies attentional state from fNIRS features in people, but no multi-agent supervision setting described.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+openalex:W7137517280,5,title_abstract,exclude,E4,"Driver hazard and state detection system for one vehicle; single-agent, not fleet or multi-agent supervision.",,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1089/cyber.2020.29188.bkw,5,title_abstract,exclude,E1,Editorial on videoconference fatigue during the pandemic; unrelated to supervision of automated agents.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1215/08879982-4252947,5,title_abstract,exclude,E1,Essay on ecological civilization and global system failure; off-topic for this pillar.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1111/1467-8675.12686,5,title_abstract,exclude,E1,Philosophical critique of the Anthropocene and innovation; unrelated to human-automation interaction.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.14321/rhetpublaffa.25.3.0167,5,title_abstract,exclude,E1,Political theory essay on concepts of freedom and democracy; entirely off-topic.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.5406/24736031.51.2.01,5,title_abstract,exclude,E1,Religious history article on the RLDS Church; entirely off-topic for the pillar.,,,2026-11-14,ta-screen-v4+p5-scope+multi3,run 2026-11-14_p5; arXiv;OpenAlex
+doi:10.1145/3830398.3830597,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3830398.3830597,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.20965/jrm.2025.p0927,5,title_abstract,exclude,E5,duplicate of doi:10.20965/jrm.2025.p0927,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2602.08882,5,title_abstract,exclude,E5,duplicate of arxiv:2602.08882,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2602.04992,5,title_abstract,exclude,E5,duplicate of arxiv:2602.04992,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.oceaneng.2026.124646,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.oceaneng.2026.124646,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2510.21357,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ssrr68451.2025.11391295,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3756884.3766033,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3756884.3766033,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2509.15959,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tits.2026.3724365,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2510.21716,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-981-95-2379-5_29,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2507.17376,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc58881.2025.11342608,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2506.13505,5,title_abstract,exclude,E5,duplicate of doi:10.1049/cps2.70048,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2505.21676,5,title_abstract,exclude,E5,duplicate of arxiv:2505.21676,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2505.13722,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.asr.2025.05.048,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tits.2025.3632788,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tits.2025.3632788,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2502.02308,5,title_abstract,exclude,E5,duplicate of doi:10.1109/case69030.2026.11704142,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2502.00289,5,title_abstract,exclude,E5,duplicate of doi:10.2139/ssrn.5123621,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/lra.2025.3601037,5,title_abstract,exclude,E5,duplicate of doi:10.1109/lra.2025.3601037,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2404.07383,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iv55156.2024.10588812,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2403.19595,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tiv.2024.3440634,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2312.09397,5,title_abstract,exclude,E5,duplicate of doi:10.1109/itsc58415.2024.10919978,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tits.2024.3443927,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tits.2024.3443927,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2311.16841,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.knosys.2024.112402,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2310.05921,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icra57147.2024.10610041,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2308.10340,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-031-64182-4_10,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2305.03252,5,title_abstract,exclude,E5,duplicate of doi:10.1109/mass58611.2023.00077,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ecmr50962.2021.9568840,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ecmr50962.2021.9568840,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.robot.2022.104338,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.robot.2022.104338,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2204.03313,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-031-07472-1_29,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2109.13382,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ecmr50962.2021.9568842,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2109.04837,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10846-022-01592-6,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2107.09992,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3507471,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:2103.14078,5,title_abstract,exclude,E5,duplicate of arxiv:2103.14078,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1017/dsd.2020.157,5,title_abstract,exclude,E5,duplicate of doi:10.1017/dsd.2020.157,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iros45743.2020.9341382,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iros45743.2020.9341382,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+arxiv:1909.07487,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ro-man47096.2020.9223553,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iros40897.2019.8968598,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iros40897.2019.8968598,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1003964,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1003964,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208221077804,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208221077804,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/lra.2021.3062787,5,title_abstract,exclude,E5,duplicate of doi:10.1109/lra.2021.3062787,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.2514/6.2021-1176,5,title_abstract,exclude,E5,duplicate of doi:10.2514/6.2021-1176,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3568294.3580118,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3568294.3580118,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tmrb.2024.3422618,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tmrb.2024.3422618,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-41947-3_14,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-41947-3_14,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208221129371,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208221129371,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ivs.2019.8814045,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ivs.2019.8814045,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2019.2947592,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2019.2947592,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc.2018.00148,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc.2018.00148,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s12555-019-0999-z,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s12555-019-0999-z,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/15553434221136358,5,title_abstract,exclude,E5,duplicate of doi:10.1177/15553434221136358,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/15553434241310084,5,title_abstract,exclude,E5,duplicate of doi:10.1177/15553434241310084,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.cogsys.2017.02.003,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.cogsys.2017.02.003,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.12716/1001.13.01.01,5,title_abstract,exclude,E5,duplicate of doi:10.12716/1001.13.01.01,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/00140139.2018.1441449,5,title_abstract,exclude,E5,duplicate of doi:10.1080/00140139.2018.1441449,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/0018720816681350,5,title_abstract,exclude,E5,duplicate of doi:10.1177/0018720816681350,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ijhcs.2026.103877,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ijhcs.2026.103877,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3239060.3265636,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3239060.3265636,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2019.1634317,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2019.1634317,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/access.2023.3236814,5,title_abstract,exclude,E5,duplicate of doi:10.1109/access.2023.3236814,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icid57362.2022.9969690,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icid57362.2022.9969690,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icdcsw63273.2025.00040,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icdcsw63273.2025.00040,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.oceaneng.2024.117257,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.oceaneng.2024.117257,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10845-023-02138-9,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10845-023-02138-9,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/ijerph19031834,5,title_abstract,exclude,E5,duplicate of doi:10.3390/ijerph19031834,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/00140139.2026.2734921,5,title_abstract,exclude,E5,duplicate of doi:10.1080/00140139.2026.2734921,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-21565-1_11,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-21565-1_11,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iros45743.2020.9341135,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iros45743.2020.9341135,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1186/s41235-021-00271-8,5,title_abstract,exclude,E5,duplicate of doi:10.1186/s41235-021-00271-8,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-981-287-988-2_11,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-981-287-988-2_11,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3395035.3425205,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3395035.3425205,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1729881417710463,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1729881417710463,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181322661250,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181322661250,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/cinti-macro49179.2019.9105300,5,title_abstract,exclude,E5,duplicate of doi:10.1109/cinti-macro49179.2019.9105300,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/app10238751,5,title_abstract,exclude,E5,duplicate of doi:10.3390/app10238751,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3411764.3445351,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3411764.3445351,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-96729-1_19,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-96729-1_19,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/b978-0-12-819472-0.00001-0,5,title_abstract,exclude,E5,duplicate of doi:10.1016/b978-0-12-819472-0.00001-0,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ictis54573.2021.9798633,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ictis54573.2021.9798633,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/1463922x.2017.1315750,5,title_abstract,exclude,E5,duplicate of doi:10.1080/1463922x.2017.1315750,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-12392-3_11,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-12392-3_11,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2024.2350840,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2024.2350840,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-981-95-4972-6_37,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-981-95-4972-6_37,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.12716/1001.15.03.03,5,title_abstract,exclude,E5,duplicate of doi:10.12716/1001.15.03.03,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3242969.3242974,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3242969.3242974,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ismar-adjunct.2018.00104,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ismar-adjunct.2018.00104,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/15553434241240553,5,title_abstract,exclude,E5,duplicate of doi:10.1177/15553434241240553,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-50334-5_3,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-50334-5_3,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ifacol.2024.09.083,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ifacol.2024.09.083,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trf.2024.07.018,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trf.2024.07.018,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1006732,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1006732,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1002/9781119275275.ch9,5,title_abstract,exclude,E5,duplicate of doi:10.1002/9781119275275.ch9,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-981-96-8904-0_17,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-981-96-8904-0_17,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.20965/jrm.2024.p0526,5,title_abstract,exclude,E5,duplicate of doi:10.20965/jrm.2024.p0526,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/access.2024.3428698,5,title_abstract,exclude,E5,duplicate of doi:10.1109/access.2024.3428698,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ergon.2018.12.001,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ergon.2018.12.001,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2026.2706905,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2026.2706905,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-78513-0_6,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-78513-0_6,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208251380522,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208251380522,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/most57249.2023.00022,5,title_abstract,exclude,E5,duplicate of doi:10.1109/most57249.2023.00022,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ichms59971.2024.10555824,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ichms59971.2024.10555824,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tits.2015.2474150,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tits.2015.2474150,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W2588004624,5,title_abstract,exclude,E5,duplicate of scopus:84980018596,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.4271/2025-99-0440,5,title_abstract,exclude,E5,duplicate of doi:10.4271/2025-99-0440,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W3199007885,5,title_abstract,exclude,E5,duplicate of scopus:85118801226,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931215591246,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931215591246,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.6084/m9.figshare.31032362,5,title_abstract,exclude,E5,duplicate of doi:10.1080/15389588.2025.2596847,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1006532,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1006532,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3534609,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3534609,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iv55152.2023.10186725,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iv55152.2023.10186725,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/10711813241261387,5,title_abstract,exclude,E5,duplicate of doi:10.1177/10711813241261387,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3290607.3312817,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3290607.3312817,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2025.3573243,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2025.3573243,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3181671,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3181671,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-92046-7_40,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-92046-7_40,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-94346-6_10,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-94346-6_10,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iwobi47054.2019.9114533,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iwobi47054.2019.9114533,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3173386.3176920,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3173386.3176920,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2022.2081282,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2022.2081282,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208241278433,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208241278433,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-74614-8_37,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-74614-8_37,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3371382.3378207,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3371382.3378207,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/15389588.2023.2300640,5,title_abstract,exclude,E5,duplicate of doi:10.1080/15389588.2023.2300640,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181319631053,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181319631053,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.55041/isjem02420,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ijhcs.2019.05.006,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trf.2022.05.004,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trf.2022.05.004,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icce-asia59966.2023.10326344,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icce-asia59966.2023.10326344,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/buildings16173492,5,title_abstract,exclude,E5,duplicate of doi:10.3390/buildings16173492,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3744333.3747816,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3744333.3747816,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3459086.3459630,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3459086.3459630,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-39952-2_21,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-39952-2_21,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/itsc48978.2021.9565080,5,title_abstract,exclude,E5,duplicate of doi:10.1109/itsc48978.2021.9565080,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/apscon68325.2026.11497843,5,title_abstract,exclude,E5,duplicate of doi:10.1109/apscon68325.2026.11497843,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-90403-0_5,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-90403-0_5,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ictbig68706.2025.11323269,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ictbig68706.2025.11323269,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s00146-024-01895-2,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s00146-024-01895-2,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1038/s41598-026-42814-3,5,title_abstract,exclude,E5,duplicate of doi:10.1038/s41598-026-42814-3,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/lra.2023.3326690,5,title_abstract,exclude,E5,duplicate of doi:10.1109/lra.2023.3326690,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ichms56717.2022.9980783,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ichms56717.2022.9980783,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-58625-0_32,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-58625-0_32,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10846-018-0899-0,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10846-018-0899-0,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-15672-9_6,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-15672-9_6,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1088/1742-6596/3123/1/012040,5,title_abstract,exclude,E5,duplicate of doi:10.1088/1742-6596/3123/1/012040,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181321651020,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181321651020,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3029798.3038431,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3029798.3038431,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.5750/ijme.v167ia1.1313,5,title_abstract,exclude,E5,duplicate of doi:10.5750/ijme.v167ia1.1313,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3577190.3614112,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3577190.3614112,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-79763-8_30,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-79763-8_30,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s12369-021-00757-x,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s12369-021-00757-x,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2026.2724199,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2026.2724199,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/access.2026.3749135,5,title_abstract,exclude,E5,duplicate of doi:10.1109/access.2026.3749135,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-30427-8_3,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-30427-8_3,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.aei.2026.104938,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.aei.2026.104938,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc42975.2020.9283364,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc42975.2020.9283364,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3592801,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3592801,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3758871.3758907,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3758871.3758907,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3568162.3576954,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3568162.3576954,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s00779-020-01438-8,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s00779-020-01438-8,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.17351/ests2019.260,5,title_abstract,exclude,E5,duplicate of paper:elish2019moral,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icuas57906.2023.10156037,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icuas57906.2023.10156037,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ines56734.2022.9922657,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ines56734.2022.9922657,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1115/1.4067705,5,title_abstract,exclude,E5,duplicate of doi:10.1115/1.4067705,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/15553434241296573,5,title_abstract,exclude,E5,duplicate of doi:10.1177/15553434241296573,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1002698,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1002698,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ictis60134.2023.10243785,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ictis60134.2023.10243785,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3349263.3351500,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3349263.3351500,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931213601971,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931213601971,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/humanoids.2015.7363497,5,title_abstract,exclude,E5,duplicate of doi:10.1109/humanoids.2015.7363497,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/app15158250,5,title_abstract,exclude,E5,duplicate of doi:10.3390/app15158250,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/0018720816665201,5,title_abstract,exclude,E5,duplicate of doi:10.1177/0018720816665201,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ichms49158.2020.9209525,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ichms49158.2020.9209525,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10055-025-01263-5,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10055-025-01263-5,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2019.1676519,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2019.1676519,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931215591040,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931215591040,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/00140139.2025.2558703,5,title_abstract,exclude,E5,duplicate of doi:10.1080/00140139.2025.2558703,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2024.2375697,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2024.2375697,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-19374-2_3,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-19374-2_3,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.2514/6.2026-2731,5,title_abstract,exclude,E5,duplicate of doi:10.2514/6.2026-2731,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1017/aer.2018.14,5,title_abstract,exclude,E5,duplicate of doi:10.1017/aer.2018.14,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trf.2024.09.019,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trf.2024.09.019,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1002/9781119636113.ch44,5,title_abstract,exclude,E5,duplicate of doi:10.1002/9781119636113.ch44,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.tust.2026.107771,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.tust.2026.107771,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/0018720814566454,5,title_abstract,exclude,E5,duplicate of doi:10.1177/0018720814566454,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3580585.3607171,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3580585.3607171,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-74608-7_68,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-74608-7_68,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/cogsima.2017.7929593,5,title_abstract,exclude,E5,duplicate of doi:10.1109/cogsima.2017.7929593,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/15553434261477210,5,title_abstract,exclude,E5,duplicate of doi:10.1177/15553434261477210,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3544999.3554973,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3544999.3554973,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s42452-024-06106-7,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s42452-024-06106-7,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3136457.3136471,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3136457.3136471,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s11701-024-01852-7,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s11701-024-01852-7,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10055-026-01334-1,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10055-026-01334-1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/s25216725,5,title_abstract,exclude,E5,duplicate of doi:10.3390/s25216725,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1088/1742-6596/2311/1/012032,5,title_abstract,exclude,E5,duplicate of doi:10.1088/1742-6596/2311/1/012032,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/0018720820966433,5,title_abstract,exclude,E5,duplicate of doi:10.1177/0018720820966433,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-29723-5_10,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-29723-5_10,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc58881.2025.11343435,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc58881.2025.11343435,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-33500-5_16,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-33500-5_16,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1027/2192-0923/a000210,5,title_abstract,exclude,E5,duplicate of doi:10.1027/2192-0923/a000210,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc.2018.00545,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc.2018.00545,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-19374-2_7,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-19374-2_7,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-41959-6_14,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-41959-6_14,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931213601808,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931213601808,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931215591051,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931215591051,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931213601305,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931213601305,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2026.2750679,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2026.2750679,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.autcon.2018.12.012,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.autcon.2018.12.012,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3317956.3318149,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3317956.3318149,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-22649-7_2,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-22649-7_2,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1088/1757-899x/929/1/012008,5,title_abstract,exclude,E5,duplicate of doi:10.1088/1757-899x/929/1/012008,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ergon.2026.104030,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ergon.2026.104030,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/10711813251371650,5,title_abstract,exclude,E5,duplicate of doi:10.1177/10711813251371650,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-64861-9_5,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-64861-9_5,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3371382.3378237,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3371382.3378237,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W2509165375,5,title_abstract,exclude,E5,duplicate of scopus:85013852895,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ojits.2026.3662160,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ojits.2026.3662160,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1017/9781108770880.006,5,title_abstract,exclude,E5,duplicate of doi:10.1017/9781108770880.006,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208241234810,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208241234810,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/frobt.2022.799522,5,title_abstract,exclude,E5,duplicate of doi:10.3389/frobt.2022.799522,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.apergo.2018.02.011,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.apergo.2018.02.011,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tase.2016.2530623,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tase.2016.2530623,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/hri.2019.8673286,5,title_abstract,exclude,E5,duplicate of doi:10.1109/hri.2019.8673286,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-21150-7_13,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-21150-7_13,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3233/faia220640,5,title_abstract,exclude,E5,duplicate of doi:10.3233/faia220640,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2019.2925717,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2019.2925717,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.5281/zenodo.18008907,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3811427.3811435,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3776734.3794416,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3776734.3794416,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1108/ir-08-2024-0358,5,title_abstract,exclude,E5,duplicate of doi:10.1108/ir-08-2024-0358,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc53992.2023.10394254,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc53992.2023.10394254,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-21565-1_32,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-21565-1_32,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/hst53381.2021.9619838,5,title_abstract,exclude,E5,duplicate of doi:10.1109/hst53381.2021.9619838,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10111-024-00756-8,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10111-024-00756-8,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.65109/ahjd3178,5,title_abstract,exclude,E5,duplicate of acm:3635637.3663186,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icas49788.2021.9551163,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icas49788.2021.9551163,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.aap.2023.107372,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.aap.2023.107372,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-49062-1_23,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-49062-1_23,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc.2016.7844677,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc.2016.7844677,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10111-018-0522-y,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10111-018-0522-y,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-96071-5_52,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-96071-5_52,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ro-man60168.2024.10731192,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ro-man60168.2024.10731192,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ihmsc70922.2026.00029,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ihmsc70922.2026.00029,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/2909824.3020243,5,title_abstract,exclude,E5,duplicate of doi:10.1145/2909824.3020243,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-30038-6_10,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-30038-6_10,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/0144929x.2025.2470382,5,title_abstract,exclude,E5,duplicate of doi:10.1080/0144929x.2025.2470382,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-21565-1_1,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-21565-1_1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3610978.3640589,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3610978.3640589,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W2885860886,5,title_abstract,exclude,E5,duplicate of scopus:84987912365,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s00773-024-01043-x,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s00773-024-01043-x,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/fnrgo.2024.1345507,5,title_abstract,exclude,E5,duplicate of doi:10.3389/fnrgo.2024.1345507,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181321651004,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181321651004,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/fpsyg.2023.1129294,5,title_abstract,exclude,E5,duplicate of doi:10.3389/fpsyg.2023.1129294,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/frobt.2022.993997,5,title_abstract,exclude,E5,duplicate of doi:10.3389/frobt.2022.993997,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/oceanse.2017.8084617,5,title_abstract,exclude,E5,duplicate of doi:10.1109/oceanse.2017.8084617,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-981-97-8963-4_12,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-981-97-8963-4_12,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-74614-8_32,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-74614-8_32,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10490-026-10170-5,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10490-026-10170-5,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/aerospace12070626,5,title_abstract,exclude,E5,duplicate of doi:10.3390/aerospace12070626,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2025.2484417,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2025.2484417,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/0018720816634228,5,title_abstract,exclude,E5,duplicate of doi:10.1177/0018720816634228,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s11701-026-04035-8,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s11701-026-04035-8,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icra55743.2025.11128530,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icra55743.2025.11128530,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/access.2018.2790838,5,title_abstract,exclude,E5,duplicate of doi:10.1109/access.2018.2790838,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.aap.2024.107687,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.aap.2024.107687,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/b978-0-443-29246-0.00017-1,5,title_abstract,exclude,E5,duplicate of doi:10.1016/b978-0-443-29246-0.00017-1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.4271/10-10-02-0014,5,title_abstract,exclude,E5,duplicate of doi:10.4271/10-10-02-0014,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/isparo60631.2024.10687418,5,title_abstract,exclude,E5,duplicate of doi:10.1109/isparo60631.2024.10687418,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2026.2693612,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2026.2693612,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/roman.2018.8525639,5,title_abstract,exclude,E5,duplicate of doi:10.1109/roman.2018.8525639,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icra46639.2022.9811721,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icra46639.2022.9811721,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/sieds.2019.8735647,5,title_abstract,exclude,E5,duplicate of doi:10.1109/sieds.2019.8735647,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-49695-1_40,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-49695-1_40,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/lra.2018.2890200,5,title_abstract,exclude,E5,duplicate of doi:10.1109/lra.2018.2890200,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1117/12.2264245,5,title_abstract,exclude,E5,duplicate of doi:10.1117/12.2264245,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/10711813241277522,5,title_abstract,exclude,E5,duplicate of doi:10.1177/10711813241277522,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trf.2026.103569,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trf.2026.103569,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/cts.2016.0071,5,title_abstract,exclude,E5,duplicate of doi:10.1109/cts.2016.0071,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.4218/etrij.2017-0294,5,title_abstract,exclude,E5,duplicate of doi:10.4218/etrij.2017-0294,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3530874,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3530874,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.apergo.2024.104269,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.apergo.2024.104269,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/10711813241261346,5,title_abstract,exclude,E5,duplicate of doi:10.1177/10711813241261346,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931218621397,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931218621397,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3233/faia230086,5,title_abstract,exclude,E5,duplicate of doi:10.3233/faia230086,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1002/9781119527183.ch18,5,title_abstract,exclude,E5,duplicate of doi:10.1002/9781119527183.ch18,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3610661.3620660,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3610661.3620660,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ro-man53752.2022.9900596,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ro-man53752.2022.9900596,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/fnrgo.2023.1171403,5,title_abstract,exclude,E5,duplicate of doi:10.3389/fnrgo.2023.1171403,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2026.2689522,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2026.2689522,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smartworld-uic-atc-scalcom-iop-sci.2019.00247,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smartworld-uic-atc-scalcom-iop-sci.2019.00247,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.aap.2026.108594,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.aap.2026.108594,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icaiic51459.2021.9415260,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icaiic51459.2021.9415260,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-12392-3_17,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-12392-3_17,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.promfg.2015.07.635,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.promfg.2015.07.635,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s12369-021-00834-1,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s12369-021-00834-1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931215591149,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931215591149,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/frobt.2021.620026,5,title_abstract,exclude,E5,duplicate of doi:10.3389/frobt.2021.620026,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-60128-7_16,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-60128-7_16,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iavvc61942.2025.11219526,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iavvc61942.2025.11219526,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/futuretransp6030097,5,title_abstract,exclude,E5,duplicate of doi:10.3390/futuretransp6030097,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s11740-018-0868-2,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s11740-018-0868-2,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-29897-3_19,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-29897-3_19,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.aap.2026.108497,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.aap.2026.108497,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-20373-7_31,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-20373-7_31,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ijhcs.2018.03.005,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ijhcs.2018.03.005,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.2514/6.2024-4496,5,title_abstract,exclude,E5,duplicate of doi:10.2514/6.2024-4496,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.4018/979-8-3373-7665-3.ch013,5,title_abstract,exclude,E5,duplicate of doi:10.4018/979-8-3373-7665-3.ch013,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.4324/9781003586883-4,5,title_abstract,exclude,E5,duplicate of doi:10.4324/9781003586883-4,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ths.2018.8574170,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ths.2018.8574170,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icma54519.2022.9856369,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icma54519.2022.9856369,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2018.1561784,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2018.1561784,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/safety6030034,5,title_abstract,exclude,E5,duplicate of doi:10.3390/safety6030034,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trc.2021.103090,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trc.2021.103090,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1117/12.2519302,5,title_abstract,exclude,E5,duplicate of doi:10.1117/12.2519302,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/20464177.2026.2710914,5,title_abstract,exclude,E5,duplicate of doi:10.1080/20464177.2026.2710914,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ce2ct64011.2025.10939546,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ce2ct64011.2025.10939546,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.promfg.2015.07.159,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.promfg.2015.07.159,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1002603,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1002603,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ismar-adjunct.2018.00027,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ismar-adjunct.2018.00027,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/25725084.2021.1922148,5,title_abstract,exclude,E5,duplicate of doi:10.1080/25725084.2021.1922148,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/21695067231192262,5,title_abstract,exclude,E5,duplicate of doi:10.1177/21695067231192262,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc.2016.7844497,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc.2016.7844497,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/itsc48978.2021.9565043,5,title_abstract,exclude,E5,duplicate of doi:10.1109/itsc48978.2021.9565043,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2025.3595746,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2025.3595746,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/itsc48978.2021.9564557,5,title_abstract,exclude,E5,duplicate of doi:10.1109/itsc48978.2021.9564557,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/10711813241275908,5,title_abstract,exclude,E5,duplicate of doi:10.1177/10711813241275908,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/vehicles6030076,5,title_abstract,exclude,E5,duplicate of doi:10.3390/vehicles6030076,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-60898-9_13,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-60898-9_13,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1005262,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1005262,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931215591361,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931215591361,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1002/hfm.21025,5,title_abstract,exclude,E5,duplicate of doi:10.1002/hfm.21025,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/0018720819872893,5,title_abstract,exclude,E5,duplicate of doi:10.1177/0018720819872893,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/1463922x.2022.2152900,5,title_abstract,exclude,E5,duplicate of doi:10.1080/1463922x.2022.2152900,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/cogsima64436.2025.11079518,5,title_abstract,exclude,E5,duplicate of doi:10.1109/cogsima64436.2025.11079518,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.23919/acc45564.2020.9147762,5,title_abstract,exclude,E5,duplicate of doi:10.23919/acc45564.2020.9147762,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-031-93718-7_6,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-031-93718-7_6,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s11370-020-00339-2,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s11370-020-00339-2,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ergon.2026.104009,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ergon.2026.104009,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/emes52337.2021.9484141,5,title_abstract,exclude,E5,duplicate of doi:10.1109/emes52337.2021.9484141,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s13437-022-00278-y,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s13437-022-00278-y,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/hsi70218.2026.11773152,5,title_abstract,exclude,E5,duplicate of doi:10.1109/hsi70218.2026.11773152,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/anzcc47194.2019.8945623,5,title_abstract,exclude,E5,duplicate of doi:10.1109/anzcc47194.2019.8945623,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/dasc62030.2024.10749421,5,title_abstract,exclude,E5,duplicate of doi:10.1109/dasc62030.2024.10749421,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-67687-6_18,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-67687-6_18,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3173386.3176960,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3173386.3176960,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-50732-9_49,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-50732-9_49,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/arso68304.2026.11536121,5,title_abstract,exclude,E5,duplicate of doi:10.1109/arso68304.2026.11536121,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1117/12.3061683,5,title_abstract,exclude,E5,duplicate of doi:10.1117/12.3061683,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/2899361.2899375,5,title_abstract,exclude,E5,duplicate of doi:10.1145/2899361.2899375,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.23919/fusion49751.2022.9841297,5,title_abstract,exclude,E5,duplicate of doi:10.23919/fusion49751.2022.9841297,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10339-022-01113-1,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10339-022-01113-1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s12369-024-01183-5,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s12369-024-01183-5,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.jrt.2026.100197,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.jrt.2026.100197,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/jcm11247533,5,title_abstract,exclude,E5,duplicate of doi:10.3390/jcm11247533,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icorr.2017.8009347,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icorr.2017.8009347,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.cie.2018.10.047,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.cie.2018.10.047,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3721250.3743029,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3721250.3743029,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.apergo.2021.103674,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.apergo.2021.103674,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1088/1742-6596/2867/1/012024,5,title_abstract,exclude,E5,duplicate of doi:10.1088/1742-6596/2867/1/012024,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/01691864.2020.1730238,5,title_abstract,exclude,E5,duplicate of doi:10.1080/01691864.2020.1730238,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.17221/73/2024-rae,5,title_abstract,exclude,E5,duplicate of doi:10.17221/73/2024-rae,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.2514/6.2021-0880,5,title_abstract,exclude,E5,duplicate of scopus:85100169715,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-15806-2_10,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-15806-2_10,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/fpsyg.2023.1129369,5,title_abstract,exclude,E5,duplicate of doi:10.3389/fpsyg.2023.1129369,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ichms69701.2026.11602324,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ichms69701.2026.11602324,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1111/bju.70430,5,title_abstract,exclude,E5,duplicate of doi:10.1111/bju.70430,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-981-19-1053-1_15,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-981-19-1053-1_15,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-91408-0_5,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-91408-0_5,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1108/ecam-03-2025-0538,5,title_abstract,exclude,E5,duplicate of doi:10.1108/ecam-03-2025-0538,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/app16157513,5,title_abstract,exclude,E5,duplicate of doi:10.3390/app16157513,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-93885-1_54,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-93885-1_54,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1117/12.2620038,5,title_abstract,exclude,E5,duplicate of doi:10.1117/12.2620038,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3122986.3123020,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3122986.3123020,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181320641484,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181320641484,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tetci.2016.2641929,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tetci.2016.2641929,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-39907-2_10,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-39907-2_10,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3568294.3580149,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3568294.3580149,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trf.2025.01.045,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trf.2025.01.045,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/aieee71113.2026.11576770,5,title_abstract,exclude,E5,duplicate of doi:10.1109/aieee71113.2026.11576770,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s13177-025-00538-0,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s13177-025-00538-0,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W2577496299,5,title_abstract,exclude,E5,duplicate of scopus:84996799449,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tits.2026.3725655,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tits.2026.3725655,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2017.2784018,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2017.2784018,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/app16094311,5,title_abstract,exclude,E5,duplicate of doi:10.3390/app16094311,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3390/su18073199,5,title_abstract,exclude,E5,duplicate of doi:10.3390/su18073199,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.apergo.2025.104719,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.apergo.2025.104719,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3772318.3791256,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3772318.3791256,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tits.2026.3739341,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tits.2026.3739341,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s12369-024-01103-7,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s12369-024-01103-7,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208261483656,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208261483656,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.5507/tots.2021.014,5,title_abstract,exclude,E5,duplicate of doi:10.5507/tots.2021.014,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1115/omae2018-78774,5,title_abstract,exclude,E5,duplicate of doi:10.1115/omae201878774,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/arso68304.2026.11536135,5,title_abstract,exclude,E5,duplicate of doi:10.1109/arso68304.2026.11536135,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/15389588.2026.2656715,5,title_abstract,exclude,E5,duplicate of doi:10.1080/15389588.2026.2656715,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.displa.2025.103180,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.displa.2025.103180,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1115/omae2026-180928,5,title_abstract,exclude,E5,duplicate of doi:10.1115/omae2026-180928,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1555343417723432,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1555343417723432,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1097/aco.0000000000000935,5,title_abstract,exclude,E5,duplicate of doi:10.1097/aco.0000000000000935,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.promfg.2015.07.149,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.promfg.2015.07.149,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3029798.3038339,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3029798.3038339,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ainit61980.2024.10581456,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ainit61980.2024.10581456,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2020.2988835,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2020.2988835,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/1463922x.2020.1827080,5,title_abstract,exclude,E5,duplicate of doi:10.1080/1463922x.2020.1827080,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc.2017.8122718,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc.2017.8122718,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-50020-7_3,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-50020-7_3,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/dasc52595.2021.9594355,5,title_abstract,exclude,E5,duplicate of doi:10.1109/dasc52595.2021.9594355,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2022.2068744,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2022.2068744,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/lra.2025.3583621,5,title_abstract,exclude,E5,duplicate of doi:10.1109/lra.2025.3583621,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1002/9781394266401.ch1,5,title_abstract,exclude,E5,duplicate of doi:10.1002/9781394266401.ch1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-031-93508-4_23,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-031-93508-4_23,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3500866.3516374,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3500866.3516374,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/dasc.2017.8102124,5,title_abstract,exclude,E5,duplicate of doi:10.1109/dasc.2017.8102124,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2018.1561792,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2018.1561792,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.apergo.2016.05.011,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.apergo.2016.05.011,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ichms56717.2022.9980801,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ichms56717.2022.9980801,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10111-026-00887-0,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10111-026-00887-0,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.net.2026.104130,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.net.2026.104130,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/dasc55683.2022.9925836,5,title_abstract,exclude,E5,duplicate of doi:10.1109/dasc55683.2022.9925836,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1201/9781003561309-1,5,title_abstract,exclude,E5,duplicate of doi:10.1201/9781003561309-1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.aap.2025.108067,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.aap.2025.108067,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/10447318.2022.2143004,5,title_abstract,exclude,E5,duplicate of doi:10.1080/10447318.2022.2143004,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1002/qre.3422,5,title_abstract,exclude,E5,duplicate of doi:10.1002/qre.3422,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-91122-9_44,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-91122-9_44,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208211042782,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208211042782,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc.2015.245,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc.2015.245,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3385009,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3385009,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/frvir.2025.1487281,5,title_abstract,exclude,E5,duplicate of doi:10.3389/frvir.2025.1487281,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2020.2965529,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2020.2965529,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/aero47225.2020.9172297,5,title_abstract,exclude,E5,duplicate of doi:10.1109/aero47225.2020.9172297,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/csnet67572.2025.11288238,5,title_abstract,exclude,E5,duplicate of doi:10.1109/csnet67572.2025.11288238,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tvt.2023.3319495,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tvt.2023.3319495,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iros.2017.8206233,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iros.2017.8206233,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/2993148.2998525,5,title_abstract,exclude,E5,duplicate of doi:10.1145/2993148.2998525,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10111-025-00794-w,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10111-025-00794-w,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/25726668241270486,5,title_abstract,exclude,E5,duplicate of doi:10.1177/25726668241270486,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181322661184,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181322661184,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-40030-3_18,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-40030-3_18,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1061/9780784485231.007,5,title_abstract,exclude,E5,duplicate of doi:10.1061/9780784485231.007,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/frobt.2023.1143723,5,title_abstract,exclude,E5,duplicate of doi:10.3389/frobt.2023.1143723,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W7162358264,5,title_abstract,exclude,E5,duplicate of openalex:W7216903900,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1006871,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1006871,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.oceaneng.2026.128835,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.oceaneng.2026.128835,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3543174.3546088,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3543174.3546088,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iv55156.2024.10588827,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iv55156.2024.10588827,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/0018720818788995,5,title_abstract,exclude,E5,duplicate of doi:10.1177/0018720818788995,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3543174.3546830,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3543174.3546830,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W2272625484,5,title_abstract,exclude,E5,duplicate of scopus:85012868003,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3757279.3785614,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3757279.3785614,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/01691864.2022.2134737,5,title_abstract,exclude,E5,duplicate of doi:10.1080/01691864.2022.2134737,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/00187208261457703,5,title_abstract,exclude,E5,duplicate of doi:10.1177/00187208261457703,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1145/3472883.3487008,5,title_abstract,exclude,E5,duplicate of doi:10.1145/3472883.3487008,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/smc.2016.7844401,5,title_abstract,exclude,E5,duplicate of doi:10.1109/smc.2016.7844401,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1006904,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1006904,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1541931213601303,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1541931213601303,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-981-13-2245-7_1,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-981-13-2245-7_1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icce53296.2022.9730473,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icce53296.2022.9730473,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iv47402.2020.9304717,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iv47402.2020.9304717,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.chb.2025.108690,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.chb.2025.108690,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/access.2019.2928981,5,title_abstract,exclude,E5,duplicate of doi:10.1109/access.2019.2928981,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/access.2026.3659997,5,title_abstract,exclude,E5,duplicate of doi:10.1109/access.2026.3659997,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ichcai70183.2026.11607540,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ichcai70183.2026.11607540,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trc.2024.104491,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trc.2024.104491,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2020.2988859,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2020.2988859,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/dasc55683.2022.9925804,5,title_abstract,exclude,E5,duplicate of doi:10.1109/dasc55683.2022.9925804,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-031-32633-2_8,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-031-32633-2_8,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-20467-9_4,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-20467-9_4,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1007687,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1007687,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/20464177.2025.2494431,5,title_abstract,exclude,E5,duplicate of doi:10.1080/20464177.2025.2494431,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/thms.2022.3202900,5,title_abstract,exclude,E5,duplicate of doi:10.1109/thms.2022.3202900,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/mipro70003.2026.11591871,5,title_abstract,exclude,E5,duplicate of doi:10.1109/mipro70003.2026.11591871,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-319-60642-2_2,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-60642-2_2,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1098/rsta.2024.0147,5,title_abstract,exclude,E5,duplicate of doi:10.1098/rsta.2024.0147,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/10711813251395047,5,title_abstract,exclude,E5,duplicate of doi:10.1177/10711813251395047,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iv47402.2020.9304676,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iv47402.2020.9304676,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trc.2021.103199,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trc.2021.103199,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.aap.2019.105406,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.aap.2019.105406,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.4324/9781003586883-3,5,title_abstract,exclude,E5,duplicate of doi:10.4324/9781003586883-3,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/iv47402.2020.9304802,5,title_abstract,exclude,E5,duplicate of doi:10.1109/iv47402.2020.9304802,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/case69030.2026.11704473,5,title_abstract,exclude,E5,duplicate of doi:10.1109/case69030.2026.11704473,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s13437-025-00401-9,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s13437-025-00401-9,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/cic56439.2022.00018,5,title_abstract,exclude,E5,duplicate of doi:10.1109/cic56439.2022.00018,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s10489-024-06052-2,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s10489-024-06052-2,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-030-20503-4_58,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-030-20503-4_58,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ihmsc62065.2024.00039,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ihmsc62065.2024.00039,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/red-uas.2015.7441025,5,title_abstract,exclude,E5,duplicate of doi:10.1109/red-uas.2015.7441025,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tem.2023.3331369,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tem.2023.3331369,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/itsc45102.2020.9294344,5,title_abstract,exclude,E5,duplicate of doi:10.1109/itsc45102.2020.9294344,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.5281/zenodo.23862456,5,title_abstract,exclude,E5,duplicate of doi:10.5281/zenodo.23862456,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/0144929x.2025.2500448,5,title_abstract,exclude,E5,duplicate of doi:10.1080/0144929x.2025.2500448,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1117/12.2665399,5,title_abstract,exclude,E5,duplicate of doi:10.1117/12.2665399,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181322661197,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181322661197,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/fphys.2026.1913172,5,title_abstract,exclude,E5,duplicate of doi:10.3389/fphys.2026.1913172,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/tits.2024.3376185,5,title_abstract,exclude,E5,duplicate of doi:10.1109/tits.2024.3376185,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.martra.2024.100110,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.martra.2024.100110,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icnsurv.2019.8735135,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icnsurv.2019.8735135,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/icoias69065.2025.00016,5,title_abstract,exclude,E5,duplicate of doi:10.1109/icoias69065.2025.00016,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1515/auto-2020-0086,5,title_abstract,exclude,E5,duplicate of doi:10.1515/auto-2020-0086,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1061/(asce)co.1943-7862.0001258,5,title_abstract,exclude,E5,duplicate of doi:10.1061/(asce)co.1943-7862.0001258,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/s00773-026-01123-0,5,title_abstract,exclude,E5,duplicate of doi:10.1007/s00773-026-01123-0,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.jsse.2021.07.002,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.jsse.2021.07.002,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/vrw66409.2025.00216,5,title_abstract,exclude,E5,duplicate of doi:10.1109/vrw66409.2025.00216,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/00140139.2022.2127920,5,title_abstract,exclude,E5,duplicate of doi:10.1080/00140139.2022.2127920,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/07370024.2024.2341217,5,title_abstract,exclude,E5,duplicate of doi:10.1080/07370024.2024.2341217,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/aero.2017.7943679,5,title_abstract,exclude,E5,duplicate of doi:10.1109/aero.2017.7943679,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-031-48047-8_14,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-031-48047-8_14,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.3389/fpsyg.2022.1039431,5,title_abstract,exclude,E5,duplicate of doi:10.3389/fpsyg.2022.1039431,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.20532/cit.2019.1004396,5,title_abstract,exclude,E5,duplicate of doi:10.20532/cit.2019.1004396,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1061/9780784484876.025,5,title_abstract,exclude,E5,duplicate of doi:10.1061/9780784484876.025,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/isaes70982.2026.11669213,5,title_abstract,exclude,E5,duplicate of doi:10.1109/isaes70982.2026.11669213,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/cogsima.2017.7929584,5,title_abstract,exclude,E5,duplicate of doi:10.1109/cogsima.2017.7929584,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1177/1071181322661541,5,title_abstract,exclude,E5,duplicate of doi:10.1177/1071181322661541,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1080/24721840.2019.1696196,5,title_abstract,exclude,E5,duplicate of doi:10.1080/24721840.2019.1696196,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1109/ism.2020.00008,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ism.2020.00008,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trf.2024.04.006,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trf.2024.04.006,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ifacol.2016.10.520,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ifacol.2016.10.520,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.trf.2024.01.012,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.trf.2024.01.012,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.13031/aim.202100788,5,title_abstract,exclude,E5,duplicate of doi:10.13031/aim.202100788,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1016/j.ijhcs.2025.103592,5,title_abstract,exclude,E5,duplicate of doi:10.1016/j.ijhcs.2025.103592,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1004516,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1004516,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1007/978-3-032-29456-2_15,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-032-29456-2_15,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.5281/zenodo.23306037,5,title_abstract,exclude,E5,duplicate of doi:10.5281/zenodo.23306037,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.54941/ahfe1007608,5,title_abstract,exclude,E5,duplicate of doi:10.54941/ahfe1007608,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+openalex:W2954487452,5,title_abstract,exclude,E5,duplicate of scopus:85069520070,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.5281/zenodo.23168698,5,title_abstract,exclude,E5,duplicate of doi:10.5281/zenodo.23168698,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.5281/zenodo.23167484,5,title_abstract,exclude,E5,duplicate of doi:10.5281/zenodo.23167484,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
+doi:10.1093/acprof:oso/9780190626136.003.0001,5,title_abstract,exclude,E5,duplicate of doi:10.1007/978-3-319-74265-6_1,,,2026-11-14,rule-E5,run 2026-11-14_p5; duplicate recorded by ingest
