@@ -18,3 +18,28 @@ The first screen under the text above passed 742 of 1,307 records, because the P
 - Exclude E2 where the setting is multi-agent but nothing about the human is measured.
 - Say in the reason how many agents the person supervises, and name the human measure.
 - The maintainer accepts the consequence, stated on the methods page: Pillar 5 covers human supervision of multiple agents, and single-agent human-automation interaction is out of scope by design rather than by oversight.
+
+## Sharpened application of the ruling (2026-11-14)
+
+A blind re-screen of 60 of the 660 records the ruling had removed found 4 that should have
+passed, so all 660 were read again. Two of the four were plain misreads of multi-agent
+settings (a fleet of autonomous vessels supervised from a remote operating centre; thirty
+participants supervising several autonomous agricultural machines). The other two exposed a
+boundary the ruling as written does not settle.
+
+The rule as applied on the second reading: condition (2) requires that the things the person
+supervises are EACH automated or autonomous in their own right - a robot team, a fleet of
+autonomous vehicles or vessels, a swarm, several UAVs, a human-agent team with several
+agents, a platoon of automated vehicles. One automated system is not enough however many
+subsystems it has.
+
+Held for a maintainer ruling, neither included nor excluded: records where a human outcome IS
+measured but the person watches many entities that are not themselves individually automated,
+or that are all driven by a single central automation. Examples are an air traffic controller
+monitoring many human-piloted aircraft under one arrival-management system, a nuclear plant
+crew supervising many loops and interlocks of one plant automation system, and a driver among
+many other road users. 18 records are held this way; they carry ai_code M and no decision, so
+the coverage check reports them as awaiting a decision until the maintainer rules on the set.
+
+Counts on the second reading of the 660: 10 further includes (92 in total), 18 held, 632
+excluded (E4 394, E1 163, E2 65, E3 10).
