@@ -1,0 +1,17 @@
+{
+ "arxiv": {
+  "query": "(all:\"situation awareness\" OR all:\"out-of-the-loop\" OR all:\"out of the loop\" OR all:\"automation surprise\" OR all:\"takeover\" OR all:\"human-automation\" OR all:\"moral crumple zone\" OR all:\"ironies of automation\") AND (all:\"autonomous\" OR (all:\"robot\" OR all:\"robots\" OR all:\"robotic\" OR all:\"robotics\") OR all:\"supervisory control\") AND (all:\"operator\" OR all:\"supervisor\" OR all:\"trust\" OR all:\"workload\") AND submittedDate:[201501010000 TO 209912312359]",
+  "hits": 266,
+  "downloaded": 266
+ },
+ "openalex": {
+  "query": "(\"situation awareness\" OR \"out-of-the-loop\" OR \"out of the loop\" OR \"automation surprise\" OR \"takeover\" OR \"human-automation\" OR \"moral crumple zone\" OR \"ironies of automation\") AND (\"autonomous\" OR (\"robot\" OR \"robots\" OR \"robotic\" OR \"robotics\") OR \"supervisory control\") AND (\"operator\" OR \"supervisor\" OR \"trust\" OR \"workload\")",
+  "hits": 783,
+  "downloaded": 783
+ },
+ "semanticscholar": {
+  "query": "(\"situation awareness\" | \"out-of-the-loop\" | \"out of the loop\" | \"automation surprise\" | \"takeover\" | \"human-automation\" | \"moral crumple zone\" | \"ironies of automation\") + (\"autonomous\" | (\"robot\" | \"robots\" | \"robotic\" | \"robotics\") | \"supervisory control\") + (\"operator\" | \"supervisor\" | \"trust\" | \"workload\")",
+  "hits": 1410,
+  "downloaded": 1410
+ }
+}
