@@ -46,8 +46,8 @@
   </div>
 
   <div style="display:flex;flex-direction:column;gap:10px">
-    <span class="eyebrow">TIER 2 - MISSING CROSS-PILLAR BRIDGES - A POPULATED PILLAR SILENT ON A REQUIREMENT OTHERS COVER</span>
-    <p class="muted" style="margin:0;font-size:14px;max-width:760px">These are integration gaps: the requirement exists in the literature, but not inside the community PreCog would need to borrow it from. A cell is listed here only when the pillar has three or more papers, so the silence is informative rather than an artefact of a thin pillar.</p>
+    <span class="eyebrow">TIER 2 - UNADDRESSED CROSS-PILLAR REQUIREMENTS - COVERED IN ONE PILLAR, ABSENT FROM ANOTHER</span>
+    <p class="muted" style="margin:0;font-size:14px;max-width:760px">These are integration gaps: the requirement exists in the literature, but not inside the community PreCog would need to borrow it from. A cell is listed here only when the pillar has three or more papers, which distinguishes an unaddressed requirement from a small sample.</p>
     <ul style="columns:2;margin:0;font-size:14px;color:var(--muted)">{% for pl, key, label in gapinfo.tier2 %}<li><a href="/pillars/{{ pl.slug }}/">Pillar {{ pl.n }} - {{ pl.short }}</a> × <strong>{{ label }}</strong></li>{% endfor %}</ul>
     {% if gapinfo.other %}<details><summary class="hint" style="cursor:pointer">{{ gapinfo.other|length }} further empty cells in pillars with fewer than three papers (not yet informative)</summary>
       <ul style="columns:2;font-size:14px;color:var(--muted)">{% for pl, key, label in gapinfo.other %}<li>Pillar {{ pl.n }} × {{ label }}</li>{% endfor %}</ul>
