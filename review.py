@@ -27,6 +27,31 @@ def tier(title, abstract, year):
     return "A" if (m and y >= 2022) or (m and l) else ("B" if m or l else "C")
 
 
+CODES = [
+    ("E1", "off-topic", "Not about this pillar's subject at all."),
+    ("E2", "no evaluation", "No quantitative result bearing on the claim, or nothing measured about the person."),
+    ("E3", "survey or tutorial", "Reviews prior work rather than reporting an original study. A book chapter reporting an original study is judged on content, not type (v1.15)."),
+    ("E4", "wrong level", "Right topic, wrong scale: single-agent where the pillar needs multi-agent, or a bystander rather than a supervisor."),
+    ("E5", "duplicate", "The same work already in the review. The later or journal version is kept."),
+    ("E6", "not retrievable", "No copy could be obtained through the library or open access."),
+    ("E7", "not in English", ""),
+    ("E8", "not eligible by type", "Not peer-reviewed and not on arXiv (v1.9), or a thesis or dissertation (v1.11). Assigned by rule, not retrospective."),
+    ("E9", "retracted or withdrawn", "Assigned by rule from the record. The only code that applies retrospectively (v1.15)."),
+]
+
+
+def legend(ws):
+    from openpyxl.styles import Font, Alignment, PatternFill
+    ws.append(["code", "means", "notes"])
+    for c, m, n in CODES: ws.append([c, m, n])
+    for i, wd in enumerate([8, 26, 96], 1):
+        c = ws.cell(1, i); c.font = Font(bold=True); c.fill = PatternFill("solid", fgColor="DDE7E3")
+        ws.column_dimensions[c.column_letter].width = wd
+    for row in ws.iter_rows(min_row=2):
+        for c in row: c.alignment = Alignment(wrap_text=True, vertical="top")
+    ws.freeze_panes = "A2"
+
+
 def build(a):
     from openpyxl import Workbook
     from openpyxl.worksheet.datavalidation import DataValidation
@@ -55,6 +80,7 @@ def build(a):
 
     wb = Workbook(); sheet(wb.active, inc, INC_OPTS); wb.active.title = "AI includes"
     sheet(wb.create_sheet("Leak check"), leak, LEAK_OPTS)
+    legend(wb.create_sheet("Codes"))
     out = SCREEN / f"{a.run}_review.xlsx"; wb.save(out)
     print(f"{len(inc)} AI includes to review, {len(leak)} leak-check records (of {len(exc)} AI excludes) -> {out}")
 
