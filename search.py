@@ -251,8 +251,12 @@ def openalex(query, count_only):
 
 # ---------------------------------------------------------------- Semantic Scholar
 def s2_query(query):
-    # bulk search syntax: + for AND, | for OR, quotes for phrases, * prefix wildcard supported
-    q = query.replace(" AND ", " + ").replace(" OR ", " | ")
+    # bulk search syntax: + for AND, | for OR, quotes for phrases.
+    # The trailing wildcards in the IEEE string are expanded here as they are for arXiv and
+    # OpenAlex: S2 supports * only as a prefix wildcard on a bare token, so "robot*" inside a
+    # quoted phrase matches nothing useful and would search a narrower string than the other
+    # databases. Expanding keeps the three arms comparable.
+    q = expand(query).replace(" AND ", " + ").replace(" OR ", " | ")
     return q
 
 
