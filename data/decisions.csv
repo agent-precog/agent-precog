@@ -51440,3 +51440,4 @@ doi:10.13031/jash.16543,5,title_abstract,exclude,E5,duplicate of doi:10.13031/ja
 doi:10.1109/ictis60134.2023.10243802,5,title_abstract,exclude,E5,duplicate of doi:10.1109/ictis60134.2023.10243802,,,2026-11-15,rule-E5,run 2026-11-15_p5; duplicate recorded by ingest
 doi:10.1109/itsc60802.2025.11423679,5,title_abstract,exclude,E5,duplicate of doi:10.1109/itsc60802.2025.11423679,,,2026-11-15,rule-E5,run 2026-11-15_p5; duplicate recorded by ingest
 doi:10.3389/fsurg.2022.1015367,5,title_abstract,exclude,E5,duplicate of doi:10.3389/fsurg.2022.1015367,,,2026-11-15,rule-E5,run 2026-11-15_p5; duplicate recorded by ingest
+doi:10.1109/lra.2026.3723283,5,full_text,exclude,E5,"journal version of arXiv 2603.18344, already published as senaratne2026hri",exclude,E5,2026-11-15,ft-extract-v2,"run 2026-11-15_p5; duplicate found at full text by identifier, recorded by rule (protocol v1.4)"
