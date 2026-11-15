@@ -1,0 +1,46 @@
+record_id,ai_label,ai_code,ai_reason,prompt_version,labelled_on
+arxiv:2611.16123,include,,Multi-agent LLM tool-calling safety; controlled measurement of message-delivery effects on policy violations.,ta-screen-v4,2026-11-15
+arxiv:2611.15521,exclude,E1,Decentralized multi-agent collaboration and resource discovery; no runtime safety interception or hazard detection.,ta-screen-v4,2026-11-15
+arxiv:2611.14969,exclude,E1,VLA serving system optimization; inference latency management for robotics but no safety interception or multi-agent hazard.,ta-screen-v4,2026-11-15
+doi:10.3390/robotics15110237,exclude,E3,"Systematic review of industrial fleet management, orchestration, and deployment maturity; survey paper.",ta-screen-v4,2026-11-15
+doi:10.20944/preprints202611.0959.v1,include,,Real-time mixed-criticality scheduling for fleet management; collision-avoidance rerouting with latency assurance and protective stops.,ta-screen-v4,2026-11-15
+doi:10.33915/etd.12701,exclude,E1,Swarm foraging task allocation via market-based mechanisms; no runtime safety interception or multi-agent hazard detection.,ta-screen-v4,2026-11-15
+doi:10.5281/zenodo.24096895,include,,Multi-agent LLM trajectory audit; hook enforcement and execution verification for autonomous agent safety.,ta-screen-v4,2026-11-15
+doi:10.1007/s10846-026-02476-9,include,,Language-conditioned robotic task allocation with feasibility-gated command admission; safety constraints and execution control.,ta-screen-v4,2026-11-15
+doi:10.1061/9780784487129.ch1,exclude,E1,Construction site monitoring with AI agents and digital twin; no runtime safety interception or multi-agent hazard focus.,ta-screen-v4,2026-11-15
+doi:10.1109/acsos-c70952.2026.00069,exclude,E2,Doctoral research on swarm architecture under human supervision; proposes observer/controller principle but reports no empirical results yet.,ta-screen-v4,2026-11-15
+doi:10.1109/itc-egypt70422.2026.11765870,include,,Multi-agent path planning with dynamic safety margins and collision avoidance; continuous trajectory safety enhancement.,ta-screen-v4,2026-11-15
+doi:10.1145/3841580.3845784,exclude,E2,"Workshop abstract on trust and blame in multi-agent societies; position and agenda-setting, no method or empirical study.",ta-screen-v4,2026-11-15
+doi:10.25394/pgs.35007421,exclude,E2,Doctoral research on MARL via Stackelberg games; proposes frameworks but abstract reports no empirical results or formal contribution.,ta-screen-v4,2026-11-15
+doi:10.20517/ir.2026.40,exclude,E3,Comprehensive survey of secure control in multi-agent systems under cyber attacks; review paper.,ta-screen-v4,2026-11-15
+doi:10.1163/24519391-06010009,exclude,E1,Maritime occupational safety and fishing accidents; not about autonomous agents or multi-agent systems.,ta-screen-v4,2026-11-15
+doi:10.5281/zenodo.24118151,exclude,E2,"Agentic state evasion and latent context poisoning; abstract incomplete, no method or results shown.",ta-screen-v4,2026-11-15
+doi:10.2139/ssrn.7687802,exclude,E2,"AI-driven autonomous cyber defense; abstract empty, no content provided.",ta-screen-v4,2026-11-15
+openalex:W7120534393,include,,Multi-agent system architecture for IIoT safety; edge-level risk assessment and selective signal forwarding for hazard management.,ta-screen-v4,2026-11-15
+doi:10.5281/zenodo.18961834,include,,Architecture-level safety enforcement for autonomous systems; capability-gating and non-bypassable execution control framework.,ta-screen-v4,2026-11-15
+doi:10.1109/isse70179.2026.11762774,include,,Multi-UAV task allocation with DRL-based navigation; mission supervisor couples assignment with learned policies for collision avoidance.,ta-screen-v4,2026-11-15
+openalex:W3162603108,exclude,E4,Single-agent robot navigation and collision avoidance in human environments; no multi-agent or sequential safety interception aspect.,ta-screen-v4,2026-11-15
+doi:10.32390/ksmer.2026.63.5.808,exclude,E2,"Autonomous mining concept paper; vision and future directions, no method, system, or empirical study reported.",ta-screen-v4,2026-11-15
+doi:10.5281/zenodo.24118372,exclude,E1,"Lunar/Martian rover wheel-block modularity; vehicle design and logistics, not autonomous safety or multi-agent hazard.",ta-screen-v4,2026-11-15
+doi:10.12737/2246493,exclude,E1,"Transport vehicle reliability in agrologistics; supply-chain simulation, not autonomous agent safety or multi-agent hazard.",ta-screen-v4,2026-11-15
+doi:10.5281/zenodo.24098587,exclude,E1,"Fractal Systems Thinking organizational methodology; management theory, not autonomous systems or multi-agent safety.",ta-screen-v4,2026-11-15
+doi:10.4271/2026-99-2132,exclude,E1,Multi-vehicle cargo loading optimization; no runtime safety interception or multi-agent hazard detection as primary claim.,ta-screen-v4,2026-11-15
+openalex:W7225845444,exclude,E1,"Indoor forklift localization in mixed AGV/human warehouses; localization technique, not runtime safety interception or multi-agent hazard detection.",ta-screen-v4,2026-11-15
+doi:10.1021/acsmaterialsau.6c00100,exclude,E1,"Multi-agent LLM framework for materials design; no runtime safety interception, hazard detection, or latency-constrained inference for safety.",ta-screen-v4,2026-11-15
+doi:10.19693/j.issn.1673-3185.04511,include,,USV swarm path planning with LLM-driven adaptive planning and safety constraints; addresses multi-agent coordination with safety thresholds.,ta-screen-v4,2026-11-15
+doi:10.19693/j.issn.1673-3185.04883,exclude,E3,"Systematic review of LLM-based fault detection for ships; survey paper, not primary research.",ta-screen-v4,2026-11-15
+doi:10.26434/chemrxiv.15012015/v1,exclude,E1,"Edible spacecraft components for redundancy; no multi-agent systems, runtime safety interception, or autonomous agent safety.",ta-screen-v4,2026-11-15
+doi:10.1007/978-981-95-5253-5_3-1,exclude,E2,"Title only, no abstract; cannot assess contribution or relevance.",ta-screen-v4,2026-11-15
+doi:10.19693/j.issn.1673-3185.04811,exclude,E3,"Review of large models in shipbuilding lifecycle; systematic review/survey, not primary research contribution.",ta-screen-v4,2026-11-15
+doi:10.5281/zenodo.23559396,exclude,E1,"Automotive energy equilibrium theorem; no multi-agent systems, runtime safety interception, or autonomous agent coordination.",ta-screen-v4,2026-11-15
+doi:10.1108/jqme-02-2026-0041,exclude,E1,"Predictive maintenance framework for mining equipment; reliability/availability analysis, not runtime safety interception or multi-agent hazard detection.",ta-screen-v4,2026-11-15
+doi:10.5281/zenodo.20028546,exclude,E2,"AILEE Trust Layer release notes; product documentation and governance framework, no empirical study or formal result.",ta-screen-v4,2026-11-15
+doi:10.22108/pom.2026.147153.1641,exclude,E1,"Supply chain digital twin for protein logistics resilience; no multi-agent safety interception, hazard detection, or autonomous agent coordination.",ta-screen-v4,2026-11-15
+doi:10.1016/j.heliyon.2022.e11814,exclude,E1,"Passenger road transportation risk assessment; single-agent driver safety, not multi-agent or runtime interception.",ta-screen-v4,2026-11-15
+openalex:W2766425501,exclude,E1,"Hydrogen fuel production lifecycle analysis; energy systems, not multi-agent systems or autonomous agent safety.",ta-screen-v4,2026-11-15
+doi:10.1109/escience70237.2026.00052,exclude,E2,"Title only, no abstract; cannot assess contribution or relevance.",ta-screen-v4,2026-11-15
+doi:10.1049/cp.2016.0648,exclude,E2,"Title only, no abstract; cannot assess contribution or relevance.",ta-screen-v4,2026-11-15
+s2:2c1ecd701cc8f361863bff3c080705e7d63a6355,exclude,E2,"Title only, no abstract; cannot assess contribution or relevance.",ta-screen-v4,2026-11-15
+doi:10.1109/tase.2026.3750354,include,,Consensus under multi-mode DoS attacks in heterogeneous multi-agent systems; addresses multi-agent coordination under adversarial disruption with topology-driven control.,ta-screen-v4,2026-11-15
+s2:7a3daf34b2efb81ee012687b465d1c210ccb4a63,exclude,E2,"Title only, no abstract; cannot assess contribution or relevance.",ta-screen-v4,2026-11-15
+s2:b6b81b73ad4dd3548510cad0a7a5b722b21031c8,exclude,E2,"Title only, no abstract; cannot assess contribution or relevance.",ta-screen-v4,2026-11-15
