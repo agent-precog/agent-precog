@@ -135,6 +135,6 @@ footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 .rubric{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:3px;font-size:13px;color:var(--muted)}.rubric .mono{display:inline-block;min-width:28px;color:var(--ink);font-weight:600}
 .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.meta .hint{min-width:84px}
 
-.foot-aff{display:inline-flex;align-items:center;gap:12px}.bath-logo{height:30px;width:auto;display:block}
+.foot-aff{display:inline-flex;align-items:center;gap:12px}
 
 .prose h3.sub{font-size:13px;font-family:'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);font-weight:600;margin:10px 0 -4px}
